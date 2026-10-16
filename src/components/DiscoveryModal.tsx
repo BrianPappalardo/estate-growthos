@@ -209,11 +209,14 @@ export function DiscoveryModal({ open, onOpenChange }: DiscoveryModalProps) {
         throw new Error("Booking submission failed");
       }
 
-      setStep("success");
+      // Close modal and redirect directly to the thank-you homework page
+      onOpenChange(false);
+      navigate({ to: "/thank-you" });
     } catch (err: any) {
       console.error("Booking error:", err);
-      // Even if webhook has issue, provide polite confirm state so the attorney lead is not lost
-      setStep("success");
+      // Still navigate to thank-you so the prospect proceeds to the homework assignment
+      onOpenChange(false);
+      navigate({ to: "/thank-you" });
     } finally {
       setSubmitting(false);
     }

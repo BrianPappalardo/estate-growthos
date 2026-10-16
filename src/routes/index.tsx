@@ -119,7 +119,7 @@ function GrowthOSLandingPage() {
               <div className="text-[11px] text-slate-500">vs 40% industry avg</div>
             </div>
             <div className="bg-white/80 p-3.5 rounded-xl border border-slate-200 text-center shadow-xs">
-              <div className="text-xs text-slate-500 font-semibold uppercase">Avg Case Value</div>
+              <div className="text-xs text-slate-500 font-semibold uppercase">Your Case Value</div>
               <div className="text-xl sm:text-2xl font-extrabold text-[#3344b8] mt-0.5">
                 $3.5k - $7k
               </div>

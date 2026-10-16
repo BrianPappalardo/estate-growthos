@@ -115,8 +115,8 @@ function ThankYouPage() {
                 at <strong>{booking.email}</strong>
               </>
             ) : null}{" "}
-            for your calendar invitation and Zoom link. We're looking forward to digging into your
-            firm’s intake process and finding where the money is currently leaking.
+            for your calendar invitation and meeting link. We're looking forward to digging into
+            your firm’s intake process and finding where the money is currently leaking.
           </p>
 
           {/* 3 Quick Expectations Cards */}
@@ -125,10 +125,10 @@ function ThankYouPage() {
               <div className="w-8 h-8 rounded-xl bg-blue-50 text-[#3344b8] flex items-center justify-center font-black text-sm mb-3">
                 1
               </div>
-              <h3 className="font-extrabold text-[#12193b] text-base">Show up on Zoom</h3>
+              <h3 className="font-extrabold text-[#12193b] text-base">Show up on the call</h3>
               <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
                 Plan for 30 minutes on a computer with good internet. Bring an honest look at how
-                prospects currently find you and book with you.
+                prospects currently find you and book with you. Get ready to answer some questions!
               </p>
             </div>
 
@@ -139,7 +139,7 @@ function ThankYouPage() {
               <h3 className="font-extrabold text-[#12193b] text-base">No slick sales pitch</h3>
               <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
                 We ask a lot of direct questions about your intake pipeline. If GrowthOS isn’t a
-                fit, we’ll say so plainly and point you in the right direction.
+                fit, we’ll say so plainly and point you in another direction.
               </p>
             </div>
 

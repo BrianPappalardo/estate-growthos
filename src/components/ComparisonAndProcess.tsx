@@ -287,7 +287,7 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
           </div>
 
           <div className="mt-8 bg-blue-50/70 border border-blue-200 rounded-xl p-5 text-center text-xs sm:text-sm text-slate-700">
-            <strong>Not an estate planner?</strong> The approach works for elder law, probate, other
+            <strong>Not an estate planner?</strong> Our approach works for elder law, probate, other
             practice areas, and other professional services. Ask on the call.
           </div>
 

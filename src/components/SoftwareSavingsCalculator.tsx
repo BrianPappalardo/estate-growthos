@@ -515,6 +515,12 @@ function SummaryPanel({
             +${monthlySavings.toLocaleString()}/mo
           </span>
         </div>
+        {monthlySavings > 0 && (
+          <p className="text-[11px] text-slate-500 text-center mt-2 leading-relaxed">
+            Software savings alone frequently cover the entire $199/month software cost of your
+            GrowthOS engagement.
+          </p>
+        )}
       </div>
 
       <div className="mt-5 p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30">
@@ -603,10 +609,6 @@ function SavePanel({
           from the home page and your tech stack will save automatically.
         </div>
       )}
-      <p className="text-[11px] text-slate-500 text-center mt-3 leading-relaxed">
-        Software savings alone frequently cover the entire $199/month software cost of your GrowthOS
-        engagement.
-      </p>
       <p className="text-[11px] text-slate-500 text-center mt-2 leading-relaxed">
         We'll review this together on your discovery call and build your estimate from here.
       </p>

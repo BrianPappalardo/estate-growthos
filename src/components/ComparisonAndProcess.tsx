@@ -13,7 +13,8 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
               The Fundamental Difference
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] mt-3 tracking-tight">
-              Most agencies sell you leads or traffic. We fix the process that decides whether those leads become clients.
+              Most agencies sell you leads or traffic. We fix the process that decides whether those
+              leads become clients.
             </h2>
           </div>
 
@@ -101,7 +102,10 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
                 <h3 className="text-xl font-bold text-slate-900 mb-1">The Discovery Call</h3>
                 <span className="text-xs font-semibold text-amber-700 uppercase">30 minutes</span>
                 <p className="mt-4 text-sm text-slate-600 leading-relaxed">
-                  We ask a lot of questions about how your firm runs, from first inquiry to signed engagement letter. By the end of the call, you’ll know whether we’re a good fit, and you’ll have a clear estimate of the work we'll do together and what it will cost.
+                  We ask a lot of questions about how your firm runs, from first inquiry to signed
+                  engagement letter. By the end of the call, you’ll know whether we’re a good fit,
+                  and you’ll have a clear estimate of the work we'll do together and what it will
+                  cost.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-slate-200/80 text-xs font-semibold text-[#3344b8]">
@@ -227,7 +231,9 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
                     ✓
                   </div>
                   <span>
-                    You run a profitable estate planning firm, whether you're a solo attorney with plans to grow, or leading a full team. (We LOVE workign with small businesses, and our pricing and service reflects that)
+                    You run a profitable estate planning firm, whether you're a solo attorney with
+                    plans to grow, or leading a full team. (We LOVE workign with small businesses,
+                    and our pricing and service reflects that)
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -265,6 +271,16 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
                     ✕
                   </div>
                   <span>You want a template dropped on your firm. We don’t do that.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-rose-100 text-rose-700 flex items-center justify-center shrink-0 mt-0.5 font-bold">
+                    ✕
+                  </div>
+                  <span>
+                    You’re too busy to answer an email or find an hour to do some work on your
+                    process. The pain isn’t bad enough yet for you to need us — come back when it
+                    is.
+                  </span>
                 </li>
               </ul>
             </div>

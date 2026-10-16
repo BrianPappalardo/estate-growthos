@@ -199,7 +199,7 @@ function GrowthOSLandingPage() {
               Client Proof
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] mt-3 tracking-tight">
-              What Law Firm Leaders Say
+              Don't just take my word for it.
             </h2>
           </div>
 

@@ -181,9 +181,8 @@ function ThankYouPage() {
                   DocuSign, Zoom, Loom, Asana, Mailchimp, Typeform, and text messaging apps.
                 </p>
                 <p className="mt-2 text-base text-slate-700 leading-relaxed max-w-3xl">
-                  With <strong>Leadli</strong> (our white-label platform included with GrowthOS),
-                  almost all of those subscriptions can be replaced for just{" "}
-                  <strong>$199/month</strong>.
+                  With <strong>Leadli</strong> (our CRM platform included with GrowthOS), almost all
+                  of those subscriptions can be replaced for just <strong>$199/month</strong>.
                 </p>
               </div>
             </div>

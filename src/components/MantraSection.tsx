@@ -13,17 +13,13 @@ export function MantraSection() {
               Start Closest to the Money.
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
-              Most marketers start with ads and traffic. We think that’s like pouring water into a
-              bucket full of holes. It doesn’t matter how much you pour in until you plug the holes.
+              Most marketers start with ads and traffic. We think that’s nuts. It's like pouring water into a bucket full of holes. It doesn’t matter how much you pour in until you plug the holes.
             </p>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
-              So we do it backwards. Find the moment someone gives you money, then fix everything
-              right before it.
+              So we do it backwards. Find the moment someone gives you money, then fix everything right before that. We think the most important thing that a firm can have is a buttery smooth intake process.
             </p>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
-              For an estate planning firm, that moment is the initial consult: they decide whether
-              they like you, sign your engagement letter, and cut a check. Everything that happens
-              before that consult is your intake, and that’s where we start.
+              For an estate planning firm, that moment is the initial consult: they decide whether they like you and trust you, they sign your engagement letter, and then they cut a check. That's where we start.
             </p>
           </div>
 
@@ -42,7 +38,7 @@ export function MantraSection() {
                   </span>
                   <div>
                     <div className="font-bold text-base">Your intake process</div>
-                    <div className="text-xs text-blue-100">(right before the check)</div>
+                    <div className="text-xs text-blue-100"></div>
                   </div>
                 </div>
                 <span className="text-xs bg-amber-400 text-slate-950 font-bold px-2.5 py-1 rounded-md uppercase">
@@ -63,7 +59,7 @@ export function MantraSection() {
                 <span className="w-7 h-7 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-xs shrink-0">
                   3
                 </span>
-                <span>Lead magnets</span>
+                <span>Email &amp; Text Marketing</span>
               </div>
 
               {/* Item 4 */}
@@ -71,7 +67,7 @@ export function MantraSection() {
                 <span className="w-7 h-7 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-xs shrink-0">
                   4
                 </span>
-                <span>Social media</span>
+                <span>Lead Magnets</span>
               </div>
 
               {/* Item 5 */}
@@ -79,7 +75,7 @@ export function MantraSection() {
                 <span className="w-7 h-7 rounded-full bg-slate-200 text-slate-500 font-bold flex items-center justify-center text-xs shrink-0">
                   5
                 </span>
-                <span>Ads (where most marketing gurus tell you to start)</span>
+                <span>Ads and social media (Don't start here!!)</span>
               </div>
             </div>
 

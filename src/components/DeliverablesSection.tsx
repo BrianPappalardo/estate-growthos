@@ -50,7 +50,7 @@ export function DeliverablesSection({ onBookClick }: { onBookClick: () => void }
                 to update your plan afterward.
               </p>
               <div className="mt-3 inline-block bg-amber-50 text-amber-900 text-xs font-semibold px-3 py-1.5 rounded-lg border border-amber-200">
-                Prospects arrive already educated, and already know your fees.
+                Prospects arrive already educated, and already know your fees. They're ready to buy.
               </div>
             </div>
             <div className="mt-5 pt-3 border-t border-slate-200/60 text-xs font-semibold text-emerald-700 flex items-center gap-1">
@@ -63,10 +63,9 @@ export function DeliverablesSection({ onBookClick }: { onBookClick: () => void }
               <div className="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center mb-4">
                 <BarChart3 className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-2">Viewing analytics</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-2">Analytics for each prospect</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                See who watched what before the consult. If someone skipped the pricing video, you
-                know to expect sticker shock and can address it early in the conversation.
+                See who watched what before the consult. For instance, if someone skipped the pricing video, you know that you may need to spend a little extra time there during your discovery call.
               </p>
             </div>
             <div className="mt-5 pt-3 border-t border-slate-200/60 text-xs font-semibold text-purple-700 flex items-center gap-1">

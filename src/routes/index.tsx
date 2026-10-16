@@ -240,7 +240,7 @@ function GrowthOSLandingPage() {
 
           <div className="flex items-center gap-4 text-xs">
             <a href="/thank-you" className="text-slate-600 hover:text-[#3344b8] font-medium">
-              Next Steps & Homework
+              
             </a>
             <span className="text-slate-300">•</span>
             <button

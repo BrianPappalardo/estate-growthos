@@ -19,7 +19,8 @@ export function PricingCards({ onBookClick }: { onBookClick: () => void }) {
             + $100/hr for our team’s time
           </div>
           <p className="mt-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
-            Use us as much or as little as you want.
+            This plan is super flexible — we can work with any budget or timeline, as fast or as
+            slow as you need.
           </p>
 
           <ul className="mt-6 space-y-3 text-xs sm:text-sm text-slate-700">
@@ -42,7 +43,7 @@ export function PricingCards({ onBookClick }: { onBookClick: () => void }) {
           onClick={onBookClick}
           className="mt-8 w-full py-3.5 px-4 rounded-xl border-2 border-[#3344b8] text-[#3344b8] hover:bg-[#3344b8] hover:text-white font-bold transition-all"
         >
-          <strong>Choose Software + Hourly</strong> &rarr;
+          <strong>Schedule a Call</strong> &rarr;
         </button>
       </div>
 
@@ -88,7 +89,7 @@ export function PricingCards({ onBookClick }: { onBookClick: () => void }) {
           onClick={onBookClick}
           className="mt-8 w-full py-3.5 px-4 rounded-xl bg-[#f97316] hover:bg-[#ea580c] text-white font-extrabold shadow-lg transition-all"
         >
-          <strong>Choose All-You-Can-Eat</strong> &rarr;
+          <strong>Schedule a Call</strong> &rarr;
         </button>
       </div>
     </div>

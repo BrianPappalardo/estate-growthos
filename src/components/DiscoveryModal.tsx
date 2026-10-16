@@ -101,13 +101,13 @@ export function DiscoveryModal({ open, onOpenChange }: DiscoveryModalProps) {
 
         // Pick first available date
         const dateKeys = Object.keys(data).filter(
-          (k) => Array.isArray(data[k]?.slots) && data[k].slots.length > 0,
+          (k) => Array.isArray(data[k]?.slots) && (data[k]?.slots?.length ?? 0) > 0,
         );
         const firstKey = dateKeys[0];
         const firstEntry = firstKey ? data[firstKey] : undefined;
-        if (firstKey && firstEntry) {
+        if (firstKey && firstEntry?.slots?.length) {
           setSelectedDate(firstKey);
-          setSelectedSlot(firstEntry.slots[0] || "");
+          setSelectedSlot(firstEntry.slots[0] ?? "");
         }
       } catch (err) {
         console.warn("Slots fetch error, falling back to manual confirm:", err);

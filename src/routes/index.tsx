@@ -12,7 +12,7 @@ import { ProofSection } from "@/components/ProofSection";
 import { GrowthOSFAQ } from "@/components/GrowthOSFAQ";
 import { DeliverablesSection } from "@/components/DeliverablesSection";
 import { ComparisonAndProcess } from "@/components/ComparisonAndProcess";
-import { TopBanner, FinalCtaSection } from "@/components/CtaSections";
+import { FinalCtaSection } from "@/components/CtaSections";
 
 export const Route = createFileRoute("/")({
   component: GrowthOSLandingPage,
@@ -41,17 +41,7 @@ export const Route = createFileRoute("/")({
       },
       {
         name: "twitter:card",
-        content: "summary_large_image",
-      },
-      {
-        property: "og:image",
-        content:
-          "https://vibe.filesafe.space/1792124205677784135/attachments/12d064d3-9ad0-4bda-ba9d-a5e91e57df39.png",
-      },
-      {
-        name: "twitter:image",
-        content:
-          "https://vibe.filesafe.space/1792124205677784135/attachments/12d064d3-9ad0-4bda-ba9d-a5e91e57df39.png",
+        content: "summary",
       },
     ],
   }),
@@ -66,9 +56,6 @@ function GrowthOSLandingPage() {
 
   return (
     <div className="min-h-screen bg-[#fcfbf8] text-slate-900 font-sans selection:bg-amber-200 selection:text-slate-900">
-      {/* 1. TOP ANNOUNCEMENT BAR */}
-      <TopBanner />
-
       {/* 2. NAVIGATION BAR (Clean Ad-Landing Style: Logo + Top-Right Call to Action) */}
       <header className="sticky top-0 z-40 bg-[#fcfbf8]/95 backdrop-blur-md border-b border-slate-200/80 transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
@@ -122,43 +109,6 @@ function GrowthOSLandingPage() {
             <p className="text-xs sm:text-sm text-slate-600 font-medium">
               30 minutes. See if it’s right for you and leave with a clear estimate.
             </p>
-          </div>
-
-          {/* Opportunity Pipeline Screenshot & Matching Layout */}
-          <div className="mt-14 relative max-w-4xl mx-auto">
-            <div className="relative rounded-2xl overflow-hidden border-2 border-slate-300 shadow-2xl bg-white">
-              <div className="bg-slate-100 px-4 py-2.5 border-b border-slate-200 flex items-center gap-2">
-                <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-red-400" />
-                  <div className="w-3 h-3 rounded-full bg-amber-400" />
-                  <div className="w-3 h-3 rounded-full bg-emerald-400" />
-                </div>
-                <div className="text-[11px] text-slate-500 font-mono mx-auto font-medium">
-                  GrowthOS • Estate Planning Intake & Opportunity Pipeline
-                </div>
-              </div>
-
-              <div className="relative aspect-16/9 bg-slate-900 overflow-hidden">
-                <img
-                  src="https://vibe.filesafe.space/1792124205677784135/attachments/12d064d3-9ad0-4bda-ba9d-a5e91e57df39.png"
-                  alt="GrowthOS Platform Opportunity Pipeline Preview"
-                  className="w-full h-full object-cover object-top opacity-95"
-                />
-
-                <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-white/95 backdrop-blur-md p-5 rounded-2xl border border-slate-200 shadow-xl max-w-sm text-left">
-                  <div className="text-xs font-bold uppercase tracking-wider text-[#3344b8]">
-                    One team. One platform.
-                  </div>
-                  <div className="text-base sm:text-lg font-black text-slate-900 mt-0.5 leading-snug">
-                    No loose ends.
-                  </div>
-                  <p className="text-xs text-slate-600 mt-1.5 leading-relaxed">
-                    Flying Leap Studio is the team. GrowthOS is the system built directly around
-                    your firm’s specific consult and fee flow.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="mt-12 pt-8 border-t border-slate-200/80 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">

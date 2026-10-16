@@ -6,9 +6,6 @@ import {
   Sparkles,
   Landmark,
   TrendingDown,
-  Video,
-  Radio,
-  FileSpreadsheet,
   Save,
   CheckCircle2,
   Info,
@@ -546,24 +543,6 @@ function SummaryPanel({
               <strong>Operating Account</strong> — 100% compliant.
             </p>
           </div>
-        </div>
-      </div>
-
-      <div className="mt-4 grid grid-cols-3 gap-2 text-center text-xs">
-        <div className="bg-white p-2.5 rounded-xl border border-slate-200">
-          <Video className="w-4 h-4 mx-auto text-[#3344b8] mb-1" />
-          <span className="font-bold text-slate-800 block text-[11px]">Zoom</span>
-          <span className="text-[10px] text-emerald-700 font-semibold">Included</span>
-        </div>
-        <div className="bg-white p-2.5 rounded-xl border border-slate-200">
-          <Radio className="w-4 h-4 mx-auto text-amber-600 mb-1" />
-          <span className="font-bold text-slate-800 block text-[11px]">Loom</span>
-          <span className="text-[10px] text-emerald-700 font-semibold">Included</span>
-        </div>
-        <div className="bg-white p-2.5 rounded-xl border border-slate-200">
-          <FileSpreadsheet className="w-4 h-4 mx-auto text-purple-600 mb-1" />
-          <span className="font-bold text-slate-800 block text-[11px]">Asana/Tasks</span>
-          <span className="text-[10px] text-emerald-700 font-semibold">Included</span>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+import { useNavigate } from "@tanstack/react-router";
 import {
   Dialog,
   DialogContent,
@@ -42,6 +43,7 @@ interface FreeSlotsResponse {
 }
 
 export function DiscoveryModal({ open, onOpenChange }: DiscoveryModalProps) {
+  const navigate = useNavigate();
   const [step, setStep] = useState<"details" | "slot" | "success">("details");
   const [submitting, setSubmitting] = useState(false);
   const [loadingSlots, setLoadingSlots] = useState(false);
@@ -497,12 +499,24 @@ export function DiscoveryModal({ open, onOpenChange }: DiscoveryModalProps) {
               <p>3. You leave with a clear estimate and roadmap for your firm.</p>
             </div>
 
-            <Button
-              onClick={handleReset}
-              className="w-full mt-4 bg-[#12193b] hover:bg-[#202c61] text-white font-semibold py-2.5 rounded-xl cursor-pointer"
-            >
-              Close & Return to Page
-            </Button>
+            <div className="space-y-2 mt-4">
+              <Button
+                onClick={() => {
+                  handleReset();
+                  navigate({ to: "/thank-you" });
+                }}
+                className="w-full bg-[#3344b8] hover:bg-[#25349c] text-white font-bold py-3 rounded-xl cursor-pointer shadow-md"
+              >
+                Go to First Homework Assignment &rarr;
+              </Button>
+              <Button
+                variant="outline"
+                onClick={handleReset}
+                className="w-full text-slate-600 hover:text-slate-900 font-medium py-2 rounded-xl cursor-pointer"
+              >
+                Close
+              </Button>
+            </div>
           </div>
         )}
       </DialogContent>

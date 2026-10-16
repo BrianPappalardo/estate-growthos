@@ -29,8 +29,61 @@ const CALENDAR_ID = "dXgWrtBdGrGpBX8b9XdP";
 const BOOKING_API_URL = "https://backend.leadconnectorhq.com";
 const VIBE_API_URL = "https://backend.leadconnectorhq.com/vibe-ai";
 
+const TRACKING_ID = "tk_0b6dff0565554fae9befae498aab6045";
+const PROJECT_ID = "1792124205677784135";
+
 const CUSTOM_FIELD_FIRM_SIZE = "16HtXtlDMagWnPU4K2ZC";
 const CUSTOM_FIELD_MONTHLY_INQUIRIES = "duLyll01Jt9B0MyPZBoO";
+
+type StandardTrackingFieldKey = string;
+type RegisteredCustomFieldId = string;
+type TrackingCustomField = { value?: unknown; label: string };
+
+const getTrackingSessionId = () => {
+  try {
+    const sid = document.cookie.match(/(?:^|;\s*)__vibe_sid=([0-9a-f-]{36})(?:;|$)/)?.[1];
+    if (sid) return sid;
+  } catch {}
+  return crypto.randomUUID();
+};
+
+const postTrackingEvent = (
+  trackingPayload: Record<string, unknown> & {
+    formData: Record<StandardTrackingFieldKey, unknown>;
+    formLabels: Record<StandardTrackingFieldKey, string>;
+  },
+  options: {
+    customFields?: Record<RegisteredCustomFieldId, TrackingCustomField>;
+  } = {},
+) => {
+  const { customFields = {} } = options;
+  const eventPayload = {
+    ...trackingPayload,
+    formData: { ...trackingPayload.formData },
+    formLabels: { ...trackingPayload.formLabels },
+  };
+  const body = new FormData();
+
+  for (const [key, field] of Object.entries(customFields)) {
+    if (field.value === undefined) continue;
+    eventPayload.formData[key] = field.value;
+    eventPayload.formLabels[key] = field.label;
+  }
+
+  for (const key of Object.keys(eventPayload.formData)) {
+    eventPayload.formLabels[key] ||= key;
+  }
+
+  body.append("event", JSON.stringify(eventPayload));
+
+  fetch("https://backend.leadconnectorhq.com/external-tracking/events", {
+    method: "POST",
+    headers: {
+      version: "2021-07-28",
+    },
+    body,
+  }).catch(() => {});
+};
 
 interface DiscoveryModalProps {
   open: boolean;
@@ -152,6 +205,58 @@ export function DiscoveryModal({ open, onOpenChange }: DiscoveryModalProps) {
       selectedSlot: selectedSlot || "",
       savedAt: Date.now(),
     });
+
+    // Track lead capture event in CRM
+    try {
+      const trackingPayload = {
+        type: "external_form_submission",
+        timestamp: Date.now(),
+        formId: "discovery-call-booking",
+        formData: {
+          first_name: cleanFirst,
+          last_name: cleanLast,
+          organization: cleanFirm,
+          email: cleanEmail,
+          phone: cleanPhone,
+        },
+        formLabels: {
+          first_name: "First Name",
+          last_name: "Last Name",
+          organization: "Firm Name",
+          email: "Work Email",
+          phone: "Direct Phone",
+        },
+        url: window.location.href,
+        title: document.title,
+        path: window.location.pathname,
+        userAgent: navigator.userAgent,
+        trackingId: TRACKING_ID,
+        locationId: LOCATION_ID,
+        projectId: PROJECT_ID,
+        sessionId: getTrackingSessionId(),
+        properties: {
+          deviceType: /Mobile|Android|iPhone/i.test(navigator.userAgent) ? "mobile" : "desktop",
+          source: "ai_studio",
+          projectId: PROJECT_ID,
+          formName: "Discovery Call Booking",
+        },
+      };
+
+      postTrackingEvent(trackingPayload, {
+        customFields: {
+          [CUSTOM_FIELD_FIRM_SIZE]: {
+            value: formData.teamSize,
+            label: "Firm Size",
+          },
+          [CUSTOM_FIELD_MONTHLY_INQUIRIES]: {
+            value: formData.currentMonthlyLeads,
+            label: "Monthly Inquiries",
+          },
+        },
+      });
+    } catch (trackErr) {
+      console.warn("Form tracking error:", trackErr);
+    }
 
     // Persist the lead to the Cloud database so it's not trapped in the
     // browser. Best-effort: a failure here must not block the booking.

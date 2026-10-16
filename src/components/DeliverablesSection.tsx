@@ -139,7 +139,7 @@ export function DeliverablesSection({ onBookClick }: { onBookClick: () => void }
               Custom Tailoring Guarantee
             </span>
             <h3 className="text-2xl sm:text-3xl font-extrabold mt-2 text-white">
-              No snapshots. No templates. No cookie-cutter.
+              No snapshots. No templates. No cookie-cutter bullshit.
             </h3>
             <p className="text-slate-300 mt-4 leading-relaxed text-sm sm:text-base">
               Other companies license a “proprietary system” that some marketer dreamed up, then
@@ -155,9 +155,11 @@ export function DeliverablesSection({ onBookClick }: { onBookClick: () => void }
                 Where we can take it next:
               </div>
               <p className="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
-                Every build uncovers a wishlist. Automated follow-up and reminders, landing pages,
-                webinar and seminar signups, integrations with other systems, AI agents, a website
-                redesign, phone systems. We build outward from the intake, one step at a time.
+                We work with many of our clients for years after the initial buildout. Every build
+                uncovers a "wishlist". Automated follow-up and reminders, landing pages, webinar and
+                seminar signups, integrations with other systems, AI agents, a website redesign,
+                phone systems. We can help you with all of those things after we fix your intake
+                process. It's about knowing the next best thing and prioritizing it.
               </p>
             </div>
 

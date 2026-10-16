@@ -13,8 +13,7 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
               The Fundamental Difference
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] mt-3 tracking-tight">
-              Most agencies sell you leads. We fix the process that decides whether those leads
-              become clients.
+              Most agencies sell you leads or traffic. We fix the process that decides whether those leads become clients.
             </h2>
           </div>
 
@@ -25,7 +24,7 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
                   <tr className="border-b border-slate-200 bg-slate-50 text-slate-900 text-xs sm:text-sm font-bold uppercase tracking-wider">
                     <th className="py-4 px-6">Metric</th>
                     <th className="py-4 px-6 text-rose-700 bg-rose-50/60">
-                      Industry Average (Chaos)
+                      Industry Chaos (I mean, average)
                     </th>
                     <th className="py-4 px-6 text-emerald-800 bg-emerald-50/80">GrowthOS Goal</th>
                   </tr>
@@ -102,9 +101,7 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
                 <h3 className="text-xl font-bold text-slate-900 mb-1">The Discovery Call</h3>
                 <span className="text-xs font-semibold text-amber-700 uppercase">30 minutes</span>
                 <p className="mt-4 text-sm text-slate-600 leading-relaxed">
-                  We ask a lot of questions about how your firm runs, from first inquiry to signed
-                  engagement letter. By the end of the call, you’ll know whether we’re a good fit,
-                  and you’ll have a clear estimate.
+                  We ask a lot of questions about how your firm runs, from first inquiry to signed engagement letter. By the end of the call, you’ll know whether we’re a good fit, and you’ll have a clear estimate of the work we'll do together and what it will cost.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-slate-200/80 text-xs font-semibold text-[#3344b8]">
@@ -191,7 +188,7 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
           </div>
 
           <p className="mt-4 text-xs sm:text-sm text-slate-300 max-w-xl mx-auto">
-            Because every build is fully custom, we can’t take on more.
+            Because every build is fully custom, we don't take on more than that.
           </p>
 
           <div className="mt-8">
@@ -230,15 +227,14 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
                     ✓
                   </div>
                   <span>
-                    You run a profitable estate planning firm, from a solo attorney with plans to
-                    grow to a team of 12-15
+                    You run a profitable estate planning firm, whether you're a solo attorney with plans to grow, or leading a full team. (We LOVE workign with small businesses, and our pricing and service reflects that)
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
                     ✓
                   </div>
-                  <span>You believe in educating clients before asking them to buy</span>
+                  <span>You believe in educating clients before asking them to buy. </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">

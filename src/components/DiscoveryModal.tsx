@@ -133,19 +133,45 @@ export function DiscoveryModal({ open, onOpenChange }: DiscoveryModalProps) {
     setSubmitting(true);
     setSubmitError(null);
 
-    // Stash the booking contact so the thank-you / homework page can tie the
-    // tech stack audit back to this lead. (Client-side until Cloud is on.)
+    const cleanEmail = formData.email.trim();
+    const cleanPhone = formData.phone.trim();
+    const cleanFirm = formData.firmName.trim();
+    const cleanFirst = formData.firstName.trim();
+    const cleanLast = formData.lastName.trim();
+
+    // Stash the booking contact in session storage so the thank-you /
+    // homework page can tie the tech stack audit back to this lead.
     saveBookingContact({
-      firstName: formData.firstName.trim(),
-      lastName: formData.lastName.trim(),
-      firmName: formData.firmName.trim(),
-      email: formData.email.trim(),
-      phone: formData.phone.trim(),
+      firstName: cleanFirst,
+      lastName: cleanLast,
+      firmName: cleanFirm,
+      email: cleanEmail,
+      phone: cleanPhone,
       teamSize: formData.teamSize,
       currentMonthlyLeads: formData.currentMonthlyLeads,
       selectedSlot: selectedSlot || "",
       savedAt: Date.now(),
     });
+
+    // Persist the lead to the Cloud database so it's not trapped in the
+    // browser. Best-effort: a failure here must not block the booking.
+    try {
+      const { supabase } = await import("@/integrations/supabase/client");
+      await supabase.from("leads").insert({
+        email: cleanEmail,
+        first_name: cleanFirst || "Counselor",
+        last_name: cleanLast,
+        firm_name: cleanFirm,
+        phone: cleanPhone,
+        team_size: formData.teamSize,
+        monthly_inquiries: formData.currentMonthlyLeads,
+        selected_slot: selectedSlot || null,
+        booking_submitted: true,
+        source: "growthos_landing",
+      });
+    } catch (leadErr) {
+      console.warn("Lead capture insert failed (non-blocking):", leadErr);
+    }
 
     const slotToBook = selectedSlot || new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
 

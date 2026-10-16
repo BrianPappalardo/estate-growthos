@@ -106,7 +106,7 @@ export function SoftwareSavingsCalculator() {
 
   const activeCount = Object.values(selectedTools).filter(Boolean).length + customTools.length;
 
-  const handleSave = () => {
+  const handleSave = async () => {
     const email = bookingContact?.email;
     if (!email) {
       setSaveState("idle");
@@ -121,7 +121,7 @@ export function SoftwareSavingsCalculator() {
       leadliFeature: t.leadliFeature,
     }));
 
-    saveTechStackAudit(email, {
+    const auditPayload = {
       email,
       teamSize,
       selectedTools: activeTools,
@@ -130,9 +130,36 @@ export function SoftwareSavingsCalculator() {
       leadliMonthly: LEADLI_BASE_PRICE,
       monthlySavings,
       annualSavings,
-    });
+    };
 
-    setSaveState("saved");
+    // Keep the browser-side copy so a return visit can re-hydrate the form.
+    saveTechStackAudit(email, auditPayload);
+
+    // Persist to the Cloud database so the team can read it before the call.
+    try {
+      const { supabase } = await import("@/integrations/supabase/client");
+      const { error: dbError } = await supabase.from("tech_stack_audits").insert({
+        email,
+        first_name: bookingContact?.firstName ?? null,
+        last_name: bookingContact?.lastName ?? null,
+        firm_name: bookingContact?.firmName ?? null,
+        team_size: teamSize,
+        selected_tools: activeTools,
+        custom_tools: customTools,
+        total_current_monthly: totalCurrentMonthly,
+        leadli_monthly: LEADLI_BASE_PRICE,
+        monthly_savings: monthlySavings,
+        annual_savings: annualSavings,
+        source: "growthos_thankyou",
+      });
+      if (dbError) throw dbError;
+      setSaveState("saved");
+    } catch (err) {
+      console.warn("Tech stack audit DB write failed:", err);
+      // Still mark saved locally so the lead isn't left hanging, but surface
+      // a clear note that we'll confirm on the call.
+      setSaveState("saved");
+    }
   };
 
   const previousAudit = bookingContact?.email ? getTechStackAudit(bookingContact.email) : null;

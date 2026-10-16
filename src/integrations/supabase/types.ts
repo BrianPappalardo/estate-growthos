@@ -10,11 +10,106 @@ export type Database = {
   // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
-    PostgrestVersion: "14.5"
+    PostgrestVersion: "14.18"
   }
   public: {
     Tables: {
-      [_ in never]: never
+      leads: {
+        Row: {
+          booking_submitted: boolean
+          created_at: string
+          email: string
+          firm_name: string | null
+          first_name: string
+          id: string
+          last_name: string | null
+          monthly_inquiries: string | null
+          phone: string | null
+          selected_slot: string | null
+          source: string
+          team_size: string | null
+        }
+        Insert: {
+          booking_submitted?: boolean
+          created_at?: string
+          email: string
+          firm_name?: string | null
+          first_name: string
+          id?: string
+          last_name?: string | null
+          monthly_inquiries?: string | null
+          phone?: string | null
+          selected_slot?: string | null
+          source?: string
+          team_size?: string | null
+        }
+        Update: {
+          booking_submitted?: boolean
+          created_at?: string
+          email?: string
+          firm_name?: string | null
+          first_name?: string
+          id?: string
+          last_name?: string | null
+          monthly_inquiries?: string | null
+          phone?: string | null
+          selected_slot?: string | null
+          source?: string
+          team_size?: string | null
+        }
+        Relationships: []
+      }
+      tech_stack_audits: {
+        Row: {
+          annual_savings: number
+          created_at: string
+          custom_tools: Json
+          email: string
+          firm_name: string | null
+          first_name: string | null
+          id: string
+          last_name: string | null
+          leadli_monthly: number
+          monthly_savings: number
+          selected_tools: Json
+          source: string
+          team_size: number
+          total_current_monthly: number
+        }
+        Insert: {
+          annual_savings?: number
+          created_at?: string
+          custom_tools?: Json
+          email: string
+          firm_name?: string | null
+          first_name?: string | null
+          id?: string
+          last_name?: string | null
+          leadli_monthly?: number
+          monthly_savings?: number
+          selected_tools?: Json
+          source?: string
+          team_size?: number
+          total_current_monthly?: number
+        }
+        Update: {
+          annual_savings?: number
+          created_at?: string
+          custom_tools?: Json
+          email?: string
+          firm_name?: string | null
+          first_name?: string | null
+          id?: string
+          last_name?: string | null
+          leadli_monthly?: number
+          monthly_savings?: number
+          selected_tools?: Json
+          source?: string
+          team_size?: number
+          total_current_monthly?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

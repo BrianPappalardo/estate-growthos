@@ -24,7 +24,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 55,
     leadliFeature:
       "Complete unlimited estate planning pipeline, contact history, smart tags & notes",
-    dropLabel: "Drop your CRM subscription",
+    dropLabel: "CRM subscription",
     highlight: true,
   },
   {
@@ -36,7 +36,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 16,
     leadliFeature:
       "Unlimited service calendars with automatic round-robin, intake forms & SMS confirmation",
-    dropLabel: "Drop your Calendly / scheduling tool",
+    dropLabel: "Calendly / scheduling tool subscription",
     highlight: true,
   },
   {
@@ -48,7 +48,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 65,
     leadliFeature:
       "Visual drag-and-drop email builder, automated nurture sequences & broadcast campaigns",
-    dropLabel: "Drop your Mailchimp / email tool",
+    dropLabel: "Mailchimp / email tool subscription",
   },
   {
     id: "sms",
@@ -59,7 +59,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 45,
     leadliFeature:
       "Direct 2-way SMS conversations, automated appointment reminders & text snippets",
-    dropLabel: "Drop your separate texting app",
+    dropLabel: "Texting app subscription",
   },
   {
     id: "esign",
@@ -70,7 +70,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 35,
     leadliFeature:
       "Built-in legally binding e-Sign for engagement letters, fee agreements & disclosures",
-    dropLabel: "Drop your DocuSign plan",
+    dropLabel: "DocuSign/E-Sign Subscription",
     highlight: true,
   },
   {
@@ -82,7 +82,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 39,
     leadliFeature:
       "Custom multi-step estate planning intake forms that map directly into your CRM fields",
-    dropLabel: "Drop your Typeform subscription",
+    dropLabel: "Typeform/Form Builder/Intake subscription",
   },
   {
     id: "funnels",
@@ -93,7 +93,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 99,
     leadliFeature:
       "Fast-loading video education funnels, workshop registration pages & custom subdomains",
-    dropLabel: "Drop your funnel builder",
+    dropLabel: "Funnel builder Subscription",
   },
   {
     id: "zoom",
@@ -104,7 +104,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 16,
     leadliFeature:
       "Native Leadli Video Rooms embedded right inside consult links — no separate Zoom licenses required",
-    dropLabel: "Drop your Zoom account",
+    dropLabel: "Zoom subscription",
     highlight: true,
   },
   {
@@ -116,7 +116,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 15,
     leadliFeature:
       "Record custom walkthroughs of drafts or quick client messages directly from your unified inbox",
-    dropLabel: "Drop your Loom account",
+    dropLabel: "Loom Subscription",
     highlight: true,
   },
   {
@@ -128,7 +128,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 14,
     leadliFeature:
       "Firm task boards, automated onboarding checklists, milestone triggers & staff assignment",
-    dropLabel: "Drop your Asana subscription",
+    dropLabel: "Asana/Project Management subscription",
     highlight: true,
   },
   {
@@ -140,7 +140,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 79,
     leadliFeature:
       "On-site lead capture widget that routes incoming inquiries straight into SMS & CRM pipelines",
-    dropLabel: "Drop your live chat tool",
+    dropLabel: "Live chat tool subscription",
   },
   {
     id: "reviews",
@@ -151,7 +151,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 249,
     leadliFeature:
       "Automated Google Review requests triggered the moment a client signs their final estate plan",
-    dropLabel: "Drop your review software",
+    dropLabel: "Review software subscription",
   },
   {
     id: "voip",
@@ -162,7 +162,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 85,
     leadliFeature:
       "Recorded intake lines, call whisper, automated missed-call text back & local firm numbers",
-    dropLabel: "Drop your separate phone system",
+    dropLabel: "Separate phone system subscription",
   },
   {
     id: "social",
@@ -173,7 +173,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 25,
     leadliFeature:
       "Schedule educational posts across LinkedIn, Facebook & Google Business in one view",
-    dropLabel: "Drop your social scheduler",
+    dropLabel: "Social scheduler subscription",
   },
   {
     id: "courses",
@@ -184,7 +184,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 149,
     leadliFeature:
       "Gated estate planning resource library & on-demand video modules for client families",
-    dropLabel: "Drop your course platform",
+    dropLabel: "Course platform subscription",
   },
   {
     id: "ai",
@@ -195,7 +195,7 @@ export const DEFAULT_TOOLS: ToolItem[] = [
     defaultPrice: 20,
     leadliFeature:
       "Built-in Leadli AI conversation engine, smart response drafting & voice transcription",
-    dropLabel: "Drop your separate AI subscriptions",
+    dropLabel: "AI subscriptions",
   },
 ];
 

@@ -256,7 +256,7 @@ function ThankYouPage() {
                     </div>
                     <div>
                       <strong className="text-slate-900 block">
-                        Native Video Rooms (Zoom Replacement):
+                        Native Meeting Rooms (Zoom Replacement):
                       </strong>
                       Host intake consults directly inside your custom branded domain without paying
                       for extra Zoom seats.

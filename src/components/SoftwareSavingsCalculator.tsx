@@ -328,7 +328,7 @@ function HeaderBanner({
             First Homework Assignment • Software Audit
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight">
-            Drop Your Tech Stack & Save Calculator
+            Consolidate & Save Calculator
           </h2>
           <p className="mt-2 text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
             Check off every tool your firm pays for each month — your CRM, your Loom account, your
@@ -370,8 +370,8 @@ function HeaderBanner({
           <strong className="text-white">Make it as accurate as you can.</strong> Open your
           statements, count your seats, and add anything we missed. The more honest this is, the
           better your estimate on the call. When you're done,{" "}
-          <strong className="text-white">hit Save My Tech Stack</strong> and we'll keep it tied to
-          your booking.
+          <strong className="text-white">hit Save My Tech Stack</strong> and we'll save it so we can
+          review on your discovery call.
           {bookingEmail ? (
             <span className="block mt-1 text-amber-200">
               Saving for <strong className="text-white">{bookingEmail}</strong>

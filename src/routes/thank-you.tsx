@@ -1,18 +1,11 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   CheckCircle2,
-  Calendar,
   Sparkles,
-  ArrowRight,
   ShieldCheck,
   Landmark,
-  Layers,
-  HelpCircle,
   ExternalLink,
-  Clock,
-  FileCheck2,
-  PhoneCall,
   Video,
   Radio,
   FileSpreadsheet,
@@ -20,6 +13,7 @@ import {
 import { FlyingLeapLogo } from "@/components/FlyingLeapLogo";
 import { SoftwareSavingsCalculator } from "@/components/SoftwareSavingsCalculator";
 import { getCapacityMonth } from "@/lib/capacity-month";
+import { getBookingContact, type BookingContact } from "@/lib/booking-session";
 
 export const Route = createFileRoute("/thank-you")({
   component: ThankYouPage,
@@ -54,7 +48,14 @@ export const Route = createFileRoute("/thank-you")({
 });
 
 function ThankYouPage() {
-  const [copied, setCopied] = useState(false);
+  const [booking, setBooking] = useState<BookingContact | null>(null);
+
+  useEffect(() => {
+    setBooking(getBookingContact());
+  }, []);
+
+  const firstName = booking?.firstName?.trim();
+  const firmName = booking?.firmName?.trim();
 
   return (
     <div className="min-h-screen bg-[#fcfbf8] text-slate-900 font-sans selection:bg-amber-200 selection:text-slate-900">
@@ -90,7 +91,11 @@ function ThankYouPage() {
           </div>
 
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-950 text-xs sm:text-sm font-bold mb-4">
-            <span>You're on the calendar for {getCapacityMonth()}</span>
+            <span>
+              {firstName
+                ? `${firstName}, you're on the calendar for ${getCapacityMonth()}`
+                : `You're on the calendar for ${getCapacityMonth()}`}
+            </span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#12193b] tracking-tight leading-[1.15]">
@@ -98,9 +103,20 @@ function ThankYouPage() {
           </h1>
 
           <p className="mt-5 text-lg sm:text-xl text-slate-700 max-w-2xl mx-auto leading-relaxed">
-            Check your inbox for your calendar invitation and Zoom link. We're looking forward to
-            digging into your firm’s intake process and finding where the money is currently
-            leaking.
+            {firmName ? (
+              <>
+                <strong>{firmName}</strong> is officially on the schedule.{" "}
+              </>
+            ) : null}
+            Check your inbox
+            {booking?.email ? (
+              <>
+                {" "}
+                at <strong>{booking.email}</strong>
+              </>
+            ) : null}{" "}
+            for your calendar invitation and Zoom link. We're looking forward to digging into your
+            firm’s intake process and finding where the money is currently leaking.
           </p>
 
           {/* 3 Quick Expectations Cards */}

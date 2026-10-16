@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+import { saveBookingContact } from "@/lib/booking-session";
 import { useNavigate } from "@tanstack/react-router";
 import {
   Dialog,
@@ -131,6 +132,20 @@ export function DiscoveryModal({ open, onOpenChange }: DiscoveryModalProps) {
   const handleFinalBooking = async () => {
     setSubmitting(true);
     setSubmitError(null);
+
+    // Stash the booking contact so the thank-you / homework page can tie the
+    // tech stack audit back to this lead. (Client-side until Cloud is on.)
+    saveBookingContact({
+      firstName: formData.firstName.trim(),
+      lastName: formData.lastName.trim(),
+      firmName: formData.firmName.trim(),
+      email: formData.email.trim(),
+      phone: formData.phone.trim(),
+      teamSize: formData.teamSize,
+      currentMonthlyLeads: formData.currentMonthlyLeads,
+      selectedSlot: selectedSlot || "",
+      savedAt: Date.now(),
+    });
 
     const slotToBook = selectedSlot || new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
 

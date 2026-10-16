@@ -227,7 +227,7 @@ function GrowthOSLandingPage() {
       <FinalCtaSection onBookClick={handleOpenDiscovery} />
 
       {/* FOOTER */}
-      <footer className="bg-[#0b1026] text-slate-400 py-12 border-t border-slate-800">
+      <footer className="bg-white text-slate-700 py-12 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <FlyingLeapLogo className="h-9" />
@@ -241,11 +241,11 @@ function GrowthOSLandingPage() {
           <div className="flex items-center gap-4 text-xs">
             <button
               onClick={handleOpenDiscovery}
-              className="text-amber-400 hover:text-amber-300 font-semibold cursor-pointer"
+              className="text-[#3344b8] hover:text-[#25349c] font-semibold cursor-pointer"
             >
               Book Discovery Call
             </button>
-            <span>•</span>
+            <span className="text-slate-300">•</span>
             <span className="text-slate-500">2 Spots for {getCapacityMonth()}</span>
           </div>
         </div>

@@ -69,49 +69,20 @@ function GrowthOSLandingPage() {
       {/* 1. TOP ANNOUNCEMENT BAR */}
       <TopBanner />
 
-      {/* 2. NAVIGATION BAR */}
+      {/* 2. NAVIGATION BAR (Clean Ad-Landing Style: Logo + Top-Right Call to Action) */}
       <header className="sticky top-0 z-40 bg-[#fcfbf8]/95 backdrop-blur-md border-b border-slate-200/80 transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-3">
-            <FlyingLeapLogo className="h-10" />
+          <a href="#" className="flex items-center">
+            <FlyingLeapLogo className="h-11 sm:h-12" />
           </a>
-
-          <nav className="hidden md:flex items-center gap-1.5 lg:gap-2">
-            <a
-              href="#problem"
-              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-slate-950 hover:bg-slate-100 rounded-full transition-colors"
-            >
-              The Problem
-            </a>
-            <a
-              href="#strategy"
-              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-slate-950 hover:bg-slate-100 rounded-full transition-colors"
-            >
-              The Mantra
-            </a>
-            <span className="px-4 py-2 text-sm font-bold text-[#3344b8] bg-blue-50/80 border border-blue-200/80 rounded-full">
-              GrowthOS
-            </span>
-            <a
-              href="#how-it-works"
-              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-slate-950 hover:bg-slate-100 rounded-full transition-colors"
-            >
-              How It Works
-            </a>
-            <a
-              href="#pricing"
-              className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-slate-950 hover:bg-slate-100 rounded-full transition-colors"
-            >
-              Pricing
-            </a>
-          </nav>
 
           <div className="flex items-center gap-3">
             <button
               onClick={handleOpenDiscovery}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-[#12193b] text-[#12193b] hover:bg-[#12193b] hover:text-white font-bold text-xs sm:text-sm transition-all shadow-xs cursor-pointer"
+              className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-2.5 sm:py-3 rounded-full bg-[#12193b] text-white hover:bg-[#202c61] font-bold text-sm sm:text-base transition-all shadow-md hover:shadow-lg cursor-pointer"
             >
-              <strong>Book Call</strong>
+              <strong>Book a Call</strong>
+              <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </div>

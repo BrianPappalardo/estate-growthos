@@ -77,15 +77,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "AI Studio App" },
-      { name: "description", content: "AI Studio Generated Project" },
-      { name: "author", content: "AI Studio" },
-      { property: "og:title", content: "AI Studio App" },
-      { property: "og:description", content: "AI Studio Generated Project" },
+      { title: "GrowthOS | Fix Your Estate Planning Intake | Flying Leap Studio" },
+      {
+        name: "description",
+        content:
+          "Stop pouring money into a leaky bucket. In 4-6 weeks, we build a custom intake system around how your estate planning firm actually works.",
+      },
+      { name: "author", content: "Flying Leap Studio" },
+      { property: "og:title", content: "GrowthOS | Fix Your Estate Planning Intake" },
+      {
+        property: "og:description",
+        content:
+          "Stop pouring money into a leaky bucket. Custom intake systems for estate planning firms.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@500;600;700&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,

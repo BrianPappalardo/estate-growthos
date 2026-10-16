@@ -37,11 +37,12 @@ export function EmotionalSection({ onBookClick }: { onBookClick: () => void }) {
             real work, or sitting at your daughter’s soccer game.
           </p>
           <p>
-            You didn’t go to law school to become a salesperson. Or to run a call center. You went to help people protect their legacies. But when your intake is a mess, the bargain hunters and tire kickers crowd out the families who actually need you.
+            You didn’t go to law school to become a salesperson. Or to run a call center. You went
+            to help people protect their legacies. But when your intake is a mess, the bargain
+            hunters and tire kickers crowd out the families who actually need you.
           </p>
           <p className="text-xl sm:text-2xl font-extrabold text-amber-300 pt-2 text-center">
-            What you want is to have all your shit together. 
-We can help with that.
+            What you want is to have all your shit together. We can help with that.
           </p>
         </div>
 

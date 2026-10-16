@@ -43,7 +43,9 @@ export function ProblemSection() {
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">No-shows and sticker shock.</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Half your consults don’t show. Of the ones who do, many don’t know what a good estate plan costs, or what a trust even is. You spend the first 30 minutes educating someone who was never going to hire you in the first place.
+                Half your consults don’t show. Of the ones who do, many don’t know what a good
+                estate plan costs, or what a trust even is. You spend the first 30 minutes educating
+                someone who was never going to hire you in the first place.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-200/60 text-xs font-semibold text-amber-800 flex items-center gap-1.5">

@@ -13,13 +13,19 @@ export function MantraSection() {
               Start Closest to the Money.
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
-              Most marketers start with ads and traffic. We think that’s nuts. It's like pouring water into a bucket full of holes. It doesn’t matter how much you pour in until you plug the holes.
+              Most marketers start with ads and traffic. We think that’s nuts. It's like pouring
+              water into a bucket full of holes. It doesn’t matter how much you pour in until you
+              plug the holes.
             </p>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
-              So we do it backwards. Find the moment someone gives you money, then fix everything right before that. We think the most important thing that a firm can have is a buttery smooth intake process.
+              So we do it backwards. Find the moment someone gives you money, then fix everything
+              right before that. We think the most important thing that a firm can have is a buttery
+              smooth intake process.
             </p>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
-              For an estate planning firm, that moment is the initial consult: they decide whether they like you and trust you, they sign your engagement letter, and then they cut a check. That's where we start.
+              For an estate planning firm, that moment is the initial consult: they decide whether
+              they like you and trust you, they sign your engagement letter, and then they cut a
+              check. That's where we start.
             </p>
           </div>
 

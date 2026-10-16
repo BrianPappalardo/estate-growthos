@@ -1,5 +1,14 @@
 import React from "react";
-import { Calendar, Video, BarChart3, Users, Database, Check, ArrowRight } from "lucide-react";
+import {
+  Calendar,
+  Video,
+  BarChart3,
+  Users,
+  Database,
+  Check,
+  ArrowRight,
+  Quote,
+} from "lucide-react";
 
 export function DeliverablesSection({ onBookClick }: { onBookClick: () => void }) {
   return (
@@ -65,7 +74,9 @@ export function DeliverablesSection({ onBookClick }: { onBookClick: () => void }
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-2">Analytics for each prospect</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
-                See who watched what before the consult. For instance, if someone skipped the pricing video, you know that you may need to spend a little extra time there during your discovery call.
+                See who watched what before the consult. For instance, if someone skipped the
+                pricing video, you know that you may need to spend a little extra time there during
+                your discovery call.
               </p>
             </div>
             <div className="mt-5 pt-3 border-t border-slate-200/60 text-xs font-semibold text-purple-700 flex items-center gap-1">
@@ -105,6 +116,20 @@ export function DeliverablesSection({ onBookClick }: { onBookClick: () => void }
             <div className="mt-5 pt-3 border-t border-slate-200/60 text-xs font-semibold text-[#3344b8] flex items-center gap-1">
               <Check className="w-4 h-4" /> Zero manual duplicate data entry
             </div>
+          </div>
+        </div>
+
+        {/* Client voice pull-quote: the "I already know you" moment */}
+        <div className="mt-12 bg-linear-to-r from-amber-50 via-orange-50 to-amber-50 rounded-2xl p-8 sm:p-10 border border-amber-200/80 shadow-xs">
+          <div className="max-w-3xl mx-auto text-center">
+            <Quote className="w-10 h-10 text-amber-400 mx-auto mb-4" />
+            <p className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#12193b] leading-snug tracking-tight">
+              We hear from our clients that their prospects show up on their call and say,
+              <span className="text-[#3344b8]"> "Oh my god, I feel like I already know you!"</span>
+            </p>
+            <p className="mt-4 text-base sm:text-lg text-slate-600 font-medium">
+              And that's what you need, too.
+            </p>
           </div>
         </div>
 

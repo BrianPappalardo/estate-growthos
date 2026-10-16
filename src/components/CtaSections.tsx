@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight, Check } from "lucide-react";
+import { getCapacityMonth } from "@/lib/capacity-month";
 
 export function TopBanner() {
   return (
@@ -20,7 +21,7 @@ export function FinalCtaSection({ onBookClick }: { onBookClick: () => void }) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 relative">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/20 border border-amber-400/40 text-amber-300 text-xs sm:text-sm font-bold mb-6">
           <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-          <span>November: Only 2 spots open</span>
+          <span>{getCapacityMonth()}: Only 2 spots open</span>
         </div>
 
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-tight">
@@ -29,7 +30,7 @@ export function FinalCtaSection({ onBookClick }: { onBookClick: () => void }) {
 
         <p className="mt-6 text-base sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
           In 30 minutes, we’ll learn how your firm runs, tell you honestly whether we’re a fit, and
-          give you a clear estimate. Only 2 spots open for November.
+          give you a clear estimate. Only 2 spots open for {getCapacityMonth()}.
         </p>
 
         <div className="mt-10">

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { FlyingLeapLogo } from "@/components/FlyingLeapLogo";
+import { getCapacityMonth } from "@/lib/capacity-month";
 import { DiscoveryModal } from "@/components/DiscoveryModal";
 import { IntakeLeakCalculator } from "@/components/IntakeLeakCalculator";
 import { ProblemSection } from "@/components/ProblemSection";
@@ -82,7 +83,7 @@ function GrowthOSLandingPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 relative text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-950 text-xs sm:text-sm font-bold mb-6 shadow-xs">
             <span className="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse" />
-            <span>Only 2 new clients per month. November: 2 spots open.</span>
+            <span>Only 2 new clients per month. {getCapacityMonth()}: 2 spots open.</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-[#12193b] tracking-tight leading-[1.14]">
@@ -245,7 +246,7 @@ function GrowthOSLandingPage() {
               Book Discovery Call
             </button>
             <span>•</span>
-            <span className="text-slate-500">2 Spots for November</span>
+            <span className="text-slate-500">2 Spots for {getCapacityMonth()}</span>
           </div>
         </div>
       </footer>

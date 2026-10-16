@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { getCapacityMonth } from "@/lib/capacity-month";
 
 export function HeroSection({ onBookClick }: { onBookClick: () => void }) {
   return (
@@ -11,7 +12,7 @@ export function HeroSection({ onBookClick }: { onBookClick: () => void }) {
         {/* Urgency Pill */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-900 text-xs sm:text-sm font-bold mb-6">
           <span className="w-2 h-2 rounded-full bg-amber-600 animate-pulse" />
-          <span>Only 2 new clients per month. November: 2 spots open.</span>
+          <span>Only 2 new clients per month. {getCapacityMonth()}: 2 spots open.</span>
         </div>
 
         {/* Headline */}

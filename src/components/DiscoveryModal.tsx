@@ -20,6 +20,7 @@ import {
   Loader2,
   AlertCircle,
 } from "lucide-react";
+import { getCapacityMonth } from "@/lib/capacity-month";
 
 const LOCATION_ID = "33NL2L4kFbwfFAzRv5DM";
 const CALENDAR_ID = "dXgWrtBdGrGpBX8b9XdP";
@@ -195,7 +196,7 @@ export function DiscoveryModal({ open, onOpenChange }: DiscoveryModalProps) {
           <div className="flex items-center gap-2 mb-1.5">
             <span className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full">
               <Sparkles className="w-3 h-3" />
-              November: 2 Spots Open
+              {getCapacityMonth()}: 2 Spots Open
             </span>
             <span className="text-xs text-slate-300 flex items-center gap-1">
               <Clock className="w-3.5 h-3.5 text-amber-400" /> 30-Minute Discovery Call
@@ -334,7 +335,7 @@ export function DiscoveryModal({ open, onOpenChange }: DiscoveryModalProps) {
 
             <div className="p-3 bg-amber-50 rounded-lg border border-amber-200 text-xs text-amber-950 leading-relaxed font-medium">
               <strong>Capacity notice:</strong> We only onboard 2 firms per month because every
-              build is fully custom. 2 spots remain for November.
+              build is fully custom. 2 spots remain for {getCapacityMonth()}.
             </div>
 
             <Button

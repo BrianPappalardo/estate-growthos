@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight, CheckCircle2, X, Sparkles } from "lucide-react";
+import { getCapacityMonth } from "@/lib/capacity-month";
 
 export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void }) {
   return (
@@ -186,7 +187,7 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
 
           <div className="mt-8 inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-amber-400/20 border border-amber-400/40 text-amber-300 font-bold text-sm sm:text-base">
             <Sparkles className="w-5 h-5 text-amber-400" />
-            <span>We only take 2 new clients per month. November: 2 spots open.</span>
+            <span>We only take 2 new clients per month. {getCapacityMonth()}: 2 spots open.</span>
           </div>
 
           <p className="mt-4 text-xs sm:text-sm text-slate-300 max-w-xl mx-auto">
@@ -198,7 +199,7 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
               onClick={onBookClick}
               className="inline-flex items-center justify-center gap-3 px-8 py-4 text-base sm:text-lg font-bold bg-[#f97316] hover:bg-[#ea580c] text-white rounded-2xl shadow-xl hover:shadow-orange-500/25 transition-all cursor-pointer"
             >
-              <strong>Claim One of 2 November Spots</strong>
+              <strong>Claim One of 2 {getCapacityMonth()} Spots</strong>
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>

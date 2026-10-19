@@ -9,12 +9,7 @@ import {
   DuctTapeSection,
 } from "@/components/home/HomeHeroAndOverview";
 import { PlatformFeaturesGrid, OfferingsSection } from "@/components/home/HomeFeaturesAndOfferings";
-import {
-  FlightCrewSection,
-  FlightPlanTimeline,
-  HomeFinalCta,
-  HomeFooter,
-} from "@/components/home/HomeCrewAndPlan";
+import { FlightPlanTimeline, HomeFinalCta, HomeFooter } from "@/components/home/HomeCrewAndPlan";
 
 export const Route = createFileRoute("/")({
   component: FlyingLeapHomePage,
@@ -124,10 +119,7 @@ function FlyingLeapHomePage() {
       {/* 6. CHOOSE YOUR EXPERIENCE */}
       <OfferingsSection onOpenDiscovery={handleOpenDiscovery} />
 
-      {/* 7. MEET YOUR FLIGHT CREW */}
-      <FlightCrewSection />
-
-      {/* 8. FLIGHT PLAN TIMELINE */}
+      {/* 7. BUILD TIMELINE */}
       <FlightPlanTimeline onOpenDiscovery={handleOpenDiscovery} />
 
       {/* 9. TESTIMONIALS */}

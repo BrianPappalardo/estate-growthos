@@ -103,14 +103,15 @@ export function PlatformFeaturesGrid() {
           })}
         </div>
 
-        <div className="mt-12 text-center">
+        <p className="mt-10 text-center text-sm text-slate-500">
+          Our Consolidate &amp; Save Calculator lives on the Leadli page — coming soon. For now,{" "}
           <Link
-            to="/thank-you"
-            className="inline-flex items-center gap-2 text-sm font-bold text-[#3344b8] hover:text-[#12193b] underline underline-offset-4"
+            to="/intake"
+            className="text-[#3344b8] font-bold hover:underline underline-offset-4"
           >
-            See our Consolidate & Save Calculator to calculate your software savings →
+            explore the GrowthOS intake build →
           </Link>
-        </div>
+        </p>
       </div>
     </section>
   );
@@ -128,47 +129,51 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
             Choose your experience.
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600">
-            From full turnkey buildouts to self-managed software, we meet you where you are.
+            From a done-for-you retainer to self-managed software, we meet you where you are.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Full Launch: Leadli + Growth OS */}
+          {/* Growth OS — Retainer (Featured) */}
           <div className="relative bg-white rounded-3xl border-2 border-[#3344b8] p-7 sm:p-8 shadow-xl flex flex-col justify-between">
-            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#3344b8] text-white text-xs font-extrabold uppercase px-4 py-1 rounded-full tracking-wider">
-              Most Popular • Turnkey
+            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#3344b8] text-white text-xs font-extrabold uppercase px-4 py-1 rounded-full tracking-wider whitespace-nowrap">
+              Most Popular • Retainer
             </div>
 
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-slate-400 mt-2">
-                Full Launch
+                Growth OS
               </div>
-              <h3 className="text-2xl font-black text-[#12193b] mt-1">Leadli + Growth OS</h3>
+              <h3 className="text-2xl font-black text-[#12193b] mt-1">
+                We become part of your team
+              </h3>
               <p className="text-sm font-semibold text-[#3344b8] mt-1">
-                We build the system. You run the business.
+                Software + a monthly retainer. We're on the hunt for the next win.
               </p>
 
               <p className="mt-4 text-sm text-slate-600 leading-relaxed">
-                Flying Leap installs your Growth OS inside Leadli — configured around how your
-                business works today, and where it needs to go next.
+                The same done-for-you build — but on a retainer. Each month we're actively looking
+                for the next thing to improve, so your system keeps getting sharper and your
+                business keeps getting more efficient, month after month. Iterative growth, on
+                autopilot.
               </p>
 
               <div className="mt-6 space-y-2.5 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Complete marketing, sales & ops workflow build</span>
+                  <span>Complete marketing, sales &amp; ops system built around your firm</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Custom educational video intake funnels</span>
+                  <span>We proactively scope the next improvement every month</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Follow-up runs automatically; no leads go cold</span>
+                  <span>Ongoing build, support &amp; team training</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Weekly build sprints & hands-on concierge support</span>
+                  <span>Direct line to our senior strategy &amp; engineering team</span>
                 </div>
               </div>
             </div>
@@ -178,47 +183,47 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
                 onClick={onOpenDiscovery}
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#3344b8] hover:bg-[#25349c] text-white font-bold text-sm shadow-md transition-all cursor-pointer"
               >
-                <strong>Fix My Growth System</strong>
+                <strong>Book Your Discovery Call</strong>
                 <ArrowRight className="w-4 h-4" />
               </button>
               <Link
                 to="/intake"
                 className="text-center text-xs font-semibold text-[#3344b8] hover:underline"
               >
-                View Estate Planning Intake details →
+                View the estate planning intake build →
               </Link>
             </div>
           </div>
 
-          {/* Leadli System Buildout */}
+          {/* Leadli+ — Hourly */}
           <div className="bg-white rounded-3xl border border-slate-200 p-7 sm:p-8 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-slate-400">
                 Implementation
               </div>
-              <h3 className="text-2xl font-black text-[#12193b] mt-1">Leadli + Buildout</h3>
+              <h3 className="text-2xl font-black text-[#12193b] mt-1">Leadli+</h3>
               <p className="text-sm font-semibold text-slate-700 mt-1">
-                Built correctly, with flexibility for next steps.
+                Done for you. You set the pace.
               </p>
 
               <p className="mt-4 text-sm text-slate-600 leading-relaxed">
-                You want your Leadli system built right without committing to an ongoing retainer.
-                We configure the foundation to eliminate manual data entry and streamline client
-                onboarding.
+                The build is still done for you — you just decide how fast or slow we go. Pay for
+                the Leadli software, plus our billable hours only when you need them. No long-term
+                contracts.
               </p>
 
               <div className="mt-6 space-y-2.5 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Core CRM, calendar & pipeline setup</span>
+                  <span>Full Leadli system built around your workflow</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Run it yourself once live, or request additions</span>
+                  <span>Pay for our time only when you need it</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>No long-term contracts; hourly support available</span>
+                  <span>No retainer, no long-term contracts</span>
                 </div>
               </div>
             </div>
@@ -228,12 +233,12 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
                 onClick={onOpenDiscovery}
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm shadow-md transition-all cursor-pointer"
               >
-                <strong>Talk With Our Team</strong>
+                <strong>Book Your Discovery Call</strong>
               </button>
             </div>
           </div>
 
-          {/* Software Only */}
+          {/* Software Only — DIY */}
           <div className="bg-white rounded-3xl border border-slate-200 p-7 sm:p-8 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-slate-400">
@@ -241,7 +246,7 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
               </div>
               <h3 className="text-2xl font-black text-[#12193b] mt-1">Software Only</h3>
               <p className="text-sm font-semibold text-slate-700 mt-1">
-                DIY Leadli Subscription for builder-owners.
+                DIY Leadli subscription for builder-owners.
               </p>
 
               <p className="mt-4 text-sm text-slate-600 leading-relaxed">
@@ -256,11 +261,11 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Unlimited contacts, pipelines & users</span>
+                  <span>Unlimited contacts, pipelines &amp; users</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Expert support & build services available hourly</span>
+                  <span>Expert support &amp; build services available hourly</span>
                 </div>
               </div>
             </div>
@@ -278,6 +283,11 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
             </div>
           </div>
         </div>
+
+        <p className="mt-10 text-center text-sm text-slate-500 max-w-xl mx-auto">
+          Not sure which is right? We'll talk it through on your Discovery Call and give you a clear
+          estimate of the work and the cost.
+        </p>
       </div>
     </section>
   );

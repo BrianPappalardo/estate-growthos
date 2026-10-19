@@ -1,131 +1,53 @@
 import React, { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, Rocket, Mail, Send } from "lucide-react";
+import { ArrowRight, Mail, Send, CalendarCheck } from "lucide-react";
 import { FlyingLeapLogo } from "@/components/FlyingLeapLogo";
 import { getCapacityMonth } from "@/lib/capacity-month";
 
-export const TEAM_MEMBERS = [
-  {
-    name: "Brian Pappalardo",
-    role: "Mission Commander",
-    description: "Sets the course and leads the crew.",
-    image:
-      "https://vibe.filesafe.space/1792124205677784135/assets/a0a734e4-bd8a-4236-81ff-df39c687c25f.webp",
-  },
-  {
-    name: "Adam Campbell",
-    role: "Chief Rocket Builder",
-    description: "Makes the launch happen.",
-    image:
-      "https://vibe.filesafe.space/1792124205677784135/assets/41ce6538-4fc2-4a31-b9c0-ae877f648226.webp",
-  },
-  {
-    name: "Sara Kotila",
-    role: "Flight Navigator",
-    description: "Explores new frontiers of strategy & marketing.",
-    image:
-      "https://vibe.filesafe.space/1792124205677784135/assets/14a12cb4-feac-4ba7-88d8-ad510fcffbda.png",
-  },
-  {
-    name: "Whitney Wilde",
-    role: "Ground Control",
-    description: "Handles communication & keeps everything running smoothly from Flying Leap HQ.",
-    image:
-      "https://vibe.filesafe.space/1792124205677784135/assets/2443152c-7938-4319-9b45-39c5d9c6fb5b.png",
-  },
-];
-
-export const FLIGHT_PLAN_STEPS = [
+export const BUILD_STEPS = [
   {
     timeline: "Today",
-    title: "Mission Objectives Assessment",
-    body: "This is where we outline what's possible. We introduce the Growth OS and decide what gets built first and why. We listen to your current setup, identify cash flow and efficiency gaps, and decide if we're the right co-pilots. More importantly, we identify ways to consolidate your tech stack and save money.",
+    title: "Discovery Call",
+    body: "We ask a lot of questions about how your business actually runs — from first inquiry to signed engagement. We outline what's possible, identify the cash flow and efficiency gaps costing you right now, and decide together whether we're the right team to build it. You leave with a clear estimate of the work and the cost.",
     badgeColor: "bg-blue-100 text-blue-900 border-blue-200",
   },
   {
     timeline: "Week 1",
-    title: "Create your Flight Plan",
-    body: "This is where your flight plan takes shape, and we build systems — not just check technical boxes. We dive into the details of your business, identify quick wins, map your processes, and kick off your Growth Accelerator OS.",
+    title: "Map Your System",
+    body: "We dig into the details of your business — your processes, your tools, your bottlenecks — and map out exactly what we're going to build and in what order. We identify the quick wins alongside the bigger structural pieces, so you see momentum early.",
     badgeColor: "bg-amber-100 text-amber-900 border-amber-200",
   },
   {
-    timeline: "Weeks 2-6",
-    title: "Rocket Assembly Phase",
-    body: "Here's where we get to work behind the scenes. Your build is guided by real business priorities, not guesswork. We assemble automations, custom intake funnels, and client touchpoints, meeting weekly with your team so everything is ready for the cockpit.",
+    timeline: "Weeks 2–6",
+    title: "Build Phase",
+    body: "This is where the work happens. We build your automations, intake funnels, pipelines, and client touchpoints around your real business priorities — not guesswork. We meet weekly with your team, ship in sprints, and keep everything moving toward a system you can actually run.",
     badgeColor: "bg-indigo-100 text-indigo-900 border-indigo-200",
   },
   {
     timeline: "Week 6",
-    title: "Launch Phase",
-    body: "This is your system test flight. We walk you and your team through every part of your new system so you feel confident from day one. We turn focus to the marketing and sales priorities sequenced for stable, scalable growth.",
+    title: "Launch",
+    body: "Your new system goes live. We walk you and your team through every piece so you feel confident from day one — no 'figure it out' handoff. Then we turn focus to the marketing and sales priorities, sequenced for stable, scalable growth.",
     badgeColor: "bg-emerald-100 text-emerald-900 border-emerald-200",
   },
   {
     timeline: "Months 2 & 3",
-    title: "Cruise Phase",
-    body: "We don't just hand you the keys and say 'good luck.' We stay with you so you can stop babysitting your software and focus on growing your business. You'll understand your data and make confident decisions.",
+    title: "Stabilize",
+    body: "We don't disappear after launch. We stay close so you can stop babysitting your software and focus on serving clients. You get comfortable with your data, make confident decisions, and the day-to-day starts running without you in the middle of it.",
     badgeColor: "bg-purple-100 text-purple-900 border-purple-200",
   },
   {
     timeline: "Months 3 & 4",
-    title: "Trajectory Phase",
-    body: "Now that your systems are humming, we review your wish list — all the nice-to-haves and growth opportunities uncovered during the build. This is where the sky becomes the limit.",
+    title: "Grow",
+    body: "Now that your foundation is humming, we work through the wishlist — all the nice-to-haves and growth opportunities uncovered during the build. New campaigns, new automations, new ways to turn the system into revenue. This is where it gets fun.",
     badgeColor: "bg-rose-100 text-rose-900 border-rose-200",
   },
   {
     timeline: "Month 4 & Beyond",
-    title: "Extended Ops Phase",
-    body: "Ground Control on standby. You confidently run your day-to-day operations. When you're ready for new campaigns, advanced automations, or new growth systems, our team is right here on your terms.",
+    title: "Sustain & Scale",
+    body: "You run the business. We're on standby for whatever's next — new campaigns, advanced automations, integrations, a website redesign. On retainer or hourly, on your terms. The system keeps working while you keep growing.",
     badgeColor: "bg-slate-100 text-slate-800 border-slate-300",
   },
 ];
-
-export function FlightCrewSection() {
-  return (
-    <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-            The People Behind the Platform
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#12193b] mt-3 tracking-tight">
-            Meet your flight crew for business growth.
-          </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
-            We don’t just install software — we design the marketing, sales, and operational systems
-            that make it work together. Marketing, sales, and operations stop competing for your
-            attention and start reinforcing each other.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {TEAM_MEMBERS.map((member) => (
-            <div
-              key={member.name}
-              className="bg-[#fcfbf8] rounded-2xl border border-slate-200 p-6 text-center hover:border-blue-300 hover:shadow-lg transition-all"
-            >
-              <div className="w-28 h-28 mx-auto rounded-full overflow-hidden border-3 border-white shadow-md bg-slate-200 mb-4">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <h3 className="text-lg font-black text-[#12193b]">{member.name}</h3>
-              <div className="text-xs font-bold uppercase tracking-wider text-[#3344b8] mt-0.5">
-                {member.role}
-              </div>
-              <p className="text-xs sm:text-sm text-slate-600 mt-2.5 leading-relaxed">
-                {member.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 export function FlightPlanTimeline({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
   return (
@@ -133,18 +55,19 @@ export function FlightPlanTimeline({ onOpenDiscovery }: { onOpenDiscovery: () =>
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-xs font-bold uppercase tracking-wider text-[#f97316] bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
-            Systems + Strategy Built Together
+            From first call to a finished system
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#12193b] mt-3 tracking-tight">
-            Here's your Flight Plan.
+            How the build works.
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600">
-            Your blueprint for saving money and making money.
+            Same process whether you choose the retainer or hourly. Here's what the first few months
+            look like.
           </p>
         </div>
 
         <div className="relative border-l-2 border-slate-200 ml-4 sm:ml-8 pl-6 sm:pl-10 space-y-10">
-          {FLIGHT_PLAN_STEPS.map((step, idx) => (
+          {BUILD_STEPS.map((step, idx) => (
             <div key={step.title} className="relative group">
               <div className="absolute -left-[31px] sm:-left-[47px] top-1.5 w-7 h-7 rounded-full bg-white border-3 border-[#3344b8] flex items-center justify-center text-xs font-bold text-[#3344b8] shadow-sm">
                 {idx + 1}
@@ -170,7 +93,7 @@ export function FlightPlanTimeline({ onOpenDiscovery }: { onOpenDiscovery: () =>
             onClick={onOpenDiscovery}
             className="inline-flex items-center justify-center gap-3 px-8 sm:px-10 py-4 text-base sm:text-lg font-bold bg-[#3344b8] hover:bg-[#25349c] text-white rounded-2xl shadow-xl transition-all cursor-pointer"
           >
-            <strong>Start Your Flight Plan</strong>
+            <strong>Book Your Discovery Call</strong>
             <ArrowRight className="w-5 h-5" />
           </button>
         </div>
@@ -186,17 +109,18 @@ export function HomeFinalCta({ onOpenDiscovery }: { onOpenDiscovery: () => void 
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 relative text-center">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs sm:text-sm font-bold mb-6">
-          <Rocket className="w-4 h-4 text-amber-400" />
-          <span>Ready for your next flying leap?</span>
+          <CalendarCheck className="w-4 h-4 text-amber-400" />
+          <span>30 minutes. No pressure.</span>
         </div>
 
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight">
-          Let’s build the system that launches your business into orbit.
+          Let's find out if this is right for your firm.
         </h2>
 
         <p className="mt-6 text-base sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          In 30 minutes, we’ll learn how your business runs, tell you honestly whether we’re a fit,
-          and give you a clear estimate of what we can build together.
+          We'll learn how your business runs, tell you honestly whether we're a fit, and give you a
+          clear estimate of what we can build together. Only 2 build spots open for{" "}
+          {getCapacityMonth()}.
         </p>
 
         <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -204,14 +128,10 @@ export function HomeFinalCta({ onOpenDiscovery }: { onOpenDiscovery: () => void 
             onClick={onOpenDiscovery}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 sm:px-10 py-4 text-base sm:text-lg font-bold bg-[#f97316] hover:bg-[#ea580c] text-white rounded-2xl shadow-xl hover:shadow-2xl transition-all cursor-pointer"
           >
-            <strong>Take the Assessment & Book Call</strong>
+            <strong>Book Your Discovery Call</strong>
             <ArrowRight className="w-5 h-5" />
           </button>
         </div>
-
-        <p className="mt-4 text-xs sm:text-sm text-slate-400">
-          Only 2 build spots open for {getCapacityMonth()}
-        </p>
       </div>
     </section>
   );
@@ -234,7 +154,7 @@ export function HomeFooter({ onOpenDiscovery }: { onOpenDiscovery: () => void })
           <div className="md:col-span-5 space-y-4">
             <FlyingLeapLogo className="h-10" />
             <p className="text-sm text-slate-600 max-w-sm leading-relaxed">
-              From automation to strategy, we’ll help you launch smarter — not harder.
+              From automation to strategy, we'll help you launch smarter — not harder.
             </p>
             <div className="pt-2 text-sm text-slate-600">
               <span className="font-semibold text-slate-900 block">Contact Info:</span>
@@ -261,11 +181,6 @@ export function HomeFooter({ onOpenDiscovery }: { onOpenDiscovery: () => void })
               <li>
                 <Link to="/intake" className="text-slate-600 hover:text-[#3344b8] font-medium">
                   GrowthOS (Intake System)
-                </Link>
-              </li>
-              <li>
-                <Link to="/thank-you" className="text-slate-600 hover:text-[#3344b8]">
-                  Consolidate & Save Calculator
                 </Link>
               </li>
               <li>

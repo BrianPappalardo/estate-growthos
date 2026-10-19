@@ -47,10 +47,10 @@ export function HomeHero({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
           </button>
 
           <Link
-            to="/intake"
+            to="/estate-planning"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 text-base font-bold bg-white hover:bg-slate-50 text-[#12193b] rounded-2xl border-2 border-slate-300 shadow-sm transition-all"
           >
-            <span>Explore GrowthOS Intake</span>
+            <span>Explore the Estate Planning Vertical</span>
             <ChevronRight className="w-4 h-4 text-slate-400" />
           </Link>
         </div>

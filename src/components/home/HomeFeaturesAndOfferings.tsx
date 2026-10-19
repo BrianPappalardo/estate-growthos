@@ -106,10 +106,10 @@ export function PlatformFeaturesGrid() {
         <p className="mt-10 text-center text-sm text-slate-500">
           Our Consolidate &amp; Save Calculator lives on the Leadli page — coming soon. For now,{" "}
           <Link
-            to="/intake"
+            to="/estate-planning"
             className="text-[#3344b8] font-bold hover:underline underline-offset-4"
           >
-            explore the GrowthOS intake build →
+            explore the estate planning build →
           </Link>
         </p>
       </div>
@@ -129,33 +129,103 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
             Choose your experience.
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600">
-            From a done-for-you retainer to self-managed software, we meet you where you are.
+            From done-for-you work with you in the driver's seat to a fully managed retainer, we
+            meet you where you are.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Growth OS — Retainer (Featured) */}
-          <div className="relative bg-white rounded-3xl border-2 border-[#3344b8] p-7 sm:p-8 shadow-xl flex flex-col justify-between">
+        {/* Estate planner vertical callout */}
+        <div className="mb-10 max-w-3xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-gradient-to-r from-amber-50 to-blue-50 border border-amber-200 rounded-2xl px-6 py-5">
+            <div className="text-center sm:text-left">
+              <h3 className="text-lg sm:text-xl font-black text-[#12193b] tracking-tight">
+                Are you an Estate Planner? We have something just for you.
+              </h3>
+              <p className="text-sm text-slate-600 mt-1">
+                We've built an entire vertical around estate planning intake. See how it works.
+              </p>
+            </div>
+            <Link
+              to="/estate-planning"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#12193b] text-white font-bold text-sm hover:bg-[#202c61] transition-all whitespace-nowrap shrink-0"
+            >
+              <span>See the Estate Planning Vertical</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          {/* Leadli+ — Hourly (Featured) */}
+          <div className="relative bg-white rounded-3xl border-2 border-[#3344b8] p-7 sm:p-8 shadow-xl flex flex-col justify-between md:mt-2">
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#3344b8] text-white text-xs font-extrabold uppercase px-4 py-1 rounded-full tracking-wider whitespace-nowrap">
-              Most Popular • Retainer
+              Most Popular • You're in the driver's seat
             </div>
 
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-slate-400 mt-2">
-                Growth OS
+                Implementation
               </div>
-              <h3 className="text-2xl font-black text-[#12193b] mt-1">
-                We become part of your team
-              </h3>
+              <h3 className="text-2xl font-black text-[#12193b] mt-1">Leadli+</h3>
               <p className="text-sm font-semibold text-[#3344b8] mt-1">
-                Software + a monthly retainer. We're on the hunt for the next win.
+                Done for you. You're in the driver's seat.
               </p>
 
               <p className="mt-4 text-sm text-slate-600 leading-relaxed">
-                The same done-for-you build — but on a retainer. Each month we're actively looking
-                for the next thing to improve, so your system keeps getting sharper and your
-                business keeps getting more efficient, month after month. Iterative growth, on
-                autopilot.
+                Done-for-you services where you set the pace. Leadli+ lets us work with any client
+                and any budget, and we can go as fast or as slow as you'd like. We start with the
+                highest value work that will show a return on investment — then we're on standby for
+                any training, questions, or additional projects after your initial buildout is
+                complete.
+              </p>
+
+              <div className="mt-6 space-y-2.5 text-xs sm:text-sm text-slate-700">
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <span>Full Leadli system built around your workflow</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <span>Software + billable hours only when you need them</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <span>Any budget, any timeline — no long-term contracts</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <span>On standby for training, questions &amp; new projects</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-slate-100">
+              <button
+                onClick={onOpenDiscovery}
+                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#3344b8] hover:bg-[#25349c] text-white font-bold text-sm shadow-md transition-all cursor-pointer"
+              >
+                <strong>Book Your Discovery Call</strong>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+
+          {/* Growth OS — Retainer */}
+          <div className="bg-white rounded-3xl border border-slate-200 p-7 sm:p-8 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div>
+              <div className="text-xs font-bold uppercase tracking-wider text-slate-400">
+                Retainer
+              </div>
+              <h3 className="text-2xl font-black text-[#12193b] mt-1">Growth OS</h3>
+              <p className="text-sm font-semibold text-slate-700 mt-1">
+                A carefully planned build that's always improving.
+              </p>
+
+              <p className="mt-4 text-sm text-slate-600 leading-relaxed">
+                A carefully planned, done-for-you build that's always improving. Each month we're
+                looking for the highest-ROI item to improve, so your system keeps getting sharper
+                and your business keeps getting more efficient — month after month. We become part
+                of your team.
               </p>
 
               <div className="mt-6 space-y-2.5 text-xs sm:text-sm text-slate-700">
@@ -170,60 +240,6 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span>Ongoing build, support &amp; team training</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Direct line to our senior strategy &amp; engineering team</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-8 pt-6 border-t border-slate-100 flex flex-col gap-2">
-              <button
-                onClick={onOpenDiscovery}
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#3344b8] hover:bg-[#25349c] text-white font-bold text-sm shadow-md transition-all cursor-pointer"
-              >
-                <strong>Book Your Discovery Call</strong>
-                <ArrowRight className="w-4 h-4" />
-              </button>
-              <Link
-                to="/intake"
-                className="text-center text-xs font-semibold text-[#3344b8] hover:underline"
-              >
-                View the estate planning intake build →
-              </Link>
-            </div>
-          </div>
-
-          {/* Leadli+ — Hourly */}
-          <div className="bg-white rounded-3xl border border-slate-200 p-7 sm:p-8 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-            <div>
-              <div className="text-xs font-bold uppercase tracking-wider text-slate-400">
-                Implementation
-              </div>
-              <h3 className="text-2xl font-black text-[#12193b] mt-1">Leadli+</h3>
-              <p className="text-sm font-semibold text-slate-700 mt-1">
-                Done for you. You set the pace.
-              </p>
-
-              <p className="mt-4 text-sm text-slate-600 leading-relaxed">
-                The build is still done for you — you just decide how fast or slow we go. Pay for
-                the Leadli software, plus our billable hours only when you need them. No long-term
-                contracts.
-              </p>
-
-              <div className="mt-6 space-y-2.5 text-xs sm:text-sm text-slate-700">
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Full Leadli system built around your workflow</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Pay for our time only when you need it</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>No retainer, no long-term contracts</span>
                 </div>
               </div>
             </div>

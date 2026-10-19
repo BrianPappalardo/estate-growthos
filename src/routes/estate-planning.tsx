@@ -15,7 +15,7 @@ import { DeliverablesSection } from "@/components/DeliverablesSection";
 import { ComparisonAndProcess } from "@/components/ComparisonAndProcess";
 import { FinalCtaSection } from "@/components/CtaSections";
 
-export const Route = createFileRoute("/intake")({
+export const Route = createFileRoute("/estate-planning")({
   component: GrowthOSLandingPage,
   head: () => ({
     meta: [

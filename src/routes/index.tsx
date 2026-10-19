@@ -66,12 +66,12 @@ function FlyingLeapHomePage() {
               Home
             </Link>
             <Link
-              to="/intake"
+              to="/estate-planning"
               className="text-slate-700 hover:text-[#3344b8] transition-colors inline-flex items-center gap-1.5"
             >
-              <span>Growth OS</span>
+              <span>Estate Planning</span>
               <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-sm bg-amber-100 text-amber-900 border border-amber-300">
-                Intake
+                Vertical
               </span>
             </Link>
             <a

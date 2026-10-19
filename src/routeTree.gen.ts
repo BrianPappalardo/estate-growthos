@@ -10,7 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as IntakeRouteImport } from './routes/intake'
+import { Route as EstatePlanningRouteImport } from './routes/estate-planning'
 import { Route as ThankYouRouteImport } from './routes/thank-you'
 
 const IndexRoute = IndexRouteImport.update({
@@ -18,9 +18,9 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IntakeRoute = IntakeRouteImport.update({
-  id: '/intake',
-  path: '/intake',
+const EstatePlanningRoute = EstatePlanningRouteImport.update({
+  id: '/estate-planning',
+  path: '/estate-planning',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ThankYouRoute = ThankYouRouteImport.update({
@@ -31,31 +31,31 @@ const ThankYouRoute = ThankYouRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/intake': typeof IntakeRoute
+  '/estate-planning': typeof EstatePlanningRoute
   '/thank-you': typeof ThankYouRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/intake': typeof IntakeRoute
+  '/estate-planning': typeof EstatePlanningRoute
   '/thank-you': typeof ThankYouRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/intake': typeof IntakeRoute
+  '/estate-planning': typeof EstatePlanningRoute
   '/thank-you': typeof ThankYouRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/intake' | '/thank-you'
+  fullPaths: '/' | '/estate-planning' | '/thank-you'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/intake' | '/thank-you'
-  id: '__root__' | '/' | '/intake' | '/thank-you'
+  to: '/' | '/estate-planning' | '/thank-you'
+  id: '__root__' | '/' | '/estate-planning' | '/thank-you'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  IntakeRoute: typeof IntakeRoute
+  EstatePlanningRoute: typeof EstatePlanningRoute
   ThankYouRoute: typeof ThankYouRoute
 }
 
@@ -68,11 +68,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/intake': {
-      id: '/intake'
-      path: '/intake'
-      fullPath: '/intake'
-      preLoaderRoute: typeof IntakeRouteImport
+    '/estate-planning': {
+      id: '/estate-planning'
+      path: '/estate-planning'
+      fullPath: '/estate-planning'
+      preLoaderRoute: typeof EstatePlanningRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/thank-you': {
@@ -87,7 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  IntakeRoute: IntakeRoute,
+  EstatePlanningRoute: EstatePlanningRoute,
   ThankYouRoute: ThankYouRoute,
 }
 export const routeTree = rootRouteImport

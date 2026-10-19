@@ -114,13 +114,13 @@ export function HomeFinalCta({ onOpenDiscovery }: { onOpenDiscovery: () => void 
         </div>
 
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight">
-          Let's find out if this is right for your firm.
+          Let's find out if this is right for you.
         </h2>
 
         <p className="mt-6 text-base sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          We'll learn how your business runs, tell you honestly whether we're a fit, and give you a
-          clear estimate of what we can build together. Only 2 build spots open for{" "}
-          {getCapacityMonth()}.
+          We only take about 2 new clients per month, so it's important to us that we make sure
+          you're a perfect fit. We'll learn how your business runs, tell you honestly whether we're
+          the right team, and give you a clear estimate of what we can build together.
         </p>
 
         <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -179,8 +179,11 @@ export function HomeFooter({ onOpenDiscovery }: { onOpenDiscovery: () => void })
                 </Link>
               </li>
               <li>
-                <Link to="/intake" className="text-slate-600 hover:text-[#3344b8] font-medium">
-                  GrowthOS (Intake System)
+                <Link
+                  to="/estate-planning"
+                  className="text-slate-600 hover:text-[#3344b8] font-medium"
+                >
+                  Estate Planning Vertical
                 </Link>
               </li>
               <li>

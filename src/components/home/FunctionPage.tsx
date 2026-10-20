@@ -89,11 +89,11 @@ export function FunctionPage({
               {features.length} capabilities in this function
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] mt-3 tracking-tight">
-              Everything {fn.name.toLowerCase()} needs — in one place.
+              {fn.featureGridHeading ?? `Everything ${fn.name.toLowerCase()} needs — in one place.`}
             </h2>
             <p className="mt-3 text-base sm:text-lg text-slate-600">
-              Tap any capability to see how it fits your firm. Each one is part of Leadli — one
-              platform, one flat $199/mo rate.
+              {fn.featureGridSub ??
+                "Tap any capability to see how it fits your firm. Each one is part of Leadli — one platform, one flat $199/mo rate."}
             </p>
           </div>
 
@@ -153,12 +153,12 @@ export function FunctionPage({
                 One platform, one rate
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-4 tracking-tight">
-                {fn.name}, built around your firm — not the other way around.
+                {fn.whatYouGetHeading ??
+                  `${fn.name}, built around your firm — not the other way around.`}
               </h2>
               <p className="mt-4 text-slate-700 leading-relaxed text-sm sm:text-base">
-                We don't drop a template on top of how you already work. We configure this whole
-                function around your real processes — and because every capability below lives on
-                the same platform, they talk to each other without glue, integrations, or retyping.
+                {fn.whatYouGetBody ??
+                  "We don't drop a template on top of how you already work. We configure this whole function around your real processes — and because every capability below lives on the same platform, they talk to each other without glue, integrations, or retyping."}
               </p>
             </div>
             <div className="rounded-3xl bg-gradient-to-br from-[#12193b] to-[#202c61] text-white p-6 sm:p-8 shadow-xl">
@@ -204,7 +204,7 @@ export function FunctionPage({
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight">
-              {fn.name} is one part of the whole platform.
+              {fn.otherFunctionsHeading ?? `${fn.name} is one part of the whole platform.`}
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
               Explore the other functions that connect to it — same platform, same flat rate.
@@ -248,11 +248,11 @@ export function FunctionPage({
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let's see if {fn.name.toLowerCase()} fits your firm.
+            {fn.finalCtaHeading ?? `Let's see if ${fn.name.toLowerCase()} fits your firm.`}
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We'll learn how you work, tell you honestly whether we're a fit, and give
-            you a clear estimate.
+            {fn.finalCtaSub ??
+              "30 minutes. We'll learn how you work, tell you honestly whether we're a fit, and give you a clear estimate."}
           </p>
           <button
             onClick={onOpenDiscovery}

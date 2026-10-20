@@ -64,7 +64,7 @@ export const OPS_SCHEDULING: LeadliFeature[] = [
       "Per-pipeline views",
       "Revenue forecasting",
     ],
-    primary: false,
+    primary: true,
     status: "live",
   },
   {
@@ -152,7 +152,7 @@ export const OPS_SCHEDULING: LeadliFeature[] = [
       "Recurring event support",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "service-calendars",

@@ -17,6 +17,7 @@ import { DashboardsProductPage } from "@/components/home/DashboardsProductPage";
 import { InboxProductPage } from "@/components/home/InboxProductPage";
 import { IntegrationsProductPage } from "@/components/home/IntegrationsProductPage";
 import { OpportunityPipelinesProductPage } from "@/components/home/OpportunityPipelinesProductPage";
+import { ClassBookingsProductPage } from "@/components/home/ClassBookingsProductPage";
 import { TaskManagementProductPage } from "@/components/home/TaskManagementProductPage";
 import { SmartListsProductPage } from "@/components/home/SmartListsProductPage";
 import { FormsProductPage } from "@/components/home/FormsProductPage";
@@ -122,6 +123,8 @@ function FeatureDetailPage() {
           <IntegrationsProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : feature.slug === "opportunity-pipelines" ? (
           <OpportunityPipelinesProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "class-bookings" ? (
+          <ClassBookingsProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : feature.slug === "task-management" ? (
           <TaskManagementProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : feature.slug === "smart-lists" ? (

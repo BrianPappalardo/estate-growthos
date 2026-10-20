@@ -6,6 +6,7 @@ import { DiscoveryModal } from "@/components/DiscoveryModal";
 import { HomeFooter } from "@/components/home/HomeCrewAndPlan";
 import { CrmProductPage } from "@/components/home/CrmProductPage";
 import { CalendarProductPage } from "@/components/home/CalendarProductPage";
+import { MarketingProductPage } from "@/components/home/MarketingProductPage";
 import { getFeatureBySlug, LEADLI_FEATURES } from "@/lib/leadli-features";
 
 export const Route = createFileRoute("/feature/$slug")({
@@ -86,6 +87,8 @@ function FeatureDetailPage() {
           <CrmProductPage feature={feature} onOpenDiscovery={handleOpenDiscovery} />
         ) : feature.slug === "calendars" ? (
           <CalendarProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "marketing" ? (
+          <MarketingProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : (
           <FeatureContent feature={feature} onOpenDiscovery={handleOpenDiscovery} />
         )

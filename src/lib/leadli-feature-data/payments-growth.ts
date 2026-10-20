@@ -143,6 +143,6 @@ export const PAYMENTS_GROWTH: LeadliFeature[] = [
       "Auto-filed to the client record",
     ],
     primary: true,
-    status: "planned",
+    status: "live",
   },
 ];

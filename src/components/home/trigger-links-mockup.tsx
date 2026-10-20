@@ -101,9 +101,11 @@ const TONE_STYLES: Record<
 };
 
 export function TriggerLinksMockup() {
-  const [selectedId, setSelectedId] = useState<string>(LINKS[0]!.id);
-  const selected = (LINKS.find((l) => l.id === selectedId) ?? LINKS[0])!;
+  const [selectedId, setSelectedId] = useState<string>(LINKS[0]?.id ?? "");
+  const selected = LINKS.find((l) => l.id === selectedId) ?? LINKS[0];
   const totalClicks = LINKS.reduce((sum, l) => sum + l.clicks, 0);
+
+  if (!selected) return null;
 
   return (
     <div className="rounded-3xl border border-slate-200 bg-white overflow-hidden shadow-lg">

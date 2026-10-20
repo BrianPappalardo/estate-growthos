@@ -68,7 +68,7 @@ export const MARKETING_WEB: LeadliFeature[] = [
       "Registrant CRM sync",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "social-scheduler",

@@ -29,7 +29,7 @@ export const PLATFORM_EDUCATION: LeadliFeature[] = [
       "Zapier-compatible",
     ],
     primary: true,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "support-concierge",

@@ -90,18 +90,19 @@ export const OPS_SCHEDULING: LeadliFeature[] = [
     name: "Smart Lists & Segments",
     category: "Operations",
     icon: ListFilter,
-    tagline: "Saved audiences that update themselves as contacts change.",
+    tagline:
+      "Saved audiences for contacts, opportunities, custom objects, and projects — that update themselves as data changes.",
     description:
-      "Define a segment once by tag, field, or behavior, and it stays current automatically — no exports, no re-uploads.",
-    replaces: "Manual list exports & filters",
+      "Define a segment once by tag, field, stage, or behavior, and it stays current automatically across every kind of record in your CRM — no exports, no re-uploads, no stale lists.",
+    replaces: "Manual list exports, CSV scrubs & spreadsheet filters",
     included: [
-      "Self-updating segments",
-      "Tag, field & behavior rules",
-      "Reusable across campaigns",
-      "No re-uploading",
+      "Segments for contacts, opportunities, custom objects & projects",
+      "Tag, field, stage & behavior rules with and / or logic",
+      "Auto-updating as records change",
+      "Reusable across email, SMS & workflow triggers",
     ],
-    primary: false,
-    status: "planned",
+    primary: true,
+    status: "live",
   },
   {
     slug: "forms-surveys-quizzes",

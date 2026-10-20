@@ -18,6 +18,7 @@ import { InboxProductPage } from "@/components/home/InboxProductPage";
 import { IntegrationsProductPage } from "@/components/home/IntegrationsProductPage";
 import { OpportunityPipelinesProductPage } from "@/components/home/OpportunityPipelinesProductPage";
 import { TaskManagementProductPage } from "@/components/home/TaskManagementProductPage";
+import { SmartListsProductPage } from "@/components/home/SmartListsProductPage";
 import { getFeatureBySlug, LEADLI_FEATURES } from "@/lib/leadli-features";
 
 export const Route = createFileRoute("/feature/$slug")({
@@ -122,6 +123,8 @@ function FeatureDetailPage() {
           <OpportunityPipelinesProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : feature.slug === "task-management" ? (
           <TaskManagementProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "smart-lists" ? (
+          <SmartListsProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : (
           <FeatureContent feature={feature} onOpenDiscovery={handleOpenDiscovery} />
         )

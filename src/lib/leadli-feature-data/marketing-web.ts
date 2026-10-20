@@ -103,8 +103,8 @@ export const MARKETING_WEB: LeadliFeature[] = [
       "Segmentation",
       "Open & click analytics",
     ],
-    primary: false,
-    status: "planned",
+    primary: true,
+    status: "live",
   },
   {
     slug: "sms-marketing",

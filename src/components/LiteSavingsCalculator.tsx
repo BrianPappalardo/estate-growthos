@@ -238,7 +238,7 @@ export function LiteSavingsCalculator({ onOpenDiscovery }: { onOpenDiscovery: ()
                   </span>
                 </div>
                 <h4 className="font-bold text-sm text-[#12193b] mt-0.5">
-                  Leadli Payments — built for complicated funds routing
+                  We built Leadli Payments specifically for complicated funds routing — like Attorney IOLTA Trust accounts. It's included for every customer at no additional fee. (Confido Legal payment processing fees still apply.)
                 </h4>
                 <p className="text-xs text-slate-700 mt-1 leading-relaxed">
                   We built Leadli Payments specifically for complicated funds routing — like

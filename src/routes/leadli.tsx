@@ -3,7 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, XCircle, PhoneCall } from "lucide-react";
 import { FlyingLeapLogo } from "@/components/FlyingLeapLogo";
 import { DiscoveryModal } from "@/components/DiscoveryModal";
-import { SoftwareSavingsCalculator } from "@/components/SoftwareSavingsCalculator";
+import { LiteSavingsCalculator } from "@/components/LiteSavingsCalculator";
 import { HomeFooter } from "@/components/home/HomeCrewAndPlan";
 import {
   LeadliPageHero,
@@ -271,23 +271,23 @@ function LeadliPage() {
       {/* 6. FEATURE GRID */}
       <LeadliFeatureGrid />
 
-      {/* 7. CONSOLIDATE & SAVE CALCULATOR */}
+      {/* 7. CONSOLIDATE & SAVE CALCULATOR (LITE / ILLUSTRATIVE) */}
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200">
-              Interactive Tech Stack Calculator
+              Illustrative Savings Estimate
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] mt-3 tracking-tight">
               What is your tech stack costing you?
             </h2>
             <p className="mt-3 text-base sm:text-lg text-slate-600">
-              Select the tools you're currently paying for to calculate your instant annual savings
-              when consolidating onto Leadli.
+              Toggle the tools you pay for today to see an illustrative estimate of what you'd save
+              by consolidating onto Leadli. We'll dial in the real numbers on your consult.
             </p>
           </div>
 
-          <SoftwareSavingsCalculator />
+          <LiteSavingsCalculator onOpenDiscovery={handleOpenDiscovery} />
         </div>
       </section>
 

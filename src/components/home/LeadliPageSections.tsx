@@ -1,26 +1,9 @@
 import React from "react";
 import { Link } from "@tanstack/react-router";
-import {
-  ArrowRight,
-  CheckCircle2,
-  XCircle,
-  Sparkles,
-  Zap,
-  Bot,
-  MessageSquare,
-  BarChart3,
-  Globe,
-  Database,
-  Calendar,
-  Layers,
-  ShieldCheck,
-  Star,
-  ChevronRight,
-  PhoneCall,
-} from "lucide-react";
+import { ArrowRight, CheckCircle2, XCircle, Sparkles, ChevronRight, PhoneCall } from "lucide-react";
 import { DiscoveryModal } from "@/components/DiscoveryModal";
-import { SoftwareSavingsCalculator } from "@/components/SoftwareSavingsCalculator";
 import { HomeFooter } from "@/components/home/HomeCrewAndPlan";
+import { LEADLI_FEATURES } from "@/lib/leadli-features";
 
 export function LeadliPageHero({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
   return (
@@ -327,6 +310,9 @@ export function LeadliChaosSection() {
 }
 
 export function LeadliFeatureGrid() {
+  const primaryFeatures = LEADLI_FEATURES.filter((f) => f.primary);
+  const moreFeatures = LEADLI_FEATURES.filter((f) => !f.primary);
+
   return (
     <section className="py-16 sm:py-24 bg-[#fcfbf8] border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -338,49 +324,54 @@ export function LeadliFeatureGrid() {
             Every Feature Your Business Needs
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600">
-            Use all of the features or only the ones you need to automate, connect, and grow with
-            confidence.
+            Tap any feature to see how it fits your firm. Use all of them, or only the ones you need
+            to automate, connect, and grow with confidence.
           </p>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-          {[
-            { name: "CRM + Client Management", icon: Database },
-            { name: "Calendars & Booking", icon: Calendar },
-            { name: "Marketing Campaigns", icon: Zap },
-            { name: "Automation & Workflows", icon: Layers },
-            { name: "Reporting & Analytics", icon: BarChart3 },
-            { name: "Payments & E-Commerce", icon: ShieldCheck },
-            { name: "Reputation & Reviews", icon: Star },
-            { name: "Integrations & AI Tools", icon: Bot },
-            { name: "Unified Inbox", icon: MessageSquare },
-            { name: "Custom Dashboards", icon: BarChart3 },
-            { name: "Websites & Domain Hosting", icon: Globe },
-            { name: "Contracts & E-Signatures", icon: ShieldCheck },
-          ].map((item) => {
+          {primaryFeatures.map((item) => {
             const Icon = item.icon;
             return (
-              <div
-                key={item.name}
-                className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-2xs hover:shadow-md transition-all flex items-center gap-3"
+              <Link
+                key={item.slug}
+                to="/feature/$slug"
+                params={{ slug: item.slug }}
+                className="group bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xs hover:shadow-md hover:border-[#3344b8]/40 transition-all flex items-center gap-3"
               >
-                <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-[#3344b8] shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-[#3344b8] shrink-0 group-hover:bg-[#3344b8] group-hover:text-white group-hover:border-[#3344b8] transition-colors">
                   <Icon className="w-5 h-5" />
                 </div>
-                <span className="font-bold text-xs sm:text-sm text-slate-900 leading-snug">
+                <span className="font-bold text-xs sm:text-sm text-slate-900 leading-snug group-hover:text-[#3344b8] transition-colors">
                   {item.name}
                 </span>
-              </div>
+              </Link>
             );
           })}
         </div>
 
-        <div className="mt-10 p-6 bg-white rounded-2xl border border-slate-200 text-center max-w-2xl mx-auto">
-          <p className="text-sm font-semibold text-slate-700">
-            Plus: Class bookings, Power dialer, Email & SMS marketing, Affiliate manager, Courses &
-            memberships, Online communities, and Cloud phone system.
-          </p>
-        </div>
+        {moreFeatures.length > 0 && (
+          <div className="mt-10 p-6 sm:p-7 bg-white rounded-2xl border border-slate-200 max-w-3xl mx-auto">
+            <div className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3 text-center">
+              Plus everything else, all included
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-2.5">
+              {moreFeatures.map((item) => (
+                <Link
+                  key={item.slug}
+                  to="/feature/$slug"
+                  params={{ slug: item.slug }}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#fcfbf8] border border-slate-200 text-xs font-bold text-slate-700 hover:text-[#3344b8] hover:border-[#3344b8]/40 transition-all"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+            <p className="text-xs text-slate-500 mt-4 text-center">
+              Every feature above ships with Leadli — one platform, one flat $199/mo rate.
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );

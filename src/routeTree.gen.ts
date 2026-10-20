@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as EstatePlanningRouteImport } from './routes/estate-planning'
 import { Route as LeadliRouteImport } from './routes/leadli'
 import { Route as ThankYouRouteImport } from './routes/thank-you'
+import { Route as FeatureSlugRouteImport } from './routes/feature.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -34,18 +35,25 @@ const ThankYouRoute = ThankYouRouteImport.update({
   path: '/thank-you',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FeatureSlugRoute = FeatureSlugRouteImport.update({
+  id: '/feature/$slug',
+  path: '/feature/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/estate-planning': typeof EstatePlanningRoute
   '/leadli': typeof LeadliRoute
   '/thank-you': typeof ThankYouRoute
+  '/feature/$slug': typeof FeatureSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/estate-planning': typeof EstatePlanningRoute
   '/leadli': typeof LeadliRoute
   '/thank-you': typeof ThankYouRoute
+  '/feature/$slug': typeof FeatureSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -53,13 +61,21 @@ export interface FileRoutesById {
   '/estate-planning': typeof EstatePlanningRoute
   '/leadli': typeof LeadliRoute
   '/thank-you': typeof ThankYouRoute
+  '/feature/$slug': typeof FeatureSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/estate-planning' | '/leadli' | '/thank-you'
+  fullPaths:
+    '/' | '/estate-planning' | '/leadli' | '/thank-you' | '/feature/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/estate-planning' | '/leadli' | '/thank-you'
-  id: '__root__' | '/' | '/estate-planning' | '/leadli' | '/thank-you'
+  to: '/' | '/estate-planning' | '/leadli' | '/thank-you' | '/feature/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/estate-planning'
+    | '/leadli'
+    | '/thank-you'
+    | '/feature/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -67,6 +83,7 @@ export interface RootRouteChildren {
   EstatePlanningRoute: typeof EstatePlanningRoute
   LeadliRoute: typeof LeadliRoute
   ThankYouRoute: typeof ThankYouRoute
+  FeatureSlugRoute: typeof FeatureSlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -99,6 +116,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ThankYouRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/feature/$slug': {
+      id: '/feature/$slug'
+      path: '/feature/$slug'
+      fullPath: '/feature/$slug'
+      preLoaderRoute: typeof FeatureSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -107,6 +131,7 @@ const rootRouteChildren: RootRouteChildren = {
   EstatePlanningRoute: EstatePlanningRoute,
   LeadliRoute: LeadliRoute,
   ThankYouRoute: ThankYouRoute,
+  FeatureSlugRoute: FeatureSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

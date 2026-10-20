@@ -24,6 +24,7 @@ import { FormsProductPage } from "@/components/home/FormsProductPage";
 import { ServiceCalendarsProductPage } from "@/components/home/ServiceCalendarsProductPage";
 import { TriggerLinksProductPage } from "@/components/home/TriggerLinksProductPage";
 import { WebinarFunnelsProductPage } from "@/components/home/WebinarFunnelsProductPage";
+import { SocialSchedulerProductPage } from "@/components/home/SocialSchedulerProductPage";
 import { getFeatureBySlug, LEADLI_FEATURES } from "@/lib/leadli-features";
 
 export const Route = createFileRoute("/feature/$slug")({
@@ -140,6 +141,8 @@ function FeatureDetailPage() {
           <TriggerLinksProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : feature.slug === "webinar-funnels" ? (
           <WebinarFunnelsProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "social-scheduler" ? (
+          <SocialSchedulerProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : (
           <FeatureContent feature={feature} onOpenDiscovery={handleOpenDiscovery} />
         )

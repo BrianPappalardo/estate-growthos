@@ -85,8 +85,8 @@ export const MARKETING_WEB: LeadliFeature[] = [
       "Auto-publishing",
       "Engagement tracking",
     ],
-    primary: false,
-    status: "planned",
+    primary: true,
+    status: "live",
   },
   {
     slug: "email-marketing",

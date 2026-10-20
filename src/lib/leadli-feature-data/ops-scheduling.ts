@@ -114,8 +114,8 @@ export const OPS_SCHEDULING: LeadliFeature[] = [
       "Build forms, surveys, and quizzes that feed your CRM, trigger workflows, and qualify leads automatically.",
     replaces: "Typeform & Google Forms",
     included: ["Drag-and-drop builder", "Conditional logic", "CRM & workflow sync", "Lead scoring"],
-    primary: false,
-    status: "planned",
+    primary: true,
+    status: "live",
   },
   {
     slug: "calendars",

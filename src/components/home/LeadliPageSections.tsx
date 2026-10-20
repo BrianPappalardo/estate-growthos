@@ -544,7 +544,7 @@ export function LeadliFunctionsSection({ onOpenDiscovery }: { onOpenDiscovery: (
             return (
               <Link
                 key={fn.slug}
-                to="/function/$slug"
+                to="/leadli/$slug"
                 params={{ slug: fn.slug }}
                 className="group relative bg-gradient-to-br from-[#fcfbf8] to-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#3344b8]/40 transition-all flex flex-col gap-4 h-full overflow-hidden"
               >

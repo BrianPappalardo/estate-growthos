@@ -14,7 +14,8 @@ import { Route as EstatePlanningRouteImport } from './routes/estate-planning'
 import { Route as LeadliRouteImport } from './routes/leadli'
 import { Route as ThankYouRouteImport } from './routes/thank-you'
 import { Route as FeatureSlugRouteImport } from './routes/feature.$slug'
-import { Route as FunctionSlugRouteImport } from './routes/function.$slug'
+import { Route as LeadliIndexRouteImport } from './routes/leadli.index'
+import { Route as LeadliSlugRouteImport } from './routes/leadli.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -41,36 +42,43 @@ const FeatureSlugRoute = FeatureSlugRouteImport.update({
   path: '/feature/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FunctionSlugRoute = FunctionSlugRouteImport.update({
-  id: '/function/$slug',
-  path: '/function/$slug',
-  getParentRoute: () => rootRouteImport,
+const LeadliIndexRoute = LeadliIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => LeadliRoute,
+} as any)
+const LeadliSlugRoute = LeadliSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => LeadliRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/estate-planning': typeof EstatePlanningRoute
-  '/leadli': typeof LeadliRoute
+  '/leadli': typeof LeadliRouteWithChildren
   '/thank-you': typeof ThankYouRoute
   '/feature/$slug': typeof FeatureSlugRoute
-  '/function/$slug': typeof FunctionSlugRoute
+  '/leadli/$slug': typeof LeadliSlugRoute
+  '/leadli/': typeof LeadliIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/estate-planning': typeof EstatePlanningRoute
-  '/leadli': typeof LeadliRoute
   '/thank-you': typeof ThankYouRoute
   '/feature/$slug': typeof FeatureSlugRoute
-  '/function/$slug': typeof FunctionSlugRoute
+  '/leadli/$slug': typeof LeadliSlugRoute
+  '/leadli': typeof LeadliIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/estate-planning': typeof EstatePlanningRoute
-  '/leadli': typeof LeadliRoute
+  '/leadli': typeof LeadliRouteWithChildren
   '/thank-you': typeof ThankYouRoute
   '/feature/$slug': typeof FeatureSlugRoute
-  '/function/$slug': typeof FunctionSlugRoute
+  '/leadli/$slug': typeof LeadliSlugRoute
+  '/leadli/': typeof LeadliIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -80,15 +88,16 @@ export interface FileRouteTypes {
     | '/leadli'
     | '/thank-you'
     | '/feature/$slug'
-    | '/function/$slug'
+    | '/leadli/$slug'
+    | '/leadli/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/estate-planning'
-    | '/leadli'
     | '/thank-you'
     | '/feature/$slug'
-    | '/function/$slug'
+    | '/leadli/$slug'
+    | '/leadli'
   id:
     | '__root__'
     | '/'
@@ -96,16 +105,16 @@ export interface FileRouteTypes {
     | '/leadli'
     | '/thank-you'
     | '/feature/$slug'
-    | '/function/$slug'
+    | '/leadli/$slug'
+    | '/leadli/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   EstatePlanningRoute: typeof EstatePlanningRoute
-  LeadliRoute: typeof LeadliRoute
+  LeadliRoute: typeof LeadliRouteWithChildren
   ThankYouRoute: typeof ThankYouRoute
   FeatureSlugRoute: typeof FeatureSlugRoute
-  FunctionSlugRoute: typeof FunctionSlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -145,23 +154,42 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FeatureSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/function/$slug': {
-      id: '/function/$slug'
-      path: '/function/$slug'
-      fullPath: '/function/$slug'
-      preLoaderRoute: typeof FunctionSlugRouteImport
-      parentRoute: typeof rootRouteImport
+    '/leadli/': {
+      id: '/leadli/'
+      path: '/'
+      fullPath: '/leadli/'
+      preLoaderRoute: typeof LeadliIndexRouteImport
+      parentRoute: typeof LeadliRoute
+    }
+    '/leadli/$slug': {
+      id: '/leadli/$slug'
+      path: '/$slug'
+      fullPath: '/leadli/$slug'
+      preLoaderRoute: typeof LeadliSlugRouteImport
+      parentRoute: typeof LeadliRoute
     }
   }
 }
 
+interface LeadliRouteChildren {
+  LeadliSlugRoute: typeof LeadliSlugRoute
+  LeadliIndexRoute: typeof LeadliIndexRoute
+}
+
+const LeadliRouteChildren: LeadliRouteChildren = {
+  LeadliSlugRoute: LeadliSlugRoute,
+  LeadliIndexRoute: LeadliIndexRoute,
+}
+
+const LeadliRouteWithChildren =
+  LeadliRoute._addFileChildren(LeadliRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   EstatePlanningRoute: EstatePlanningRoute,
-  LeadliRoute: LeadliRoute,
+  LeadliRoute: LeadliRouteWithChildren,
   ThankYouRoute: ThankYouRoute,
   FeatureSlugRoute: FeatureSlugRoute,
-  FunctionSlugRoute: FunctionSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

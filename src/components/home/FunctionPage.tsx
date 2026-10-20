@@ -216,7 +216,7 @@ export function FunctionPage({
               return (
                 <Link
                   key={other.slug}
-                  to="/function/$slug"
+                  to="/leadli/$slug"
                   params={{ slug: other.slug }}
                   className="group flex items-center gap-4 p-5 rounded-2xl border border-slate-200 bg-[#fcfbf8] hover:border-[#3344b8]/40 hover:shadow-md transition-all"
                 >

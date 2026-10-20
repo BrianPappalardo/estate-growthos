@@ -7,7 +7,7 @@ import { HomeFooter } from "@/components/home/HomeCrewAndPlan";
 import { FunctionPage } from "@/components/home/FunctionPage";
 import { getFunctionBySlug } from "@/lib/leadli-functions";
 
-export const Route = createFileRoute("/function/$slug")({
+export const Route = createFileRoute("/leadli/$slug")({
   loader: ({ params }) => {
     return { fn: getFunctionBySlug(params.slug) };
   },

@@ -7,11 +7,11 @@ import { LiteSavingsCalculator } from "@/components/LiteSavingsCalculator";
 import { HomeFooter } from "@/components/home/HomeCrewAndPlan";
 import {
   LeadliPageHero,
+  LeadliAudienceBar,
   LeadliConstellationSection,
   LeadliChaosSection,
   LeadliFeatureGrid,
   LeadliFunctionsSection,
-  LeadliBuildRoadmap,
 } from "@/components/home/LeadliPageSections";
 
 export const Route = createFileRoute("/leadli/")({
@@ -106,6 +106,9 @@ function LeadliPage() {
 
       {/* 2. HERO */}
       <LeadliPageHero onOpenDiscovery={handleOpenDiscovery} />
+
+      {/* 2a. WHO LEADLI IS FOR */}
+      <LeadliAudienceBar />
 
       {/* 3. CONSTELLATION / ADAPTS TO WORK */}
       <LeadliConstellationSection onOpenDiscovery={handleOpenDiscovery} />
@@ -274,9 +277,6 @@ function LeadliPage() {
 
       {/* 6a. BROWSE BY FUNCTION */}
       <LeadliFunctionsSection onOpenDiscovery={handleOpenDiscovery} />
-
-      {/* 6b. BUILD ROADMAP */}
-      <LeadliBuildRoadmap onOpenDiscovery={handleOpenDiscovery} />
 
       {/* 7. CONSOLIDATE & SAVE CALCULATOR (LITE / ILLUSTRATIVE) */}
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">

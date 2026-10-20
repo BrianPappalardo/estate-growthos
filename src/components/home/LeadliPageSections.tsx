@@ -320,18 +320,18 @@ export function LeadliChaosSection() {
 }
 
 export function LeadliFeatureGrid() {
-  const primaryFeatures = LEADLI_FEATURES.filter((f) => f.primary);
+  const coreFeatures = LEADLI_FEATURES.filter((f) => f.primary);
   const moreFeatures = LEADLI_FEATURES.filter((f) => !f.primary);
 
   return (
     <section className="py-16 sm:py-24 bg-[#fcfbf8] border-b border-slate-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-            Complete Capability
+            The core platform
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] mt-3 tracking-tight">
-            Every Feature Your Business Needs
+            Everything your firm runs on.
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600">
             Tap any feature to see how it fits your firm. Use all of them, or only the ones you need
@@ -339,10 +339,9 @@ export function LeadliFeatureGrid() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-          {primaryFeatures.map((item) => {
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
+          {coreFeatures.map((item) => {
             const Icon = item.icon;
-            const isLive = item.status === "live";
             return (
               <Link
                 key={item.slug}
@@ -358,22 +357,13 @@ export function LeadliFeatureGrid() {
                     {item.name}
                   </span>
                 </div>
-                <span
-                  className={`self-start text-[9px] font-extrabold uppercase tracking-wider px-1.5 py-0.5 rounded-full border ${
-                    isLive
-                      ? "bg-emerald-50 text-emerald-700 border-emerald-200"
-                      : "bg-amber-50 text-amber-700 border-amber-200"
-                  }`}
-                >
-                  {isLive ? "Live now" : "Planned"}
-                </span>
               </Link>
             );
           })}
         </div>
 
         {moreFeatures.length > 0 && (
-          <div className="mt-10 p-6 sm:p-7 bg-white rounded-2xl border border-slate-200 max-w-3xl mx-auto">
+          <div className="mt-10 p-6 sm:p-7 bg-white rounded-2xl border border-slate-200 max-w-5xl mx-auto">
             <div className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3 text-center">
               Plus everything else, all included
             </div>
@@ -524,7 +514,7 @@ export function LeadliBuildRoadmap({ onOpenDiscovery }: { onOpenDiscovery: () =>
 export function LeadliFunctionsSection({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
   return (
     <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
             Browse by function
@@ -610,6 +600,41 @@ export function LeadliFunctionsSection({ onOpenDiscovery }: { onOpenDiscovery: (
               <strong>Book a Discovery Call</strong>
               <ArrowRight className="w-4 h-4" />
             </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LeadliAudienceBar() {
+  return (
+    <section className="bg-white border-b border-slate-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 sm:py-7">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+          <div className="shrink-0">
+            <span className="text-[11px] font-extrabold uppercase tracking-wider text-slate-500">
+              Use Leadli for
+            </span>
+            <p className="text-sm font-black text-[#12193b] mt-0.5">
+              One platform, every function.
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center gap-2.5 flex-1">
+            {LEADLI_FUNCTIONS.map((fn) => {
+              const Icon = fn.icon;
+              return (
+                <Link
+                  key={fn.slug}
+                  to="/leadli/$slug"
+                  params={{ slug: fn.slug }}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 bg-[#fcfbf8] hover:border-[#3344b8]/40 hover:shadow-sm transition-all text-sm font-bold text-slate-700 hover:text-[#3344b8]"
+                >
+                  <Icon className="w-4 h-4" style={{ color: fn.accent }} />
+                  <span>{fn.name}</span>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>

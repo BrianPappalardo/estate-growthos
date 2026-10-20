@@ -46,17 +46,19 @@ export function CrmProductPage({
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-tr from-[#3344b8]/30 to-amber-500/10 blur-3xl pointer-events-none rounded-full" />
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 relative">
-          <Link
-            to="/leadli"
-            className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-300 hover:text-amber-200 transition-colors mb-6"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            All Leadli Features
-          </Link>
+          <div className="mb-6 flex flex-col items-start gap-3">
+            <Link
+              to="/leadli"
+              className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-300 hover:text-amber-200 transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              All Leadli Features
+            </Link>
 
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold mb-6 tracking-wide uppercase">
-            <Sparkles className="w-4 h-4 text-amber-400" />
-            Operations · CRM
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
+              <Sparkles className="w-4 h-4 text-amber-400" />
+              Operations · CRM
+            </div>
           </div>
 
           <div className="flex items-start gap-5">

@@ -117,7 +117,7 @@ export const MARKETING_WEB: LeadliFeature[] = [
     replaces: "EZTexting & SimpleTexting",
     included: ["Bulk & drip SMS", "Two-way replies", "Templates", "Compliance & opt-outs"],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "countdown-timers",

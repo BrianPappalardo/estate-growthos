@@ -65,7 +65,7 @@ export const OPS_SCHEDULING: LeadliFeature[] = [
       "Revenue forecasting",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "task-management",

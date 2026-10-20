@@ -107,7 +107,7 @@ export const PAYMENTS_GROWTH: LeadliFeature[] = [
       "Reputation dashboard",
     ],
     primary: true,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "affiliate",

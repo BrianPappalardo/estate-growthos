@@ -10,6 +10,7 @@ import { MarketingProductPage } from "@/components/home/MarketingProductPage";
 import { AutomationProductPage } from "@/components/home/AutomationProductPage";
 import { WebsitesProductPage } from "@/components/home/WebsitesProductPage";
 import { PaymentsProductPage } from "@/components/home/PaymentsProductPage";
+import { ReviewsProductPage } from "@/components/home/ReviewsProductPage";
 import { getFeatureBySlug, LEADLI_FEATURES } from "@/lib/leadli-features";
 
 export const Route = createFileRoute("/feature/$slug")({
@@ -98,6 +99,8 @@ function FeatureDetailPage() {
           <WebsitesProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : feature.slug === "payments" ? (
           <PaymentsProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "reviews" ? (
+          <ReviewsProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : (
           <FeatureContent feature={feature} onOpenDiscovery={handleOpenDiscovery} />
         )

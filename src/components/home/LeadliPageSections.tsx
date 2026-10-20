@@ -77,45 +77,116 @@ export function LeadliConstellationSection({ onOpenDiscovery }: { onOpenDiscover
     <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-6 bg-gradient-to-br from-slate-900 to-[#12193b] p-8 sm:p-12 rounded-3xl text-white relative overflow-hidden shadow-2xl">
-            <div className="text-xs font-extrabold uppercase tracking-widest text-amber-400 mb-6">
-              Connected Constellation
+          <div className="lg:col-span-6 bg-gradient-to-br from-slate-950 via-[#101738] to-[#1a2350] p-6 sm:p-10 rounded-3xl text-white relative overflow-hidden shadow-2xl border border-slate-800">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-[11px] font-extrabold uppercase tracking-widest text-amber-400">
+                Connected System Architecture
+              </span>
+              <span className="text-[10px] font-bold tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                All-in-One
+              </span>
             </div>
 
-            <div className="relative h-[320px] flex items-center justify-center">
-              <svg className="absolute inset-0 w-full h-full stroke-amber-400/30 stroke-[2] [stroke-dasharray:4_4]">
-                <line x1="20%" y1="20%" x2="50%" y2="50%" />
-                <line x1="80%" y1="20%" x2="50%" y2="50%" />
-                <line x1="15%" y1="60%" x2="50%" y2="50%" />
-                <line x1="85%" y1="60%" x2="50%" y2="50%" />
-                <line x1="30%" y1="85%" x2="50%" y2="50%" />
-                <line x1="70%" y1="85%" x2="50%" y2="50%" />
+            {/* Hub Diagram with generous spacing and precise node alignment */}
+            <div className="relative h-[340px] sm:h-[360px] w-full flex items-center justify-center select-none">
+              <svg
+                className="absolute inset-0 w-full h-full pointer-events-none"
+                viewBox="0 0 400 320"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <line
+                  x1="75"
+                  y1="55"
+                  x2="200"
+                  y2="160"
+                  stroke="#fbbf24"
+                  strokeOpacity="0.35"
+                  strokeWidth="2"
+                  strokeDasharray="4 4"
+                />
+                <line
+                  x1="325"
+                  y1="55"
+                  x2="200"
+                  y2="160"
+                  stroke="#fbbf24"
+                  strokeOpacity="0.35"
+                  strokeWidth="2"
+                  strokeDasharray="4 4"
+                />
+                <line
+                  x1="55"
+                  y1="160"
+                  x2="200"
+                  y2="160"
+                  stroke="#fbbf24"
+                  strokeOpacity="0.35"
+                  strokeWidth="2"
+                  strokeDasharray="4 4"
+                />
+                <line
+                  x1="345"
+                  y1="160"
+                  x2="200"
+                  y2="160"
+                  stroke="#fbbf24"
+                  strokeOpacity="0.35"
+                  strokeWidth="2"
+                  strokeDasharray="4 4"
+                />
+                <line
+                  x1="95"
+                  y1="265"
+                  x2="200"
+                  y2="160"
+                  stroke="#fbbf24"
+                  strokeOpacity="0.35"
+                  strokeWidth="2"
+                  strokeDasharray="4 4"
+                />
+                <line
+                  x1="305"
+                  y1="265"
+                  x2="200"
+                  y2="160"
+                  stroke="#fbbf24"
+                  strokeOpacity="0.35"
+                  strokeWidth="2"
+                  strokeDasharray="4 4"
+                />
               </svg>
 
-              <div className="absolute top-[15%] left-[15%] bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full border border-amber-400/40 text-xs font-bold text-amber-300">
+              {/* Satellites positioned with generous clearance so nothing gets clipped */}
+              <div className="absolute top-4 left-4 sm:left-6 bg-slate-900/90 backdrop-blur-md px-3 sm:px-3.5 py-1.5 rounded-full border border-amber-400/40 text-[11px] sm:text-xs font-bold text-amber-300 shadow-md">
                 ★ Reporting
               </div>
-              <div className="absolute top-[15%] right-[15%] bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full border border-amber-400/40 text-xs font-bold text-amber-300">
+              <div className="absolute top-4 right-4 sm:right-6 bg-slate-900/90 backdrop-blur-md px-3 sm:px-3.5 py-1.5 rounded-full border border-amber-400/40 text-[11px] sm:text-xs font-bold text-amber-300 shadow-md">
                 ★ Memberships
               </div>
-              <div className="absolute top-[35%] left-[5%] bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full border border-amber-400/40 text-xs font-bold text-amber-300">
+              <div className="absolute top-1/2 -translate-y-1/2 left-2 sm:left-4 bg-slate-900/90 backdrop-blur-md px-3 sm:px-3.5 py-1.5 rounded-full border border-amber-400/40 text-[11px] sm:text-xs font-bold text-amber-300 shadow-md">
                 ★ Conversations
               </div>
-              <div className="absolute top-[35%] right-[5%] bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full border border-amber-400/40 text-xs font-bold text-amber-300">
+              <div className="absolute top-1/2 -translate-y-1/2 right-2 sm:right-4 bg-slate-900/90 backdrop-blur-md px-3 sm:px-3.5 py-1.5 rounded-full border border-amber-400/40 text-[11px] sm:text-xs font-bold text-amber-300 shadow-md">
                 ★ Calendars
               </div>
 
-              <div className="z-10 bg-[#3344b8] text-white px-6 py-4 rounded-2xl shadow-2xl border-2 border-amber-400 text-center scale-110">
-                <div className="text-xs uppercase font-extrabold tracking-wider text-amber-300">
-                  Leadli Hub
+              {/* Center Hub - clean sized badge so text never clips or wraps awkwardly */}
+              <div className="z-10 bg-gradient-to-br from-[#2a3ab3] to-[#1a2578] text-white px-5 sm:px-6 py-3.5 rounded-2xl shadow-2xl border-2 border-amber-400 text-center">
+                <div className="text-[10px] uppercase font-black tracking-widest text-amber-300">
+                  Leadli Core
                 </div>
-                <div className="text-xl font-black tracking-tight mt-0.5">Workflow Engine</div>
+                <div className="text-lg sm:text-xl font-black tracking-tight mt-0.5 whitespace-nowrap">
+                  Workflow Engine
+                </div>
+                <div className="text-[10px] text-blue-200 font-semibold tracking-wide">
+                  Central Automations & CRM
+                </div>
               </div>
 
-              <div className="absolute bottom-[15%] left-[20%] bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full border border-amber-400/40 text-xs font-bold text-amber-300">
+              <div className="absolute bottom-4 left-6 sm:left-10 bg-slate-900/90 backdrop-blur-md px-3 sm:px-3.5 py-1.5 rounded-full border border-amber-400/40 text-[11px] sm:text-xs font-bold text-amber-300 shadow-md">
                 ★ Marketing
               </div>
-              <div className="absolute bottom-[15%] right-[20%] bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full border border-amber-400/40 text-xs font-bold text-amber-300">
+              <div className="absolute bottom-4 right-6 sm:right-10 bg-slate-900/90 backdrop-blur-md px-3 sm:px-3.5 py-1.5 rounded-full border border-amber-400/40 text-[11px] sm:text-xs font-bold text-amber-300 shadow-md">
                 ★ Payments
               </div>
             </div>

@@ -80,7 +80,7 @@ export const INSIGHTS_COMMUNICATION: LeadliFeature[] = [
       "Two-way text conversations",
     ],
     primary: true,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "power-dialer",

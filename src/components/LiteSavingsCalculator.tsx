@@ -154,7 +154,7 @@ export function LiteSavingsCalculator({ onOpenDiscovery }: { onOpenDiscovery: ()
                     {isOn && <Check className="w-3.5 h-3.5 stroke-[3]" />}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="font-bold text-xs sm:text-sm text-slate-900 truncate">
+                    <div className="font-bold text-xs sm:text-sm text-slate-900 leading-snug">
                       {tool.name}
                     </div>
                     <div className="text-[11px] text-slate-500">
@@ -238,11 +238,11 @@ export function LiteSavingsCalculator({ onOpenDiscovery }: { onOpenDiscovery: ()
                   </span>
                 </div>
                 <h4 className="font-bold text-sm text-[#12193b] mt-0.5">
-                  We built Leadli Payments specifically for complicated funds routing — like Attorney IOLTA Trust accounts. It's included for every customer at no additional fee. (Confido Legal payment processing fees still apply.)
+                  We built Leadli Payments specifically for complicated funds routing — like
+                  Attorney IOLTA Trust accounts. It's included for every customer at no additional
+                  fee. (Confido Legal payment processing fees still apply.)
                 </h4>
-                <p className="text-xs text-slate-700 mt-1 leading-relaxed">
-                  
-                </p>
+                <p className="text-xs text-slate-700 mt-1 leading-relaxed"></p>
               </div>
             </div>
           </div>

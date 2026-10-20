@@ -8,6 +8,7 @@ import { CrmProductPage } from "@/components/home/CrmProductPage";
 import { CalendarProductPage } from "@/components/home/CalendarProductPage";
 import { MarketingProductPage } from "@/components/home/MarketingProductPage";
 import { AutomationProductPage } from "@/components/home/AutomationProductPage";
+import { WebsitesProductPage } from "@/components/home/WebsitesProductPage";
 import { getFeatureBySlug, LEADLI_FEATURES } from "@/lib/leadli-features";
 
 export const Route = createFileRoute("/feature/$slug")({
@@ -92,6 +93,8 @@ function FeatureDetailPage() {
           <MarketingProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : feature.slug === "automation" ? (
           <AutomationProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "websites" ? (
+          <WebsitesProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : (
           <FeatureContent feature={feature} onOpenDiscovery={handleOpenDiscovery} />
         )

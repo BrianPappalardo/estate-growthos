@@ -197,7 +197,7 @@ export const MARKETING_WEB: LeadliFeature[] = [
       "Built-in forms & tracking",
     ],
     primary: true,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "funnel-builder",

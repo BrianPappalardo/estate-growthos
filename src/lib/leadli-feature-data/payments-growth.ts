@@ -28,11 +28,11 @@ export const PAYMENTS_GROWTH: LeadliFeature[] = [
       "Reconciliation-ready reporting",
     ],
     primary: true,
-    status: "planned",
+    status: "live",
     partnerBadge: "Official Confido Legal Partner",
     partnerTitle: "Leadli Payments — built for complicated funds routing",
     partnerBody:
-      "We built Leadli Payments specifically for complicated funds routing — like Attorney IOLTA Trust accounts. It's included for every customer at no additional fee. (Confido Legal fees still apply.)",
+      "We built Leadli Payments specifically for complicated funds routing — like Attorney IOLTA Trust accounts. It's included for every customer at no additional fee. (Confido Legal payment processing fees still apply.)",
   },
   {
     slug: "invoices-estimates",

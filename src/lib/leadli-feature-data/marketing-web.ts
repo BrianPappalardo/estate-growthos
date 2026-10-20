@@ -50,7 +50,7 @@ export const MARKETING_WEB: LeadliFeature[] = [
       "No forms required",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "webinar-funnels",

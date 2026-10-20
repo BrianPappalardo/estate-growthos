@@ -22,6 +22,7 @@ import { TaskManagementProductPage } from "@/components/home/TaskManagementProdu
 import { SmartListsProductPage } from "@/components/home/SmartListsProductPage";
 import { FormsProductPage } from "@/components/home/FormsProductPage";
 import { ServiceCalendarsProductPage } from "@/components/home/ServiceCalendarsProductPage";
+import { TriggerLinksProductPage } from "@/components/home/TriggerLinksProductPage";
 import { getFeatureBySlug, LEADLI_FEATURES } from "@/lib/leadli-features";
 
 export const Route = createFileRoute("/feature/$slug")({
@@ -134,6 +135,8 @@ function FeatureDetailPage() {
           <FormsProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : feature.slug === "service-calendars" ? (
           <ServiceCalendarsProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "trigger-links" ? (
+          <TriggerLinksProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : (
           <FeatureContent feature={feature} onOpenDiscovery={handleOpenDiscovery} />
         )

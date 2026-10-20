@@ -260,9 +260,9 @@ export function ProductPageScaffold({ content, mockup, onOpenDiscovery }: Props)
                   Included in Leadli
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
-                  This is part of the single platform we configure around how your firm runs &mdash;
-                  not a separate tool with its own login, its own pricing, and its own disconnected
-                  data. One inbox, one rate, one place where everything lives.
+                  This is part of the single platform we configure around how your firm runs — not a
+                  separate tool with its own login, its own pricing, and its own disconnected data.
+                  One inbox, one rate, one place where everything lives.
                 </p>
               </div>
               <div className="flex items-baseline gap-2 shrink-0">
@@ -438,8 +438,8 @@ export function ProductPageScaffold({ content, mockup, onOpenDiscovery }: Props)
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              {c.title.replace(/^Leadli\s*/, "")} is just the start. Explore the rest of
-              what&rsquo;s included with Leadli.
+              {c.title.replace(/^Leadli\s*/, "")} is just the start. Explore the rest of what’s
+              included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">

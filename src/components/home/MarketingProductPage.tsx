@@ -57,7 +57,7 @@ export function MarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Marketing · Email &amp; SMS
+              Marketing · Email & SMS
             </div>
           </div>
 
@@ -119,20 +119,20 @@ export function MarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
                 The leak
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-4 tracking-tight leading-tight">
-                Your follow-up is a manual relay race — and you&apos;re always dropping the baton.
+                Your follow-up is a manual relay race — and you're always dropping the baton.
               </h2>
             </div>
             <div className="lg:col-span-7 space-y-5">
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 A prospect downloads your guide on Monday. You mean to follow up, but Tuesday gets
                 busy. Wednesday you remember and draft an email in Mailchimp. Thursday you realize
-                the list didn&apos;t sync from your CRM, so half the leads never got it. By Friday
-                they&apos;ve booked with the firm down the street that texted them within an hour.
+                the list didn't sync from your CRM, so half the leads never got it. By Friday
+                they've booked with the firm down the street that texted them within an hour.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                Leadli&apos;s marketing engine plugs that leak. One platform, one audience, one
-                builder. A prospect takes an action and the nurture sequence fires itself — email,
-                text, wait, branch, repeat — without anyone on your team remembering to hit send.
+                Leadli's marketing engine plugs that leak. One platform, one audience, one builder.
+                A prospect takes an action and the nurture sequence fires itself — email, text,
+                wait, branch, repeat — without anyone on your team remembering to hit send.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -162,7 +162,7 @@ export function MarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               Set it and forget it
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              A nurture sequence that runs while you&apos;re in court.
+              A nurture sequence that runs while you're in court.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
               Drag a trigger, drop in the steps, and walk away. Email, SMS, wait times, and branches
@@ -202,7 +202,7 @@ export function MarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
                       Trigger
                     </span>
                     <p className="text-sm font-bold text-slate-800">
-                      Form submitted — &ldquo;Book a Consult&rdquo;
+                      Form submitted — “Book a Consult”
                     </p>
                   </div>
                 </div>
@@ -219,7 +219,7 @@ export function MarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
                       Send email · Immediately
                     </span>
                     <p className="text-sm font-bold text-slate-800">
-                      &ldquo;Your next steps&rdquo; + calendar link
+                      “Your next steps” + calendar link
                     </p>
                   </div>
                 </div>
@@ -347,7 +347,7 @@ export function MarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               <div className="inline-flex items-center gap-2 text-[#3344b8] mb-3">
                 <Workflow className="w-5 h-5" />
                 <span className="text-xs font-bold uppercase tracking-wider">
-                  Drip &amp; nurture sequences
+                  Drip & nurture sequences
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
@@ -356,7 +356,7 @@ export function MarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 A lead downloads your estate planning guide. Over the next two weeks, they receive a
                 curated sequence — what a trust is, what it costs, when to update one — each email
-                timed and triggered by what they did or didn&apos;t do. They arrive at the consult
+                timed and triggered by what they did or didn't do. They arrive at the consult
                 already educated and already warmed up.
               </p>
               <ul className="mt-6 space-y-2.5">
@@ -377,7 +377,7 @@ export function MarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               <div className="inline-flex items-center gap-2 text-[#3344b8] mb-3">
                 <Filter className="w-5 h-5" />
                 <span className="text-xs font-bold uppercase tracking-wider">
-                  Segmentation &amp; broadcasts
+                  Segmentation & broadcasts
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
@@ -385,8 +385,8 @@ export function MarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 Slice your audience by service, stage, referral source, or any custom field. Send a
-                broadcast to trust prospects who haven&apos;t booked, or a nurture sequence to leads
-                from your last seminar. The list builds itself, so you&apos;re never exporting and
+                broadcast to trust prospects who haven't booked, or a nurture sequence to leads from
+                your last seminar. The list builds itself, so you're never exporting and
                 re-uploading.
               </p>
               <ul className="mt-6 space-y-2.5">
@@ -451,7 +451,7 @@ export function MarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Marketing campaigns are just the start. Explore the rest of what&apos;s included with
+              Marketing campaigns are just the start. Explore the rest of what's included with
               Leadli.
             </p>
           </div>
@@ -474,11 +474,11 @@ export function MarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s see if Leadli fits your firm.
+            Let's see if Leadli fits your firm.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll learn how you market today, tell you honestly whether we&apos;re
-            a fit, and give you a clear estimate.
+            30 minutes. We'll learn how you market today, tell you honestly whether we're a fit, and
+            give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}

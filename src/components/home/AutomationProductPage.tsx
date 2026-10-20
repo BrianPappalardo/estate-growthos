@@ -59,7 +59,7 @@ export function AutomationProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Operations · Workflows &amp; Automation
+              Operations · Workflows & Automation
             </div>
           </div>
 
@@ -69,7 +69,7 @@ export function AutomationProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
             </div>
             <div>
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.1]">
-                Leadli Automation &amp; Workflows
+                Leadli Automation & Workflows
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
                 Trigger-based workflows that respond the instant a prospect takes action — no Zapier
@@ -134,7 +134,7 @@ export function AutomationProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
                 rival.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                Leadli&apos;s workflow engine eliminates those delays. The second an action occurs,
+                Leadli's workflow engine eliminates those delays. The second an action occurs,
                 Leadli updates the contact, moves the deal stage, triggers an instant SMS nudge, and
                 notifies your team — automatically, error-free, and in under 10 seconds.
               </p>
@@ -180,7 +180,7 @@ export function AutomationProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
               <div className="flex items-center gap-2">
                 <Workflow className="w-4 h-4 text-amber-300" />
                 <span className="text-sm font-bold">
-                  Estate Planning Intake &amp; Qualification Automation
+                  Estate Planning Intake & Qualification Automation
                 </span>
               </div>
               <div className="flex items-center gap-3 text-xs text-slate-300">
@@ -225,8 +225,7 @@ export function AutomationProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
                       2. CRM Action
                     </div>
                     <div className="text-sm font-extrabold text-slate-900">
-                      Create Opportunity in &ldquo;New Leads&rdquo; Pipeline &amp; Tag &ldquo;Estate
-                      Prospect&rdquo;
+                      Create Opportunity in “New Leads” Pipeline & Tag “Estate Prospect”
                     </div>
                   </div>
                 </div>
@@ -273,7 +272,7 @@ export function AutomationProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
                       YES · Booking Confirmed
                     </div>
                     <p className="text-xs text-slate-700 leading-snug font-medium">
-                      Send SMS with prep video link + trigger 24h &amp; 1h pre-consult calendar
+                      Send SMS with prep video link + trigger 24h & 1h pre-consult calendar
                       reminders.
                     </p>
                   </div>
@@ -294,7 +293,7 @@ export function AutomationProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
 
             <div className="px-5 py-3 bg-white flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
               <span className="font-semibold">
-                4-step automated sequence with conditional branching &amp; SMS actions
+                4-step automated sequence with conditional branching & SMS actions
               </span>
               <span className="flex items-center gap-1.5 font-bold text-[#3344b8]">
                 <Zap className="w-3.5 h-3.5" />
@@ -469,7 +468,7 @@ export function AutomationProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Automation is just one piece. Explore the rest of what&apos;s included with Leadli.
+              Automation is just one piece. Explore the rest of what's included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -491,11 +490,11 @@ export function AutomationProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s see if Leadli fits your firm.
+            Let's see if Leadli fits your firm.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll learn where your team spends manual time, tell you honestly
-            whether we&apos;re a fit, and give you a clear estimate.
+            30 minutes. We'll learn where your team spends manual time, tell you honestly whether
+            we're a fit, and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}

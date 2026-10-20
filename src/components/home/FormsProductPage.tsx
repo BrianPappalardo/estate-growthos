@@ -56,7 +56,7 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Operations &middot; Forms, Surveys &amp; Quizzes
+              Operations · Forms, Surveys & Quizzes
             </div>
           </div>
 
@@ -66,10 +66,10 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
             </div>
             <div>
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.1]">
-                Leadli Forms, Surveys &amp; Quizzes
+                Leadli Forms, Surveys & Quizzes
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
-                Capture exactly the information you need &mdash; and route it. Every answer writes
+                Capture exactly the information you need — and route it. Every answer writes
                 straight to the CRM and fires the next step.
               </p>
             </div>
@@ -78,9 +78,9 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
             Most firms run their forms on a separate tool that emails a notification and calls it a
             day. Leadli forms live inside the same platform as your CRM, your pipeline, and your
-            automations &mdash; so a submitted form doesn&apos;t just notify someone. It tags the
-            prospect, scores the lead, books the right consult, and sends the confirmation. No
-            re-typing, no Zapier, no glue.
+            automations — so a submitted form doesn't just notify someone. It tags the prospect,
+            scores the lead, books the right consult, and sends the confirmation. No re-typing, no
+            Zapier, no glue.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
@@ -89,7 +89,7 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
               "Typeform",
               "Google Forms",
               "Jotform",
-              "The &ldquo;let me copy this into the CRM&rdquo; step",
+              "The “let me copy this into the CRM” step",
             ].map((name) => (
               <span
                 key={name}
@@ -132,20 +132,19 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 A prospect fills out your intake form. It emails your office a notification.
                 Somebody opens it, copies the name and email into the CRM, sets a tag, and adds a
-                note. By the time they get around to it, it&apos;s Thursday. The prospect already
-                booked with the firm that replied on Tuesday.
+                note. By the time they get around to it, it's Thursday. The prospect already booked
+                with the firm that replied on Tuesday.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                Leadli forms don&apos;t notify &mdash; they route. The moment someone submits, the
-                answers write straight to the contact record, the right tag fires, the lead gets
-                scored, and the right calendar opens for them to book. The form does the work of
-                three tabs and a sticky note, in the seconds after someone says &ldquo;I&apos;m
-                interested.&rdquo;
+                Leadli forms don't notify — they route. The moment someone submits, the answers
+                write straight to the contact record, the right tag fires, the lead gets scored, and
+                the right calendar opens for them to book. The form does the work of three tabs and
+                a sticky note, in the seconds after someone says “I'm interested.”
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
                   "Writes straight to the CRM",
-                  "Conditional logic &amp; lead scoring",
+                  "Conditional logic & lead scoring",
                   "Routes to the right calendar",
                 ].map((item) => (
                   <span
@@ -174,7 +173,7 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
               Switch the form type to see how the same fields map to your CRM, branch on the
-              answers, and fire the next workflow &mdash; all inside Leadli.
+              answers, and fire the next workflow — all inside Leadli.
             </p>
           </div>
 
@@ -190,7 +189,7 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
               What you get
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              Forms wired into the rest of your firm &mdash; not sitting next to it.
+              Forms wired into the rest of your firm — not sitting next to it.
             </h2>
           </div>
 
@@ -224,8 +223,8 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
                   Forms, surveys, and quizzes are part of the single platform we configure around
-                  how your firm runs &mdash; not a separate Typeform plan you have to wire up. No
-                  extra subscription, no per-response bill, no Zapier to babysit.
+                  how your firm runs — not a separate Typeform plan you have to wire up. No extra
+                  subscription, no per-response bill, no Zapier to babysit.
                 </p>
               </div>
               <div className="flex items-baseline gap-2 shrink-0">
@@ -249,21 +248,19 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                Ask the next question based on the last answer &mdash; and branch the follow-up with
-                it.
+                Ask the next question based on the last answer — and branch the follow-up with it.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 If they own a home, ask the value. If their plan is three years old, flag it for a
-                consult. If their quiz scores &ldquo;strong fit,&rdquo; open the trust calendar. If
-                they&apos;d leave a review, route them to the review request. The form adapts to the
-                prospect in real time &mdash; and the same rules that branch the questions branch
-                the workflow behind it.
+                consult. If their quiz scores “strong fit,” open the trust calendar. If they'd leave
+                a review, route them to the review request. The form adapts to the prospect in real
+                time — and the same rules that branch the questions branch the workflow behind it.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
                   "Show or hide fields based on prior answers",
                   "Branch the next step by answer, value, or score",
-                  "No &ldquo;if this, then that&rdquo; Zapier stack &mdash; it&apos;s native",
+                  "No “if this, then that” Zapier stack — it's native",
                   "Test the logic before you publish, on the same canvas",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
@@ -280,21 +277,21 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
                 <span className="text-xs font-bold uppercase tracking-wider">Direct CRM sync</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                Every answer writes straight to the contact record &mdash; no one re-types a thing.
+                Every answer writes straight to the contact record — no one re-types a thing.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                Map each field to a CRM field once &mdash; standard fields like name, email, and
-                phone, or the custom fields we build for your firm (estate value, plan age, trust
-                fit score). On submit, the contact is created or updated, the tags fire, and the
-                custom fields populate. The record your team opens next already knows everything the
-                prospect told you.
+                Map each field to a CRM field once — standard fields like name, email, and phone, or
+                the custom fields we build for your firm (estate value, plan age, trust fit score).
+                On submit, the contact is created or updated, the tags fire, and the custom fields
+                populate. The record your team opens next already knows everything the prospect told
+                you.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Standard fields map to name, email, phone &amp; more",
+                  "Standard fields map to name, email, phone & more",
                   "Custom fields map to the data unique to your firm",
-                  "Tags &amp; custom fields populate on submit",
-                  "One source of truth &mdash; the form, the CRM, and the pipeline read the same data",
+                  "Tags & custom fields populate on submit",
+                  "One source of truth — the form, the CRM, and the pipeline read the same data",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -318,8 +315,8 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
               One builder. Three jobs it actually does for you.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Same canvas, same CRM sync, same workflow triggers &mdash; whether you&apos;re
-              qualifying a lead, educating a prospect, or asking for a review.
+              Same canvas, same CRM sync, same workflow triggers — whether you're qualifying a lead,
+              educating a prospect, or asking for a review.
             </p>
           </div>
 
@@ -360,9 +357,8 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
               Your forms know what the rest of your platform knows.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              No exports, no copy-paste, no &ldquo;does this match the CRM?&rdquo; The form writes
-              the same data your contacts, deals, and calendars run through &mdash; so it&apos;s
-              always right.
+              No exports, no copy-paste, no “does this match the CRM?” The form writes the same data
+              your contacts, deals, and calendars run through — so it's always right.
             </p>
           </div>
 
@@ -395,8 +391,8 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Forms, surveys &amp; quizzes are just the start. Explore the rest of what&apos;s
-              included with Leadli.
+              Forms, surveys & quizzes are just the start. Explore the rest of what's included with
+              Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -427,11 +423,11 @@ export function FormsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s capture the right information &mdash; and route it.
+            Let's capture the right information — and route it.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll map the forms you&apos;re running today, tell you honestly
-            whether Leadli fits, and give you a clear estimate.
+            30 minutes. We'll map the forms you're running today, tell you honestly whether Leadli
+            fits, and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}
@@ -450,42 +446,42 @@ const FORMS_CAPABILITIES: { title: string; body: string; icon: typeof ClipboardL
   {
     icon: FileText,
     title: "Drag-and-drop builder",
-    body: "Build a multi-step intake, a scored quiz, or a one-question survey on the same canvas. Add fields with a drag, reorder with a grip, and publish when it&apos;s right &mdash; no code, no developer.",
+    body: "Build a multi-step intake, a scored quiz, or a one-question survey on the same canvas. Add fields with a drag, reorder with a grip, and publish when it's right — no code, no developer.",
   },
   {
     icon: GitBranch,
-    title: "Conditional logic &amp; branching",
-    body: "Show or hide the next question based on the last answer. Route the prospect down a different path by practice area, value, or intent &mdash; and branch the workflow behind the form with it.",
+    title: "Conditional logic & branching",
+    body: "Show or hide the next question based on the last answer. Route the prospect down a different path by practice area, value, or intent — and branch the workflow behind the form with it.",
   },
   {
     icon: Database,
     title: "Direct CRM mapping",
-    body: "Map every field to a standard or custom CRM field once. On submit, the contact is created or updated, tags fire, and custom fields populate &mdash; no one re-types a name.",
+    body: "Map every field to a standard or custom CRM field once. On submit, the contact is created or updated, tags fire, and custom fields populate — no one re-types a name.",
   },
   {
     icon: Zap,
-    title: "Lead scoring &amp; routing",
-    body: "Score the prospect by their answers and route the high-intent ones straight to the right calendar. A trust quiz that scores &ldquo;strong fit&rdquo; books the trust consult &mdash; automatically.",
+    title: "Lead scoring & routing",
+    body: "Score the prospect by their answers and route the high-intent ones straight to the right calendar. A trust quiz that scores “strong fit” books the trust consult — automatically.",
   },
   {
     icon: Tag,
     title: "Automatic tagging",
-    body: "Tags fire on submit by practice area, source, or answer &mdash; so the prospect lands in the right Smart List, the right pipeline, and the right follow-up sequence without a human in between.",
+    body: "Tags fire on submit by practice area, source, or answer — so the prospect lands in the right Smart List, the right pipeline, and the right follow-up sequence without a human in between.",
   },
   {
     icon: ShieldCheck,
-    title: "Compliance &amp; opt-outs",
-    body: "Built-in consent capture, opt-out handling, and audit trails keep your SMS and email marketing compliant &mdash; so the form that collects the email also collects the permission to use it.",
+    title: "Compliance & opt-outs",
+    body: "Built-in consent capture, opt-out handling, and audit trails keep your SMS and email marketing compliant — so the form that collects the email also collects the permission to use it.",
   },
   {
     icon: HelpCircle,
-    title: "Scored quizzes &amp; assessments",
-    body: "Turn the &ldquo;do I need a trust?&rdquo; question into a quiz that educates the prospect and scores the result &mdash; then sends their answers, their score, and their contact info straight to you.",
+    title: "Scored quizzes & assessments",
+    body: "Turn the “do I need a trust?” question into a quiz that educates the prospect and scores the result — then sends their answers, their score, and their contact info straight to you.",
   },
   {
     icon: ListChecks,
     title: "Surveys that trigger reviews",
-    body: "Send a post-matter survey, capture the NPS, and only route the happy clients to your review request &mdash; so every survey becomes either a review or a coaching moment, automatically.",
+    body: "Send a post-matter survey, capture the NPS, and only route the happy clients to your review request — so every survey becomes either a review or a coaching moment, automatically.",
   },
 ];
 
@@ -498,29 +494,29 @@ const USE_CASES: {
   {
     icon: FileText,
     title: "Intake forms",
-    body: "Capture exactly what your firm needs at first inquiry &mdash; then route the prospect to the right consult, tag them by practice area, and score the lead before anyone picks up the phone.",
+    body: "Capture exactly what your firm needs at first inquiry — then route the prospect to the right consult, tag them by practice area, and score the lead before anyone picks up the phone.",
     trigger: "Books the right consult",
   },
   {
     icon: HelpCircle,
     title: "Educational quizzes",
-    body: "Educate the prospect on whether a trust fits their situation, hand them a result they can act on, and route the high-intent scores straight into your pipeline &mdash; pre-sold and ready to book.",
+    body: "Educate the prospect on whether a trust fits their situation, hand them a result they can act on, and route the high-intent scores straight into your pipeline — pre-sold and ready to book.",
     trigger: "Pre-sells the consult",
   },
   {
     icon: ListChecks,
     title: "Post-matter surveys",
-    body: "Close the loop after a matter with a short survey, capture the NPS, and trigger the review request only for the clients who&apos;d actually leave one &mdash; then add them to your referral list.",
+    body: "Close the loop after a matter with a short survey, capture the NPS, and trigger the review request only for the clients who'd actually leave one — then add them to your referral list.",
     trigger: "Triggers the review sequence",
   },
 ];
 
 const FORMS_CONNECTIONS: { label: string; icon: typeof ClipboardList }[] = [
-  { icon: Database, label: "CRM &amp; contacts" },
+  { icon: Database, label: "CRM & contacts" },
   { icon: Zap, label: "Workflow automations" },
   { icon: CalendarCheck, label: "Consult calendars" },
-  { icon: Tag, label: "Smart Lists &amp; tags" },
-  { icon: Mail, label: "Email &amp; SMS" },
+  { icon: Tag, label: "Smart Lists & tags" },
+  { icon: Mail, label: "Email & SMS" },
   { icon: Users, label: "Team assignment" },
 ];
 

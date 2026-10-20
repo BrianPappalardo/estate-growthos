@@ -68,7 +68,7 @@ export function ReviewsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =>
             </div>
             <div>
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.1]">
-                Leadli Reputation &amp; Reviews
+                Leadli Reputation & Reviews
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
                 Automated review requests the moment a client signs their final plan — and every
@@ -133,9 +133,9 @@ export function ReviewsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =>
             <div className="lg:col-span-7 space-y-5">
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 You handed off a flawless estate plan. The family is thrilled. You ask for a review
-                and they say &ldquo;of course!&rdquo; — and then life happens. The request gets
-                buried in a text you forget to follow up on. Six months later, you have two reviews
-                on Google, and one of them is from a disgruntled prospect who never even hired you.
+                and they say “of course!” — and then life happens. The request gets buried in a text
+                you forget to follow up on. Six months later, you have two reviews on Google, and
+                one of them is from a disgruntled prospect who never even hired you.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Meanwhile the firm down the street — the one with the mediocre intake and the same
@@ -291,7 +291,7 @@ export function ReviewsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =>
                           </span>
                         </div>
                         <p className="mt-1.5 text-xs text-slate-600 leading-relaxed">
-                          &ldquo;{review.body}&rdquo;
+                          “{review.body}”
                         </p>
                       </div>
                     </div>
@@ -375,8 +375,8 @@ export function ReviewsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =>
                   Included in Leadli
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
-                  Reputation &amp; reviews are part of the single platform we configure around the
-                  way your firm finishes work. No extra subscription, no separate reputation tool.
+                  Reputation & reviews are part of the single platform we configure around the way
+                  your firm finishes work. No extra subscription, no separate reputation tool.
                 </p>
               </div>
               <div className="flex items-baseline gap-2 shrink-0">
@@ -403,9 +403,9 @@ export function ReviewsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =>
                 The review request fires when your client is actually happy.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                Trigger the ask the moment an engagement closes out — not a week later when
-                they&apos;ve moved on. Leadli waits a beat, then sends a personalized request from
-                the attorney they worked with. Timing is everything, and the timing is handled.
+                Trigger the ask the moment an engagement closes out — not a week later when they've
+                moved on. Leadli waits a beat, then sends a personalized request from the attorney
+                they worked with. Timing is everything, and the timing is handled.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
@@ -432,10 +432,9 @@ export function ReviewsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =>
                 Route unhappy clients to private feedback — before they go public.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                A quick &ldquo;how did it go?&rdquo; lands first. If they had a great experience,
-                they&apos;re guided to Google. If not, their feedback routes straight to you
-                privately — so you can make it right before it becomes a one-star review you
-                can&apos;t take back.
+                A quick “how did it go?” lands first. If they had a great experience, they're guided
+                to Google. If not, their feedback routes straight to you privately — so you can make
+                it right before it becomes a one-star review you can't take back.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
@@ -498,8 +497,8 @@ export function ReviewsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =>
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Reputation &amp; reviews are just the start. Explore the rest of what&apos;s included
-              with Leadli.
+              Reputation & reviews are just the start. Explore the rest of what's included with
+              Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -521,11 +520,11 @@ export function ReviewsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =>
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s see if Leadli fits your firm.
+            Let's see if Leadli fits your firm.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll learn how your firm finishes work today, tell you honestly
-            whether we&apos;re a fit, and give you a clear estimate.
+            30 minutes. We'll learn how your firm finishes work today, tell you honestly whether
+            we're a fit, and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}

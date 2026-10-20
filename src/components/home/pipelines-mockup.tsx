@@ -271,12 +271,12 @@ export function PipelineBoardMockup() {
       <div className="bg-[#12193b] text-white px-5 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <GitBranch className="w-4 h-4 text-amber-300" />
-          <span className="text-sm font-bold">Opportunity Pipeline &middot; yourfirm.law</span>
+          <span className="text-sm font-bold">Opportunity Pipeline · yourfirm.law</span>
         </div>
         <div className="flex items-center gap-3 text-xs text-slate-300">
           <span className="hidden sm:inline-flex items-center gap-1">
             <RefreshCw className="w-3.5 h-3.5 text-emerald-400" />
-            Live &middot; updated just now
+            Live · updated just now
           </span>
           <span className="inline-flex items-center gap-1 text-emerald-400 font-bold">
             <ShieldCheck className="w-3.5 h-3.5" />
@@ -446,9 +446,9 @@ export function PipelineBoardMockup() {
           <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-bold">
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-rose-50 text-rose-700 border border-rose-200">
               <AlertCircle className="w-3.5 h-3.5" />
-              Deal idle 9 days &rarr; flagged
+              Deal idle 9 days → flagged
             </span>
-            <span className="text-slate-300">&rarr;</span>
+            <span className="text-slate-300">→</span>
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-blue-50 text-[#3344b8] border border-blue-200">
               <TrendingUp className="w-3.5 h-3.5" />
               Follow-up fires to recapture
@@ -460,12 +460,12 @@ export function PipelineBoardMockup() {
       {/* Footer */}
       <div className="px-5 py-3 bg-white border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
         <span className="font-semibold">
-          {pipeline.stages.reduce((s, st) => s + st.deals.length, 0)} deals &middot; 5 stages
-          &middot; {pipeline.label}
+          {pipeline.stages.reduce((s, st) => s + st.deals.length, 0)} deals · 5 stages ·{" "}
+          {pipeline.label}
         </span>
         <span className="flex items-center gap-1.5">
           <DollarSign className="w-3.5 h-3.5 text-emerald-600" />
-          {pipeline.total} open &middot; {pipeline.won} won
+          {pipeline.total} open · {pipeline.won} won
         </span>
       </div>
     </div>

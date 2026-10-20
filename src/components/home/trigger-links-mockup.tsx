@@ -179,9 +179,7 @@ export function TriggerLinksMockup() {
               When this link is clicked
             </span>
           </div>
-          <div className="text-base font-black text-[#12193b] mb-5">
-            &ldquo;{selected.label}&rdquo;
-          </div>
+          <div className="text-base font-black text-[#12193b] mb-5">“{selected.label}”</div>
 
           <div className="space-y-1">
             {selected.automation.map((step, i) => {
@@ -215,8 +213,7 @@ export function TriggerLinksMockup() {
               <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
               <span className="leading-relaxed">
                 Fires the instant they click. No form to fill out, no button to press, no manual
-                follow-up. And you know <em>exactly</em> who clicked &mdash; per contact, in real
-                time.
+                follow-up. And you know <em>exactly</em> who clicked — per contact, in real time.
               </span>
             </div>
           </div>

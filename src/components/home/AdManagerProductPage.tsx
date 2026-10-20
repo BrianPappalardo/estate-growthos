@@ -16,12 +16,12 @@ const content: ProductPageContent = {
   title: "Leadli Ad Manager",
   subtitle:
     "Launch and track ad campaigns alongside your funnel and CRM — so you finally know which ads actually drive clients.",
-  body: "Manage ad creative, audiences, and spend from one dashboard tied to your Leadli funnel and CRM. Instead of guessing which campaign produced the client who signed last week, you see the full path: ad click &rarr; landing page &rarr; consult &rarr; signed engagement. No spreadsheet tracking, no &ldquo;where did you find us?&rdquo; intake question.",
+  body: "Manage ad creative, audiences, and spend from one dashboard tied to your Leadli funnel and CRM. Instead of guessing which campaign produced the client who signed last week, you see the full path: ad click → landing page → consult → signed engagement. No spreadsheet tracking, no “where did you find us?” intake question.",
   replaces: ["Spreadsheet ad tracking", "Disconnected ad platforms", "Manual lead attribution"],
-  leakHeading: "You&rsquo;re paying for ads you can&rsquo;t tie to a single signed client.",
+  leakHeading: "You’re paying for ads you can’t tie to a single signed client.",
   leakBody: [
-    "You run Facebook and Google ads, and every month you spend hours pulling reports into a spreadsheet trying to figure out what&rsquo;s working. But the ad platform knows about clicks; your CRM knows about consults; your practice management software knows about signed matters. None of them talk. So you keep paying for the campaign that &ldquo;seems&rdquo; busy while the one that actually closes clients quietly runs out of budget.",
-    "Leadli Ad Manager closes that loop. The ad that brought in the click is the same record that became the consult, the engagement, and the signed matter &mdash; all in one pipeline. You see cost per signed client, not just cost per click, and you can finally turn off the ads that don&rsquo;t produce clients.",
+    "You run Facebook and Google ads, and every month you spend hours pulling reports into a spreadsheet trying to figure out what’s working. But the ad platform knows about clicks; your CRM knows about consults; your practice management software knows about signed matters. None of them talk. So you keep paying for the campaign that “seems” busy while the one that actually closes clients quietly runs out of budget.",
+    "Leadli Ad Manager closes that loop. The ad that brought in the click is the same record that became the consult, the engagement, and the signed matter — all in one pipeline. You see cost per signed client, not just cost per click, and you can finally turn off the ads that don’t produce clients.",
   ],
   leakChips: [
     "Cost per signed client, not per click",
@@ -31,13 +31,13 @@ const content: ProductPageContent = {
   ],
   mockupHeading: "See which ads actually become clients.",
   mockupSubhead:
-    "Ad spend, leads, consults, and signed matters side by side &mdash; with per-campaign cost per client and ROI.",
+    "Ad spend, leads, consults, and signed matters side by side — with per-campaign cost per client and ROI.",
   whatYouGetHeading: "Ad spend you can finally justify.",
   capabilities: [
     {
       icon: Target,
       title: "Campaign management",
-      body: "Launch and manage campaigns across platforms from one dashboard &mdash; creative, budget, and schedule in one place.",
+      body: "Launch and manage campaigns across platforms from one dashboard — creative, budget, and schedule in one place.",
     },
     {
       icon: Users,
@@ -47,7 +47,7 @@ const content: ProductPageContent = {
     {
       icon: Wallet,
       title: "Spend tracking",
-      body: "See what each campaign costs in real time, alongside what it produced &mdash; no end-of-month spreadsheet reconciliation.",
+      body: "See what each campaign costs in real time, alongside what it produced — no end-of-month spreadsheet reconciliation.",
     },
     {
       icon: BarChart3,
@@ -57,23 +57,23 @@ const content: ProductPageContent = {
     {
       icon: RefreshCw,
       title: "Auto-refresh audiences",
-      body: "As contacts move stages, your ad audiences update automatically &mdash; retarget the warm, exclude the signed.",
+      body: "As contacts move stages, your ad audiences update automatically — retarget the warm, exclude the signed.",
     },
     {
       icon: TrendingUp,
       title: "ROI reporting",
-      body: "Cost per lead, per consult, and per signed client per campaign &mdash; the numbers that actually tell you what to scale.",
+      body: "Cost per lead, per consult, and per signed client per campaign — the numbers that actually tell you what to scale.",
     },
   ],
   deepDive: {
     left: {
       label: "Attribution",
       heading: "From ad click to signed matter, in one record.",
-      body: "When Sarah clicks your Facebook ad, lands on your funnel, books a consult, and signs an engagement letter, that&rsquo;s one continuous record in Leadli &mdash; not four entries in four tools. So when you ask &ldquo;did that campaign work?&rdquo; the answer isn&rsquo;t a guess from a spreadsheet. It&rsquo;s the signed matter, tied back to the ad.",
+      body: "When Sarah clicks your Facebook ad, lands on your funnel, books a consult, and signs an engagement letter, that’s one continuous record in Leadli — not four entries in four tools. So when you ask “did that campaign work?” the answer isn’t a guess from a spreadsheet. It’s the signed matter, tied back to the ad.",
       bullets: [
         "Source follows the contact through every stage",
         "Cost per signed client, per campaign",
-        "No &ldquo;where did you hear about us?&rdquo; intake question",
+        "No “where did you hear about us?” intake question",
       ],
     },
     right: {
@@ -91,7 +91,7 @@ const content: ProductPageContent = {
     {
       icon: Target,
       title: "The consult campaign",
-      body: "Run a local awareness ad aimed at booking consults. Leadli attributes every booked consult back to the ad, so you know your true cost per consult &mdash; not just cost per click.",
+      body: "Run a local awareness ad aimed at booking consults. Leadli attributes every booked consult back to the ad, so you know your true cost per consult — not just cost per click.",
       trigger: "Real cost per consult",
     },
     {
@@ -103,14 +103,14 @@ const content: ProductPageContent = {
     {
       icon: Filter,
       title: "The exclusion cleanup",
-      body: "Automatically exclude anyone who&rsquo;s already signed or booked from your retargeting, so you stop paying to show ads to people who are already your clients.",
+      body: "Automatically exclude anyone who’s already signed or booked from your retargeting, so you stop paying to show ads to people who are already your clients.",
       trigger: "Stops wasted spend",
     },
   ],
   connections: {
     heading: "Your ad spend finally connects to your revenue.",
     subhead:
-      "The ad isn&rsquo;t a separate line item in a separate tool &mdash; it&rsquo;s the first step of a pipeline that ends in a signed matter.",
+      "The ad isn’t a separate line item in a separate tool — it’s the first step of a pipeline that ends in a signed matter.",
     items: [
       { icon: Users, label: "Custom ad audiences" },
       { icon: BarChart3, label: "Pipeline & reports" },
@@ -120,9 +120,9 @@ const content: ProductPageContent = {
       { icon: TrendingUp, label: "ROI reporting" },
     ],
   },
-  finalCtaHeading: "Let&rsquo;s make your ad spend accountable.",
+  finalCtaHeading: "Let’s make your ad spend accountable.",
   finalCtaBody:
-    "30 minutes. We&rsquo;ll map your current ad-to-client path, tell you honestly whether Leadli fits, and give you a clear estimate.",
+    "30 minutes. We’ll map your current ad-to-client path, tell you honestly whether Leadli fits, and give you a clear estimate.",
   excludeFromRelated: [
     "ad-manager",
     "custom-ad-audiences",

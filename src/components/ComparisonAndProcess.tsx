@@ -49,7 +49,7 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
                     <td className="py-4 px-6 font-bold text-slate-800">Admin Time per Lead</td>
                     <td className="py-4 px-6 text-slate-600 bg-rose-50/20">3+ Hours</td>
                     <td className="py-4 px-6 font-extrabold text-[#f97316] bg-emerald-50/40">
-                      &lt; 15 Minutes
+                      {"< 15 Minutes"}
                     </td>
                   </tr>
                 </tbody>

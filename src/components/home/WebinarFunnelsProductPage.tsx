@@ -57,7 +57,7 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Marketing &middot; Webinar Funnels
+              Marketing · Webinar Funnels
             </div>
           </div>
 
@@ -71,7 +71,7 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
                 Registration pages, automated reminders, live or evergreen replays, and post-event
-                nurture &mdash; all tied straight to your CRM.
+                nurture — all tied straight to your CRM.
               </p>
             </div>
           </div>
@@ -79,8 +79,8 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
             Run a live monthly webinar or an evergreen on-demand session. Leadli handles
             registration, sends the right reminders at the right time, tracks attendance, and drops
-            every registrant into a nurture sequence &mdash; without a separate webinar platform, a
-            separate email tool, or a spreadsheet of &ldquo;who showed up.&rdquo;
+            every registrant into a nurture sequence — without a separate webinar platform, a
+            separate email tool, or a spreadsheet of “who showed up.”
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
@@ -88,7 +88,7 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
             {[
               "Webinar platforms (Zoom Webinars, Webex)",
               "Manual reminder emails",
-              "The &ldquo;who attended?&rdquo; spreadsheet",
+              "The “who attended?” spreadsheet",
               "Post-event follow-up you forget to send",
             ].map((name) => (
               <span
@@ -132,14 +132,14 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
                 You set up a webinar in one tool, registration in another, reminders by hand, and
                 the replay link in a third. Half your registrants forget to show because the
                 reminder went out at the wrong time. The other half show up, and you never get
-                around to sending the follow-up &mdash; so the warmest leads in your pipeline go
-                cold while you&rsquo;re back to drafting wills.
+                around to sending the follow-up — so the warmest leads in your pipeline go cold
+                while you’re back to drafting wills.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Webinar Funnels close that loop. One registration page. Automated reminders at the
-                exact right moments. Attendance tracked automatically. And the moment it&rsquo;s
-                over, the replay goes to no-shows and the consult-offer sequence goes to attendees
-                &mdash; without you lifting a finger.
+                exact right moments. Attendance tracked automatically. And the moment it’s over, the
+                replay goes to no-shows and the consult-offer sequence goes to attendees — without
+                you lifting a finger.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -173,7 +173,7 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
               Switch between a live monthly webinar and an evergreen on-demand session to see the
-              full automated sequence &mdash; from registration to post-event nurture.
+              full automated sequence — from registration to post-event nurture.
             </p>
           </div>
 
@@ -189,7 +189,7 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
               What you get
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              A webinar funnel that runs itself &mdash; start to finish.
+              A webinar funnel that runs itself — start to finish.
             </h2>
           </div>
 
@@ -223,8 +223,8 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
                   Webinar funnels are part of the single platform we configure around how your firm
-                  runs &mdash; not a separate webinar tool with its own login, its own attendee
-                  list, and its own monthly bill. No extra subscription, no per-attendee fee.
+                  runs — not a separate webinar tool with its own login, its own attendee list, and
+                  its own monthly bill. No extra subscription, no per-attendee fee.
                 </p>
               </div>
               <div className="flex items-baseline gap-2 shrink-0">
@@ -252,15 +252,15 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 Host a live monthly webinar with real-time registration and attendance tracking. Or
-                set up an evergreen session that&rsquo;s available on-demand &mdash; every
-                registrant gets the same reminders, the same tracking, and the same nurture
-                sequence, on their schedule. Same funnel, two modes, no extra setup.
+                set up an evergreen session that’s available on-demand — every registrant gets the
+                same reminders, the same tracking, and the same nurture sequence, on their schedule.
+                Same funnel, two modes, no extra setup.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Live webinars with capacity limits &amp; waitlists",
+                  "Live webinars with capacity limits & waitlists",
                   "Evergreen sessions available around the clock",
-                  "Same reminders, tracking &amp; nurture either way",
+                  "Same reminders, tracking & nurture either way",
                   "Switch modes without rebuilding the funnel",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
@@ -282,18 +282,18 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
                 The replay goes to no-shows. The consult offer goes to attendees.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                The moment the webinar ends, the funnel splits: no-shows get the replay and a
-                &ldquo;catch the next one&rdquo; nudge, and attendees get the pricing video, the
-                consult calendar, and a follow-up sequence that walks them toward hiring you. No one
-                falls through the cracks because there are no cracks &mdash; the automation handles
-                every registrant by status, automatically.
+                The moment the webinar ends, the funnel splits: no-shows get the replay and a “catch
+                the next one” nudge, and attendees get the pricing video, the consult calendar, and
+                a follow-up sequence that walks them toward hiring you. No one falls through the
+                cracks because there are no cracks — the automation handles every registrant by
+                status, automatically.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
                   "No-shows get the replay automatically",
                   "Attendees get the consult-offer sequence",
                   "High-engagement viewers ping your team",
-                  "Every registrant stays in your CRM &mdash; tagged &amp; staged",
+                  "Every registrant stays in your CRM — tagged & staged",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -317,7 +317,7 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
               Three funnels. Three audiences. Zero manual reminders.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              The webinars estate planners already run &mdash; now the registration, reminders, and
+              The webinars estate planners already run — now the registration, reminders, and
               follow-up run themselves.
             </p>
           </div>
@@ -359,8 +359,8 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
               Every registrant ripples through the rest of your platform.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              No exports, no copy-paste, no &ldquo;is this the same person?&rdquo; The contact who
-              registers is the same contact your pipeline, sequences, and calendars already know.
+              No exports, no copy-paste, no “is this the same person?” The contact who registers is
+              the same contact your pipeline, sequences, and calendars already know.
             </p>
           </div>
 
@@ -393,8 +393,7 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Webinar funnels are just the start. Explore the rest of what&apos;s included with
-              Leadli.
+              Webinar funnels are just the start. Explore the rest of what's included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -425,11 +424,11 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s fill your next webinar.
+            Let's fill your next webinar.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll map the webinars you run today, tell you honestly whether Leadli
-            fits, and give you a clear estimate.
+            30 minutes. We'll map the webinars you run today, tell you honestly whether Leadli fits,
+            and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}
@@ -448,42 +447,42 @@ const CAPABILITIES: { title: string; body: string; icon: typeof Zap }[] = [
   {
     icon: Calendar,
     title: "Registration pages",
-    body: "A branded registration page for every webinar &mdash; live or evergreen &mdash; with capacity limits, custom intake questions, and instant confirmation.",
+    body: "A branded registration page for every webinar — live or evergreen — with capacity limits, custom intake questions, and instant confirmation.",
   },
   {
     icon: Bell,
     title: "Automated reminders",
-    body: "Email and SMS reminders fire at the exact right moments &mdash; one day before, morning of, 15 minutes prior. No more &ldquo;I forgot it was today.&rdquo;",
+    body: "Email and SMS reminders fire at the exact right moments — one day before, morning of, 15 minutes prior. No more “I forgot it was today.”",
   },
   {
     icon: PlayCircle,
     title: "Attendance tracking",
-    body: "See who showed up, who dropped off, and who never clicked the link &mdash; automatically, per registrant, in your CRM. No manual attendee lists.",
+    body: "See who showed up, who dropped off, and who never clicked the link — automatically, per registrant, in your CRM. No manual attendee lists.",
   },
   {
     icon: Send,
-    title: "Replay &amp; nurture sequences",
-    body: "The moment the webinar ends, the replay goes to no-shows and the consult-offer sequence goes to attendees &mdash; split by status, automatically.",
+    title: "Replay & nurture sequences",
+    body: "The moment the webinar ends, the replay goes to no-shows and the consult-offer sequence goes to attendees — split by status, automatically.",
   },
   {
     icon: Users,
-    title: "Capacity &amp; waitlists",
-    body: "Set a seat limit and let the overflow join a waitlist. When a spot opens, the next person gets promoted automatically &mdash; no spreadsheet to manage.",
+    title: "Capacity & waitlists",
+    body: "Set a seat limit and let the overflow join a waitlist. When a spot opens, the next person gets promoted automatically — no spreadsheet to manage.",
   },
   {
     icon: Tag,
     title: "Registrant CRM sync",
-    body: "Every registrant lands in your CRM &mdash; tagged by webinar, staged in your pipeline, and ready for the next step. No imports, no exports, no duplicates.",
+    body: "Every registrant lands in your CRM — tagged by webinar, staged in your pipeline, and ready for the next step. No imports, no exports, no duplicates.",
   },
   {
     icon: Clock,
-    title: "Live &amp; evergreen modes",
-    body: "Run the same funnel live once a month or evergreen 24/7. Same reminders, same tracking, same nurture &mdash; switch modes without rebuilding anything.",
+    title: "Live & evergreen modes",
+    body: "Run the same funnel live once a month or evergreen 24/7. Same reminders, same tracking, same nurture — switch modes without rebuilding anything.",
   },
   {
     icon: Globe,
     title: "On your domain",
-    body: "Registration and replay pages live on your own domain &mdash; not a generic webinar platform URL. Your brand, your trust, your traffic.",
+    body: "Registration and replay pages live on your own domain — not a generic webinar platform URL. Your brand, your trust, your traffic.",
   },
 ];
 
@@ -496,25 +495,25 @@ const USE_CASES: {
   {
     icon: Video,
     title: "The monthly live webinar",
-    body: "A Trusts 101 session the first Thursday of every month. Registration opens, reminders fire, attendance is tracked, and the replay + consult offer goes out automatically &mdash; while you&apos;re back to drafting documents.",
+    body: "A Trusts 101 session the first Thursday of every month. Registration opens, reminders fire, attendance is tracked, and the replay + consult offer goes out automatically — while you're back to drafting documents.",
     trigger: "Runs the full sequence monthly",
   },
   {
     icon: PlayCircle,
     title: "The evergreen on-demand session",
-    body: "An on-demand &ldquo;Is a Trust Right for Your Family?&rdquo; that&apos;s available 24/7. Every registrant gets the same reminders, tracking, and 3-part nurture sequence &mdash; on their schedule, not yours.",
+    body: "An on-demand “Is a Trust Right for Your Family?” that's available 24/7. Every registrant gets the same reminders, tracking, and 3-part nurture sequence — on their schedule, not yours.",
     trigger: "Fills your pipeline around the clock",
   },
   {
     icon: Users,
     title: "The client education seminar",
-    body: "A quarterly seminar for existing clients on updating their estate plan. Registration, reminders, and a post-event follow-up that offers a review consult &mdash; all automated, all tied to their existing CRM record.",
-    trigger: "Drives repeat &amp; referral business",
+    body: "A quarterly seminar for existing clients on updating their estate plan. Registration, reminders, and a post-event follow-up that offers a review consult — all automated, all tied to their existing CRM record.",
+    trigger: "Drives repeat & referral business",
   },
 ];
 
 const CONNECTIONS: { label: string; icon: typeof Mail }[] = [
-  { icon: Database, label: "CRM &amp; contacts" },
+  { icon: Database, label: "CRM & contacts" },
   { icon: Zap, label: "Automation builder" },
   { icon: Mail, label: "Email sequences" },
   { icon: MessageSquare, label: "SMS reminders" },

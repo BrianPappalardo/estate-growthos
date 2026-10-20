@@ -179,7 +179,7 @@ export function SocialSchedulerMockup() {
           <div>
             <div className="text-sm font-black text-[#12193b]">Social Planner</div>
             <div className="text-[11px] text-slate-500 font-medium">
-              Plan, publish &amp; track across every platform
+              Plan, publish & track across every platform
             </div>
           </div>
         </div>
@@ -317,7 +317,7 @@ export function SocialSchedulerMockup() {
                               {plat.label}
                             </div>
                             <div className="text-[10px] text-slate-400 font-medium">
-                              Nov {post.day} &middot; {post.time}
+                              Nov {post.day} · {post.time}
                             </div>
                           </div>
                           <span
@@ -336,7 +336,7 @@ export function SocialSchedulerMockup() {
           ) : (
             <>
               <div className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-3">
-                Content library &middot; reusable assets
+                Content library · reusable assets
               </div>
               <div className="space-y-2">
                 {POSTS.map((post) => {
@@ -362,10 +362,10 @@ export function SocialSchedulerMockup() {
                       </div>
                       <div className="min-w-0 flex-1">
                         <div className="text-xs font-bold text-slate-700 truncate">
-                          {plat.label} &middot; Nov {post.day}
+                          {plat.label} · Nov {post.day}
                         </div>
                         <div className="text-[10px] text-slate-400 truncate">
-                          {post.caption.slice(0, 48)}&hellip;
+                          {post.caption.slice(0, 48)}…
                         </div>
                       </div>
                       <span
@@ -382,8 +382,8 @@ export function SocialSchedulerMockup() {
               <div className="mt-4 flex items-center gap-2 text-[11px] text-slate-500 font-medium rounded-xl border border-slate-200 bg-[#fcfbf8] p-3">
                 <Repeat className="w-4 h-4 text-[#3344b8] shrink-0" />
                 <span>
-                  Drag any post onto the calendar to reuse it &mdash; or set it to recycle on a
-                  schedule. Your best content keeps working.
+                  Drag any post onto the calendar to reuse it — or set it to recycle on a schedule.
+                  Your best content keeps working.
                 </span>
               </div>
             </>
@@ -401,7 +401,7 @@ export function SocialSchedulerMockup() {
             </span>
             <div className="flex items-center gap-1 text-[10px] font-bold text-slate-400">
               <Clock className="w-3 h-3" />
-              Nov {selected.day} &middot; {selected.time}
+              Nov {selected.day} · {selected.time}
             </div>
           </div>
 
@@ -488,7 +488,7 @@ export function SocialSchedulerMockup() {
           <div className="mt-4 flex items-start gap-2.5 text-xs text-slate-500">
             <ArrowRight className="w-4 h-4 text-[#3344b8] shrink-0 mt-0.5 rotate-45" />
             <span className="leading-relaxed">
-              Every post ties to your CRM &mdash; track which prospects engage, trigger follow-up on
+              Every post ties to your CRM — track which prospects engage, trigger follow-up on
               high-intent interactions, and keep your whole social presence in one place.
             </span>
           </div>

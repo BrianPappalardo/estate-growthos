@@ -58,7 +58,7 @@ export function ServiceCalendarsProductPage({ onOpenDiscovery }: { onOpenDiscove
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Scheduling &middot; Service Calendars
+              Scheduling · Service Calendars
             </div>
           </div>
 
@@ -71,17 +71,17 @@ export function ServiceCalendarsProductPage({ onOpenDiscovery }: { onOpenDiscove
                 Leadli Service Calendars
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
-                A dedicated booking calendar for every service you offer &mdash; with its own intake
-                form, its own buffers, and its own routing rules built right in.
+                A dedicated booking calendar for every service you offer — with its own intake form,
+                its own buffers, and its own routing rules built right in.
               </p>
             </div>
           </div>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
-            Your firm doesn&rsquo;t offer one service. So why does your booking tool give you one
-            generic calendar link? Leadli Service Calendars gives every service its own page, its
-            own form, and its own assignment rules &mdash; so the right prospect lands on the right
-            person&rsquo;s calendar, already pre-qualified, before your team picks up the phone.
+            Your firm doesn’t offer one service. So why does your booking tool give you one generic
+            calendar link? Leadli Service Calendars gives every service its own page, its own form,
+            and its own assignment rules — so the right prospect lands on the right person’s
+            calendar, already pre-qualified, before your team picks up the phone.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
@@ -89,7 +89,7 @@ export function ServiceCalendarsProductPage({ onOpenDiscovery }: { onOpenDiscove
             {[
               "Calendly with one link for everything",
               "Acuity with a service dropdown",
-              "The &ldquo;let me find the right person&rdquo; email",
+              "The “let me find the right person” email",
               "Re-scheduling because they booked the wrong consult",
             ].map((name) => (
               <span
@@ -126,25 +126,25 @@ export function ServiceCalendarsProductPage({ onOpenDiscovery }: { onOpenDiscove
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-4 tracking-tight leading-tight">
                 One calendar link for every service. So they book the wrong consult with the wrong
-                person &mdash; and your team pays for it.
+                person — and your team pays for it.
               </h2>
             </div>
             <div className="lg:col-span-7 space-y-5">
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 You run estate planning consults, trust reviews, will signings, and probate
-                consultations &mdash; each one a different length, a different person, and a
-                different set of questions. But your booking tool gives you one link. So someone
-                books a 30-minute slot for what should be a 90-minute probate consult. Or they
-                arrive at a trust review with no idea what their current trust says &mdash; because
-                the form asked &ldquo;how can we help?&rdquo; and stopped there.
+                consultations — each one a different length, a different person, and a different set
+                of questions. But your booking tool gives you one link. So someone books a 30-minute
+                slot for what should be a 90-minute probate consult. Or they arrive at a trust
+                review with no idea what their current trust says — because the form asked “how can
+                we help?” and stopped there.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Leadli Service Calendars fixes this at the root. Each service gets its own calendar
                 with its own duration, its own buffers, its own intake form, and its own assignment
                 rules. The estate planning form asks about assets and family. The trust review form
                 asks about the trust and the trustee. The will signing form asks about witnesses and
-                notary. And every booking routes to the right person &mdash; automatically &mdash;
-                before anyone on your team touches it.
+                notary. And every booking routes to the right person — automatically — before anyone
+                on your team touches it.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -178,7 +178,7 @@ export function ServiceCalendarsProductPage({ onOpenDiscovery }: { onOpenDiscove
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
               Each service calendar has its own duration, its own buffers, its own intake form, and
-              its own routing &mdash; and the automations that fire after booking change with it.
+              its own routing — and the automations that fire after booking change with it.
             </p>
           </div>
 
@@ -194,7 +194,7 @@ export function ServiceCalendarsProductPage({ onOpenDiscovery }: { onOpenDiscove
               What you get
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              Every service, dialed in &mdash; not crammed into one dropdown.
+              Every service, dialed in — not crammed into one dropdown.
             </h2>
           </div>
 
@@ -228,8 +228,8 @@ export function ServiceCalendarsProductPage({ onOpenDiscovery }: { onOpenDiscove
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
                   Service calendars are part of the single platform we configure around how your
-                  firm runs &mdash; not a separate Calendly plan with a &ldquo;which service are you
-                  interested in?&rdquo; dropdown. No extra subscription, no per-calendar fee.
+                  firm runs — not a separate Calendly plan with a “which service are you interested
+                  in?” dropdown. No extra subscription, no per-calendar fee.
                 </p>
               </div>
               <div className="flex items-baseline gap-2 shrink-0">
@@ -253,20 +253,20 @@ export function ServiceCalendarsProductPage({ onOpenDiscovery }: { onOpenDiscove
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                The questions on your estate planning intake aren&rsquo;t the same as the ones on
-                your probate intake. Each calendar gets its own form.
+                The questions on your estate planning intake aren’t the same as the ones on your
+                probate intake. Each calendar gets its own form.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 The estate planning form asks about assets, family, and existing plans. The trust
                 review form asks about trust type, the current trustee, and asset range. The will
                 signing form asks about witnesses and notary. The probate consult asks about the
-                deceased, the estate, and whether probate&rsquo;s been opened. Same platform,
-                different form per service &mdash; every answer writes straight to the contact
-                record and tags the lead by what they actually need.
+                deceased, the estate, and whether probate’s been opened. Same platform, different
+                form per service — every answer writes straight to the contact record and tags the
+                lead by what they actually need.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Each service, its own intake form &mdash; no &ldquo;one size fits all&rdquo;",
+                  "Each service, its own intake form — no “one size fits all”",
                   "Custom fields map to the data unique to that service",
                   "Prospects arrive pre-qualified for the consult they booked",
                   "No more explaining a trust to someone who booked a will signing",
@@ -288,20 +288,20 @@ export function ServiceCalendarsProductPage({ onOpenDiscovery }: { onOpenDiscove
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
                 Route estate planning to the estate team, trust reviews to the senior partner, and
-                probate to the specialist &mdash; automatically.
+                probate to the specialist — automatically.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 Round-robin estate planning consults across the estate team. Pin trust reviews to
                 the senior partner. Send probate straight to the probate specialist. Co-assign will
                 signings to a paralegal and an attorney at the same time. The calendar does the
-                routing &mdash; not a receptionist, not a scheduling email, not a Google Calendar
-                you have to check before you reply.
+                routing — not a receptionist, not a scheduling email, not a Google Calendar you have
+                to check before you reply.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
                   "Round-robin, pinned, or co-assignment per service",
                   "Route by practice area, tag, or CRM data",
-                  "Buffers set per service &mdash; 15 min for a signing, 45 for probate",
+                  "Buffers set per service — 15 min for a signing, 45 for probate",
                   "Nobody books the wrong person for the wrong consult",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
@@ -326,8 +326,8 @@ export function ServiceCalendarsProductPage({ onOpenDiscovery }: { onOpenDiscove
               Four calendars. Four forms. Four routing rules. One platform.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Same configuration, same CRM sync, same workflow triggers &mdash; whether
-              they&rsquo;re booking a consult or coming in to sign.
+              Same configuration, same CRM sync, same workflow triggers — whether they’re booking a
+              consult or coming in to sign.
             </p>
           </div>
 
@@ -365,8 +365,7 @@ export function ServiceCalendarsProductPage({ onOpenDiscovery }: { onOpenDiscove
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Service calendars are just one piece. Explore the rest of what&rsquo;s included with
-              Leadli.
+              Service calendars are just one piece. Explore the rest of what’s included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -397,11 +396,11 @@ export function ServiceCalendarsProductPage({ onOpenDiscovery }: { onOpenDiscove
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&rsquo;s give every service its own calendar.
+            Let’s give every service its own calendar.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&rsquo;ll map the services you offer, tell you honestly whether Leadli
-            fits, and give you a clear estimate.
+            30 minutes. We’ll map the services you offer, tell you honestly whether Leadli fits, and
+            give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}
@@ -424,42 +423,42 @@ const SERVICE_CAPABILITIES: { title: string; body: string; icon: typeof Calendar
   {
     icon: CalendarCheck,
     title: "A calendar link for every service",
-    body: "Estate planning, trust review, will signing, probate &mdash; each one gets its own booking page with its own URL. Not a dropdown on a generic form.",
+    body: "Estate planning, trust review, will signing, probate — each one gets its own booking page with its own URL. Not a dropdown on a generic form.",
   },
   {
     icon: FileText,
     title: "Service-specific intake forms",
-    body: "The questions on your estate planning intake aren&rsquo;t the same as the ones on your probate intake. Each calendar gets its own form, asking the right questions for that service.",
+    body: "The questions on your estate planning intake aren’t the same as the ones on your probate intake. Each calendar gets its own form, asking the right questions for that service.",
   },
   {
     icon: Clock,
     title: "Custom buffers per service",
-    body: "A will signing needs 15 minutes of buffer. A probate consult needs 45. Each calendar&rsquo;s buffers are set independently, so nobody shows up early or gets rushed out.",
+    body: "A will signing needs 15 minutes of buffer. A probate consult needs 45. Each calendar’s buffers are set independently, so nobody shows up early or gets rushed out.",
   },
   {
     icon: Users,
     title: "Right-to-the-right-person routing",
-    body: "Route estate planning consults to the estate team, trust reviews to the senior partner, probate to the specialist. The calendar does the routing &mdash; not a receptionist.",
+    body: "Route estate planning consults to the estate team, trust reviews to the senior partner, probate to the specialist. The calendar does the routing — not a receptionist.",
   },
   {
     icon: RefreshCw,
-    title: "Round-robin &amp; pinned assignment",
+    title: "Round-robin & pinned assignment",
     body: "Distribute bookings evenly across your team, or pin a specific service to a specific person. Either way, the calendar handles it without a scheduling email.",
   },
   {
     icon: MessageSquare,
     title: "Instant SMS confirmations",
-    body: "The moment someone books, they get an SMS with the calendar invite and the details for that service &mdash; the right checklist, the right prep, the right link.",
+    body: "The moment someone books, they get an SMS with the calendar invite and the details for that service — the right checklist, the right prep, the right link.",
   },
   {
     icon: Bell,
     title: "Automated reminder sequences",
-    body: "A reminder the day before, a reminder an hour before, a nudge if they haven&rsquo;t filled out the intake form &mdash; all automatic, all tied to the specific service they booked.",
+    body: "A reminder the day before, a reminder an hour before, a nudge if they haven’t filled out the intake form — all automatic, all tied to the specific service they booked.",
   },
   {
     icon: Database,
     title: "CRM sync on booking",
-    body: "Every booking creates or updates the contact, fires the right tags, and drops the prospect into the right pipeline &mdash; before anyone on your team picks up the phone.",
+    body: "Every booking creates or updates the contact, fires the right tags, and drops the prospect into the right pipeline — before anyone on your team picks up the phone.",
   },
 ];
 
@@ -483,19 +482,19 @@ const USE_CASES: {
   },
   {
     icon: PenLine,
-    title: "Will Signing &amp; Witness",
-    body: "A 30-minute slot co-assigned to the paralegal and the attorney, a form that confirms witnesses and notary, and a signing checklist sent the moment they book &mdash; so everyone shows up prepared.",
+    title: "Will Signing & Witness",
+    body: "A 30-minute slot co-assigned to the paralegal and the attorney, a form that confirms witnesses and notary, and a signing checklist sent the moment they book — so everyone shows up prepared.",
     meta: "30 min · co-assigned",
   },
 ];
 
 const SERVICE_CONNECTIONS: { label: string; icon: typeof CalendarCheck }[] = [
-  { icon: Database, label: "CRM &amp; contacts" },
+  { icon: Database, label: "CRM & contacts" },
   { icon: ClipboardList, label: "Intake forms" },
   { icon: Zap, label: "Workflow automations" },
   { icon: GitBranch, label: "Opportunity pipelines" },
-  { icon: ListFilter, label: "Smart Lists &amp; tags" },
-  { icon: MessageSquare, label: "SMS &amp; email" },
+  { icon: ListFilter, label: "Smart Lists & tags" },
+  { icon: MessageSquare, label: "SMS & email" },
 ];
 
 void SERVICE_CONNECTIONS;

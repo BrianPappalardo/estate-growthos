@@ -70,7 +70,7 @@ export function OpportunityPipelinesProductPage({
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Operations &middot; Opportunity Pipelines
+              Operations · Opportunity Pipelines
             </div>
           </div>
 
@@ -83,18 +83,18 @@ export function OpportunityPipelinesProductPage({
                 Leadli Opportunity Pipelines
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
-                Every deal in flight on one board &mdash; drag a card, change a stage, fire the next
-                step automatically.
+                Every deal in flight on one board — drag a card, change a stage, fire the next step
+                automatically.
               </p>
             </div>
           </div>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
-            You don&apos;t need a better spreadsheet. You need to see every prospect at a glance,
-            know exactly where each one stands, and have the right follow-up fire the instant a deal
-            moves. Leadli&apos;s pipelines show you the whole board &mdash; from first inquiry to
-            signed engagement &mdash; and automate the work between stages so nothing stalls waiting
-            for someone to remember to call.
+            You don't need a better spreadsheet. You need to see every prospect at a glance, know
+            exactly where each one stands, and have the right follow-up fire the instant a deal
+            moves. Leadli's pipelines show you the whole board — from first inquiry to signed
+            engagement — and automate the work between stages so nothing stalls waiting for someone
+            to remember to call.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
@@ -139,22 +139,22 @@ export function OpportunityPipelinesProductPage({
                 The leak
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-4 tracking-tight leading-tight">
-                Your deals live in a spreadsheet nobody opens &mdash; and a pipeline nobody updates.
+                Your deals live in a spreadsheet nobody opens — and a pipeline nobody updates.
               </h2>
             </div>
             <div className="lg:col-span-7 space-y-5">
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                A prospect fills out your form. They go in a spreadsheet. Someone books a consult
-                &mdash; that goes in a calendar. They show up, you send an engagement letter,
-                that&apos;s an email thread. Three weeks later you&apos;re trying to figure out
-                whether the Henderson matter is still alive, and the answer is in a note someone
-                left on a sticky tab by the receptionist&apos;s monitor.
+                A prospect fills out your form. They go in a spreadsheet. Someone books a consult —
+                that goes in a calendar. They show up, you send an engagement letter, that's an
+                email thread. Three weeks later you're trying to figure out whether the Henderson
+                matter is still alive, and the answer is in a note someone left on a sticky tab by
+                the receptionist's monitor.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Leadli puts the whole thing on one board. Every prospect is a card. Every stage is a
-                column. Drag it when it moves, and the next step fires on its own &mdash; the
-                follow-up text, the engagement-letter template, the reminder to call. You see the
-                whole pipeline at a glance, and nothing&apos;s hiding in a tab nobody checks.
+                column. Drag it when it moves, and the next step fires on its own — the follow-up
+                text, the engagement-letter template, the reminder to call. You see the whole
+                pipeline at a glance, and nothing's hiding in a tab nobody checks.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -187,9 +187,9 @@ export function OpportunityPipelinesProductPage({
               See every deal. Move it with a drag. Watch the next step fire.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Switch between your practice areas &mdash; each with its own pipeline, its own stages,
-              and its own automations. This is what your intake looks like when nothing falls
-              through the cracks.
+              Switch between your practice areas — each with its own pipeline, its own stages, and
+              its own automations. This is what your intake looks like when nothing falls through
+              the cracks.
             </p>
           </div>
 
@@ -205,7 +205,7 @@ export function OpportunityPipelinesProductPage({
               What you get
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              Pipelines wired into the rest of your firm &mdash; not sitting next to it.
+              Pipelines wired into the rest of your firm — not sitting next to it.
             </h2>
           </div>
 
@@ -239,7 +239,7 @@ export function OpportunityPipelinesProductPage({
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
                   Opportunity pipelines are part of the single platform we configure around how your
-                  firm runs &mdash; not a separate CRM you have to remember to open. No extra
+                  firm runs — not a separate CRM you have to remember to open. No extra
                   subscription, no per-seat Pipedrive bill, no spreadsheet to babysit.
                 </p>
               </div>
@@ -259,23 +259,21 @@ export function OpportunityPipelinesProductPage({
             <div>
               <div className="inline-flex items-center gap-2 text-[#3344b8] mb-3">
                 <GripVertical className="w-5 h-5" />
-                <span className="text-xs font-bold uppercase tracking-wider">
-                  Drag, don&apos;t type
-                </span>
+                <span className="text-xs font-bold uppercase tracking-wider">Drag, don't type</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
                 The pipeline that updates itself the moment a deal moves.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                A spreadsheet forces someone to remember to update it &mdash; and they won&apos;t. A
+                A spreadsheet forces someone to remember to update it — and they won't. A
                 drag-and-drop board rewards the opposite: the moment you know a prospect moved, you
-                move the card. No &ldquo;status&rdquo; field to set, no note to retype. The board is
-                the source of truth because it&apos;s easier to keep current than to let it rot.
+                move the card. No “status” field to set, no note to retype. The board is the source
+                of truth because it's easier to keep current than to let it rot.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
                   "Visual columns for every stage, top to bottom",
-                  "Move a card with a drag &mdash; no forms, no typing",
+                  "Move a card with a drag — no forms, no typing",
                   "See the whole pipeline in one glance, not one row",
                   "Color-coded by value, age, and owner",
                 ].map((item) => (
@@ -301,15 +299,14 @@ export function OpportunityPipelinesProductPage({
                 Every stage change can trigger the next step automatically. Prospect books a
                 consult? Send the confirmation and the pre-call video. Consult held? Queue the
                 engagement letter. Engagement sent? Start the three-day reminder sequence. The
-                pipeline doesn&apos;t just show you where things are &mdash; it does the work in
-                between.
+                pipeline doesn't just show you where things are — it does the work in between.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Triggers on any stage change &mdash; inbound or manual",
+                  "Triggers on any stage change — inbound or manual",
                   "Sends SMS, email, or creates a task for the team",
                   "Branches by practice area, value, or source",
-                  "No Zapier, no glue, no &ldquo;I forgot to follow up&rdquo;",
+                  "No Zapier, no glue, no “I forgot to follow up”",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -333,9 +330,8 @@ export function OpportunityPipelinesProductPage({
               Your pipeline knows what the rest of your platform knows.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              No exports, no copy-paste, no &ldquo;does this match the CRM?&rdquo; The board reads
-              the same data your leads, calls, and payments run through &mdash; so it&apos;s always
-              right.
+              No exports, no copy-paste, no “does this match the CRM?” The board reads the same data
+              your leads, calls, and payments run through — so it's always right.
             </p>
           </div>
 
@@ -368,8 +364,8 @@ export function OpportunityPipelinesProductPage({
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Opportunity pipelines are just the start. Explore the rest of what&apos;s included
-              with Leadli.
+              Opportunity pipelines are just the start. Explore the rest of what's included with
+              Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -400,11 +396,11 @@ export function OpportunityPipelinesProductPage({
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s put your whole pipeline on one board.
+            Let's put your whole pipeline on one board.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll map how your firm tracks deals today, tell you honestly whether
-            Leadli fits, and give you a clear estimate.
+            30 minutes. We'll map how your firm tracks deals today, tell you honestly whether Leadli
+            fits, and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}
@@ -423,32 +419,32 @@ const PIPELINE_CAPABILITIES: { title: string; body: string; icon: typeof GitBran
   {
     icon: GitBranch,
     title: "Visual drag-and-drop board",
-    body: "Every prospect is a card; every stage is a column. Move a deal with a drag and watch the pipeline update instantly &mdash; no forms, no retyping, no &ldquo;did someone update the spreadsheet?&rdquo;",
+    body: "Every prospect is a card; every stage is a column. Move a deal with a drag and watch the pipeline update instantly — no forms, no retyping, no “did someone update the spreadsheet?”",
   },
   {
     icon: Workflow,
     title: "Stage-change automations",
-    body: "The moment a card moves, the next step fires &mdash; a follow-up text, an engagement-letter template, a reminder to call. The pipeline doesn&apos;t just track the work; it does the work in between.",
+    body: "The moment a card moves, the next step fires — a follow-up text, an engagement-letter template, a reminder to call. The pipeline doesn't just track the work; it does the work in between.",
   },
   {
     icon: Layers,
     title: "A pipeline for every practice area",
-    body: "Run separate pipelines for estate planning, probate, elder law &mdash; each with its own stages, its own automations, and its own view. Switch boards with a click, never lose the thread.",
+    body: "Run separate pipelines for estate planning, probate, elder law — each with its own stages, its own automations, and its own view. Switch boards with a click, never lose the thread.",
   },
   {
     icon: DollarSign,
     title: "Revenue forecasting",
-    body: "See the value of every open deal and a weighted forecast of what&apos;s likely to close &mdash; pulled from the same board, not a separate spreadsheet someone forgot to update.",
+    body: "See the value of every open deal and a weighted forecast of what's likely to close — pulled from the same board, not a separate spreadsheet someone forgot to update.",
   },
   {
     icon: Activity,
     title: "Stage & age alerts",
-    body: "A deal sitting in &ldquo;consult held&rdquo; for nine days? Leadli flags it before it goes cold &mdash; color-coded by age and value so you see the leak before a month of deals slips through it.",
+    body: "A deal sitting in “consult held” for nine days? Leadli flags it before it goes cold — color-coded by age and value so you see the leak before a month of deals slips through it.",
   },
   {
     icon: Database,
     title: "One record per prospect",
-    body: "Every card is tied to the same CRM record as the emails, the calls, the payments, and the signed matter. Drag a card and the whole history moves with it &mdash; nothing orphaned, nothing lost.",
+    body: "Every card is tied to the same CRM record as the emails, the calls, the payments, and the signed matter. Drag a card and the whole history moves with it — nothing orphaned, nothing lost.",
   },
   {
     icon: Users,
@@ -458,7 +454,7 @@ const PIPELINE_CAPABILITIES: { title: string; body: string; icon: typeof GitBran
   {
     icon: Target,
     title: "Custom stages, your way",
-    body: "Your pipeline shouldn&apos;t look like a software company&apos;s. We build the stages around how your firm actually moves a prospect &mdash; from first inquiry to signed engagement &mdash; not a template.",
+    body: "Your pipeline shouldn't look like a software company's. We build the stages around how your firm actually moves a prospect — from first inquiry to signed engagement — not a template.",
   },
 ];
 

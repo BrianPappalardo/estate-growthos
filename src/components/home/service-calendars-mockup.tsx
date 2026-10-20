@@ -159,7 +159,7 @@ export function ServiceCalendarsMockup() {
       <div className="bg-[#12193b] text-white px-5 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <CalendarCheck className="w-4 h-4 text-amber-300" />
-          <span className="text-sm font-bold">Leadli Service Calendars &middot; yourfirm.law</span>
+          <span className="text-sm font-bold">Leadli Service Calendars · yourfirm.law</span>
         </div>
         <div className="flex items-center gap-3 text-xs text-slate-300">
           <span className="hidden sm:inline-flex items-center gap-1">
@@ -168,7 +168,7 @@ export function ServiceCalendarsMockup() {
           </span>
           <span className="inline-flex items-center gap-1 text-emerald-400 font-bold">
             <ShieldCheck className="w-3.5 h-3.5" />
-            Every booking &rarr; CRM
+            Every booking → CRM
           </span>
         </div>
       </div>
@@ -227,7 +227,7 @@ export function ServiceCalendarsMockup() {
               <div className="flex items-center gap-2 mb-3">
                 <Clock className="w-4 h-4 text-[#3344b8]" />
                 <span className="text-[10px] font-extrabold uppercase tracking-widest text-slate-400">
-                  Duration &amp; buffers
+                  Duration & buffers
                 </span>
               </div>
               <div className="flex items-baseline justify-between mb-2">
@@ -244,7 +244,7 @@ export function ServiceCalendarsMockup() {
               <div className="flex items-center gap-2 mb-3">
                 <Users className="w-4 h-4 text-[#3344b8]" />
                 <span className="text-[10px] font-extrabold uppercase tracking-widest text-slate-400">
-                  Assignment &amp; routing
+                  Assignment & routing
                 </span>
               </div>
               <div className="space-y-2.5">
@@ -326,11 +326,11 @@ export function ServiceCalendarsMockup() {
       {/* Footer */}
       <div className="px-5 py-3 bg-white border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
         <span className="font-semibold">
-          {SERVICES.length} service calendars &middot; each with its own form, buffers &amp; routing
+          {SERVICES.length} service calendars · each with its own form, buffers & routing
         </span>
         <span className="inline-flex items-center gap-1.5 text-emerald-600 font-bold">
           <CheckCircle2 className="w-3.5 h-3.5" />
-          Right calendar &rarr; right person &rarr; right consult
+          Right calendar → right person → right consult
         </span>
       </div>
     </div>

@@ -56,7 +56,7 @@ export function EmailMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Marketing &middot; Email Marketing
+              Marketing · Email Marketing
             </div>
           </div>
 
@@ -69,33 +69,29 @@ export function EmailMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery
                 Leadli Email Marketing
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
-                Broadcast and drip campaigns that live where your contacts do &mdash; not in a
-                separate app you forget to check.
+                Broadcast and drip campaigns that live where your contacts do — not in a separate
+                app you forget to check.
               </p>
             </div>
           </div>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
-            Design beautiful emails, automate nurture sequences, and track every open and click
-            &mdash; all built right into your CRM. The contact who opened your pricing email is the
-            same contact your pipeline already knows, so your follow-up is instant and never out of
-            sync.
+            Design beautiful emails, automate nurture sequences, and track every open and click —
+            all built right into your CRM. The contact who opened your pricing email is the same
+            contact your pipeline already knows, so your follow-up is instant and never out of sync.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
             <span className="font-bold uppercase tracking-wider text-slate-400">Replaces:</span>
-            {[
-              "Mailchimp",
-              "ConvertKit",
-              "ActiveCampaign",
-              "The &lsquo;I&rsquo;ll email them later&rsquo; list",
-            ].map((name) => (
-              <span
-                key={name}
-                className="px-3 py-1 rounded-full bg-white/10 border border-white/15 text-slate-200 font-semibold line-through decoration-rose-400/60"
-                dangerouslySetInnerHTML={{ __html: name }}
-              />
-            ))}
+            {["Mailchimp", "ConvertKit", "ActiveCampaign", "The ‘I’ll email them later’ list"].map(
+              (name) => (
+                <span
+                  key={name}
+                  className="px-3 py-1 rounded-full bg-white/10 border border-white/15 text-slate-200 font-semibold line-through decoration-rose-400/60"
+                  dangerouslySetInnerHTML={{ __html: name }}
+                />
+              ),
+            )}
           </div>
 
           <div className="mt-9 flex flex-col sm:flex-row items-start gap-4">
@@ -123,7 +119,7 @@ export function EmailMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery
                 The leak
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-4 tracking-tight leading-tight">
-                Your email tool doesn&rsquo;t know what your CRM knows.
+                Your email tool doesn’t know what your CRM knows.
               </h2>
             </div>
             <div className="lg:col-span-7 space-y-5">
@@ -131,15 +127,15 @@ export function EmailMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery
                 You pay for Mailchimp on top of everything else, and it lives in its own world. A
                 lead fills out your form, lands in your CRM, and then what? You export a list,
                 import it into Mailchimp, send a blast, and hope the two systems stay in sync. They
-                don&rsquo;t. Half your list is stale, the people who clicked your pricing link are
+                don’t. Half your list is stale, the people who clicked your pricing link are
                 invisible to your pipeline, and the nurture sequence you meant to set up is still a
                 sticky note on your monitor.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Leadli Email Marketing fixes that by living inside your CRM. Build the campaign,
                 segment by pipeline stage, trigger the sequence on a form submit or a calendar
-                booking, and watch every open, click, and booking happen in one place &mdash; the
-                same place that already knows your prospect&rsquo;s name.
+                booking, and watch every open, click, and booking happen in one place — the same
+                place that already knows your prospect’s name.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -190,7 +186,7 @@ export function EmailMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery
               What you get
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              Email marketing that knows your pipeline &mdash; because it <em>is</em> your pipeline.
+              Email marketing that knows your pipeline — because it <em>is</em> your pipeline.
             </h2>
           </div>
 
@@ -224,8 +220,8 @@ export function EmailMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
                   Email marketing is part of the single platform we configure around how your firm
-                  runs &mdash; not a separate tool with its own list, its own login, and its own
-                  monthly bill. No extra subscription, no per-contact pricing tiers.
+                  runs — not a separate tool with its own list, its own login, and its own monthly
+                  bill. No extra subscription, no per-contact pricing tiers.
                 </p>
               </div>
               <div className="flex items-baseline gap-2 shrink-0">
@@ -255,8 +251,8 @@ export function EmailMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery
                 When someone fills out your intake form, a nurture sequence starts automatically.
                 Day one: what a trust is and why it matters. Two days later: the cost of doing
                 nothing. Then a client story, then the pricing video, then the booking link. By the
-                time they reach your calendar, they&rsquo;ve already decided you&rsquo;re the expert
-                &mdash; because they&rsquo;ve heard from you five times before the call.
+                time they reach your calendar, they’ve already decided you’re the expert — because
+                they’ve heard from you five times before the call.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
@@ -277,7 +273,7 @@ export function EmailMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery
               <div className="inline-flex items-center gap-2 text-[#3344b8] mb-3">
                 <BarChart3 className="w-5 h-5" />
                 <span className="text-xs font-bold uppercase tracking-wider">
-                  See who&rsquo;s paying attention
+                  See who’s paying attention
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
@@ -285,17 +281,17 @@ export function EmailMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 A prospect opened your pricing email three times and clicked the booking link?
-                That&rsquo;s a hot lead &mdash; and Leadli flags it automatically. Your intake
-                coordinator sees it in the pipeline, tagged and prioritized, without anyone
-                exporting a report or cross-referencing two tools. The data you need to follow up
-                fast is already where you work.
+                That’s a hot lead — and Leadli flags it automatically. Your intake coordinator sees
+                it in the pipeline, tagged and prioritized, without anyone exporting a report or
+                cross-referencing two tools. The data you need to follow up fast is already where
+                you work.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
                   "Per-contact open and click tracking",
                   "Auto-flag high-engagement contacts for your team",
                   "Segment by who opened, who clicked, who ghosted",
-                  "Every interaction logged in the CRM record &mdash; automatically",
+                  "Every interaction logged in the CRM record — automatically",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -319,7 +315,7 @@ export function EmailMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery
               Three sequences. Three moments. One platform.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              The email nurture estate planners already know they need &mdash; now it runs itself.
+              The email nurture estate planners already know they need — now it runs itself.
             </p>
           </div>
 
@@ -360,9 +356,8 @@ export function EmailMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery
               Every email ripples through the rest of your platform.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              No exports, no copy-paste, no &ldquo;is this the same person?&rdquo; The contact who
-              opens your email is the same contact your pipeline, sequences, and calendars already
-              know.
+              No exports, no copy-paste, no “is this the same person?” The contact who opens your
+              email is the same contact your pipeline, sequences, and calendars already know.
             </p>
           </div>
 
@@ -395,8 +390,7 @@ export function EmailMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Email marketing is just the start. Explore the rest of what&rsquo;s included with
-              Leadli.
+              Email marketing is just the start. Explore the rest of what’s included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -427,11 +421,11 @@ export function EmailMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&rsquo;s get your email nurture running itself.
+            Let’s get your email nurture running itself.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&rsquo;ll map the emails you&rsquo;re sending by hand today, tell you
-            honestly whether Leadli fits, and give you a clear estimate.
+            30 minutes. We’ll map the emails you’re sending by hand today, tell you honestly whether
+            Leadli fits, and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}
@@ -450,27 +444,27 @@ const CAPABILITIES: { title: string; body: string; icon: typeof Zap }[] = [
   {
     icon: LayoutTemplate,
     title: "Visual email builder",
-    body: "Drag-and-drop your way to beautiful, on-brand emails &mdash; no HTML, no designer, no separate template tool.",
+    body: "Drag-and-drop your way to beautiful, on-brand emails — no HTML, no designer, no separate template tool.",
   },
   {
     icon: Repeat,
     title: "Drip & broadcast campaigns",
-    body: "Set up automated nurture sequences that run for every new inquiry, or send a one-time broadcast to a segment &mdash; same builder, same CRM.",
+    body: "Set up automated nurture sequences that run for every new inquiry, or send a one-time broadcast to a segment — same builder, same CRM.",
   },
   {
     icon: Users,
     title: "Pipeline-stage segmentation",
-    body: "Send to a Smart List built from any CRM field &mdash; pipeline stage, practice area, last consult date, or anything you track.",
+    body: "Send to a Smart List built from any CRM field — pipeline stage, practice area, last consult date, or anything you track.",
   },
   {
     icon: MousePointerClick,
     title: "Behavior-triggered sends",
-    body: "Start a sequence when someone submits a form, books a consult, or clicks a trigger link &mdash; no Zapier glue required.",
+    body: "Start a sequence when someone submits a form, books a consult, or clicks a trigger link — no Zapier glue required.",
   },
   {
     icon: BarChart3,
     title: "Open & click analytics",
-    body: "See who opened, who clicked, and who ignored &mdash; per contact, per campaign &mdash; right inside the CRM record.",
+    body: "See who opened, who clicked, and who ignored — per contact, per campaign — right inside the CRM record.",
   },
   {
     icon: Calendar,
@@ -480,12 +474,12 @@ const CAPABILITIES: { title: string; body: string; icon: typeof Zap }[] = [
   {
     icon: Send,
     title: "Email + text together",
-    body: "Mix email and SMS in the same automation. The pricing email goes out, then the text nudge follows two days later &mdash; one sequence.",
+    body: "Mix email and SMS in the same automation. The pricing email goes out, then the text nudge follows two days later — one sequence.",
   },
   {
     icon: Mail,
     title: "Unlimited contacts",
-    body: "No per-contact pricing tiers, no &ldquo;upgrade to send to 5,000.&rdquo; Every subscriber is included in your flat $199/mo rate.",
+    body: "No per-contact pricing tiers, no “upgrade to send to 5,000.” Every subscriber is included in your flat $199/mo rate.",
   },
 ];
 
@@ -498,28 +492,28 @@ const USE_CASES: {
   {
     icon: MailOpen,
     title: "The new-inquiry nurture",
-    body: "Someone fills out your form. A 5-step email sequence teaches them about trusts, shows the pricing, and hands them a booking link &mdash; before you ever pick up the phone.",
+    body: "Someone fills out your form. A 5-step email sequence teaches them about trusts, shows the pricing, and hands them a booking link — before you ever pick up the phone.",
     trigger: "Turns inquiries into booked consults",
   },
   {
     icon: Repeat,
     title: "The cold-lead revival",
-    body: "Your CRM has 400 leads you never followed up with. Build a Smart List, send a &ldquo;is your estate plan still current?&rdquo; broadcast, and let the clicks tell you who&rsquo;s warm again.",
+    body: "Your CRM has 400 leads you never followed up with. Build a Smart List, send a “is your estate plan still current?” broadcast, and let the clicks tell you who’s warm again.",
     trigger: "Wakes up your dormant list",
   },
   {
     icon: Calendar,
     title: "The post-consult follow-up",
-    body: "After a consult, a 3-step sequence reinforces the value, answers the objections you know are coming, and includes the engagement letter link &mdash; automatically.",
+    body: "After a consult, a 3-step sequence reinforces the value, answers the objections you know are coming, and includes the engagement letter link — automatically.",
     trigger: "Closes the clients who hesitate",
   },
 ];
 
 const CONNECTIONS: { label: string; icon: typeof Heart }[] = [
-  { icon: Users, label: "Smart Lists &amp; segments" },
+  { icon: Users, label: "Smart Lists & segments" },
   { icon: Zap, label: "Automation builder" },
   { icon: MousePointerClick, label: "Trigger links" },
   { icon: Calendar, label: "Consult calendars" },
-  { icon: BarChart3, label: "Pipeline &amp; reports" },
+  { icon: BarChart3, label: "Pipeline & reports" },
   { icon: Send, label: "SMS follow-up" },
 ];

@@ -6,17 +6,13 @@ const content: ProductPageContent = {
   icon: QrCode,
   title: "Leadli QR Codes",
   subtitle:
-    "Trackable, branded QR codes that bridge print to your CRM &mdash; so a mailer, a sign, or a flyer becomes a tracked lead.",
-  body: "Generate branded QR codes for direct mail, seminar signage, business cards, and flyers. Every scan routes to a page, form, or automation &mdash; and every scan is tracked and tied to a contact in your CRM. No generic QR generator that hands you a code and forgets about it, no &ldquo;how did you hear about us?&rdquo; guessing.",
-  replaces: [
-    "QR generators",
-    "Link shorteners",
-    "Manual &ldquo;how did you hear about us&rdquo; tracking",
-  ],
-  leakHeading: "You can&rsquo;t tell which mailer or sign actually produced the call.",
+    "Trackable, branded QR codes that bridge print to your CRM — so a mailer, a sign, or a flyer becomes a tracked lead.",
+  body: "Generate branded QR codes for direct mail, seminar signage, business cards, and flyers. Every scan routes to a page, form, or automation — and every scan is tracked and tied to a contact in your CRM. No generic QR generator that hands you a code and forgets about it, no “how did you hear about us?” guessing.",
+  replaces: ["QR generators", "Link shorteners", "Manual “how did you hear about us” tracking"],
+  leakHeading: "You can’t tell which mailer or sign actually produced the call.",
   leakBody: [
-    "You send a postcard to 2,000 homes and put a QR code on it from a free generator. A few people scan it. A few call. But the generator doesn&rsquo;t know who scanned, your CRM doesn&rsquo;t know it came from the mailer, and you have no idea whether the postcard or the seminar flyer is worth doing again. So you keep paying for print that you can&rsquo;t measure.",
-    "Leadli QR Codes fix that by making every code a tracked, branded entry point into your CRM. Each code routes to a specific page or form, each scan is logged with its source, and each new contact carries that source through your whole pipeline. The mailer that worked gets repeated; the one that didn&rsquo;t gets cut.",
+    "You send a postcard to 2,000 homes and put a QR code on it from a free generator. A few people scan it. A few call. But the generator doesn’t know who scanned, your CRM doesn’t know it came from the mailer, and you have no idea whether the postcard or the seminar flyer is worth doing again. So you keep paying for print that you can’t measure.",
+    "Leadli QR Codes fix that by making every code a tracked, branded entry point into your CRM. Each code routes to a specific page or form, each scan is logged with its source, and each new contact carries that source through your whole pipeline. The mailer that worked gets repeated; the one that didn’t gets cut.",
   ],
   leakChips: [
     "Per-code scan tracking",
@@ -26,23 +22,23 @@ const content: ProductPageContent = {
   ],
   mockupHeading: "Every scan is a tracked lead with a source.",
   mockupSubhead:
-    "Generate branded codes per campaign, route scans to the right page or form, and watch each code&rsquo;s scan and conversion count.",
+    "Generate branded codes per campaign, route scans to the right page or form, and watch each code’s scan and conversion count.",
   whatYouGetHeading: "Print that finally proves its ROI.",
   capabilities: [
     {
       icon: QrCode,
       title: "Branded QR codes",
-      body: "Generate clean, branded codes for every campaign &mdash; mailers, signage, flyers, business cards &mdash; styled to your firm.",
+      body: "Generate clean, branded codes for every campaign — mailers, signage, flyers, business cards — styled to your firm.",
     },
     {
       icon: ScanLine,
       title: "Scan tracking",
-      body: "See how many times each code was scanned, when, and from roughly where &mdash; per code, per campaign.",
+      body: "See how many times each code was scanned, when, and from roughly where — per code, per campaign.",
     },
     {
       icon: Link,
       title: "Routing to pages & forms",
-      body: "Send a scan to a landing page, an intake form, a calendar, or an automation &mdash; you pick the destination per code.",
+      body: "Send a scan to a landing page, an intake form, a calendar, or an automation — you pick the destination per code.",
     },
     {
       icon: Tag,
@@ -57,14 +53,14 @@ const content: ProductPageContent = {
     {
       icon: BarChart3,
       title: "Per-code analytics",
-      body: "Compare codes side by side &mdash; the postcard vs. the seminar flyer vs. the business card &mdash; and double down on what works.",
+      body: "Compare codes side by side — the postcard vs. the seminar flyer vs. the business card — and double down on what works.",
     },
   ],
   useCases: [
     {
       icon: Globe,
       title: "The direct-mail postcard",
-      body: "A QR code on every postcard routes to a consult-booking page. You see exactly how many scans and bookings the mailer produced &mdash; and whether to send it again.",
+      body: "A QR code on every postcard routes to a consult-booking page. You see exactly how many scans and bookings the mailer produced — and whether to send it again.",
       trigger: "Measurable mail ROI",
     },
     {
@@ -76,14 +72,14 @@ const content: ProductPageContent = {
     {
       icon: Smartphone,
       title: "The business card",
-      body: "A QR code on your card routes to a v-card that saves straight to a contact&rsquo;s phone &mdash; and into your CRM when they scan.",
+      body: "A QR code on your card routes to a v-card that saves straight to a contact’s phone — and into your CRM when they scan.",
       trigger: "Never lose a card again",
     },
   ],
   connections: {
     heading: "A scan becomes a contact becomes a client.",
     subhead:
-      "The QR code isn&rsquo;t a dead-end graphic &mdash; it&rsquo;s the front door to the same CRM, pipeline, and calendars the rest of your firm runs on.",
+      "The QR code isn’t a dead-end graphic — it’s the front door to the same CRM, pipeline, and calendars the rest of your firm runs on.",
     items: [
       { icon: Link, label: "Landing pages & forms" },
       { icon: Tag, label: "Campaign attribution" },
@@ -93,9 +89,9 @@ const content: ProductPageContent = {
       { icon: ScanLine, label: "Scan analytics" },
     ],
   },
-  finalCtaHeading: "Let&rsquo;s make your print trackable.",
+  finalCtaHeading: "Let’s make your print trackable.",
   finalCtaBody:
-    "30 minutes. We&rsquo;ll map the print pieces you&rsquo;d like to measure, tell you honestly whether Leadli fits, and give you a clear estimate.",
+    "30 minutes. We’ll map the print pieces you’d like to measure, tell you honestly whether Leadli fits, and give you a clear estimate.",
   excludeFromRelated: [
     "qr-codes",
     "marketing",

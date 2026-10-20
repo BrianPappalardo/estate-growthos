@@ -85,8 +85,8 @@ export function InboxProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
             Every conversation with a prospect or client lives in one place, threaded right next to
             their CRM record. Reply by email or text, hand it off to your team, and never lose track
-            of a thread buried in a tab you forgot to check. No more &ldquo;who was handling
-            that?&rdquo; No more messages that slipped through.
+            of a thread buried in a tab you forgot to check. No more “who was handling that?” No
+            more messages that slipped through.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
@@ -143,11 +143,11 @@ export function InboxProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
                 that answered in four minutes — not four hours.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                Leadli&rsquo;s unified inbox pulls every one of those into a single view — email,
-                SMS, social messages, and web chat — all threaded to the contact they belong to. You
-                see the whole history in one place, reply in whatever channel makes sense, and hand
-                it to your team without forwarding, copying, or explaining the backstory. The lead
-                gets a fast answer. You get a clean inbox.
+                Leadli’s unified inbox pulls every one of those into a single view — email, SMS,
+                social messages, and web chat — all threaded to the contact they belong to. You see
+                the whole history in one place, reply in whatever channel makes sense, and hand it
+                to your team without forwarding, copying, or explaining the backstory. The lead gets
+                a fast answer. You get a clean inbox.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -321,8 +321,8 @@ export function InboxProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
                       Caroline · 9:14 AM
                     </div>
                     <div className="rounded-2xl rounded-tl-sm bg-white border border-slate-200 p-3.5 text-sm text-slate-700 leading-relaxed">
-                      Hi! I filled out the form on your site — really hoping to get my mom&rsquo;s
-                      trust set up before the end of the year. What does the consult usually cover?
+                      Hi! I filled out the form on your site — really hoping to get my mom’s trust
+                      set up before the end of the year. What does the consult usually cover?
                     </div>
                   </div>
                   <div className="max-w-[85%] ml-auto">
@@ -331,9 +331,8 @@ export function InboxProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
                     </div>
                     <div className="rounded-2xl rounded-tr-sm bg-[#3344b8] text-white p-3.5 text-sm leading-relaxed">
                       Hi Caroline! Great timing. The consult covers exactly what you need for your
-                      mom&rsquo;s situation. I just sent a link with a short video on what a trust
-                      costs — it&rsquo;ll save you time on the call. You&rsquo;re booked for
-                      Thursday at 2.
+                      mom’s situation. I just sent a link with a short video on what a trust costs —
+                      it’ll save you time on the call. You’re booked for Thursday at 2.
                     </div>
                   </div>
                   <div className="max-w-[85%]">
@@ -488,7 +487,7 @@ export function InboxProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
                 Assign a thread to the person who should own it. They see the full history — what
                 the prospect asked, what your team already said, what they booked — without you
                 writing a summary email. Everyone works from the same thread, and nothing gets lost
-                in someone&rsquo;s personal inbox on vacation.
+                in someone’s personal inbox on vacation.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
@@ -517,8 +516,7 @@ export function InboxProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 Email, SMS, social DMs, and web chat all funnel into one view, each one attached to
                 the contact it belongs to. No more checking four apps for one reply. No more asking
-                &ldquo;did anyone answer that?&rdquo; The answer is in the inbox, next to the
-                record.
+                “did anyone answer that?” The answer is in the inbox, next to the record.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
@@ -575,9 +573,9 @@ export function InboxProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
           <div className="mt-10 flex items-start gap-3 rounded-2xl bg-amber-50/70 border border-amber-200 p-5">
             <AlertCircle className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
             <p className="text-sm text-amber-900 leading-relaxed">
-              <span className="font-black">And it&rsquo;s all the same lead.</span> The inbox, the
-              CRM, the calendar, the automations — one record, one contact, one timeline. When
-              someone texts after booking, the thread already knows they booked.
+              <span className="font-black">And it’s all the same lead.</span> The inbox, the CRM,
+              the calendar, the automations — one record, one contact, one timeline. When someone
+              texts after booking, the thread already knows they booked.
             </p>
           </div>
         </div>
@@ -591,8 +589,7 @@ export function InboxProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              The unified inbox is just the start. Explore the rest of what&rsquo;s included with
-              Leadli.
+              The unified inbox is just the start. Explore the rest of what’s included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -614,11 +611,11 @@ export function InboxProductPage({ onOpenDiscovery }: { onOpenDiscovery: () => v
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&rsquo;s see if Leadli fits your firm.
+            Let’s see if Leadli fits your firm.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&rsquo;ll learn how your firm communicates today, tell you honestly
-            whether we&rsquo;re a fit, and give you a clear estimate.
+            30 minutes. We’ll learn how your firm communicates today, tell you honestly whether
+            we’re a fit, and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}

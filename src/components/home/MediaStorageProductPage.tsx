@@ -15,13 +15,13 @@ const content: ProductPageContent = {
   icon: Cloud,
   title: "Leadli Unlimited Media Storage",
   subtitle:
-    "Host files and media without a separate storage bill &mdash; tied to each contact, secure by default.",
-  body: "Store documents, images, videos, and media in-platform with unlimited space tied to each contact and matter &mdash; no extra storage subscription, no &ldquo;your drive is full&rdquo; upgrade prompts. Every file is filed to the right record, shareable securely, and part of the same platform as your CRM and workflows. No Dropbox add-on, no Google Drive upgrade, no storage that&rsquo;s separate from the people it belongs to.",
+    "Host files and media without a separate storage bill — tied to each contact, secure by default.",
+  body: "Store documents, images, videos, and media in-platform with unlimited space tied to each contact and matter — no extra storage subscription, no “your drive is full” upgrade prompts. Every file is filed to the right record, shareable securely, and part of the same platform as your CRM and workflows. No Dropbox add-on, no Google Drive upgrade, no storage that’s separate from the people it belongs to.",
   replaces: ["Dropbox", "Google Drive add-ons", "Separate storage subscriptions"],
-  leakHeading: "Your client files live in a storage tool that&rsquo;s separate from your CRM.",
+  leakHeading: "Your client files live in a storage tool that’s separate from your CRM.",
   leakBody: [
-    "A client sends you their asset list, a scan of their deed, and a video walkthrough of their estate. You drop them in Dropbox, where they sit in a folder that&rsquo;s named by matter but disconnected from the CRM record. Your team hunts for the right folder, the storage bill creeps up with every upgrade, and the files are one shared link away from being somewhere they shouldn&rsquo;t be.",
-    "Leadli Unlimited Media Storage puts every file on the contact&rsquo;s record &mdash; documents, images, videos, all of it &mdash; with unlimited space and no separate bill. A file is filed where it belongs, shareable securely, and part of the same platform your team already works in. No hunting, no upgrade prompts, no storage that&rsquo;s separate from the people it belongs to.",
+    "A client sends you their asset list, a scan of their deed, and a video walkthrough of their estate. You drop them in Dropbox, where they sit in a folder that’s named by matter but disconnected from the CRM record. Your team hunts for the right folder, the storage bill creeps up with every upgrade, and the files are one shared link away from being somewhere they shouldn’t be.",
+    "Leadli Unlimited Media Storage puts every file on the contact’s record — documents, images, videos, all of it — with unlimited space and no separate bill. A file is filed where it belongs, shareable securely, and part of the same platform your team already works in. No hunting, no upgrade prompts, no storage that’s separate from the people it belongs to.",
   ],
   leakChips: [
     "Unlimited space",
@@ -29,47 +29,47 @@ const content: ProductPageContent = {
     "Secure sharing",
     "No extra storage bill",
   ],
-  mockupHeading: "All your files, where they belong &mdash; on the contact record.",
+  mockupHeading: "All your files, where they belong — on the contact record.",
   mockupSubhead:
     "Unlimited storage for documents, images, and media, filed to each contact and matter, shareable securely.",
-  whatYouGetHeading: "Storage that&rsquo;s part of your CRM, not a separate bill.",
+  whatYouGetHeading: "Storage that’s part of your CRM, not a separate bill.",
   capabilities: [
     {
       icon: Cloud,
       title: "Unlimited storage",
-      body: "Store as many documents, images, and videos as you need &mdash; no per-GB charge, no &ldquo;drive full&rdquo; upgrade prompts.",
+      body: "Store as many documents, images, and videos as you need — no per-GB charge, no “drive full” upgrade prompts.",
     },
     {
       icon: Users,
       title: "Contact-linked files",
-      body: "Every file is filed to the contact or matter it belongs to &mdash; no orphaned folders, no hunting for the right place.",
+      body: "Every file is filed to the contact or matter it belongs to — no orphaned folders, no hunting for the right place.",
     },
     {
       icon: Link,
       title: "Secure sharing",
-      body: "Share a file or folder with a client through a secure, expiring link &mdash; not a public Dropbox URL that lives forever.",
+      body: "Share a file or folder with a client through a secure, expiring link — not a public Dropbox URL that lives forever.",
     },
     {
       icon: FileText,
       title: "Documents & media",
-      body: "PDFs, images, videos, audio &mdash; store and preview them all in-platform, tied to the record.",
+      body: "PDFs, images, videos, audio — store and preview them all in-platform, tied to the record.",
     },
     {
       icon: ShieldCheck,
       title: "Secure by default",
-      body: "Files are stored securely and access-controlled &mdash; not sitting in a publicly shared drive anyone with the link can open.",
+      body: "Files are stored securely and access-controlled — not sitting in a publicly shared drive anyone with the link can open.",
     },
     {
       icon: BarChart3,
       title: "Part of the workflow",
-      body: "A file upload can trigger a workflow &mdash; client uploads their asset list, your team gets a task to review it.",
+      body: "A file upload can trigger a workflow — client uploads their asset list, your team gets a task to review it.",
     },
   ],
   useCases: [
     {
       icon: FileText,
       title: "The estate document set",
-      body: "A client uploads their deed, asset list, and beneficiary docs &mdash; all filed to their matter, ready for your team to review. No email attachments.",
+      body: "A client uploads their deed, asset list, and beneficiary docs — all filed to their matter, ready for your team to review. No email attachments.",
       trigger: "Organized intake",
     },
     {
@@ -81,14 +81,14 @@ const content: ProductPageContent = {
     {
       icon: FolderOpen,
       title: "The team handoff",
-      body: "A paralegal picks up a matter and every file is right there on the contact record &mdash; no &ldquo;where did you put that folder?&rdquo;",
+      body: "A paralegal picks up a matter and every file is right there on the contact record — no “where did you put that folder?”",
       trigger: "Faster handoffs",
     },
   ],
   connections: {
     heading: "Every file connects to the contact and the workflow.",
     subhead:
-      "Storage isn&rsquo;t a separate drive &mdash; it&rsquo;s files on the same records your CRM, portal, and workflows already use.",
+      "Storage isn’t a separate drive — it’s files on the same records your CRM, portal, and workflows already use.",
     items: [
       { icon: Users, label: "CRM contacts" },
       { icon: Link, label: "Secure sharing" },
@@ -98,9 +98,9 @@ const content: ProductPageContent = {
       { icon: FolderOpen, label: "Matter files" },
     ],
   },
-  finalCtaHeading: "Let&rsquo;s put your files where your contacts are.",
+  finalCtaHeading: "Let’s put your files where your contacts are.",
   finalCtaBody:
-    "30 minutes. We&rsquo;ll map how you store and share files, tell you honestly whether Leadli fits, and give you a clear estimate.",
+    "30 minutes. We’ll map how you store and share files, tell you honestly whether Leadli fits, and give you a clear estimate.",
   excludeFromRelated: ["media-storage", "client-portal", "crm", "contracts", "courses"],
 };
 

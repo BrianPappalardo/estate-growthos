@@ -493,7 +493,7 @@ export function DiscoveryModal({ open, onOpenChange }: DiscoveryModalProps) {
               type="submit"
               className="w-full py-3.5 h-auto text-base font-bold bg-[#3344b8] hover:bg-[#25349c] text-white shadow-md hover:shadow-lg transition-all rounded-xl cursor-pointer"
             >
-              Continue to Select Time &rarr;
+              Continue to Select Time →
             </Button>
             <p className="text-[11px] text-center text-slate-500">
               30 minutes. Zero obligation. 100% confidential.
@@ -656,7 +656,7 @@ export function DiscoveryModal({ open, onOpenChange }: DiscoveryModalProps) {
                 }}
                 className="w-full bg-[#3344b8] hover:bg-[#25349c] text-white font-bold py-3 rounded-xl cursor-pointer shadow-md"
               >
-                Go to First Homework Assignment &rarr;
+                Go to First Homework Assignment →
               </Button>
               <Button
                 variant="outline"

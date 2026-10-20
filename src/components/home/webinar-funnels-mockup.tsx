@@ -178,7 +178,7 @@ export function WebinarFunnelsMockup() {
           <div>
             <div className="text-sm font-black text-[#12193b]">Webinar Funnels</div>
             <div className="text-[11px] text-slate-500 font-medium">
-              Automated registration, reminders &amp; nurture
+              Automated registration, reminders & nurture
             </div>
           </div>
         </div>
@@ -259,8 +259,8 @@ export function WebinarFunnelsMockup() {
           </div>
           <div className="text-base font-black text-[#12193b] mb-1">{selected.title}</div>
           <div className="text-xs text-slate-500 font-medium mb-5">
-            {selected.subtitle} &middot; {selected.registered} registrants &middot; runs{" "}
-            {selected.steps.length} automated steps
+            {selected.subtitle} · {selected.registered} registrants · runs {selected.steps.length}{" "}
+            automated steps
           </div>
 
           <div className="space-y-1">
@@ -303,9 +303,9 @@ export function WebinarFunnelsMockup() {
             <div className="flex items-start gap-2.5 text-xs text-slate-500">
               <RotateCcw className="w-4 h-4 text-[#3344b8] shrink-0 mt-0.5" />
               <span className="leading-relaxed">
-                Every registrant flows straight into your CRM &mdash; tagged, staged, and ready for
-                the post-webinar nurture sequence. No imports, no spreadsheets, no &ldquo;did they
-                attend?&rdquo; The funnel remembers for you.
+                Every registrant flows straight into your CRM — tagged, staged, and ready for the
+                post-webinar nurture sequence. No imports, no spreadsheets, no “did they attend?”
+                The funnel remembers for you.
               </span>
             </div>
           </div>

@@ -64,7 +64,7 @@ export function WebsitesProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Web · Sites &amp; Domains
+              Web · Sites & Domains
             </div>
           </div>
 
@@ -74,7 +74,7 @@ export function WebsitesProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
             </div>
             <div>
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.1]">
-                Leadli Websites &amp; Domain Management
+                Leadli Websites & Domain Management
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
                 Fast, hosted landing pages, funnels, and full sites — on your own domain, with no
@@ -139,16 +139,16 @@ export function WebsitesProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
             </div>
             <div className="lg:col-span-7 space-y-5">
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                A prospect finds you on Google at 11&nbsp;p.m. They read your page, like what they
-                see, and fill out your contact form. That submission lands in a generic email inbox
-                — or worse, in a WordPress plugin nobody checks. By the time someone copies their
-                name into your CRM and drafts a reply on Thursday, they&apos;ve already booked a
-                consult down the street.
+                A prospect finds you on Google at 11 p.m. They read your page, like what they see,
+                and fill out your contact form. That submission lands in a generic email inbox — or
+                worse, in a WordPress plugin nobody checks. By the time someone copies their name
+                into your CRM and drafts a reply on Thursday, they've already booked a consult down
+                the street.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                Leadli&apos;s websites plug that hole. Every page lives in the same platform as your
-                CRM, calendars, and automations, so a form submission instantly creates a contact,
-                fires a nurture sequence, and books the right consult — without a single retype or a
+                Leadli's websites plug that hole. Every page lives in the same platform as your CRM,
+                calendars, and automations, so a form submission instantly creates a contact, fires
+                a nurture sequence, and books the right consult — without a single retype or a
                 third-party form tool.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
@@ -183,7 +183,7 @@ export function WebsitesProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
               Every landing page, funnel step, and full site lives in Leadli — on your domain, with
-              forms that talk to your CRM the instant they&apos;re submitted.
+              forms that talk to your CRM the instant they're submitted.
             </p>
           </div>
 
@@ -232,7 +232,7 @@ export function WebsitesProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
                     Estate Planning Consult
                   </span>
                   <h3 className="mt-2 text-xl sm:text-2xl font-black tracking-tight">
-                    Protect your family&apos;s legacy.
+                    Protect your family's legacy.
                   </h3>
                   <p className="mt-1.5 text-xs sm:text-sm text-slate-200 max-w-md">
                     Book a 30-minute consult and walk away with a clear plan — and a clear estimate.
@@ -358,10 +358,9 @@ export function WebsitesProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
                 Host on your own domain — with SSL and a global CDN baked in.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                Point your domain at Leadli and you&apos;re live — no separate hosting account, no
+                Point your domain at Leadli and you're live — no separate hosting account, no
                 renewals to chase, no SSL certificate to install by hand. Pages load fast from a
-                global CDN, and there&apos;s no plugin update to break your site at 2&nbsp;a.m. on a
-                Sunday.
+                global CDN, and there's no plugin update to break your site at 2 a.m. on a Sunday.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
@@ -388,10 +387,10 @@ export function WebsitesProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
                 Every form submission becomes a contact — instantly.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                Drop a form on any page, and the moment it&apos;s submitted Leadli creates a CRM
-                record, tags the lead, fires the right nurture sequence, and pings your team. No
-                separate form tool, no Zapier zap, no copy-pasting into a spreadsheet. The page and
-                the pipeline are the same system.
+                Drop a form on any page, and the moment it's submitted Leadli creates a CRM record,
+                tags the lead, fires the right nurture sequence, and pings your team. No separate
+                form tool, no Zapier zap, no copy-pasting into a spreadsheet. The page and the
+                pipeline are the same system.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
@@ -464,8 +463,8 @@ export function WebsitesProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
                     But what if I love WordPress?
                   </h2>
                   <p className="mt-5 text-base sm:text-lg text-slate-200 leading-relaxed">
-                    Then we&apos;ll meet you right where you are. We host WordPress too — and we
-                    host it well.
+                    Then we'll meet you right where you are. We host WordPress too — and we host it
+                    well.
                   </p>
                   <p className="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed">
                     Fast, scalable, secure WordPress hosting with a stack of premium plugins already
@@ -545,7 +544,7 @@ export function WebsitesProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Websites are just the start. Explore the rest of what&apos;s included with Leadli.
+              Websites are just the start. Explore the rest of what's included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -567,11 +566,11 @@ export function WebsitesProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s see if Leadli fits your firm.
+            Let's see if Leadli fits your firm.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll learn how your site captures leads today, tell you honestly
-            whether we&apos;re a fit, and give you a clear estimate.
+            30 minutes. We'll learn how your site captures leads today, tell you honestly whether
+            we're a fit, and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}

@@ -176,7 +176,7 @@ export function CrmProductPage({
               </div>
               <div className="flex items-center gap-2 text-xs text-slate-300">
                 <Search className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">Filter &amp; search</span>
+                <span className="hidden sm:inline">Filter & search</span>
               </div>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 sm:p-6 bg-slate-50/60">
@@ -320,7 +320,7 @@ export function CrmProductPage({
               <div className="inline-flex items-center gap-2 text-[#3344b8] mb-3">
                 <Filter className="w-5 h-5" />
                 <span className="text-xs font-bold uppercase tracking-wider">
-                  Smart lists &amp; tags
+                  Smart lists & tags
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">

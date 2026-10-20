@@ -98,7 +98,7 @@ export function EmailMarketingMockup() {
           <div className="w-3 h-3 rounded-full bg-emerald-300" />
         </div>
         <div className="flex-1 text-center text-xs font-bold text-slate-400 tracking-wide">
-          leadli.app &mdash; Email Marketing
+          leadli.app — Email Marketing
         </div>
         <Inbox className="w-4 h-4 text-slate-300" />
       </div>
@@ -136,7 +136,7 @@ export function EmailMarketingMockup() {
             <div>
               <h3 className="text-base font-black text-[#12193b]">Campaigns</h3>
               <p className="text-xs text-slate-500 mt-0.5">
-                Every send, tracked &mdash; no separate Mailchimp export
+                Every send, tracked — no separate Mailchimp export
               </p>
             </div>
             <button className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-emerald-500/10 text-emerald-700 text-xs font-bold border border-emerald-200">
@@ -207,7 +207,7 @@ export function EmailMarketingMockup() {
             </div>
             <p className="text-xs text-slate-200 leading-relaxed">
               Open and click rates live in the same CRM as your pipeline. The 38% who clicked the
-              booking link are flagged &mdash; your intake team knows exactly who to call first.
+              booking link are flagged — your intake team knows exactly who to call first.
             </p>
           </div>
         </div>
@@ -218,11 +218,9 @@ export function EmailMarketingMockup() {
         <div className="p-5 sm:p-6">
           <div className="flex items-center justify-between mb-5">
             <div>
-              <h3 className="text-base font-black text-[#12193b]">
-                New Lead &mdash; Trust Education
-              </h3>
+              <h3 className="text-base font-black text-[#12193b]">New Lead — Trust Education</h3>
               <p className="text-xs text-slate-500 mt-0.5">
-                Runs automatically for every new inquiry &mdash; no manual sends
+                Runs automatically for every new inquiry — no manual sends
               </p>
             </div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200">

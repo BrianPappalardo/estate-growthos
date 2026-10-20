@@ -15,17 +15,17 @@ const content: ProductPageContent = {
   icon: Contact,
   title: "Leadli V-Cards",
   subtitle:
-    "Smart digital business cards that save to a contact&rsquo;s phone &mdash; and into your CRM the moment they scan.",
-  body: "Share a v-card that imports straight into a contact&rsquo;s phone with one tap, and updates everywhere the moment your details change. When someone scans your card, they land on a branded page, save your info, and &mdash; if you want &mdash; become a tracked contact in your CRM. No paper cards lost in a drawer, no &ldquo;let me text you my info,&rdquo; no out-of-date cards floating around.",
+    "Smart digital business cards that save to a contact’s phone — and into your CRM the moment they scan.",
+  body: "Share a v-card that imports straight into a contact’s phone with one tap, and updates everywhere the moment your details change. When someone scans your card, they land on a branded page, save your info, and — if you want — become a tracked contact in your CRM. No paper cards lost in a drawer, no “let me text you my info,” no out-of-date cards floating around.",
   replaces: [
     "Paper business cards",
     "Separate contact apps",
-    "Manual &ldquo;text me your info&rdquo; exchanges",
+    "Manual “text me your info” exchanges",
   ],
   leakHeading: "Your paper business card is lost before they get to the car.",
   leakBody: [
-    "You hand out paper cards at a seminar, a networking event, a consult. Most end up in a pocket, then a drawer, then the recycling. The ones that survive go stale the moment your phone number or office changes. And you have no idea who actually kept yours, who called, or who became a client &mdash; the card is a dead end the moment it leaves your hand.",
-    "Leadli V-Cards turn that dead end into a tracked entry point. A scan opens a branded page, saves your live details to their phone, and can create a contact in your CRM tied to the event where you met. Update your info once and every card you&rsquo;ve ever shared updates with it. No reprinting, no lost leads, no stale numbers.",
+    "You hand out paper cards at a seminar, a networking event, a consult. Most end up in a pocket, then a drawer, then the recycling. The ones that survive go stale the moment your phone number or office changes. And you have no idea who actually kept yours, who called, or who became a client — the card is a dead end the moment it leaves your hand.",
+    "Leadli V-Cards turn that dead end into a tracked entry point. A scan opens a branded page, saves your live details to their phone, and can create a contact in your CRM tied to the event where you met. Update your info once and every card you’ve ever shared updates with it. No reprinting, no lost leads, no stale numbers.",
   ],
   leakChips: [
     "One-tap save to phone",
@@ -41,17 +41,17 @@ const content: ProductPageContent = {
     {
       icon: Contact,
       title: "Digital contact sharing",
-      body: "A branded v-card page with your photo, title, phone, email, office, and links &mdash; saved to a contact&rsquo;s phone with one tap.",
+      body: "A branded v-card page with your photo, title, phone, email, office, and links — saved to a contact’s phone with one tap.",
     },
     {
       icon: Smartphone,
       title: "Click-to-save",
-      body: "One tap imports your details straight into their phone&rsquo;s contacts &mdash; no typing, no &ldquo;let me put you in.&rdquo;",
+      body: "One tap imports your details straight into their phone’s contacts — no typing, no “let me put you in.”",
     },
     {
       icon: RefreshCw,
       title: "Updateable everywhere",
-      body: "Change your number or office once and every card you&rsquo;ve ever shared updates automatically &mdash; no reprinting.",
+      body: "Change your number or office once and every card you’ve ever shared updates automatically — no reprinting.",
     },
     {
       icon: UserPlus,
@@ -73,26 +73,26 @@ const content: ProductPageContent = {
     {
       icon: UserPlus,
       title: "The networking event",
-      body: "Instead of paper cards, you share your v-card. Every scan is a tracked contact tagged &ldquo;networking,&rdquo; ready for a follow-up sequence the next morning.",
+      body: "Instead of paper cards, you share your v-card. Every scan is a tracked contact tagged “networking,” ready for a follow-up sequence the next morning.",
       trigger: "No lost contacts",
     },
     {
       icon: Globe,
       title: "The seminar handout",
-      body: "A QR code on the seminar slide routes to your v-card. Attendees save you before they leave the room &mdash; and land in your CRM tagged by event.",
+      body: "A QR code on the seminar slide routes to your v-card. Attendees save you before they leave the room — and land in your CRM tagged by event.",
       trigger: "Captures the room",
     },
     {
       icon: RefreshCw,
       title: "The office move",
-      body: "You move offices. You update your v-card once. Every card you&rsquo;ve ever shared now shows the new address &mdash; no reprint, no stale cards.",
+      body: "You move offices. You update your v-card once. Every card you’ve ever shared now shows the new address — no reprint, no stale cards.",
       trigger: "Always current",
     },
   ],
   connections: {
-    heading: "A card that&rsquo;s part of your pipeline, not a dead end.",
+    heading: "A card that’s part of your pipeline, not a dead end.",
     subhead:
-      "The v-card isn&rsquo;t a standalone graphic &mdash; a scan is the first touch in a contact record that can end in a signed matter.",
+      "The v-card isn’t a standalone graphic — a scan is the first touch in a contact record that can end in a signed matter.",
     items: [
       { icon: UserPlus, label: "CRM contact capture" },
       { icon: QrCode, label: "QR codes" },
@@ -102,9 +102,9 @@ const content: ProductPageContent = {
       { icon: RefreshCw, label: "Live updates" },
     ],
   },
-  finalCtaHeading: "Let&rsquo;s turn your business card into a tracked lead.",
+  finalCtaHeading: "Let’s turn your business card into a tracked lead.",
   finalCtaBody:
-    "30 minutes. We&rsquo;ll map how you&rsquo;d use v-cards, tell you honestly whether Leadli fits, and give you a clear estimate.",
+    "30 minutes. We’ll map how you’d use v-cards, tell you honestly whether Leadli fits, and give you a clear estimate.",
   excludeFromRelated: ["v-cards", "qr-codes", "websites", "crm", "marketing"],
 };
 

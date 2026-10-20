@@ -283,7 +283,7 @@ export function FormsBuilderMockup() {
       <div className="bg-[#12193b] text-white px-5 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <ClipboardList className="w-4 h-4 text-amber-300" />
-          <span className="text-sm font-bold">Forms Builder &middot; yourfirm.law</span>
+          <span className="text-sm font-bold">Forms Builder · yourfirm.law</span>
         </div>
         <div className="flex items-center gap-3 text-xs text-slate-300">
           <span className="hidden sm:inline-flex items-center gap-1 text-emerald-400 font-bold">
@@ -335,7 +335,7 @@ export function FormsBuilderMockup() {
         <div className="lg:col-span-2 p-4 sm:p-5 bg-white border-r border-slate-200">
           <div className="flex items-center justify-between mb-3">
             <span className="text-[10px] font-extrabold uppercase tracking-widest text-slate-400">
-              Fields &middot; {form.fields.length}
+              Fields · {form.fields.length}
             </span>
             <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-full px-2 py-0.5">
               <ShieldCheck className="w-3 h-3" />
@@ -467,7 +467,7 @@ export function FormsBuilderMockup() {
       <div className="px-5 py-4 bg-[#12193b] text-white flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2 text-xs font-bold text-slate-300">
           <ClipboardList className="w-4 h-4 text-amber-300" />
-          Embed on any page &middot; or share a link
+          Embed on any page · or share a link
         </div>
         <div className="flex items-center gap-2 text-[10px] font-bold">
           <span className="inline-flex items-center gap-1 text-emerald-300 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-2.5 py-1">

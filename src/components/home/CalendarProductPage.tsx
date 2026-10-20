@@ -68,7 +68,7 @@ export function CalendarProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
             </div>
             <div>
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.1]">
-                Leadli Calendars &amp; Booking
+                Leadli Calendars & Booking
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
                 Round-robin scheduling that books the right consult to the right person —
@@ -80,7 +80,7 @@ export function CalendarProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
             Offer a calendar link for every service you provide. Leadli handles round-robin
             assignment, intake forms, buffer times, and SMS confirmations so the right prospect
-            lands on the right person&apos;s calendar without a single email thread.
+            lands on the right person's calendar without a single email thread.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
@@ -120,8 +120,8 @@ export function CalendarProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
                 The leak
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-4 tracking-tight leading-tight">
-                You&apos;re playing calendar Tetris across four inboxes — and half your consults
-                still no-show.
+                You're playing calendar Tetris across four inboxes — and half your consults still
+                no-show.
               </h2>
             </div>
             <div className="lg:col-span-7 space-y-5">
@@ -135,8 +135,7 @@ export function CalendarProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Leadli calendars plug that hole. One booking link per service, the intake form baked
                 right in, and reminders that fire themselves. The right consult lands with the right
-                person, and the whole thing shows up on the contact record the moment it&apos;s
-                booked.
+                person, and the whole thing shows up on the contact record the moment it's booked.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -241,7 +240,7 @@ export function CalendarProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
               </span>
               <span className="flex items-center gap-1.5">
                 <Bell className="w-3.5 h-3.5 text-amber-600" />
-                SMS &amp; email reminders handled
+                SMS & email reminders handled
               </span>
             </div>
           </div>
@@ -319,7 +318,7 @@ export function CalendarProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 Round-robin hands the next booking to whichever attorney is available, so no one
                 partner drowns in consults while the others sit idle. Need the senior partner on
-                every trust consult? Set a routing rule and it&apos;s handled. A partner goes on
+                every trust consult? Set a routing rule and it's handled. A partner goes on
                 vacation? Their calendar closes itself.
               </p>
               <ul className="mt-6 space-y-2.5">
@@ -413,8 +412,8 @@ export function CalendarProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Calendars &amp; booking are just the start. Explore the rest of what&apos;s included
-              with Leadli.
+              Calendars & booking are just the start. Explore the rest of what's included with
+              Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -436,11 +435,11 @@ export function CalendarProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s see if Leadli fits your firm.
+            Let's see if Leadli fits your firm.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll learn how you book today, tell you honestly whether we&apos;re a
-            fit, and give you a clear estimate.
+            30 minutes. We'll learn how you book today, tell you honestly whether we're a fit, and
+            give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}

@@ -204,12 +204,12 @@ export function SmartListMockup() {
       <div className="bg-[#12193b] text-white px-5 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <ListFilter className="w-4 h-4 text-amber-300" />
-          <span className="text-sm font-bold">Smart Lists &middot; yourfirm.law</span>
+          <span className="text-sm font-bold">Smart Lists · yourfirm.law</span>
         </div>
         <div className="flex items-center gap-3 text-xs text-slate-300">
           <span className="hidden sm:inline-flex items-center gap-1 text-emerald-400 font-bold">
             <RefreshCw className="w-3.5 h-3.5" />
-            Auto-updating &middot; refreshed just now
+            Auto-updating · refreshed just now
           </span>
         </div>
       </div>
@@ -241,7 +241,7 @@ export function SmartListMockup() {
         </div>
         <div className="flex items-center gap-3 text-xs">
           <span className="font-bold text-slate-500">
-            {entity.count.toLocaleString()} total &middot; {results.length} in segment
+            {entity.count.toLocaleString()} total · {results.length} in segment
           </span>
         </div>
       </div>
@@ -258,7 +258,7 @@ export function SmartListMockup() {
                 Saved segment
               </div>
               <div className="text-sm font-black text-[#12193b]">
-                Active {entity.label} &middot; High Priority
+                Active {entity.label} · High Priority
               </div>
             </div>
           </div>
@@ -278,7 +278,7 @@ export function SmartListMockup() {
               <span className="font-extrabold uppercase tracking-wider text-slate-400">
                 {r.label}
               </span>
-              <span className="text-slate-300">&middot;</span>
+              <span className="text-slate-300">·</span>
               <span className="font-bold text-slate-700">{r.value}</span>
               <X className="w-3 h-3 text-slate-300" />
             </div>

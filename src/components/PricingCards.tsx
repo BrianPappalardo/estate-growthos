@@ -43,7 +43,7 @@ export function PricingCards({ onBookClick }: { onBookClick: () => void }) {
           onClick={onBookClick}
           className="mt-8 w-full py-3.5 px-4 rounded-xl border-2 border-[#3344b8] text-[#3344b8] hover:bg-[#3344b8] hover:text-white font-bold transition-all"
         >
-          <strong>Schedule a Call</strong> &rarr;
+          <strong>Schedule a Call</strong> →
         </button>
       </div>
 
@@ -89,7 +89,7 @@ export function PricingCards({ onBookClick }: { onBookClick: () => void }) {
           onClick={onBookClick}
           className="mt-8 w-full py-3.5 px-4 rounded-xl bg-[#f97316] hover:bg-[#ea580c] text-white font-extrabold shadow-lg transition-all"
         >
-          <strong>Schedule a Call</strong> &rarr;
+          <strong>Schedule a Call</strong> →
         </button>
       </div>
     </div>

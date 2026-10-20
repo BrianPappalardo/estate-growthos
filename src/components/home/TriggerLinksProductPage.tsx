@@ -58,7 +58,7 @@ export function TriggerLinksProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Marketing &middot; Trigger Links
+              Marketing · Trigger Links
             </div>
           </div>
 
@@ -71,25 +71,24 @@ export function TriggerLinksProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
                 Leadli Trigger Links
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
-                Smart links that fire automations the instant they&rsquo;re clicked &mdash; no
-                forms, no buttons, no manual follow-up.
+                Smart links that fire automations the instant they’re clicked — no forms, no
+                buttons, no manual follow-up.
               </p>
             </div>
           </div>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
             Drop a trigger link into any email, text, or page. When a prospect clicks it, Leadli
-            fires the exact workflow you configured &mdash; tags them, starts a sequence, notifies
-            your team, opens a calendar &mdash; without a single form to fill out or a single
-            follow-up email to remember. You know who clicked, when, and what happened next.
-            Automatically.
+            fires the exact workflow you configured — tags them, starts a sequence, notifies your
+            team, opens a calendar — without a single form to fill out or a single follow-up email
+            to remember. You know who clicked, when, and what happened next. Automatically.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
             <span className="font-bold uppercase tracking-wider text-slate-400">Replaces:</span>
             {[
               "Manual link tracking",
-              "The &ldquo;did they open it?&rdquo; guesswork",
+              "The “did they open it?” guesswork",
               "Copy-paste follow-up emails",
               "UTM spreadsheets nobody reads",
             ].map((name) => (
@@ -131,18 +130,17 @@ export function TriggerLinksProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
             </div>
             <div className="lg:col-span-7 space-y-5">
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                You put a link in a nurture email &mdash; &ldquo;learn more about trusts&rdquo; or
-                &ldquo;download our estate planning guide.&rdquo; They click it. And then&hellip;
-                nothing. No tag fires. No sequence starts. Nobody on your team knows they clicked.
-                You&rsquo;re back to guessing who&rsquo;s warm, scrolling through email open rates
-                that don&rsquo;t tell you anything, and following up by hand with the same
-                &ldquo;just checking in&rdquo; email you sent last week.
+                You put a link in a nurture email — “learn more about trusts” or “download our
+                estate planning guide.” They click it. And then… nothing. No tag fires. No sequence
+                starts. Nobody on your team knows they clicked. You’re back to guessing who’s warm,
+                scrolling through email open rates that don’t tell you anything, and following up by
+                hand with the same “just checking in” email you sent last week.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Trigger Links close that gap. The click <em>is</em> the trigger. The moment a
                 prospect clicks, Leadli tags them, starts the right sequence, notifies your team,
-                and moves them to the right pipeline stage &mdash; without a form, without a button,
-                and without you remembering to follow up. The link does the remembering for you.
+                and moves them to the right pipeline stage — without a form, without a button, and
+                without you remembering to follow up. The link does the remembering for you.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -176,7 +174,7 @@ export function TriggerLinksProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
               Every trigger link is wired to its own workflow. Switch between your links to see
-              exactly what happens the moment a prospect clicks &mdash; the tag, the sequence, the
+              exactly what happens the moment a prospect clicks — the tag, the sequence, the
               notification.
             </p>
           </div>
@@ -193,7 +191,7 @@ export function TriggerLinksProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
               What you get
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              Links that do something &mdash; not links that go nowhere.
+              Links that do something — not links that go nowhere.
             </h2>
           </div>
 
@@ -227,8 +225,8 @@ export function TriggerLinksProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
                   Trigger links are part of the single platform we configure around how your firm
-                  runs &mdash; not a separate link-tracking tool with its own login and its own
-                  dashboard nobody checks. No extra subscription, no per-click fee.
+                  runs — not a separate link-tracking tool with its own login and its own dashboard
+                  nobody checks. No extra subscription, no per-click fee.
                 </p>
               </div>
               <div className="flex items-baseline gap-2 shrink-0">
@@ -250,21 +248,21 @@ export function TriggerLinksProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
                 <span className="text-xs font-bold uppercase tracking-wider">Drop it anywhere</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                Email, text, landing page, PDF &mdash; the link works wherever you put it.
+                Email, text, landing page, PDF — the link works wherever you put it.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 A trigger link is just a link. Drop it into a nurture email, a follow-up text, a
-                landing page, or even a PDF guide. When a prospect clicks &mdash; from any device,
-                in any context &mdash; Leadli recognizes who they are and fires the workflow. No
-                tracking pixel to install, no separate dashboard to check, no &ldquo;did they
-                actually click it?&rdquo; The link knows.
+                landing page, or even a PDF guide. When a prospect clicks — from any device, in any
+                context — Leadli recognizes who they are and fires the workflow. No tracking pixel
+                to install, no separate dashboard to check, no “did they actually click it?” The
+                link knows.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Works in email, SMS, landing pages &amp; PDFs",
-                  "Recognizes the contact automatically &mdash; no login required",
+                  "Works in email, SMS, landing pages & PDFs",
+                  "Recognizes the contact automatically — no login required",
                   "Trackable per link, per campaign, per channel",
-                  "One link per action &mdash; or dozens, the cost is the same",
+                  "One link per action — or dozens, the cost is the same",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -282,21 +280,20 @@ export function TriggerLinksProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                The click is the trigger &mdash; the automation runs before you even notice.
+                The click is the trigger — the automation runs before you even notice.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 The moment a prospect clicks, Leadli tags them, starts the sequence you built,
                 notifies your team, and moves them to the right pipeline stage. No delay, no manual
-                step, no &ldquo;I&rsquo;ll follow up on Monday.&rdquo; By the time you see the
-                notification, the follow-up email is already in their inbox and the consult calendar
-                is already open.
+                step, no “I’ll follow up on Monday.” By the time you see the notification, the
+                follow-up email is already in their inbox and the consult calendar is already open.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Tag fires on click &mdash; instantly, per contact",
+                  "Tag fires on click — instantly, per contact",
                   "Sequences start before your team even sees the notification",
                   "Pipeline stage updates automatically",
-                  "Your team gets a heads-up &mdash; not a to-do",
+                  "Your team gets a heads-up — not a to-do",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -320,7 +317,7 @@ export function TriggerLinksProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
               Three links. Three automations. Zero manual follow-up.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              The links you&rsquo;re already putting in emails and texts &mdash; now they actually
+              The links you’re already putting in emails and texts — now they actually
               <em> do</em> something when someone clicks.
             </p>
           </div>
@@ -362,8 +359,8 @@ export function TriggerLinksProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
               Every click ripples through the rest of your platform.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              No exports, no copy-paste, no &ldquo;is this the same person?&rdquo; The contact who
-              clicks is the same contact your pipeline, sequences, and calendars already know.
+              No exports, no copy-paste, no “is this the same person?” The contact who clicks is the
+              same contact your pipeline, sequences, and calendars already know.
             </p>
           </div>
 
@@ -396,8 +393,7 @@ export function TriggerLinksProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Trigger links are just the start. Explore the rest of what&apos;s included with
-              Leadli.
+              Trigger links are just the start. Explore the rest of what's included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -428,11 +424,11 @@ export function TriggerLinksProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s make every click count.
+            Let's make every click count.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll map the links you send today, tell you honestly whether Leadli
-            fits, and give you a clear estimate.
+            30 minutes. We'll map the links you send today, tell you honestly whether Leadli fits,
+            and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}
@@ -451,42 +447,42 @@ const CAPABILITIES: { title: string; body: string; icon: typeof Zap }[] = [
   {
     icon: Zap,
     title: "Click-triggered automations",
-    body: "Every trigger link fires its own workflow the instant it&rsquo;s clicked &mdash; tag, sequence, notification, pipeline move. You build it once; it runs every time.",
+    body: "Every trigger link fires its own workflow the instant it’s clicked — tag, sequence, notification, pipeline move. You build it once; it runs every time.",
   },
   {
     icon: Eye,
     title: "Per-contact tracking",
-    body: "Not &ldquo;142 clicks.&rdquo; You know exactly which contact clicked, when, and from which email or text. No guessing, no anonymous stats, no &ldquo;was that the same person?&rdquo;",
+    body: "Not “142 clicks.” You know exactly which contact clicked, when, and from which email or text. No guessing, no anonymous stats, no “was that the same person?”",
   },
   {
     icon: Globe,
     title: "Works anywhere",
-    body: "Drop a trigger link into an email, a text, a landing page, or a PDF. It works wherever a link works &mdash; no pixel to install, no plugin to configure.",
+    body: "Drop a trigger link into an email, a text, a landing page, or a PDF. It works wherever a link works — no pixel to install, no plugin to configure.",
   },
   {
     icon: MousePointerClick,
     title: "No forms required",
-    body: "The click is the action. No form to fill out, no button to press, no friction between &ldquo;I&rsquo;m interested&rdquo; and &ldquo;the workflow started.&rdquo; They click; it fires.",
+    body: "The click is the action. No form to fill out, no button to press, no friction between “I’m interested” and “the workflow started.” They click; it fires.",
   },
   {
     icon: Bell,
     title: "Real-time notifications",
-    body: "Your team gets a heads-up the moment a warm lead clicks a high-intent link &mdash; not a to-do for later. &ldquo;They clicked the pricing video&rdquo; shows up before they finish watching it.",
+    body: "Your team gets a heads-up the moment a warm lead clicks a high-intent link — not a to-do for later. “They clicked the pricing video” shows up before they finish watching it.",
   },
   {
     icon: Tag,
     title: "Smart auto-tagging",
-    body: "Every click tags the contact automatically &mdash; by topic, by intent, by funnel stage. The tags drive your sequences, your pipeline, and your reporting without a single manual label.",
+    body: "Every click tags the contact automatically — by topic, by intent, by funnel stage. The tags drive your sequences, your pipeline, and your reporting without a single manual label.",
   },
   {
     icon: TrendingUp,
     title: "Click analytics",
-    body: "See which links get clicked, which emails drive action, and which sequences actually convert &mdash; per link, per campaign, per channel. The data is already there; you just couldn&rsquo;t see it before.",
+    body: "See which links get clicked, which emails drive action, and which sequences actually convert — per link, per campaign, per channel. The data is already there; you just couldn’t see it before.",
   },
   {
     icon: Shield,
     title: "Frictionless for prospects",
-    body: "No redirect to a form. No &ldquo;please enter your email.&rdquo; They&rsquo;re already in your CRM &mdash; the click just tells you they&rsquo;re ready. The experience is seamless; the data is rich.",
+    body: "No redirect to a form. No “please enter your email.” They’re already in your CRM — the click just tells you they’re ready. The experience is seamless; the data is rich.",
   },
 ];
 
@@ -498,26 +494,26 @@ const USE_CASES: {
 }[] = [
   {
     icon: Mail,
-    title: "The &ldquo;Is this right for me?&rdquo; link",
-    body: "A link in your nurture email that says &ldquo;Is a trust right for you?&rdquo; When they click, Leadli tags them trust-curious, sends the education video sequence, and notifies your team &mdash; before they even close the email.",
+    title: "The “Is this right for me?” link",
+    body: "A link in your nurture email that says “Is a trust right for you?” When they click, Leadli tags them trust-curious, sends the education video sequence, and notifies your team — before they even close the email.",
     trigger: "Fires the education sequence",
   },
   {
     icon: Calendar,
-    title: "The &ldquo;Book now&rdquo; link",
-    body: "A link in a follow-up text that says &ldquo;Book your free consult.&rdquo; One click opens the estate planning calendar, sends the pre-consult intake form, and drops them straight into your pipeline &mdash; no back-and-forth.",
+    title: "The “Book now” link",
+    body: "A link in a follow-up text that says “Book your free consult.” One click opens the estate planning calendar, sends the pre-consult intake form, and drops them straight into your pipeline — no back-and-forth.",
     trigger: "Opens the calendar + sends intake",
   },
   {
     icon: FileDown,
-    title: "The &ldquo;Download this&rdquo; link",
-    body: "A link on your landing page for the estate planning checklist. They click, they download, and Leadli starts the 5-part nurture sequence, tags them lead-magnet, and tells your team there&rsquo;s a new warm inbound &mdash; all from one click.",
+    title: "The “Download this” link",
+    body: "A link on your landing page for the estate planning checklist. They click, they download, and Leadli starts the 5-part nurture sequence, tags them lead-magnet, and tells your team there’s a new warm inbound — all from one click.",
     trigger: "Starts the nurture sequence",
   },
 ];
 
 const CONNECTIONS: { label: string; icon: typeof Mail }[] = [
-  { icon: Database, label: "CRM &amp; contacts" },
+  { icon: Database, label: "CRM & contacts" },
   { icon: Zap, label: "Automation builder" },
   { icon: Mail, label: "Email sequences" },
   { icon: Send, label: "SMS follow-up" },

@@ -61,7 +61,7 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Legal · Contracts &amp; e-Signatures
+              Legal · Contracts & e-Signatures
             </div>
           </div>
 
@@ -71,7 +71,7 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
             </div>
             <div>
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.1]">
-                Leadli Contracts &amp; e-Signatures
+                Leadli Contracts & e-Signatures
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
                 Send engagement letters and fee agreements for signature right inside the platform —
@@ -83,9 +83,9 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
             You had a great consult. The prospect is ready to move forward. And then the engagement
             letter sits in a separate e-signature tool, you forget to follow up, and three days
-            later they&apos;ve cooled off — or booked with someone else. Leadli sends the document
-            the moment a deal closes, files it to the client record automatically, and pings them
-            until it&apos;s signed. No separate subscription, no chasing.
+            later they've cooled off — or booked with someone else. Leadli sends the document the
+            moment a deal closes, files it to the client record automatically, and pings them until
+            it's signed. No separate subscription, no chasing.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
@@ -138,16 +138,15 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 The consult went well. The prospect said yes. Now someone has to open a separate
                 e-signature app, upload your engagement letter, type in their email, and remember to
-                follow up when they don&apos;t sign by end of day. Three days later, the document is
-                still sitting there unsigned &mdash; and the prospect who was ready to hire you has
-                either gone quiet or booked with the firm that made it easy.
+                follow up when they don't sign by end of day. Three days later, the document is
+                still sitting there unsigned — and the prospect who was ready to hire you has either
+                gone quiet or booked with the firm that made it easy.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                Leadli closes that hole. The moment a deal moves to &ldquo;send engagement
-                letter,&rdquo; the document goes out on its own &mdash; pre-filled with the
-                prospect&apos;s name, your fee, and the scope you discussed. Reminders send
-                themselves. The signed copy files back to the client record automatically. No
-                chasing, no copy-paste, no lost momentum.
+                Leadli closes that hole. The moment a deal moves to “send engagement letter,” the
+                document goes out on its own — pre-filled with the prospect's name, your fee, and
+                the scope you discussed. Reminders send themselves. The signed copy files back to
+                the client record automatically. No chasing, no copy-paste, no lost momentum.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -181,7 +180,7 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
               Trigger an engagement letter the moment a deal closes. Leadli handles the send, the
-              reminders, and the archive &mdash; without a separate e-sign login.
+              reminders, and the archive — without a separate e-sign login.
             </p>
           </div>
 
@@ -190,7 +189,7 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
             <div className="bg-[#12193b] text-white px-5 py-3 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <FileSignature className="w-4 h-4 text-amber-300" />
-                <span className="text-sm font-bold">Engagement Letters &middot; yourfirm.law</span>
+                <span className="text-sm font-bold">Engagement Letters · yourfirm.law</span>
               </div>
               <div className="flex items-center gap-3 text-xs text-slate-300">
                 <span className="hidden sm:inline-flex items-center gap-1">
@@ -324,15 +323,13 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
                 <ArrowRight className="w-3.5 h-3.5 text-slate-300" />
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-slate-100 text-slate-600 border border-slate-200">
                   <PenLine className="w-3.5 h-3.5" />
-                  Signed &amp; filed
+                  Signed & filed
                 </span>
               </div>
             </div>
 
             <div className="px-5 py-3 bg-white border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
-              <span className="font-semibold">
-                24 sent &middot; 92% signed &middot; 0 chased by hand
-              </span>
+              <span className="font-semibold">24 sent · 92% signed · 0 chased by hand</span>
               <span className="flex items-center gap-1.5">
                 <Lock className="w-3.5 h-3.5 text-emerald-600" />
                 Audit trail on every signature
@@ -350,7 +347,7 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               What you get
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              E-signature that&apos;s wired into the rest of your firm.
+              E-signature that's wired into the rest of your firm.
             </h2>
           </div>
 
@@ -383,8 +380,8 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
                   Included in Leadli
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
-                  Contracts &amp; e-signatures are part of the single platform we configure around
-                  the way your firm closes work. No extra subscription, no separate login, no
+                  Contracts & e-signatures are part of the single platform we configure around the
+                  way your firm closes work. No extra subscription, no separate login, no
                   per-document fees.
                 </p>
               </div>
@@ -409,20 +406,20 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                The document goes out the moment a deal closes &mdash; not when you remember.
+                The document goes out the moment a deal closes — not when you remember.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                Most firms lose a day or two between &ldquo;yes&rdquo; and &ldquo;signed.&rdquo;
-                Someone drafts the letter, waits for approval, logs into a separate tool, and sends
-                it when they get a spare minute. By then the prospect has cooled off. Leadli
-                triggers the send the instant the pipeline stage changes &mdash; pre-filled,
-                on-brand, and out the door before they finish thanking you.
+                Most firms lose a day or two between “yes” and “signed.” Someone drafts the letter,
+                waits for approval, logs into a separate tool, and sends it when they get a spare
+                minute. By then the prospect has cooled off. Leadli triggers the send the instant
+                the pipeline stage changes — pre-filled, on-brand, and out the door before they
+                finish thanking you.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
                   "Trigger on any pipeline stage or form submission",
                   "Pre-filled with the prospect, scope, and fee from the CRM",
-                  "Instant send &mdash; no drafting, no waiting",
+                  "Instant send — no drafting, no waiting",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -443,16 +440,16 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
                 Stop logging in to check whether they signed.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                Leadli sends the first reminder, the second, and the gentle final nudge &mdash; on a
+                Leadli sends the first reminder, the second, and the gentle final nudge — on a
                 cadence you set. The signed copy files back to the client record automatically, the
                 pipeline moves forward on its own, and the retainer invoice goes out next. You find
-                out it&apos;s done because the money shows up, not because you remembered to check.
+                out it's done because the money shows up, not because you remembered to check.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Auto-reminders on your cadence &mdash; by email and SMS",
+                  "Auto-reminders on your cadence — by email and SMS",
                   "Signed PDF auto-filed to the contact record",
-                  "Pipeline advances &amp; invoice fires without a click",
+                  "Pipeline advances & invoice fires without a click",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -476,8 +473,8 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               Every signature updates the rest of your platform.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              A signed engagement letter isn&apos;t just a document &mdash; it&apos;s a signal that
-              advances the pipeline, fires the onboarding, and sends the retainer invoice.
+              A signed engagement letter isn't just a document — it's a signal that advances the
+              pipeline, fires the onboarding, and sends the retainer invoice.
             </p>
           </div>
 
@@ -510,8 +507,8 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Contracts &amp; e-signatures are just the start. Explore the rest of what&apos;s
-              included with Leadli.
+              Contracts & e-signatures are just the start. Explore the rest of what's included with
+              Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -533,10 +530,10 @@ export function ContractsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s close the last leak.
+            Let's close the last leak.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll map how your engagement letters go out today, tell you honestly
+            30 minutes. We'll map how your engagement letters go out today, tell you honestly
             whether Leadli fits, and give you a clear estimate.
           </p>
           <button
@@ -598,42 +595,42 @@ const CONTRACT_CAPABILITIES: { title: string; body: string; icon: typeof FileSig
   {
     icon: FileSignature,
     title: "Built-in legally binding e-signature",
-    body: "Send engagement letters, fee agreements, and disclosures for signature right inside Leadli &mdash; no separate e-sign account, no per-document fees, no extra login for your client.",
+    body: "Send engagement letters, fee agreements, and disclosures for signature right inside Leadli — no separate e-sign account, no per-document fees, no extra login for your client.",
   },
   {
     icon: FileText,
     title: "Engagement letter templates",
-    body: "Start from your firm&apos;s standard engagement letter and scope language. We pre-fill the prospect&apos;s name, the fee, and the services discussed so every document goes out consistent.",
+    body: "Start from your firm's standard engagement letter and scope language. We pre-fill the prospect's name, the fee, and the services discussed so every document goes out consistent.",
   },
   {
     icon: Bell,
     title: "Automatic reminders",
-    body: "Leadli sends the nudge, the follow-up, and the final reminder on a cadence you set &mdash; by email and SMS &mdash; so you never have to log back in just to check whether they signed.",
+    body: "Leadli sends the nudge, the follow-up, and the final reminder on a cadence you set — by email and SMS — so you never have to log back in just to check whether they signed.",
   },
   {
     icon: FileCheck2,
     title: "Status tracking",
-    body: "See at a glance which letters are sent, viewed, and signed &mdash; across every matter in flight &mdash; without opening a separate dashboard or a shared spreadsheet.",
+    body: "See at a glance which letters are sent, viewed, and signed — across every matter in flight — without opening a separate dashboard or a shared spreadsheet.",
   },
   {
     icon: Archive,
     title: "Auto-filed to the client record",
-    body: "The signed PDF lands on the contact&apos;s CRM record the moment it&apos;s executed. No saving to a folder, no renaming files, no hunting for it three months later.",
+    body: "The signed PDF lands on the contact's CRM record the moment it's executed. No saving to a folder, no renaming files, no hunting for it three months later.",
   },
   {
     icon: ShieldCheck,
     title: "Full audit trail",
-    body: "Every signature carries a tamper-evident audit log &mdash; who signed, when, from what IP. The record your malpractice carrier wants to see, kept automatically.",
+    body: "Every signature carries a tamper-evident audit log — who signed, when, from what IP. The record your malpractice carrier wants to see, kept automatically.",
   },
   {
     icon: CreditCard,
     title: "Retainer invoice on signature",
-    body: "The moment the engagement letter is signed, Leadli can fire the retainer invoice and route the payment &mdash; so the deposit and the document land together.",
+    body: "The moment the engagement letter is signed, Leadli can fire the retainer invoice and route the payment — so the deposit and the document land together.",
   },
   {
     icon: Lock,
     title: "Bank-grade security",
-    body: "Encrypted in transit and at rest, with access controlled by your team&apos;s roles. Your client&apos;s sensitive documents stay inside the platform &mdash; not bouncing through email.",
+    body: "Encrypted in transit and at rest, with access controlled by your team's roles. Your client's sensitive documents stay inside the platform — not bouncing through email.",
   },
 ];
 

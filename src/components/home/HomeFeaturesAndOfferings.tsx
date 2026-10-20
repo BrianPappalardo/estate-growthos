@@ -104,7 +104,7 @@ export function PlatformFeaturesGrid() {
         </div>
 
         <p className="mt-10 text-center text-sm text-slate-500">
-          Our Consolidate &amp; Save Calculator lives on the Leadli page — coming soon. For now,{" "}
+          Our Consolidate & Save Calculator lives on the Leadli page — coming soon. For now,{" "}
           <Link
             to="/estate-planning"
             className="text-[#3344b8] font-bold hover:underline underline-offset-4"
@@ -194,7 +194,7 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>On standby for training, questions &amp; new projects</span>
+                  <span>On standby for training, questions & new projects</span>
                 </div>
               </div>
             </div>
@@ -231,7 +231,7 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
               <div className="mt-6 space-y-2.5 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Complete marketing, sales &amp; ops system built around your firm</span>
+                  <span>Complete marketing, sales & ops system built around your firm</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -239,7 +239,7 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Ongoing build, support &amp; team training</span>
+                  <span>Ongoing build, support & team training</span>
                 </div>
               </div>
             </div>
@@ -277,11 +277,11 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Unlimited contacts, pipelines &amp; users</span>
+                  <span>Unlimited contacts, pipelines & users</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>Expert support &amp; build services available hourly</span>
+                  <span>Expert support & build services available hourly</span>
                 </div>
               </div>
             </div>

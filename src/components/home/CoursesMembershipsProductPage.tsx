@@ -15,13 +15,13 @@ const content: ProductPageContent = {
   icon: GraduationCap,
   title: "Leadli Courses & Memberships",
   subtitle:
-    "Gated educational content and client libraries in one place &mdash; to educate prospects before they book and support clients after they sign.",
-  body: "Deliver on-demand video modules, resource libraries, and membership content that educate prospects before they book and support clients after they sign &mdash; all in the same platform as your CRM and marketing. A prospect watches your &ldquo;what a trust costs&rdquo; module and arrives pre-educated; a client gets a post-signing resource library. No Kajabi, no Teachable, no sending people to a third-party platform that doesn&rsquo;t know your firm.",
+    "Gated educational content and client libraries in one place — to educate prospects before they book and support clients after they sign.",
+  body: "Deliver on-demand video modules, resource libraries, and membership content that educate prospects before they book and support clients after they sign — all in the same platform as your CRM and marketing. A prospect watches your “what a trust costs” module and arrives pre-educated; a client gets a post-signing resource library. No Kajabi, no Teachable, no sending people to a third-party platform that doesn’t know your firm.",
   replaces: ["Kajabi", "Teachable", "Skool", "Separate course platforms"],
-  leakHeading: "Your educational content lives on a platform that doesn&rsquo;t know your CRM.",
+  leakHeading: "Your educational content lives on a platform that doesn’t know your CRM.",
   leakBody: [
-    "You record videos explaining what a trust is, what it costs, and who needs one &mdash; the exact education that turns a cold lead into a pre-sold client. But they live on YouTube, or Kajabi, or a separate course platform that has no idea who watched, how much they watched, or whether they booked afterward. So the content educates, but the data doesn&rsquo;t come home to your CRM.",
-    "Leadli Courses & Memberships puts that content inside your platform. A prospect&rsquo;s viewing is tracked on their CRM record, so you know they watched the pricing video before the consult. A client gets a gated resource library after signing. The content educates, and the data feeds your pipeline &mdash; all in one place.",
+    "You record videos explaining what a trust is, what it costs, and who needs one — the exact education that turns a cold lead into a pre-sold client. But they live on YouTube, or Kajabi, or a separate course platform that has no idea who watched, how much they watched, or whether they booked afterward. So the content educates, but the data doesn’t come home to your CRM.",
+    "Leadli Courses & Memberships puts that content inside your platform. A prospect’s viewing is tracked on their CRM record, so you know they watched the pricing video before the consult. A client gets a gated resource library after signing. The content educates, and the data feeds your pipeline — all in one place.",
   ],
   leakChips: [
     "Gated video modules",
@@ -31,51 +31,51 @@ const content: ProductPageContent = {
   ],
   mockupHeading: "Educational content that feeds your pipeline.",
   mockupSubhead:
-    "Gated video modules, resource libraries, and membership tiers &mdash; with viewing tracked to each contact and progress visible.",
-  whatYouGetHeading: "Content that educates and tracks &mdash; in one platform.",
+    "Gated video modules, resource libraries, and membership tiers — with viewing tracked to each contact and progress visible.",
+  whatYouGetHeading: "Content that educates and tracks — in one platform.",
   capabilities: [
     {
       icon: Video,
       title: "Gated video modules",
-      body: "Publish on-demand video courses &mdash; trust basics, pricing, what to expect &mdash; gated behind a form or a booking.",
+      body: "Publish on-demand video courses — trust basics, pricing, what to expect — gated behind a form or a booking.",
     },
     {
       icon: BookOpen,
       title: "Resource libraries",
-      body: "Give clients a gated library of guides, checklists, and templates after they sign &mdash; organized and branded to your firm.",
+      body: "Give clients a gated library of guides, checklists, and templates after they sign — organized and branded to your firm.",
     },
     {
       icon: Users,
       title: "Membership tiers",
-      body: "Offer free, paid, or client-only tiers &mdash; with access controlled by tag, stage, or purchase, all in your CRM.",
+      body: "Offer free, paid, or client-only tiers — with access controlled by tag, stage, or purchase, all in your CRM.",
     },
     {
       icon: BarChart3,
       title: "Progress tracking",
-      body: "See who watched what, how far they got, and whether they booked &mdash; tracked to the contact, not a separate platform.",
+      body: "See who watched what, how far they got, and whether they booked — tracked to the contact, not a separate platform.",
     },
     {
       icon: Lock,
       title: "Access control",
-      body: "Gate content by form submission, purchase, pipeline stage, or membership &mdash; the right people see the right content.",
+      body: "Gate content by form submission, purchase, pipeline stage, or membership — the right people see the right content.",
     },
     {
       icon: Repeat,
       title: "Feeds your pipeline",
-      body: "A prospect finishing the pricing module can trigger a consult offer automatically &mdash; the content does the selling.",
+      body: "A prospect finishing the pricing module can trigger a consult offer automatically — the content does the selling.",
     },
   ],
   useCases: [
     {
       icon: Video,
       title: "The pre-consult education",
-      body: "A prospect watches your &ldquo;what a trust costs&rdquo; module before booking. They arrive pre-educated, ready to move &mdash; and you know they watched.",
+      body: "A prospect watches your “what a trust costs” module before booking. They arrive pre-educated, ready to move — and you know they watched.",
       trigger: "Pre-sold consults",
     },
     {
       icon: BookOpen,
       title: "The post-signing library",
-      body: "After a client signs, they get a gated library of guides and checklists for their estate plan &mdash; branded, organized, and tracked.",
+      body: "After a client signs, they get a gated library of guides and checklists for their estate plan — branded, organized, and tracked.",
       trigger: "Better client support",
     },
     {
@@ -88,7 +88,7 @@ const content: ProductPageContent = {
   connections: {
     heading: "Your content connects to your contacts and your pipeline.",
     subhead:
-      "A course isn&rsquo;t a separate platform &mdash; it&rsquo;s content that educates prospects and clients, with viewing tracked to the same CRM that books and bills them.",
+      "A course isn’t a separate platform — it’s content that educates prospects and clients, with viewing tracked to the same CRM that books and bills them.",
     items: [
       { icon: Video, label: "Video modules" },
       { icon: BarChart3, label: "Viewing analytics" },
@@ -98,9 +98,9 @@ const content: ProductPageContent = {
       { icon: BookOpen, label: "Resource libraries" },
     ],
   },
-  finalCtaHeading: "Let&rsquo;s turn your content into pre-sold clients.",
+  finalCtaHeading: "Let’s turn your content into pre-sold clients.",
   finalCtaBody:
-    "30 minutes. We&rsquo;ll map the content that educates your prospects, tell you honestly whether Leadli fits, and give you a clear estimate.",
+    "30 minutes. We’ll map the content that educates your prospects, tell you honestly whether Leadli fits, and give you a clear estimate.",
   excludeFromRelated: ["courses", "communities", "webinar-funnels", "marketing", "client-portal"],
 };
 

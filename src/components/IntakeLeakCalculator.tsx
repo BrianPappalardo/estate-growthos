@@ -145,7 +145,7 @@ export function IntakeLeakCalculator({ onBookClick }: { onBookClick: () => void 
                   ~${projectedRevenue.toLocaleString()} / mo
                 </div>
                 <div className="text-[11px] text-emerald-300 mt-2">
-                  85%+ show rate • &lt;15m admin
+                  85%+ show rate • {"<15m"} admin
                 </div>
               </div>
             </div>

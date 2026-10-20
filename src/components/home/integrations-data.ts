@@ -90,42 +90,42 @@ export const INTEGRATIONS_CAPABILITIES: { title: string; body: string; icon: typ
   {
     icon: BrainCircuit,
     title: "Built-in conversation AI",
-    body: "Draft replies, summarize calls, and transcribe voicemails from the same screen as your CRM &mdash; no separate AI tab, no copy-paste, no &ldquo;as an AI&rdquo; disclaimers.",
+    body: "Draft replies, summarize calls, and transcribe voicemails from the same screen as your CRM — no separate AI tab, no copy-paste, no “as an AI” disclaimers.",
   },
   {
     icon: MessageSquare,
     title: "Smart response drafting",
-    body: "The AI reads the contact&apos;s full history &mdash; their emails, their consult notes, the stage they&apos;re in &mdash; and drafts a reply in your firm&apos;s voice. Review, tweak, send.",
+    body: "The AI reads the contact's full history — their emails, their consult notes, the stage they're in — and drafts a reply in your firm's voice. Review, tweak, send.",
   },
   {
     icon: Plug,
     title: "Native integrations",
-    body: "Connect practice management, phone, calendar, and accounting tools natively &mdash; two-way sync, not a one-way export that breaks when an API changes.",
+    body: "Connect practice management, phone, calendar, and accounting tools natively — two-way sync, not a one-way export that breaks when an API changes.",
   },
   {
     icon: Webhook,
     title: "Webhook triggers",
-    body: "Need to connect something Leadli doesn&apos;t do natively? Fire a webhook on any event &mdash; a signed matter, a booked call, a paid invoice &mdash; and we build the bridge.",
+    body: "Need to connect something Leadli doesn't do natively? Fire a webhook on any event — a signed matter, a booked call, a paid invoice — and we build the bridge.",
   },
   {
     icon: Cpu,
     title: "Call transcription",
-    body: "Inbound and outbound calls transcribe automatically, with summary notes filed to the contact record. The AI captures the next steps so you don&apos;t have to take them by hand.",
+    body: "Inbound and outbound calls transcribe automatically, with summary notes filed to the contact record. The AI captures the next steps so you don't have to take them by hand.",
   },
   {
     icon: ShieldCheck,
     title: "Your data stays in-platform",
-    body: "The AI assistant runs inside Leadli &mdash; your client conversations and contact data don&apos;t get shipped to a separate service every time you draft a reply.",
+    body: "The AI assistant runs inside Leadli — your client conversations and contact data don't get shipped to a separate service every time you draft a reply.",
   },
   {
     icon: Zap,
     title: "Automations that connect",
-    body: "Every integration pairs with the automation engine. A signed matter pushes to practice management AND fires the onboarding sequence AND sends the retainer invoice &mdash; in one step.",
+    body: "Every integration pairs with the automation engine. A signed matter pushes to practice management AND fires the onboarding sequence AND sends the retainer invoice — in one step.",
   },
   {
     icon: Bot,
     title: "We build it for you",
-    body: "You&apos;re not handed a Zapier account and told to figure it out. We configure every integration, test it, and keep it working &mdash; so it doesn&apos;t silently break six months later.",
+    body: "You're not handed a Zapier account and told to figure it out. We configure every integration, test it, and keep it working — so it doesn't silently break six months later.",
   },
 ];
 

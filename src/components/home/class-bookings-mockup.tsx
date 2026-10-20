@@ -125,12 +125,12 @@ export function ClassBookingsMockup() {
       <div className="bg-[#12193b] text-white px-5 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Users className="w-4 h-4 text-amber-300" />
-          <span className="text-sm font-bold">Leadli Events &middot; yourfirm.law</span>
+          <span className="text-sm font-bold">Leadli Events · yourfirm.law</span>
         </div>
         <div className="flex items-center gap-3 text-xs text-slate-300">
           <span className="hidden sm:inline-flex items-center gap-1">
             <RefreshCw className="w-3.5 h-3.5 text-emerald-400" />
-            Live &middot; updated just now
+            Live · updated just now
           </span>
           <span className="inline-flex items-center gap-1 text-emerald-400 font-bold">
             <ShieldCheck className="w-3.5 h-3.5" />
@@ -187,7 +187,7 @@ export function ClassBookingsMockup() {
               <div className="text-[11px] text-slate-500 font-semibold flex items-center gap-1.5">
                 <Calendar className="w-3.5 h-3.5" />
                 {event.date}
-                <span className="text-slate-300">&middot;</span>
+                <span className="text-slate-300">·</span>
                 <span className="capitalize">{event.format}</span>
               </div>
             </div>
@@ -223,7 +223,7 @@ export function ClassBookingsMockup() {
               {isFull ? (
                 <span className="inline-flex items-center gap-1 text-amber-700">
                   <AlertCircle className="w-3 h-3" />
-                  At capacity &mdash; waitlist open
+                  At capacity — waitlist open
                 </span>
               ) : (
                 <span className="inline-flex items-center gap-1 text-emerald-700">
@@ -244,8 +244,7 @@ export function ClassBookingsMockup() {
             <div className="text-[10px] font-bold text-slate-500 leading-relaxed">
               {event.waitlist > 0 ? (
                 <span>
-                  Auto-promoted when a seat opens &mdash; first come, first seated, no manual
-                  juggling.
+                  Auto-promoted when a seat opens — first come, first seated, no manual juggling.
                 </span>
               ) : (
                 <span className="text-emerald-700 inline-flex items-center gap-1">
@@ -366,11 +365,11 @@ export function ClassBookingsMockup() {
       {/* Footer */}
       <div className="px-5 py-3 bg-white border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
         <span className="font-semibold">
-          {event.registered} registered &middot; {event.waitlist} waitlist &middot; {event.label}
+          {event.registered} registered · {event.waitlist} waitlist · {event.label}
         </span>
         <span className="inline-flex items-center gap-1.5 text-emerald-600 font-bold">
           <CheckCircle2 className="w-3.5 h-3.5" />
-          Every registrant &rarr; CRM, tagged by event
+          Every registrant → CRM, tagged by event
         </span>
       </div>
     </div>

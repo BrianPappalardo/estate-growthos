@@ -128,7 +128,7 @@ function GrowthOSLandingPage() {
             <div className="bg-white/80 p-3.5 rounded-xl border border-slate-200 text-center shadow-xs">
               <div className="text-xs text-slate-500 font-semibold uppercase">Admin Time/Lead</div>
               <div className="text-xl sm:text-2xl font-extrabold text-[#f97316] mt-0.5">
-                &lt; 15 Mins
+                {"< 15 Mins"}
               </div>
               <div className="text-[11px] text-slate-500">vs 3+ hrs manual</div>
             </div>

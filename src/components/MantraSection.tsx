@@ -65,7 +65,7 @@ export function MantraSection() {
                 <span className="w-7 h-7 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-xs shrink-0">
                   3
                 </span>
-                <span>Email &amp; Text Marketing</span>
+                <span>Email & Text Marketing</span>
               </div>
 
               {/* Item 4 */}

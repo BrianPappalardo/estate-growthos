@@ -55,7 +55,7 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Marketing &middot; Social Media Scheduler
+              Marketing · Social Media Scheduler
             </div>
           </div>
 
@@ -68,33 +68,30 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
                 Leadli Social Planner
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
-                Plan, draft, and publish across every platform from one content calendar &mdash;
-                without a separate scheduling tool.
+                Plan, draft, and publish across every platform from one content calendar — without a
+                separate scheduling tool.
               </p>
             </div>
           </div>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
-            Stop logging into five different apps to post the same thing. Leadli&apos;s Social
-            Planner lets you draft once, schedule across Instagram, Facebook, and LinkedIn, preview
-            your grid, recycle your best content, and track engagement &mdash; all tied straight to
-            your CRM so you know which prospects are paying attention.
+            Stop logging into five different apps to post the same thing. Leadli's Social Planner
+            lets you draft once, schedule across Instagram, Facebook, and LinkedIn, preview your
+            grid, recycle your best content, and track engagement — all tied straight to your CRM so
+            you know which prospects are paying attention.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
             <span className="font-bold uppercase tracking-wider text-slate-400">Replaces:</span>
-            {[
-              "Buffer",
-              "Hootsuite",
-              "Later",
-              "The post-it note reminder to &lsquo;post something&rsquo;",
-            ].map((name) => (
-              <span
-                key={name}
-                className="px-3 py-1 rounded-full bg-white/10 border border-white/15 text-slate-200 font-semibold line-through decoration-rose-400/60"
-                dangerouslySetInnerHTML={{ __html: name }}
-              />
-            ))}
+            {["Buffer", "Hootsuite", "Later", "The post-it note reminder to ‘post something’"].map(
+              (name) => (
+                <span
+                  key={name}
+                  className="px-3 py-1 rounded-full bg-white/10 border border-white/15 text-slate-200 font-semibold line-through decoration-rose-400/60"
+                  dangerouslySetInnerHTML={{ __html: name }}
+                />
+              ),
+            )}
           </div>
 
           <div className="mt-9 flex flex-col sm:flex-row items-start gap-4">
@@ -128,17 +125,16 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
             <div className="lg:col-span-7 space-y-5">
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 You open Buffer for Instagram, switch to Hootsuite for LinkedIn, remember you forgot
-                Facebook, and give up. Or you batch a week of content on Sunday &mdash; then the
-                next deadline eats your Monday and it&apos;s Thursday before anyone notices the
-                silence. The engagement you worked for dies because you can&apos;t keep up the
-                cadence across five logins.
+                Facebook, and give up. Or you batch a week of content on Sunday — then the next
+                deadline eats your Monday and it's Thursday before anyone notices the silence. The
+                engagement you worked for dies because you can't keep up the cadence across five
+                logins.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                Leadli&apos;s Social Planner fixes that. One calendar. Every platform. Draft once,
+                Leadli's Social Planner fixes that. One calendar. Every platform. Draft once,
                 schedule it across Instagram, Facebook, and LinkedIn in a click. Preview the grid
-                before it goes live. Set your best posts to recycle automatically. And track
-                who&apos;s engaging &mdash; right inside the same CRM that already knows your
-                prospects.
+                before it goes live. Set your best posts to recycle automatically. And track who's
+                engaging — right inside the same CRM that already knows your prospects.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -189,7 +185,7 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
               What you get
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              A social presence that runs on a schedule &mdash; not on willpower.
+              A social presence that runs on a schedule — not on willpower.
             </h2>
           </div>
 
@@ -223,8 +219,8 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
                   Social scheduling is part of the single platform we configure around how your firm
-                  runs &mdash; not a separate scheduling tool with its own login, its own queue, and
-                  its own monthly bill. No extra subscription, no per-account fee.
+                  runs — not a separate scheduling tool with its own login, its own queue, and its
+                  own monthly bill. No extra subscription, no per-account fee.
                 </p>
               </div>
               <div className="flex items-baseline gap-2 shrink-0">
@@ -253,8 +249,8 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 Write your caption once, attach your image, and schedule it across Instagram,
                 Facebook, and LinkedIn from a single drag-and-drop calendar. See the whole month at
-                a glance, move posts by dragging them, and know exactly what&apos;s going out and
-                when &mdash; without ever opening a separate scheduling app.
+                a glance, move posts by dragging them, and know exactly what's going out and when —
+                without ever opening a separate scheduling app.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
@@ -279,13 +275,13 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                Your best content keeps working while you&apos;re in a deposition.
+                Your best content keeps working while you're in a deposition.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 Drop your top-performing posts into a content library and set them to recycle on a
-                schedule &mdash; weekly, monthly, or on a custom cadence. Your evergreen educational
-                content keeps showing up in prospects&apos; feeds even when you&apos;re buried in
-                client work. No more &ldquo;we haven&apos;t posted in three weeks.&rdquo;
+                schedule — weekly, monthly, or on a custom cadence. Your evergreen educational
+                content keeps showing up in prospects' feeds even when you're buried in client work.
+                No more “we haven't posted in three weeks.”
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
@@ -316,7 +312,7 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
               Three cadences. Three audiences. One calendar.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              The social content estate planners already mean to post &mdash; now it runs itself.
+              The social content estate planners already mean to post — now it runs itself.
             </p>
           </div>
 
@@ -357,8 +353,8 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
               Every post ripples through the rest of your platform.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              No exports, no copy-paste, no &ldquo;is this the same person?&rdquo; The prospect who
-              likes your post is the same contact your pipeline and sequences already know.
+              No exports, no copy-paste, no “is this the same person?” The prospect who likes your
+              post is the same contact your pipeline and sequences already know.
             </p>
           </div>
 
@@ -391,8 +387,7 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Social scheduling is just the start. Explore the rest of what&apos;s included with
-              Leadli.
+              Social scheduling is just the start. Explore the rest of what's included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -423,11 +418,11 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s get your social on a schedule.
+            Let's get your social on a schedule.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll map the platforms you&apos;re juggling today, tell you honestly
-            whether Leadli fits, and give you a clear estimate.
+            30 minutes. We'll map the platforms you're juggling today, tell you honestly whether
+            Leadli fits, and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}
@@ -446,7 +441,7 @@ const CAPABILITIES: { title: string; body: string; icon: typeof Zap }[] = [
   {
     icon: LayoutGrid,
     title: "Multi-platform calendar",
-    body: "Drag-and-drop your posts across a monthly calendar and publish to Instagram, Facebook, and LinkedIn from one view &mdash; no separate app for each platform.",
+    body: "Drag-and-drop your posts across a monthly calendar and publish to Instagram, Facebook, and LinkedIn from one view — no separate app for each platform.",
   },
   {
     icon: ImageIcon,
@@ -456,7 +451,7 @@ const CAPABILITIES: { title: string; body: string; icon: typeof Zap }[] = [
   {
     icon: Clock,
     title: "Auto-publishing",
-    body: "Set the date and time and Leadli publishes it for you &mdash; no reminders, no &ldquo;I&apos;ll do it in a minute,&rdquo; no missed posts while you&apos;re in a consult.",
+    body: "Set the date and time and Leadli publishes it for you — no reminders, no “I'll do it in a minute,” no missed posts while you're in a consult.",
   },
   {
     icon: Repeat,
@@ -466,21 +461,21 @@ const CAPABILITIES: { title: string; body: string; icon: typeof Zap }[] = [
   {
     icon: BarChart3,
     title: "Engagement analytics",
-    body: "See likes, comments, and shares per post &mdash; and know which prospects are engaging &mdash; without opening a separate analytics dashboard.",
+    body: "See likes, comments, and shares per post — and know which prospects are engaging — without opening a separate analytics dashboard.",
   },
   {
     icon: Hash,
-    title: "Hashtag &amp; caption management",
-    body: "Save hashtag groups, reuse captions, and keep your brand voice consistent across every post &mdash; without starting from scratch every time.",
+    title: "Hashtag & caption management",
+    body: "Save hashtag groups, reuse captions, and keep your brand voice consistent across every post — without starting from scratch every time.",
   },
   {
     icon: MessageSquare,
     title: "Two-way messaging",
-    body: "When someone DMs your page, the conversation lands in your unified inbox &mdash; right next to their CRM record and your other messages.",
+    body: "When someone DMs your page, the conversation lands in your unified inbox — right next to their CRM record and your other messages.",
   },
   {
     icon: Send,
-    title: "Reels &amp; story scheduling",
+    title: "Reels & story scheduling",
     body: "Plan short-form content alongside your feed posts. Schedule stories and reels so your presence stays active even on the busy weeks.",
   },
 ];
@@ -494,19 +489,19 @@ const USE_CASES: {
   {
     icon: BarChart3,
     title: "Weekly thought leadership",
-    body: "A Tuesday &amp; Thursday cadence of estate planning tips, industry takes, and client wins. Draft the whole week on Monday, set it to auto-publish, and forget about it while you draft documents.",
+    body: "A Tuesday & Thursday cadence of estate planning tips, industry takes, and client wins. Draft the whole week on Monday, set it to auto-publish, and forget about it while you draft documents.",
     trigger: "Keeps your name top-of-mind",
   },
   {
     icon: Repeat,
     title: "Evergreen content recycling",
-    body: "Your &ldquo;5 signs your estate plan is outdated&rdquo; post doesn&apos;t expire. Set it to recycle monthly so new followers see it &mdash; without you rewriting it every time.",
+    body: "Your “5 signs your estate plan is outdated” post doesn't expire. Set it to recycle monthly so new followers see it — without you rewriting it every time.",
     trigger: "Your best content keeps working",
   },
   {
     icon: Calendar,
-    title: "Webinar &amp; event promotion",
-    body: "Promote your next Trusts 101 webinar across every platform on a countdown schedule &mdash; registration, reminders, and &ldquo;last chance&rdquo; posts &mdash; all automated from one calendar.",
+    title: "Webinar & event promotion",
+    body: "Promote your next Trusts 101 webinar across every platform on a countdown schedule — registration, reminders, and “last chance” posts — all automated from one calendar.",
     trigger: "Fills your webinar pipeline",
   },
 ];
@@ -516,6 +511,6 @@ const CONNECTIONS: { label: string; icon: typeof Heart }[] = [
   { icon: Zap, label: "Automation builder" },
   { icon: Hash, label: "Trigger links" },
   { icon: Calendar, label: "Consult calendars" },
-  { icon: BarChart3, label: "Analytics &amp; reports" },
+  { icon: BarChart3, label: "Analytics & reports" },
   { icon: Heart, label: "Pipeline engagement" },
 ];

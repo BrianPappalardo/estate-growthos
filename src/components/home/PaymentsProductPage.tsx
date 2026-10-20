@@ -63,7 +63,7 @@ export function PaymentsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
             <div className="flex flex-wrap items-center gap-2">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
                 <Sparkles className="w-4 h-4 text-amber-400" />
-                Payments &amp; Commerce
+                Payments & Commerce
               </div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 text-[10px] font-extrabold tracking-wider uppercase">
                 <Landmark className="w-3.5 h-3.5" />
@@ -88,11 +88,11 @@ export function PaymentsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
           </div>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
-            We&apos;re official Confido Legal partners, so Leadli Payments handles the easy stuff
-            and the hard stuff. A flat retainer into a single operating account? Easy. Splitting
-            earned fees from trust funds, routing by product or service, appointment type, or CRM
-            data on a contact? We do that too. Want to pass through the credit card processing fee?
-            One toggle.
+            We're official Confido Legal partners, so Leadli Payments handles the easy stuff and the
+            hard stuff. A flat retainer into a single operating account? Easy. Splitting earned fees
+            from trust funds, routing by product or service, appointment type, or CRM data on a
+            contact? We do that too. Want to pass through the credit card processing fee? One
+            toggle.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
@@ -149,10 +149,10 @@ export function PaymentsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
                 the wrong account.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                For estate planners, the stakes are higher: IOLTA trust accounting mistakes
-                aren&apos;t just annoying, they&apos;re an ethical violation. Leadli Payments puts
-                earned fees and trust funds in one system with rules that route every dollar to the
-                right account — automatically, and audit-ready.
+                For estate planners, the stakes are higher: IOLTA trust accounting mistakes aren't
+                just annoying, they're an ethical violation. Leadli Payments puts earned fees and
+                trust funds in one system with rules that route every dollar to the right account —
+                automatically, and audit-ready.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -372,7 +372,7 @@ export function PaymentsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
               What you get
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              Payments that flex to your firm&apos;s actual bookkeeping.
+              Payments that flex to your firm's actual bookkeeping.
             </h2>
           </div>
 
@@ -406,7 +406,7 @@ export function PaymentsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
                   Leadli Payments is included for every customer at no additional fee. Confido Legal
-                  payment processing fees still apply — that&apos;s it.
+                  payment processing fees still apply — that's it.
                 </p>
               </div>
               <div className="flex items-baseline gap-2 shrink-0">
@@ -442,8 +442,8 @@ export function PaymentsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
                 <p className="mt-4 text-sm sm:text-base text-slate-700 leading-relaxed">
                   Some firms have one bank account and want everything to land there. Easy. Others
                   juggle multiple accounts and have to route trust funds separately based on what
-                  was purchased, what appointment it was, or what&apos;s in a contact&apos;s CRM
-                  record. We handle all of it.
+                  was purchased, what appointment it was, or what's in a contact's CRM record. We
+                  handle all of it.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
                   {["1 account or 12", "IOLTA trust-ready", "Pass-through fees"].map((item) => (
@@ -461,7 +461,7 @@ export function PaymentsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
               {/* Right: what we route by */}
               <div className="lg:col-span-7 p-8 sm:p-10">
                 <div className="text-xs font-extrabold uppercase tracking-wider text-amber-800 mb-5">
-                  Route funds by&hellip;
+                  Route funds by…
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {ROUTING_RULES.map((rule) => {
@@ -503,8 +503,8 @@ export function PaymentsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
               Every payment updates the rest of your platform.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              A payment isn&apos;t just money in the bank — it&apos;s a signal that fires
-              automations, updates the CRM, and moves the pipeline forward.
+              A payment isn't just money in the bank — it's a signal that fires automations, updates
+              the CRM, and moves the pipeline forward.
             </p>
           </div>
 
@@ -537,7 +537,7 @@ export function PaymentsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Payments are just one piece. Explore the rest of what&apos;s included with Leadli.
+              Payments are just one piece. Explore the rest of what's included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -559,11 +559,11 @@ export function PaymentsProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s see how your money flows.
+            Let's see how your money flows.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll map out your accounts, your trust routing, and your fee structure
-            — and tell you honestly whether Leadli Payments fits.
+            30 minutes. We'll map out your accounts, your trust routing, and your fee structure —
+            and tell you honestly whether Leadli Payments fits.
           </p>
           <button
             onClick={onOpenDiscovery}

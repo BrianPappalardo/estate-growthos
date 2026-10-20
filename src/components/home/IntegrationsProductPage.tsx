@@ -64,7 +64,7 @@ export function IntegrationsProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Platform · Integrations &amp; AI Tools
+              Platform · Integrations & AI Tools
             </div>
           </div>
 
@@ -74,11 +74,11 @@ export function IntegrationsProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
             </div>
             <div>
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.1]">
-                Leadli Integrations &amp; AI Tools
+                Leadli Integrations & AI Tools
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
-                A built-in AI assistant and clean integrations with the tools you can&apos;t live
-                without &mdash; so your firm runs in one place, not seven.
+                A built-in AI assistant and clean integrations with the tools you can't live without
+                — so your firm runs in one place, not seven.
               </p>
             </div>
           </div>
@@ -133,20 +133,20 @@ export function IntegrationsProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
                 The leak
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-4 tracking-tight leading-tight">
-                Your tools don&apos;t talk to each other. So you pay three times for the same work.
+                Your tools don't talk to each other. So you pay three times for the same work.
               </h2>
             </div>
             <div className="lg:col-span-7 space-y-5">
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 A prospect emails a question. You draft a reply in one tab, paste it into another,
-                and remember to log it in a third. Meanwhile you&apos;re paying for a transcription
-                tool, a separate AI subscription, and a Zapier plan that breaks every time one of
-                them updates their API. Every handoff is another chance to lose a thread &mdash; and
-                another monthly bill for software that only does one thing.
+                and remember to log it in a third. Meanwhile you're paying for a transcription tool,
+                a separate AI subscription, and a Zapier plan that breaks every time one of them
+                updates their API. Every handoff is another chance to lose a thread — and another
+                monthly bill for software that only does one thing.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Leadli pulls the AI assistant and the integrations inside the same platform as your
-                CRM, your calendar, and your inbox. The AI drafts the reply from the contact&apos;s
+                CRM, your calendar, and your inbox. The AI drafts the reply from the contact's
                 history. The integration pushes the signed matter into your practice management
                 software automatically. One login, one bill, and nothing falls through the cracks
                 between them.
@@ -179,7 +179,7 @@ export function IntegrationsProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
               One platform, one AI, every connection
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              The assistant that knows your firm &mdash; and the tools it talks to.
+              The assistant that knows your firm — and the tools it talks to.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
               Switch between the built-in AI assistant and the integrations that connect your
@@ -191,9 +191,7 @@ export function IntegrationsProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
             <div className="bg-[#12193b] text-white px-5 py-3 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Layers className="w-4 h-4 text-amber-300" />
-                <span className="text-sm font-bold">
-                  Integrations &amp; AI &middot; yourfirm.law
-                </span>
+                <span className="text-sm font-bold">Integrations & AI · yourfirm.law</span>
               </div>
               <div className="flex items-center gap-3 text-xs text-slate-300">
                 <span className="hidden sm:inline-flex items-center gap-1">
@@ -324,21 +322,19 @@ export function IntegrationsProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                Draft replies, transcribe calls, and summarize matters &mdash; without leaving the
-                CRM.
+                Draft replies, transcribe calls, and summarize matters — without leaving the CRM.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                The built-in conversation AI reads the contact&apos;s history &mdash; their emails,
-                their consult notes, the stage they&apos;re in &mdash; and drafts a reply that
-                actually sounds like you wrote it. Review it, tweak it, and send it from the same
-                screen. No pasting into a separate chat window, no &ldquo;as an AI&rdquo;
-                disclaimers, no third tab.
+                The built-in conversation AI reads the contact's history — their emails, their
+                consult notes, the stage they're in — and drafts a reply that actually sounds like
+                you wrote it. Review it, tweak it, and send it from the same screen. No pasting into
+                a separate chat window, no “as an AI” disclaimers, no third tab.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
                   "Smart reply drafts from the full contact history",
                   "Call transcription and summary notes auto-filed",
-                  "Message tone in your firm&apos;s voice, not a robot&apos;s",
+                  "Message tone in your firm's voice, not a robot's",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -359,15 +355,15 @@ export function IntegrationsProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
                 Connect your practice management, phone, and calendar without a Zapier plan.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                Leadli talks to the tools you already run on &mdash; natively, two-way, and without
-                a middleman that breaks every time an API changes. A signed matter pushes into your
+                Leadli talks to the tools you already run on — natively, two-way, and without a
+                middleman that breaks every time an API changes. A signed matter pushes into your
                 practice management software automatically. A booked consult shows on your phone
                 system. A paid invoice updates your accounting tool. One platform, zero glue.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Native two-way sync &mdash; not one-way export",
-                  "Webhook triggers for anything Leadli doesn&apos;t do natively",
+                  "Native two-way sync — not one-way export",
+                  "Webhook triggers for anything Leadli doesn't do natively",
                   "We build the connection for you, so it stays working",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
@@ -392,7 +388,7 @@ export function IntegrationsProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
               Every integration updates the rest of your platform.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              A signed matter, a booked call, a paid invoice &mdash; each one ripples through every
+              A signed matter, a booked call, a paid invoice — each one ripples through every
               connected tool without you touching it.
             </p>
           </div>
@@ -426,8 +422,8 @@ export function IntegrationsProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Integrations &amp; AI Tools are just the start. Explore the rest of what&apos;s
-              included with Leadli.
+              Integrations & AI Tools are just the start. Explore the rest of what's included with
+              Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -449,11 +445,11 @@ export function IntegrationsProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s connect your firm to one platform.
+            Let's connect your firm to one platform.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll map the tools you run on today, tell you honestly which ones
-            Leadli can replace, and give you a clear estimate.
+            30 minutes. We'll map the tools you run on today, tell you honestly which ones Leadli
+            can replace, and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}
@@ -543,7 +539,7 @@ function AiAssistantMockup() {
           })}
           <div className="pt-2 flex items-center gap-2 text-[10px] font-bold text-emerald-700">
             <CheckCircle2 className="w-3.5 h-3.5" />
-            Reply sent from the same screen &mdash; no copy-paste
+            Reply sent from the same screen — no copy-paste
           </div>
         </div>
       </div>

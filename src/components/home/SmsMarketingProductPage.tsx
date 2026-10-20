@@ -59,7 +59,7 @@ export function SmsMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Marketing &middot; SMS Marketing
+              Marketing · SMS Marketing
             </div>
           </div>
 
@@ -72,18 +72,17 @@ export function SmsMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
                 Leadli SMS Marketing
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
-                Two-way text conversations and bulk campaigns that live inside your CRM &mdash; not
-                in a separate app your team forgets to check.
+                Two-way text conversations and bulk campaigns that live inside your CRM — not in a
+                separate app your team forgets to check.
               </p>
             </div>
           </div>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
             Text the way your clients already communicate. Reply one-on-one from a unified inbox
-            tied to each contact&rsquo;s pipeline stage, or blast a campaign to a Smart List with
-            delivery tracking, auto opt-outs, and replies that land right back in the conversation
-            thread. One platform, one flat rate &mdash; no separate texting app, no per-message
-            surprise.
+            tied to each contact’s pipeline stage, or blast a campaign to a Smart List with delivery
+            tracking, auto opt-outs, and replies that land right back in the conversation thread.
+            One platform, one flat rate — no separate texting app, no per-message surprise.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
@@ -92,7 +91,7 @@ export function SmsMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
               "EZTexting",
               "SimpleTexting",
               "Podium",
-              "The &lsquo;I&rsquo;ll just text them from my cell&rsquo; habit",
+              "The ‘I’ll just text them from my cell’ habit",
             ].map((name) => (
               <span
                 key={name}
@@ -127,25 +126,25 @@ export function SmsMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
                 The leak
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-4 tracking-tight leading-tight">
-                Your leads text back. Your separate texting app doesn&rsquo;t tell your CRM.
+                Your leads text back. Your separate texting app doesn’t tell your CRM.
               </h2>
             </div>
             <div className="lg:col-span-7 space-y-5">
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                Someone fills out your form and gets an automated text &mdash; great. They reply
-                with a question, and it lands in EZTexting, or Podium, or your personal phone. Your
-                CRM doesn&rsquo;t know it happened. Your pipeline still says &ldquo;new
-                inquiry&rdquo; while your prospect is two texts away from booking. Or you pay for a
-                bulk texting tool and a separate conversation tool and a separate inbox, and somehow
-                the right message still goes to the wrong person.
+                Someone fills out your form and gets an automated text — great. They reply with a
+                question, and it lands in EZTexting, or Podium, or your personal phone. Your CRM
+                doesn’t know it happened. Your pipeline still says “new inquiry” while your prospect
+                is two texts away from booking. Or you pay for a bulk texting tool and a separate
+                conversation tool and a separate inbox, and somehow the right message still goes to
+                the wrong person.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Leadli SMS fixes that by putting both 1-to-1 conversations and 1-to-many campaigns
-                inside the same CRM that already knows your contact&rsquo;s name, stage, and
-                history. A reply to a campaign lands in the same thread as your one-on-one texts
-                &mdash; tied to the contact, not to a phone number in a separate app. Opt-outs are
-                handled automatically, reminders fire on schedule, and every message shows up in the
-                pipeline the moment it&rsquo;s sent.
+                inside the same CRM that already knows your contact’s name, stage, and history. A
+                reply to a campaign lands in the same thread as your one-on-one texts — tied to the
+                contact, not to a phone number in a separate app. Opt-outs are handled
+                automatically, reminders fire on schedule, and every message shows up in the
+                pipeline the moment it’s sent.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -230,8 +229,8 @@ export function SmsMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
                   SMS marketing is part of the single platform we configure around how your firm
-                  runs &mdash; not a separate texting app with its own login, its own per-message
-                  pricing, and its own disconnected list. One inbox, one rate, one place where every
+                  runs — not a separate texting app with its own login, its own per-message pricing,
+                  and its own disconnected list. One inbox, one rate, one place where every
                   conversation lives.
                 </p>
               </div>
@@ -260,17 +259,16 @@ export function SmsMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 When Sarah replies to your automated text, her message lands in the same thread
-                that&rsquo;s tied to her CRM record &mdash; right next to her pipeline stage, the
-                form she filled out, and the email she opened yesterday. Your intake coordinator
-                sees it in the inbox; you see it in the pipeline. Nobody&rsquo;s checking a separate
-                phone or a separate app, and nobody&rsquo;s asking &ldquo;wait, which contact is
-                this?&rdquo;
+                that’s tied to her CRM record — right next to her pipeline stage, the form she
+                filled out, and the email she opened yesterday. Your intake coordinator sees it in
+                the inbox; you see it in the pipeline. Nobody’s checking a separate phone or a
+                separate app, and nobody’s asking “wait, which contact is this?”
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Every conversation tied to the contact&rsquo;s CRM record",
+                  "Every conversation tied to the contact’s CRM record",
                   "Pipeline stage, notes, and history sit next to the thread",
-                  "Team assignment &mdash; anyone on your team can reply",
+                  "Team assignment — anyone on your team can reply",
                   "Read receipts and delivery status on every message",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
@@ -294,16 +292,16 @@ export function SmsMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 Build a Smart List of past clients whose trust is over three years old, write one
                 message, and send it to all of them at once. Leadli tracks how many were delivered,
-                how many replied, and how many opted out &mdash; and every reply drops back into a
-                1-to-1 thread tied to that contact. So when 34 people text back &ldquo;YES,&rdquo;
-                they&rsquo;re already in your pipeline, ready for a consult link.
+                how many replied, and how many opted out — and every reply drops back into a 1-to-1
+                thread tied to that contact. So when 34 people text back “YES,” they’re already in
+                your pipeline, ready for a consult link.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Send to any Smart List &mdash; contacts, opportunities, or custom objects",
+                  "Send to any Smart List — contacts, opportunities, or custom objects",
                   "Delivery, reply, and opt-out analytics per campaign",
                   "Replies route back to 1-to-1 threads automatically",
-                  "STOP and opt-out handled &mdash; compliance without the spreadsheet",
+                  "STOP and opt-out handled — compliance without the spreadsheet",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -327,8 +325,8 @@ export function SmsMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
               Three campaigns. Three moments. One inbox.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              The texts estate planners already know they need &mdash; now they run themselves and
-              the replies come home.
+              The texts estate planners already know they need — now they run themselves and the
+              replies come home.
             </p>
           </div>
 
@@ -371,14 +369,13 @@ export function SmsMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
                   Compliance, built in
                 </div>
                 <h3 className="text-xl sm:text-2xl font-black text-[#12193b] tracking-tight">
-                  Opt-outs, STOP handling, and consent tracking &mdash; handled.
+                  Opt-outs, STOP handling, and consent tracking — handled.
                 </h3>
                 <p className="mt-3 text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Every campaign respects opt-outs automatically. When someone replies STOP,
-                  they&rsquo;re removed from your future sends without a manual step. We track
-                  consent at the contact level, so you know who said yes before you ever text them
-                  &mdash; and your team isn&rsquo;t maintaining a separate compliance spreadsheet on
-                  the side.
+                  Every campaign respects opt-outs automatically. When someone replies STOP, they’re
+                  removed from your future sends without a manual step. We track consent at the
+                  contact level, so you know who said yes before you ever text them — and your team
+                  isn’t maintaining a separate compliance spreadsheet on the side.
                 </p>
                 <div className="mt-5 flex flex-wrap gap-2.5">
                   {[
@@ -416,9 +413,9 @@ export function SmsMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
               Every text ripples through the rest of your platform.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              No exports, no copy-paste, no &ldquo;is this the same person?&rdquo; The contact who
-              replies to your campaign is the same contact your pipeline, calendars, and email
-              sequences already know.
+              No exports, no copy-paste, no “is this the same person?” The contact who replies to
+              your campaign is the same contact your pipeline, calendars, and email sequences
+              already know.
             </p>
           </div>
 
@@ -451,8 +448,7 @@ export function SmsMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              SMS marketing is just the start. Explore the rest of what&rsquo;s included with
-              Leadli.
+              SMS marketing is just the start. Explore the rest of what’s included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -483,11 +479,11 @@ export function SmsMarketingProductPage({ onOpenDiscovery }: { onOpenDiscovery: 
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&rsquo;s get your texts landing in the right inbox.
+            Let’s get your texts landing in the right inbox.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&rsquo;ll map the texts you&rsquo;re sending by hand today, tell you
-            honestly whether Leadli fits, and give you a clear estimate.
+            30 minutes. We’ll map the texts you’re sending by hand today, tell you honestly whether
+            Leadli fits, and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}
@@ -506,42 +502,42 @@ const CAPABILITIES: { title: string; body: string; icon: typeof Zap }[] = [
   {
     icon: MessageSquare,
     title: "Two-way conversations",
-    body: "Reply 1-to-1 from a unified inbox tied to each contact&rsquo;s CRM record &mdash; no separate texting app, no lost context.",
+    body: "Reply 1-to-1 from a unified inbox tied to each contact’s CRM record — no separate texting app, no lost context.",
   },
   {
     icon: Send,
     title: "Bulk campaigns",
-    body: "Send one message to a Smart List of hundreds &mdash; with delivery tracking, reply analytics, and replies routed back to individual threads.",
+    body: "Send one message to a Smart List of hundreds — with delivery tracking, reply analytics, and replies routed back to individual threads.",
   },
   {
     icon: Users,
     title: "Smart List targeting",
-    body: "Text a segment built from any CRM field &mdash; pipeline stage, last consult date, practice area, or a custom tag you define.",
+    body: "Text a segment built from any CRM field — pipeline stage, last consult date, practice area, or a custom tag you define.",
   },
   {
     icon: Bell,
     title: "Automated reminders",
-    body: "Fires a text reminder before a consult, after a form submit, or on any CRM trigger &mdash; without a Zapier glue layer or a manual nudge.",
+    body: "Fires a text reminder before a consult, after a form submit, or on any CRM trigger — without a Zapier glue layer or a manual nudge.",
   },
   {
     icon: Ban,
     title: "Opt-out & STOP handling",
-    body: "A reply of STOP removes the contact from future sends automatically. Consent is tracked at the contact level &mdash; no separate compliance sheet.",
+    body: "A reply of STOP removes the contact from future sends automatically. Consent is tracked at the contact level — no separate compliance sheet.",
   },
   {
     icon: Repeat,
     title: "Drip & scheduled sends",
-    body: "Schedule a campaign for later or build a multi-step SMS drip that runs for every new inquiry &mdash; same builder, same CRM, same inbox.",
+    body: "Schedule a campaign for later or build a multi-step SMS drip that runs for every new inquiry — same builder, same CRM, same inbox.",
   },
   {
     icon: MessageCircle,
     title: "Reply analytics",
-    body: "See who replied, who went quiet, and who opted out &mdash; per campaign and per contact &mdash; right inside the pipeline.",
+    body: "See who replied, who went quiet, and who opted out — per campaign and per contact — right inside the pipeline.",
   },
   {
     icon: Clock,
     title: "Quiet hours & scheduling",
-    body: "Respect business hours and time zones automatically. Messages queue and send when it&rsquo;s appropriate &mdash; not at 11 PM.",
+    body: "Respect business hours and time zones automatically. Messages queue and send when it’s appropriate — not at 11 PM.",
   },
 ];
 
@@ -554,28 +550,28 @@ const USE_CASES: {
   {
     icon: Bell,
     title: "The consult reminder",
-    body: "Two hours before the call, a text fires automatically: &ldquo;Hi Sarah, looking forward to our 2pm. Here&rsquo;s the link.&rdquo; Show rates go up, no-shows go down, and nobody&rsquo;s sending it by hand.",
+    body: "Two hours before the call, a text fires automatically: “Hi Sarah, looking forward to our 2pm. Here’s the link.” Show rates go up, no-shows go down, and nobody’s sending it by hand.",
     trigger: "Cuts your no-show rate",
   },
   {
     icon: Send,
     title: "The past-client revival",
-    body: "A Smart List of clients whose trust is 3+ years old. One bulk text: &ldquo;Time for a review?&rdquo; The replies land in 1-to-1 threads, already in your pipeline &mdash; ready to book.",
+    body: "A Smart List of clients whose trust is 3+ years old. One bulk text: “Time for a review?” The replies land in 1-to-1 threads, already in your pipeline — ready to book.",
     trigger: "Wakes up dormant revenue",
   },
   {
     icon: MessageSquare,
     title: "The new-inquiry nudge",
-    body: "Someone fills out your form. A text goes out in seconds &mdash; not Thursday. They reply, the thread starts, the pipeline updates. The lead that went cold on Tuesday doesn&rsquo;t go cold anymore.",
+    body: "Someone fills out your form. A text goes out in seconds — not Thursday. They reply, the thread starts, the pipeline updates. The lead that went cold on Tuesday doesn’t go cold anymore.",
     trigger: "Turns inquiries into calls",
   },
 ];
 
 const CONNECTIONS: { label: string; icon: typeof Heart }[] = [
-  { icon: Users, label: "Smart Lists &amp; segments" },
+  { icon: Users, label: "Smart Lists & segments" },
   { icon: Zap, label: "Automation builder" },
   { icon: Calendar, label: "Consult calendars" },
-  { icon: BarChart3, label: "Pipeline &amp; reports" },
+  { icon: BarChart3, label: "Pipeline & reports" },
   { icon: MessageSquare, label: "Unified inbox" },
   { icon: Send, label: "Email follow-up" },
 ];

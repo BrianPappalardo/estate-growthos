@@ -411,12 +411,12 @@ export function LeadliBuildRoadmap({ onOpenDiscovery }: { onOpenDiscovery: () =>
             The Build Roadmap
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] mt-3 tracking-tight">
-            What&apos;s live, and what&apos;s coming next.
+            What's live, and what's coming next.
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600">
-            We&apos;re building Leadli out feature by feature — one dedicated page at a time.
-            Here&apos;s what&apos;s fully built today and what&apos;s on deck. Every feature is
-            included at one flat $199/mo rate.
+            We're building Leadli out feature by feature — one dedicated page at a time. Here's
+            what's fully built today and what's on deck. Every feature is included at one flat
+            $199/mo rate.
           </p>
         </div>
 
@@ -512,8 +512,7 @@ export function LeadliBuildRoadmap({ onOpenDiscovery }: { onOpenDiscovery: () =>
             <ArrowRight className="w-5 h-5" />
           </button>
           <p className="mt-3 text-xs text-slate-500">
-            Don&apos;t see your feature? Ask us on the call — odds are it&apos;s already on the
-            roadmap.
+            Don't see your feature? Ask us on the call — odds are it's already on the roadmap.
           </p>
         </div>
       </div>

@@ -54,7 +54,7 @@ export function SmartListsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Operations &middot; Smart Lists &amp; Segments
+              Operations · Smart Lists & Segments
             </div>
           </div>
 
@@ -64,11 +64,11 @@ export function SmartListsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
             </div>
             <div>
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.1]">
-                Leadli Smart Lists &amp; Segments
+                Leadli Smart Lists & Segments
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
-                Organize ALL your data in your CRM &mdash; contacts, opportunities, custom objects,
-                and projects &mdash; in lists that keep themselves current.
+                Organize ALL your data in your CRM — contacts, opportunities, custom objects, and
+                projects — in lists that keep themselves current.
               </p>
             </div>
           </div>
@@ -122,23 +122,22 @@ export function SmartListsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
                 The leak
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-4 tracking-tight leading-tight">
-                Your lists rot the moment you export them &mdash; so you keep scrubbing the same
-                data over and over.
+                Your lists rot the moment you export them — so you keep scrubbing the same data over
+                and over.
               </h2>
             </div>
             <div className="lg:col-span-7 space-y-5">
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                You need every estate planning prospect who&apos;s reached consult but hasn&apos;t
-                signed. So someone exports the CRM, drops it in a spreadsheet, filters by stage, and
-                mails it off. By the time the campaign sends, three of those prospects have signed,
-                two have ghosted, and one never should have been on the list at all.
+                You need every estate planning prospect who's reached consult but hasn't signed. So
+                someone exports the CRM, drops it in a spreadsheet, filters by stage, and mails it
+                off. By the time the campaign sends, three of those prospects have signed, two have
+                ghosted, and one never should have been on the list at all.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                Leadli Smart Lists don&apos;t export. They read the live data &mdash; contacts,
-                opportunities, custom objects, and projects &mdash; and they update themselves the
-                instant anything changes. The list you send to on Monday morning is the same list
-                you send to on Friday at 5, because it&apos;s never a snapshot. It&apos;s a living
-                segment.
+                Leadli Smart Lists don't export. They read the live data — contacts, opportunities,
+                custom objects, and projects — and they update themselves the instant anything
+                changes. The list you send to on Monday morning is the same list you send to on
+                Friday at 5, because it's never a snapshot. It's a living segment.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -172,7 +171,7 @@ export function SmartListsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
               Switch the entity to see how the same rules organize contacts, opportunities, custom
-              objects, and projects &mdash; all living, all auto-updating, all inside Leadli.
+              objects, and projects — all living, all auto-updating, all inside Leadli.
             </p>
           </div>
 
@@ -188,7 +187,7 @@ export function SmartListsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
               What you get
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              Segments wired into the rest of your firm &mdash; not sitting next to it.
+              Segments wired into the rest of your firm — not sitting next to it.
             </h2>
           </div>
 
@@ -222,8 +221,8 @@ export function SmartListsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
                   Smart Lists are part of the single platform we configure around how your firm runs
-                  &mdash; not a separate export tool you have to remember to run. No extra
-                  subscription, no spreadsheet to babysit.
+                  — not a separate export tool you have to remember to run. No extra subscription,
+                  no spreadsheet to babysit.
                 </p>
               </div>
               <div className="flex items-baseline gap-2 shrink-0">
@@ -247,20 +246,20 @@ export function SmartListsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                Organize contacts, opportunities, custom objects, and projects &mdash; the same way.
+                Organize contacts, opportunities, custom objects, and projects — the same way.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                A Smart List isn&apos;t just for contacts. Build a segment of every open estate
-                planning opportunity above $3,000. A segment of every custom funding checklist
-                that&apos;s stalled. A segment of every project in the Estate Planning space marked
-                high priority. One builder, four kinds of data, one living list each.
+                A Smart List isn't just for contacts. Build a segment of every open estate planning
+                opportunity above $3,000. A segment of every custom funding checklist that's
+                stalled. A segment of every project in the Estate Planning space marked high
+                priority. One builder, four kinds of data, one living list each.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Contacts &mdash; by tag, stage, field, or behavior",
-                  "Opportunities &mdash; by pipeline, stage, and value",
-                  "Custom objects &mdash; by type, status, and field",
-                  "Projects &mdash; by space, status, and custom field",
+                  "Contacts — by tag, stage, field, or behavior",
+                  "Opportunities — by pipeline, stage, and value",
+                  "Custom objects — by type, status, and field",
+                  "Projects — by space, status, and custom field",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -278,21 +277,20 @@ export function SmartListsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                The list you send to is the list that&apos;s true right now &mdash; not last
-                Tuesday.
+                The list you send to is the list that's true right now — not last Tuesday.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 Define the rules once. A prospect signs? They leave the list. A deal moves to
                 engagement sent? It joins the list. A custom field changes? The segment reshuffles
-                itself. No one exports, no one scrubs, no one sends to a list that&apos;s been
-                quietly wrong for a week.
+                itself. No one exports, no one scrubs, no one sends to a list that's been quietly
+                wrong for a week.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
                   "Rules re-evaluate on every record change",
                   "Add or remove a rule and the list reshuffles instantly",
-                  "One segment feeds email, SMS, and workflows &mdash; one source of truth",
-                  "No CSV exports, no re-uploads, no &ldquo;wait, that list is old&rdquo;",
+                  "One segment feeds email, SMS, and workflows — one source of truth",
+                  "No CSV exports, no re-uploads, no “wait, that list is old”",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -316,9 +314,8 @@ export function SmartListsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
               Your segments know what the rest of your platform knows.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              No exports, no copy-paste, no &ldquo;does this match the CRM?&rdquo; The list reads
-              the same data your contacts, deals, and payments run through &mdash; so it&apos;s
-              always right.
+              No exports, no copy-paste, no “does this match the CRM?” The list reads the same data
+              your contacts, deals, and payments run through — so it's always right.
             </p>
           </div>
 
@@ -351,7 +348,7 @@ export function SmartListsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Smart Lists are just the start. Explore the rest of what&apos;s included with Leadli.
+              Smart Lists are just the start. Explore the rest of what's included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -382,11 +379,11 @@ export function SmartListsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s organize every record in your firm.
+            Let's organize every record in your firm.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll look at how you segment your data today, tell you honestly
-            whether Leadli fits, and give you a clear estimate.
+            30 minutes. We'll look at how you segment your data today, tell you honestly whether
+            Leadli fits, and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}
@@ -405,42 +402,42 @@ const SMARTLIST_CAPABILITIES: { title: string; body: string; icon: typeof ListFi
   {
     icon: Users,
     title: "Segments for contacts",
-    body: "Build a list of every estate planning prospect at consult, every elder law intake this month, or every client due for an annual review &mdash; defined once, maintained forever.",
+    body: "Build a list of every estate planning prospect at consult, every elder law intake this month, or every client due for an annual review — defined once, maintained forever.",
   },
   {
     icon: GitBranch,
     title: "Segments for opportunities",
-    body: "Pull every open deal above $3,000, every probate matter in the creditor period, or every opportunity that&apos;s sat idle for nine days &mdash; straight off the live pipeline.",
+    body: "Pull every open deal above $3,000, every probate matter in the creditor period, or every opportunity that's sat idle for nine days — straight off the live pipeline.",
   },
   {
     icon: Database,
     title: "Segments for custom objects",
-    body: "Organize the records that aren&apos;t contacts or deals &mdash; funding checklists, review cycles, custom workflows &mdash; with the same rules and the same auto-updating logic.",
+    body: "Organize the records that aren't contacts or deals — funding checklists, review cycles, custom workflows — with the same rules and the same auto-updating logic.",
   },
   {
     icon: ListTodo,
     title: "Segments for projects",
-    body: "List every high-priority task in your Estate Planning space, every matter that&apos;s stalled in drafting, or every project due this week &mdash; reading the same board your team works from.",
+    body: "List every high-priority task in your Estate Planning space, every matter that's stalled in drafting, or every project due this week — reading the same board your team works from.",
   },
   {
     icon: RefreshCw,
     title: "Auto-updating rules",
-    body: "A prospect signs and leaves the list. A deal moves up in value and joins it. The segment re-evaluates on every change &mdash; no one touches it, no one breaks it.",
+    body: "A prospect signs and leaves the list. A deal moves up in value and joins it. The segment re-evaluates on every change — no one touches it, no one breaks it.",
   },
   {
     icon: Tag,
-    title: "Tag, field &amp; behavior rules",
-    body: "Filter by any tag, any custom field, any stage, or any behavior (watched the pricing video, opened the last email). Combine rules with and / or logic &mdash; your words, not a template&apos;s.",
+    title: "Tag, field & behavior rules",
+    body: "Filter by any tag, any custom field, any stage, or any behavior (watched the pricing video, opened the last email). Combine rules with and / or logic — your words, not a template's.",
   },
   {
     icon: Zap,
     title: "One list, every channel",
-    body: "Drop a Smart List into an email campaign, an SMS blast, or a workflow trigger. One segment feeds every channel &mdash; one source of truth, no re-uploading between tools.",
+    body: "Drop a Smart List into an email campaign, an SMS blast, or a workflow trigger. One segment feeds every channel — one source of truth, no re-uploading between tools.",
   },
   {
     icon: Layers,
-    title: "Saved, shared &amp; reusable",
-    body: "Save a segment once and reuse it across campaigns, dashboards, and automations. Share it with your team so everyone works off the same live list &mdash; not their own private export.",
+    title: "Saved, shared & reusable",
+    body: "Save a segment once and reuse it across campaigns, dashboards, and automations. Share it with your team so everyone works off the same live list — not their own private export.",
   },
 ];
 

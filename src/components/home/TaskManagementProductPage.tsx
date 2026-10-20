@@ -56,7 +56,7 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Operations &middot; Project Management
+              Operations · Project Management
             </div>
           </div>
 
@@ -69,19 +69,19 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
                 Leadli Project Management
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
-                Spaces, folders, and custom task statuses &mdash; tied to your contacts and deals,
-                not stranded in a separate to-do app.
+                Spaces, folders, and custom task statuses — tied to your contacts and deals, not
+                stranded in a separate to-do app.
               </p>
             </div>
           </div>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
             Most firms run their work in a project tool that has no idea who the contact is, where
-            the deal stands, or what just got signed. Leadli&apos;s project management lives inside
-            the same platform as your CRM and your pipeline &mdash; so a task is attached to the
-            person it&apos;s for, the deal it&apos;s part of, and the automation that created it.
-            Create a space for every practice area, a folder for every matter, and custom statuses
-            and fields that match how your team actually moves work.
+            the deal stands, or what just got signed. Leadli's project management lives inside the
+            same platform as your CRM and your pipeline — so a task is attached to the person it's
+            for, the deal it's part of, and the automation that created it. Create a space for every
+            practice area, a folder for every matter, and custom statuses and fields that match how
+            your team actually moves work.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
@@ -121,22 +121,22 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
                 The leak
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-4 tracking-tight leading-tight">
-                Your tasks live in a tool that doesn&apos;t know who the work is for &mdash; or
-                where the deal stands.
+                Your tasks live in a tool that doesn't know who the work is for — or where the deal
+                stands.
               </h2>
             </div>
             <div className="lg:col-span-7 space-y-5">
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 You run a matter in Asana. The client is in your CRM. The deal is on a pipeline
-                board. The signed engagement letter is in an email thread. So someone&apos;s job is
-                to keep four tabs in sync &mdash; and that someone is usually you, at 9 p.m.,
-                retracing what already happened.
+                board. The signed engagement letter is in an email thread. So someone's job is to
+                keep four tabs in sync — and that someone is usually you, at 9 p.m., retracing what
+                already happened.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Leadli puts the task next to the contact, the deal, and the signed document. A task
                 created when a stage changes, attached to the prospect it belongs to, checked off
-                when the next step fires &mdash; one record, one place, one less thing to keep in
-                your head. No one retypes a name. No one loses the thread.
+                when the next step fires — one record, one place, one less thing to keep in your
+                head. No one retypes a name. No one loses the thread.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -170,9 +170,9 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
               between.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Switch the view to see your work the way that fits &mdash; a Kanban board for the
-              team, a list for the intake coordinator, custom statuses that match how you move a
-              matter. All inside Leadli.
+              Switch the view to see your work the way that fits — a Kanban board for the team, a
+              list for the intake coordinator, custom statuses that match how you move a matter. All
+              inside Leadli.
             </p>
           </div>
 
@@ -188,7 +188,7 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
               What you get
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              Project management wired into the rest of your firm &mdash; not sitting next to it.
+              Project management wired into the rest of your firm — not sitting next to it.
             </h2>
           </div>
 
@@ -222,7 +222,7 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
                   Project management is part of the single platform we configure around how your
-                  firm runs &mdash; not a separate Asana plan you have to remember to open. No extra
+                  firm runs — not a separate Asana plan you have to remember to open. No extra
                   subscription, no per-seat bill, no spreadsheet to babysit.
                 </p>
               </div>
@@ -242,22 +242,20 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
             <div>
               <div className="inline-flex items-center gap-2 text-[#3344b8] mb-3">
                 <FolderKanban className="w-5 h-5" />
-                <span className="text-xs font-bold uppercase tracking-wider">
-                  Spaces &amp; folders
-                </span>
+                <span className="text-xs font-bold uppercase tracking-wider">Spaces & folders</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                A space for every practice area &mdash; and a folder for every matter inside it.
+                A space for every practice area — and a folder for every matter inside it.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                Estate planning, probate, elder law &mdash; each gets its own space. Inside it, a
-                folder for the Henderson trust, the Martinez probate, the Sutton Medicaid matter.
-                Tasks live where the work lives, grouped the way your firm thinks about it, not the
-                way someone else&apos;s template decided you should.
+                Estate planning, probate, elder law — each gets its own space. Inside it, a folder
+                for the Henderson trust, the Martinez probate, the Sutton Medicaid matter. Tasks
+                live where the work lives, grouped the way your firm thinks about it, not the way
+                someone else's template decided you should.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Unlimited spaces &mdash; one per practice area",
+                  "Unlimited spaces — one per practice area",
                   "Nested folders for every matter",
                   "Move work between spaces without losing the thread",
                   "Permissions per space so the right people see the right work",
@@ -274,22 +272,21 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
               <div className="inline-flex items-center gap-2 text-[#3344b8] mb-3">
                 <Tag className="w-5 h-5" />
                 <span className="text-xs font-bold uppercase tracking-wider">
-                  Custom statuses &amp; fields
+                  Custom statuses & fields
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                Statuses and fields that match your workflow &mdash; not a template&apos;s.
+                Statuses and fields that match your workflow — not a template's.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                A matter doesn&apos;t move from &ldquo;To Do&rdquo; to &ldquo;Done.&rdquo; It moves
-                from &ldquo;Intake&rdquo; to &ldquo;Drafting&rdquo; to &ldquo;Review&rdquo; to
-                &ldquo;Execution&rdquo; to &ldquo;Funded.&rdquo; We build the statuses that match
-                the way you actually work &mdash; and the custom fields (priority, responsible
-                attorney, statute date) that make a task actually useful.
+                A matter doesn't move from “To Do” to “Done.” It moves from “Intake” to “Drafting”
+                to “Review” to “Execution” to “Funded.” We build the statuses that match the way you
+                actually work — and the custom fields (priority, responsible attorney, statute date)
+                that make a task actually useful.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Custom statuses per space &mdash; your words, not &ldquo;done&rdquo;",
+                  "Custom statuses per space — your words, not “done”",
                   "Custom fields: priority, owner, due date, and anything else",
                   "Color-coded by status so the board reads at a glance",
                   "Change a field and trigger the next automation",
@@ -316,8 +313,8 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
               Kanban for the team. List for the coordinator. More views on the way.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Same tasks, same data &mdash; the view that fits the person looking at it. Drag a card
-              or check a row; the record underneath doesn&apos;t move.
+              Same tasks, same data — the view that fits the person looking at it. Drag a card or
+              check a row; the record underneath doesn't move.
             </p>
           </div>
 
@@ -343,7 +340,7 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
                 <h3 className="font-black text-base text-[#12193b]">List view</h3>
               </div>
               <p className="text-sm text-slate-600 leading-relaxed">
-                Sort, filter, and check off a row. The intake coordinator lives in the list &mdash;
+                Sort, filter, and check off a row. The intake coordinator lives in the list —
                 everything assigned to them, ordered by due date, with the custom fields that matter
                 right there in the columns.
               </p>
@@ -353,7 +350,7 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5">
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold">
               <Clock className="w-3.5 h-3.5" />
-              Calendar &amp; timeline views coming soon
+              Calendar & timeline views coming soon
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#3344b8] text-xs font-bold">
               <Zap className="w-3.5 h-3.5" />
@@ -374,9 +371,8 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
               Your tasks know what the rest of your platform knows.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              No exports, no copy-paste, no &ldquo;does this match the CRM?&rdquo; The task reads
-              the same data your contacts, deals, and payments run through &mdash; so it&apos;s
-              always right.
+              No exports, no copy-paste, no “does this match the CRM?” The task reads the same data
+              your contacts, deals, and payments run through — so it's always right.
             </p>
           </div>
 
@@ -409,8 +405,7 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Project management is just the start. Explore the rest of what&apos;s included with
-              Leadli.
+              Project management is just the start. Explore the rest of what's included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -441,11 +436,11 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s get your whole team on one board.
+            Let's get your whole team on one board.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll map how your firm tracks work today, tell you honestly whether
-            Leadli fits, and give you a clear estimate.
+            30 minutes. We'll map how your firm tracks work today, tell you honestly whether Leadli
+            fits, and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}
@@ -463,13 +458,13 @@ export function TaskManagementProductPage({ onOpenDiscovery }: { onOpenDiscovery
 const PROJECT_CAPABILITIES: { title: string; body: string; icon: typeof ListTodo }[] = [
   {
     icon: FolderKanban,
-    title: "Spaces &amp; folders",
-    body: "Create a space for every practice area and a folder for every matter inside it. Tasks live where the work lives &mdash; grouped the way your firm thinks, not the way a template decided.",
+    title: "Spaces & folders",
+    body: "Create a space for every practice area and a folder for every matter inside it. Tasks live where the work lives — grouped the way your firm thinks, not the way a template decided.",
   },
   {
     icon: Tag,
-    title: "Custom statuses &amp; fields",
-    body: "Build the statuses that match how a matter actually moves &mdash; Intake, Drafting, Review, Execution, Funded &mdash; and the custom fields (priority, owner, statute date) that make a task useful.",
+    title: "Custom statuses & fields",
+    body: "Build the statuses that match how a matter actually moves — Intake, Drafting, Review, Execution, Funded — and the custom fields (priority, owner, statute date) that make a task useful.",
   },
   {
     icon: KanbanSquare,
@@ -479,27 +474,27 @@ const PROJECT_CAPABILITIES: { title: string; body: string; icon: typeof ListTodo
   {
     icon: ListChecks,
     title: "List view",
-    body: "Sort, filter, and check off a row. The intake coordinator lives in the list &mdash; everything assigned to them, ordered by due date, with the custom fields right in the columns.",
+    body: "Sort, filter, and check off a row. The intake coordinator lives in the list — everything assigned to them, ordered by due date, with the custom fields right in the columns.",
   },
   {
     icon: Zap,
     title: "Tasks created by automations",
-    body: "A deal hits &ldquo;engagement sent&rdquo; and a task to file the trust appears &mdash; assigned to the paralegal, due in three days. The work shows up because the status changed, not because someone remembered.",
+    body: "A deal hits “engagement sent” and a task to file the trust appears — assigned to the paralegal, due in three days. The work shows up because the status changed, not because someone remembered.",
   },
   {
     icon: Database,
     title: "One record, every view",
-    body: "The task is tied to the same contact record as the emails, the calls, and the signed matter. Drag a card and the whole history moves with it &mdash; nothing orphaned, nothing lost.",
+    body: "The task is tied to the same contact record as the emails, the calls, and the signed matter. Drag a card and the whole history moves with it — nothing orphaned, nothing lost.",
   },
   {
     icon: Users,
-    title: "Team assignment &amp; views",
+    title: "Team assignment & views",
     body: "Assign tasks to the right person and filter the board by owner. A coordinator sees their queue; a partner sees the whole firm. Everyone works off the same board.",
   },
   {
     icon: Clock,
-    title: "Due dates &amp; reminders",
-    body: "Every task has a due date, and Leadli reminds the owner before it slips &mdash; not after. A statute deadline approaching? The responsible attorney sees it before it&apos;s a problem.",
+    title: "Due dates & reminders",
+    body: "Every task has a due date, and Leadli reminds the owner before it slips — not after. A statute deadline approaching? The responsible attorney sees it before it's a problem.",
   },
 ];
 

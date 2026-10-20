@@ -63,7 +63,7 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Insights &middot; Reporting &amp; Analytics
+              Insights · Reporting & Analytics
             </div>
           </div>
 
@@ -73,10 +73,10 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
             </div>
             <div>
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.1]">
-                Leadli Reporting &amp; Analytics
+                Leadli Reporting & Analytics
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
-                See exactly where leads leak and where revenue lands &mdash; in real time, from one
+                See exactly where leads leak and where revenue lands — in real time, from one
                 dashboard.
               </p>
             </div>
@@ -84,11 +84,11 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
             You know your show rate is bad because someone mentioned it at a partner meeting. You
-            know your average case value is slipping because your bank deposits don&apos;t match
-            your caseload. But nobody has time to pull the numbers, reconcile four tools, and build
-            a spreadsheet that&apos;s outdated the moment it&apos;s saved. Leadli pulls it all from
-            the same platform &mdash; pipeline, show rates, campaign ROI, and revenue &mdash; so the
-            numbers are already waiting for you, every morning.
+            know your average case value is slipping because your bank deposits don't match your
+            caseload. But nobody has time to pull the numbers, reconcile four tools, and build a
+            spreadsheet that's outdated the moment it's saved. Leadli pulls it all from the same
+            platform — pipeline, show rates, campaign ROI, and revenue — so the numbers are already
+            waiting for you, every morning.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
@@ -134,24 +134,23 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
                 The leak
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-4 tracking-tight leading-tight">
-                You can&apos;t plug a hole you can&apos;t see &mdash; and you can&apos;t see
-                anything in four tools that don&apos;t talk.
+                You can't plug a hole you can't see — and you can't see anything in four tools that
+                don't talk.
               </h2>
             </div>
             <div className="lg:col-span-7 space-y-5">
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Your leads live in the CRM. Your show rate is a calendar export. Your ad spend is in
                 a Facebook dashboard. Your revenue is in your practice management software. To
-                answer one question &mdash; &ldquo;where is my money leaking?&rdquo; &mdash; someone
-                has to export four reports, paste them into a spreadsheet, and massage the dates
-                until the numbers line up. By the time it&apos;s done, it&apos;s last month&apos;s
-                news.
+                answer one question — “where is my money leaking?” — someone has to export four
+                reports, paste them into a spreadsheet, and massage the dates until the numbers line
+                up. By the time it's done, it's last month's news.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Leadli closes that hole. Every metric lives in the same platform your leads, calls,
-                and payments run through &mdash; so show rate, pipeline value, cost per lead, and
-                revenue update in real time. No exports. No reconciliation. No guessing. The number
-                you want is on the dashboard before you even think to ask for it.
+                and payments run through — so show rate, pipeline value, cost per lead, and revenue
+                update in real time. No exports. No reconciliation. No guessing. The number you want
+                is on the dashboard before you even think to ask for it.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
@@ -181,12 +180,11 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               Insights on autopilot
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              The dashboard that tells you where the money&apos;s leaking &mdash; before it&apos;s
-              gone.
+              The dashboard that tells you where the money's leaking — before it's gone.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Show rates, pipeline value, cost per lead, and revenue &mdash; pulled live from the
-              same platform your firm runs on. No exports, no copy-paste, no stale numbers.
+              Show rates, pipeline value, cost per lead, and revenue — pulled live from the same
+              platform your firm runs on. No exports, no copy-paste, no stale numbers.
             </p>
           </div>
 
@@ -195,12 +193,12 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
             <div className="bg-[#12193b] text-white px-5 py-3 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <BarChart3 className="w-4 h-4 text-amber-300" />
-                <span className="text-sm font-bold">Firm Dashboard &middot; yourfirm.law</span>
+                <span className="text-sm font-bold">Firm Dashboard · yourfirm.law</span>
               </div>
               <div className="flex items-center gap-3 text-xs text-slate-300">
                 <span className="hidden sm:inline-flex items-center gap-1">
                   <RefreshCw className="w-3.5 h-3.5 text-emerald-400" />
-                  Live &middot; updated just now
+                  Live · updated just now
                 </span>
                 <span className="inline-flex items-center gap-1 text-emerald-400 font-bold">
                   <ShieldCheck className="w-3.5 h-3.5" />
@@ -293,7 +291,7 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
                         <div className="flex items-center justify-between text-xs mb-1">
                           <span className="font-bold text-slate-700">{stage.label}</span>
                           <span className="text-slate-500 font-medium">
-                            {stage.count} &middot; {stage.pct}%
+                            {stage.count} · {stage.pct}%
                           </span>
                         </div>
                         <div className="h-2 rounded-full bg-slate-100 overflow-hidden">
@@ -338,7 +336,7 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               <div className="mt-5 flex flex-wrap items-center gap-2 text-[11px] font-bold">
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-rose-50 text-rose-700 border border-rose-200">
                   <AlertCircle className="w-3.5 h-3.5" />
-                  Leak detected: form &rarr; call drop-off
+                  Leak detected: form → call drop-off
                 </span>
                 <ArrowRight className="w-3.5 h-3.5 text-slate-300" />
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-blue-50 text-[#3344b8] border border-blue-200">
@@ -354,9 +352,7 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
             </div>
 
             <div className="px-5 py-3 bg-white border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
-              <span className="font-semibold">
-                4 KPIs &middot; 1 funnel &middot; 0 spreadsheets
-              </span>
+              <span className="font-semibold">4 KPIs · 1 funnel · 0 spreadsheets</span>
               <span className="flex items-center gap-1.5">
                 <Clock className="w-3.5 h-3.5 text-emerald-600" />
                 Updated in real time, not month-end
@@ -374,7 +370,7 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               What you get
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              Reporting that&apos;s wired into the work your firm actually does.
+              Reporting that's wired into the work your firm actually does.
             </h2>
           </div>
 
@@ -407,9 +403,9 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
                   Included in Leadli
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
-                  Reporting &amp; analytics are part of the single platform we configure around how
-                  your firm runs. No extra subscription, no separate analytics login, no per-seat
-                  fee for the partner who only wants the numbers.
+                  Reporting & analytics are part of the single platform we configure around how your
+                  firm runs. No extra subscription, no separate analytics login, no per-seat fee for
+                  the partner who only wants the numbers.
                 </p>
               </div>
               <div className="flex items-baseline gap-2 shrink-0">
@@ -436,14 +432,14 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
                 The number you want is on the dashboard before you ask for it.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                Most firms run on month-end rollups &mdash; a snapshot of last month, delivered
-                three weeks late. By the time you see a drop-off, the leads that caused it are long
-                gone. Leadli pulls every metric from the platform your firm runs on, in real time.
-                Show rate dips on a Tuesday and you know about it on Tuesday.
+                Most firms run on month-end rollups — a snapshot of last month, delivered three
+                weeks late. By the time you see a drop-off, the leads that caused it are long gone.
+                Leadli pulls every metric from the platform your firm runs on, in real time. Show
+                rate dips on a Tuesday and you know about it on Tuesday.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Live KPIs &mdash; show rate, pipeline, revenue, cost per lead",
+                  "Live KPIs — show rate, pipeline, revenue, cost per lead",
                   "No exports to reconcile, no dates to line up",
                   "Trend arrows so you spot the leak the day it starts",
                 ].map((item) => (
@@ -463,17 +459,17 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                The metrics that matter to your firm &mdash; not the ones a template decided on.
+                The metrics that matter to your firm — not the ones a template decided on.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
                 Drag the widgets you actually check to the top, hide the noise, and save the view. A
                 partner sees revenue and pipeline. An intake coordinator sees show rate and
-                follow-up. You define what &ldquo;matters&rdquo; means &mdash; we don&apos;t bend
-                your reporting around someone else&apos;s idea of it.
+                follow-up. You define what “matters” means — we don't bend your reporting around
+                someone else's idea of it.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  "Drag-and-drop widgets &mdash; build your own view",
+                  "Drag-and-drop widgets — build your own view",
                   "Saved personal dashboards per team member",
                   "Custom metrics from anywhere in the platform",
                 ].map((item) => (
@@ -500,7 +496,7 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
               No Zapier glue, no export-and-paste. The dashboard reads the same data your leads,
-              calls, and payments run through &mdash; so it&apos;s always right.
+              calls, and payments run through — so it's always right.
             </p>
           </div>
 
@@ -533,8 +529,8 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Reporting &amp; analytics are just the start. Explore the rest of what&apos;s included
-              with Leadli.
+              Reporting & analytics are just the start. Explore the rest of what's included with
+              Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -556,10 +552,10 @@ export function ReportingProductPage({ onOpenDiscovery }: { onOpenDiscovery: () 
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s see where the money&apos;s leaking.
+            Let's see where the money's leaking.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll map how your firm tracks results today, tell you honestly whether
+            30 minutes. We'll map how your firm tracks results today, tell you honestly whether
             Leadli fits, and give you a clear estimate.
           </p>
           <button
@@ -593,42 +589,42 @@ const REPORTING_CAPABILITIES: { title: string; body: string; icon: typeof BarCha
   {
     icon: BarChart3,
     title: "Real-time dashboards",
-    body: "Show rate, pipeline value, cost per lead, and revenue &mdash; pulled live from the platform your firm runs on. No exports, no reconciliation, no month-end snapshots that are already stale.",
+    body: "Show rate, pipeline value, cost per lead, and revenue — pulled live from the platform your firm runs on. No exports, no reconciliation, no month-end snapshots that are already stale.",
   },
   {
     icon: LayoutDashboard,
     title: "Custom dashboards",
-    body: "Drag the widgets you actually check to the top, hide the noise, and save the view. Build one for a partner, one for an intake coordinator &mdash; everyone sees what matters to them.",
+    body: "Drag the widgets you actually check to the top, hide the noise, and save the view. Build one for a partner, one for an intake coordinator — everyone sees what matters to them.",
   },
   {
     icon: Activity,
-    title: "Pipeline &amp; revenue reporting",
-    body: "Track every lead from first inquiry to signed engagement &mdash; where they came in, where they stalled, and what they were worth when they closed. The funnel, visualized without a spreadsheet.",
+    title: "Pipeline & revenue reporting",
+    body: "Track every lead from first inquiry to signed engagement — where they came in, where they stalled, and what they were worth when they closed. The funnel, visualized without a spreadsheet.",
   },
   {
     icon: Target,
     title: "Campaign performance tracking",
-    body: "See exactly which campaigns turn into consults and which turn into revenue &mdash; not just clicks. Know your cost per lead and cost per signed client by source, so you spend where it works.",
+    body: "See exactly which campaigns turn into consults and which turn into revenue — not just clicks. Know your cost per lead and cost per signed client by source, so you spend where it works.",
   },
   {
     icon: TrendingDown,
     title: "Leak detection",
-    body: "Leadli flags the drop-off the day it starts &mdash; a form-to-call gap, a no-show spike, a stalled stage &mdash; so you fix the hole before a month&apos;s worth of leads slips through it.",
+    body: "Leadli flags the drop-off the day it starts — a form-to-call gap, a no-show spike, a stalled stage — so you fix the hole before a month's worth of leads slips through it.",
   },
   {
     icon: TrendingUp,
     title: "Goal & KPI tracking",
-    body: "Set the targets that matter &mdash; show rate, average case value, new clients a month &mdash; and watch your progress update in real time. No quarter-end scramble to see how you did.",
+    body: "Set the targets that matter — show rate, average case value, new clients a month — and watch your progress update in real time. No quarter-end scramble to see how you did.",
   },
   {
     icon: Eye,
     title: "Lead attribution",
-    body: "Know where every lead came from and what it was worth &mdash; down to the campaign, the ad, and the keyword. Stop paying for traffic that never becomes a client and double down on what does.",
+    body: "Know where every lead came from and what it was worth — down to the campaign, the ad, and the keyword. Stop paying for traffic that never becomes a client and double down on what does.",
   },
   {
     icon: RefreshCw,
     title: "Scheduled reporting",
-    body: "Want a weekly digest in your inbox Monday morning? A monthly rollup for the partners? Set it once and forget it &mdash; the report builds itself and lands where you want it, every time.",
+    body: "Want a weekly digest in your inbox Monday morning? A monthly rollup for the partners? Set it once and forget it — the report builds itself and lands where you want it, every time.",
   },
 ];
 

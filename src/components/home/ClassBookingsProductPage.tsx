@@ -61,7 +61,7 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs font-extrabold tracking-wide uppercase">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              Scheduling &middot; Class Bookings
+              Scheduling · Class Bookings
             </div>
           </div>
 
@@ -74,19 +74,19 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
                 Leadli Class Bookings
               </h1>
               <p className="mt-4 text-lg sm:text-2xl text-slate-200 max-w-3xl leading-relaxed font-semibold">
-                Register attendees for seminars, webinars, and workshops in one flow &mdash; with
+                Register attendees for seminars, webinars, and workshops in one flow — with
                 capacity, waitlists, reminders, and follow-up that run themselves.
               </p>
             </div>
           </div>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-3xl leading-relaxed">
-            A seminar is one of the highest-ROI things your firm can run &mdash; a room full of
-            people who already raised their hand. But most firms run it on a separate tool that
-            emails a confirmation and stops there. Leadli puts the whole event on the same platform
-            as your CRM, your calendars, and your follow-up &mdash; so every registrant lands in
-            your pipeline, every reminder fires on its own, and the morning after the seminar, the
-            consult-booking sequence is already running.
+            A seminar is one of the highest-ROI things your firm can run — a room full of people who
+            already raised their hand. But most firms run it on a separate tool that emails a
+            confirmation and stops there. Leadli puts the whole event on the same platform as your
+            CRM, your calendars, and your follow-up — so every registrant lands in your pipeline,
+            every reminder fires on its own, and the morning after the seminar, the consult-booking
+            sequence is already running.
           </p>
 
           <div className="mt-7 inline-flex flex-wrap items-center gap-2 text-xs">
@@ -95,7 +95,7 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
               "Eventbrite",
               "Zoom webinar registration",
               "RSVP spreadsheets",
-              "The &ldquo;did anyone follow up?&rdquo; email",
+              "The “did anyone follow up?” email",
             ].map((name) => (
               <span
                 key={name}
@@ -138,20 +138,20 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
                 You promote an estate planning seminar. People register on Eventbrite. The list
                 lives in Eventbrite. Your leads live in your CRM. Reminders go out manually, if
                 anyone remembers. The waitlist is a separate email thread. The day-of check-in is a
-                clipboard at the door. And the morning after &mdash; when every attendee is warmest
-                &mdash; nobody knows who showed up, who watched the replay, or who&rsquo;s ready to
-                book a consult.
+                clipboard at the door. And the morning after — when every attendee is warmest —
+                nobody knows who showed up, who watched the replay, or who’s ready to book a
+                consult.
               </p>
               <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
                 Leadli closes the loop. Registration lives on your site, capacity is enforced, the
                 waitlist auto-promotes, reminders fire on their own, and every registrant drops into
                 your CRM tagged by event. The morning after, the follow-up sequence runs to everyone
-                who came &mdash; booking them into the right consult before the warmth fades.
+                who came — booking them into the right consult before the warmth fades.
               </p>
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
                   "One flow, not five tools",
-                  "Capacity &amp; waitlist, automatic",
+                  "Capacity & waitlist, automatic",
                   "Follow-up fires the morning after",
                 ].map((item) => (
                   <span
@@ -180,7 +180,7 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
               Switch between your events to see capacity, waitlist, registrants, and the reminder
-              and follow-up sequences firing behind each one &mdash; all inside Leadli.
+              and follow-up sequences firing behind each one — all inside Leadli.
             </p>
           </div>
 
@@ -196,7 +196,7 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
               What you get
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
-              Events wired into the rest of your firm &mdash; not sitting next to it.
+              Events wired into the rest of your firm — not sitting next to it.
             </h2>
           </div>
 
@@ -230,8 +230,8 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
                   Class bookings are part of the single platform we configure around how your firm
-                  runs &mdash; not a separate Eventbrite plan with its own login and its own list
-                  that never makes it back to your CRM. No extra subscription, no per-attendee fee.
+                  runs — not a separate Eventbrite plan with its own login and its own list that
+                  never makes it back to your CRM. No extra subscription, no per-attendee fee.
                 </p>
               </div>
               <div className="flex items-baseline gap-2 shrink-0">
@@ -251,22 +251,22 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
               <div className="inline-flex items-center gap-2 text-[#3344b8] mb-3">
                 <UserPlus className="w-5 h-5" />
                 <span className="text-xs font-bold uppercase tracking-wider">
-                  Capacity &amp; waitlists
+                  Capacity & waitlists
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                Fill the room without overbooking it &mdash; and turn a full event into more demand.
+                Fill the room without overbooking it — and turn a full event into more demand.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                Set a cap and Leadli enforces it. Once you&rsquo;re full, new registrations roll
-                onto a waitlist that auto-promotes the moment a seat opens &mdash; no spreadsheet,
-                no &ldquo;sorry, we&rsquo;re full&rdquo; email you forgot to send. A full event
-                becomes a signal, not a problem: it tells you to run it again.
+                Set a cap and Leadli enforces it. Once you’re full, new registrations roll onto a
+                waitlist that auto-promotes the moment a seat opens — no spreadsheet, no “sorry,
+                we’re full” email you forgot to send. A full event becomes a signal, not a problem:
+                it tells you to run it again.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
                   "Hard capacity limits, per event",
-                  "Auto-promoting waitlist &mdash; first come, first seated",
+                  "Auto-promoting waitlist — first come, first seated",
                   "Recurring events for a monthly seminar cadence",
                   "No-shows flagged so a seat reopens for the waitlist",
                 ].map((item) => (
@@ -282,24 +282,24 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
               <div className="inline-flex items-center gap-2 text-[#3344b8] mb-3">
                 <Zap className="w-5 h-5" />
                 <span className="text-xs font-bold uppercase tracking-wider">
-                  Reminders &amp; follow-up
+                  Reminders & follow-up
                 </span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight leading-tight">
-                The follow-up runs the morning after &mdash; while everyone&rsquo;s still warm.
+                The follow-up runs the morning after — while everyone’s still warm.
               </h2>
               <p className="mt-4 text-base text-slate-700 leading-relaxed">
-                Reminders fire on a schedule &mdash; confirmation on register, 24 hours out, one
-                hour out with the join link. The morning after, Leadli tags every attendee by event,
-                sends the replay to anyone who missed it, and opens the consult-booking sequence for
-                the people who showed up. The warmth from a live event doesn&rsquo;t survive the
-                weekend on its own; this keeps it alive.
+                Reminders fire on a schedule — confirmation on register, 24 hours out, one hour out
+                with the join link. The morning after, Leadli tags every attendee by event, sends
+                the replay to anyone who missed it, and opens the consult-booking sequence for the
+                people who showed up. The warmth from a live event doesn’t survive the weekend on
+                its own; this keeps it alive.
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
                   "Confirmation + calendar invite, instantly",
                   "24-hour and 1-hour reminders, automatic",
-                  "Replay to no-shows &middot; consult sequence to attendees",
+                  "Replay to no-shows · consult sequence to attendees",
                   "Every registrant tagged and in your CRM by event",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
@@ -324,8 +324,8 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
               One builder. Three events it actually runs for you.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Same capacity, same reminders, same follow-up &mdash; whether it&rsquo;s a seminar at
-              the library, a webinar at lunch, or a workshop at your office.
+              Same capacity, same reminders, same follow-up — whether it’s a seminar at the library,
+              a webinar at lunch, or a workshop at your office.
             </p>
           </div>
 
@@ -366,8 +366,8 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
               Your events know what the rest of your platform knows.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              No exports, no copy-paste, no &ldquo;is this the same person?&rdquo; Every registrant
-              is the same contact record your pipeline, calls, and payments run through.
+              No exports, no copy-paste, no “is this the same person?” Every registrant is the same
+              contact record your pipeline, calls, and payments run through.
             </p>
           </div>
 
@@ -400,8 +400,7 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
               One platform. Every feature. One flat rate.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
-              Class bookings are just the start. Explore the rest of what&apos;s included with
-              Leadli.
+              Class bookings are just the start. Explore the rest of what's included with Leadli.
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-2.5">
@@ -432,11 +431,11 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
       <section className="py-20 bg-gradient-to-br from-[#12193b] via-[#1a2350] to-[#0d122b] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight">
-            Let&apos;s fill the room &mdash; and the pipeline after it.
+            Let's fill the room — and the pipeline after it.
           </h2>
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
-            30 minutes. We&apos;ll map the events you run today, tell you honestly whether Leadli
-            fits, and give you a clear estimate.
+            30 minutes. We'll map the events you run today, tell you honestly whether Leadli fits,
+            and give you a clear estimate.
           </p>
           <button
             onClick={onOpenDiscovery}
@@ -454,43 +453,43 @@ export function ClassBookingsProductPage({ onOpenDiscovery }: { onOpenDiscovery:
 const CLASS_CAPABILITIES: { title: string; body: string; icon: typeof Users }[] = [
   {
     icon: Layers,
-    title: "Capacity &amp; waitlist management",
-    body: "Set a hard cap and Leadli enforces it. Once you&rsquo;re full, the waitlist auto-promotes the moment a seat opens &mdash; no manual juggling, no overbooking, no awkward &ldquo;sorry, we&rsquo;re full&rdquo; emails you forgot to send.",
+    title: "Capacity & waitlist management",
+    body: "Set a hard cap and Leadli enforces it. Once you’re full, the waitlist auto-promotes the moment a seat opens — no manual juggling, no overbooking, no awkward “sorry, we’re full” emails you forgot to send.",
   },
   {
     icon: Repeat,
     title: "Recurring event support",
-    body: "Run the same seminar monthly or a workshop quarterly. Set it once, and Leadli recreates the registration, reminders, and follow-up for every instance &mdash; so a recurring cadence doesn&rsquo;t become a recurring chore.",
+    body: "Run the same seminar monthly or a workshop quarterly. Set it once, and Leadli recreates the registration, reminders, and follow-up for every instance — so a recurring cadence doesn’t become a recurring chore.",
   },
   {
     icon: Bell,
     title: "Automated reminders",
-    body: "Confirmation on register, 24 hours out, one hour out with the join link or address. Reminders fire on their own, by event and by channel &mdash; so nobody no-shows because they forgot, and you don&rsquo;t spend the morning sending them.",
+    body: "Confirmation on register, 24 hours out, one hour out with the join link or address. Reminders fire on their own, by event and by channel — so nobody no-shows because they forgot, and you don’t spend the morning sending them.",
   },
   {
     icon: Database,
     title: "Registrant CRM sync",
-    body: "Every registrant drops into your CRM the moment they sign up &mdash; tagged by event, by source, and by practice area. The same contact your follow-up, pipeline, and payments run through, not a separate list in a separate tool.",
+    body: "Every registrant drops into your CRM the moment they sign up — tagged by event, by source, and by practice area. The same contact your follow-up, pipeline, and payments run through, not a separate list in a separate tool.",
   },
   {
     icon: Zap,
     title: "Post-event follow-up sequences",
-    body: "The morning after, Leadli tags every attendee by event, sends the replay to anyone who missed it, and opens the consult-booking sequence for the people who showed up &mdash; while the room is still warm in their memory.",
+    body: "The morning after, Leadli tags every attendee by event, sends the replay to anyone who missed it, and opens the consult-booking sequence for the people who showed up — while the room is still warm in their memory.",
   },
   {
     icon: Video,
-    title: "Online &amp; in-person, same flow",
-    body: "A webinar with a join link, or a seminar with an address and a capacity &mdash; the same registration, the same reminders, the same follow-up. Run the event that fits the audience, not the event that fits the software.",
+    title: "Online & in-person, same flow",
+    body: "A webinar with a join link, or a seminar with an address and a capacity — the same registration, the same reminders, the same follow-up. Run the event that fits the audience, not the event that fits the software.",
   },
   {
     icon: TrendingUp,
-    title: "Attendance &amp; show-rate tracking",
-    body: "See who registered, who showed, and who no-showed &mdash; by event and over time. A seminar that runs at 85% show rate tells you something; one that runs at 40% tells you something else. You see both.",
+    title: "Attendance & show-rate tracking",
+    body: "See who registered, who showed, and who no-showed — by event and over time. A seminar that runs at 85% show rate tells you something; one that runs at 40% tells you something else. You see both.",
   },
   {
     icon: ListChecks,
     title: "No-show recovery",
-    body: "Someone didn&rsquo;t show? Leadli opens a seat for the waitlist and fires a &ldquo;missed you, here&rsquo;s the replay&rdquo; sequence &mdash; so a no-show becomes a second touch, not a lost contact.",
+    body: "Someone didn’t show? Leadli opens a seat for the waitlist and fires a “missed you, here’s the replay” sequence — so a no-show becomes a second touch, not a lost contact.",
   },
 ];
 
@@ -503,29 +502,29 @@ const USE_CASES: {
   {
     icon: MapPin,
     title: "In-person seminars",
-    body: "Run an estate planning 101 at the library or your office &mdash; with capacity, a waitlist, and door-check-in that feeds straight into your CRM so you know exactly who came.",
+    body: "Run an estate planning 101 at the library or your office — with capacity, a waitlist, and door-check-in that feeds straight into your CRM so you know exactly who came.",
     trigger: "Books the consult after",
   },
   {
     icon: Video,
-    title: "Webinars &amp; virtual workshops",
+    title: "Webinars & virtual workshops",
     body: "A lunchtime trust webinar with an auto-join link, a replay for no-shows, and a follow-up that opens the consult calendar for everyone who stayed to the end.",
     trigger: "Pre-sells the consult",
   },
   {
     icon: Headphones,
     title: "Recurring workshops",
-    body: "A monthly elder law workshop on a recurring schedule &mdash; registration, reminders, and follow-up recreated for every instance so the cadence runs itself.",
+    body: "A monthly elder law workshop on a recurring schedule — registration, reminders, and follow-up recreated for every instance so the cadence runs itself.",
     trigger: "Fills the next one",
   },
 ];
 
 const CLASS_CONNECTIONS: { label: string; icon: typeof Users }[] = [
-  { icon: Database, label: "CRM &amp; contacts" },
+  { icon: Database, label: "CRM & contacts" },
   { icon: Zap, label: "Follow-up automations" },
   { icon: Calendar, label: "Consult calendars" },
-  { icon: Mail, label: "Email &amp; SMS" },
-  { icon: MessageSquare, label: "Replay &amp; nurture" },
+  { icon: Mail, label: "Email & SMS" },
+  { icon: MessageSquare, label: "Replay & nurture" },
   { icon: DollarSign, label: "Paid events" },
 ];
 

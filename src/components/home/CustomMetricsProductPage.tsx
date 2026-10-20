@@ -15,17 +15,17 @@ const content: ProductPageContent = {
   icon: Activity,
   title: "Leadli Custom Metrics",
   subtitle:
-    "Track the numbers that actually move your firm &mdash; defined your way, pulled from anywhere in the platform.",
-  body: "Define your own KPIs and pull them from any data in Leadli &mdash; cost per signed client, show rate by service, revenue per consult source &mdash; and combine them into one view that updates in real time. Stop bending your reporting around someone else&rsquo;s idea of what matters, and stop exporting to a spreadsheet to calculate the one number you actually care about.",
+    "Track the numbers that actually move your firm — defined your way, pulled from anywhere in the platform.",
+  body: "Define your own KPIs and pull them from any data in Leadli — cost per signed client, show rate by service, revenue per consult source — and combine them into one view that updates in real time. Stop bending your reporting around someone else’s idea of what matters, and stop exporting to a spreadsheet to calculate the one number you actually care about.",
   replaces: [
     "Spreadsheets & manual calculations",
     "Rigid built-in reports",
     "Export-to-Excel reporting",
   ],
-  leakHeading: "The number you actually care about isn&rsquo;t on any standard report.",
+  leakHeading: "The number you actually care about isn’t on any standard report.",
   leakBody: [
-    "You want to know your cost per signed trust client by lead source. No off-the-shelf report gives you that, so every month you export three reports into a spreadsheet, write a formula, and hope you didn&rsquo;t break it. By the time you have the number, it&rsquo;s two weeks stale and you&rsquo;ve spent an hour you&rsquo;ll never get back.",
-    "Leadli Custom Metrics lets you define that number once &mdash; as a rule against your platform data &mdash; and it stays live forever. Cost per signed client, show rate by service, revenue per consult source: whatever moves your firm, you build it once and watch it update in real time, shareable with your team.",
+    "You want to know your cost per signed trust client by lead source. No off-the-shelf report gives you that, so every month you export three reports into a spreadsheet, write a formula, and hope you didn’t break it. By the time you have the number, it’s two weeks stale and you’ve spent an hour you’ll never get back.",
+    "Leadli Custom Metrics lets you define that number once — as a rule against your platform data — and it stays live forever. Cost per signed client, show rate by service, revenue per consult source: whatever moves your firm, you build it once and watch it update in real time, shareable with your team.",
   ],
   leakChips: [
     "Build metrics from any platform data",
@@ -41,32 +41,32 @@ const content: ProductPageContent = {
     {
       icon: Gauge,
       title: "Build metrics from any data",
-      body: "Define a KPI from any field, stage, tag, or event in Leadli &mdash; cost per signed client, show rate, revenue per source.",
+      body: "Define a KPI from any field, stage, tag, or event in Leadli — cost per signed client, show rate, revenue per source.",
     },
     {
       icon: Layers,
       title: "Combine sources",
-      body: "Pull from CRM, payments, calendars, and campaigns into one metric &mdash; no exporting, no spreadsheet glue.",
+      body: "Pull from CRM, payments, calendars, and campaigns into one metric — no exporting, no spreadsheet glue.",
     },
     {
       icon: TrendingUp,
       title: "Time-based comparisons",
-      body: "Compare this month to last, this quarter to last year, before-and-after a change &mdash; automatically.",
+      body: "Compare this month to last, this quarter to last year, before-and-after a change — automatically.",
     },
     {
       icon: Calendar,
       title: "Trend over time",
-      body: "See a metric as a trend line, not a snapshot, so you know whether you&rsquo;re improving or drifting.",
+      body: "See a metric as a trend line, not a snapshot, so you know whether you’re improving or drifting.",
     },
     {
       icon: Filter,
       title: "Slice by segment",
-      body: "Break a metric down by service, source, attorney, or any custom field &mdash; find the leak, not just the average.",
+      body: "Break a metric down by service, source, attorney, or any custom field — find the leak, not just the average.",
     },
     {
       icon: Share2,
       title: "Share with your team",
-      body: "Put your custom metrics on a shared dashboard so everyone sees the same numbers &mdash; no &ldquo;whose spreadsheet is right?&rdquo;",
+      body: "Put your custom metrics on a shared dashboard so everyone sees the same numbers — no “whose spreadsheet is right?”",
     },
   ],
   useCases: [
@@ -79,7 +79,7 @@ const content: ProductPageContent = {
     {
       icon: TrendingUp,
       title: "Show rate by service",
-      body: "Track consult show rate per service type over time. Spot that trust consults show up 90% of the time and will consults 60% &mdash; and fix the gap.",
+      body: "Track consult show rate per service type over time. Spot that trust consults show up 90% of the time and will consults 60% — and fix the gap.",
       trigger: "Cuts no-shows",
     },
     {
@@ -92,7 +92,7 @@ const content: ProductPageContent = {
   connections: {
     heading: "Your metrics connect to every part of the platform.",
     subhead:
-      "A custom metric isn&rsquo;t a formula in a spreadsheet &mdash; it&rsquo;s a live query against the same data your CRM, payments, and campaigns produce.",
+      "A custom metric isn’t a formula in a spreadsheet — it’s a live query against the same data your CRM, payments, and campaigns produce.",
     items: [
       { icon: BarChart3, label: "Reporting & analytics" },
       { icon: Layers, label: "Custom dashboards" },
@@ -102,9 +102,9 @@ const content: ProductPageContent = {
       { icon: Share2, label: "Team sharing" },
     ],
   },
-  finalCtaHeading: "Let&rsquo;s track the numbers that move your firm.",
+  finalCtaHeading: "Let’s track the numbers that move your firm.",
   finalCtaBody:
-    "30 minutes. We&rsquo;ll map the metrics you wish you had, tell you honestly whether Leadli fits, and give you a clear estimate.",
+    "30 minutes. We’ll map the metrics you wish you had, tell you honestly whether Leadli fits, and give you a clear estimate.",
   excludeFromRelated: ["custom-metrics", "reporting", "dashboards", "marketing", "payments"],
 };
 

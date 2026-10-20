@@ -26,7 +26,7 @@ export const INSIGHTS_COMMUNICATION: LeadliFeature[] = [
       "Real-time data across the platform",
     ],
     primary: true,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "dashboards",

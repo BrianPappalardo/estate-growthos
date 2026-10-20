@@ -74,14 +74,12 @@ function FlyingLeapHomePage() {
                 Vertical
               </span>
             </Link>
-            <a
-              href="https://flyingleapstudio.com/leadli/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-slate-700 hover:text-[#3344b8] transition-colors"
+            <Link
+              to="/leadli"
+              className="text-slate-700 hover:text-[#3344b8] transition-colors font-medium"
             >
               Leadli
-            </a>
+            </Link>
             <a
               href="https://app.leadli.co/"
               target="_blank"

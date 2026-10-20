@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as EstatePlanningRouteImport } from './routes/estate-planning'
+import { Route as LeadliRouteImport } from './routes/leadli'
 import { Route as ThankYouRouteImport } from './routes/thank-you'
 
 const IndexRoute = IndexRouteImport.update({
@@ -23,6 +24,11 @@ const EstatePlanningRoute = EstatePlanningRouteImport.update({
   path: '/estate-planning',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LeadliRoute = LeadliRouteImport.update({
+  id: '/leadli',
+  path: '/leadli',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ThankYouRoute = ThankYouRouteImport.update({
   id: '/thank-you',
   path: '/thank-you',
@@ -32,30 +38,34 @@ const ThankYouRoute = ThankYouRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/estate-planning': typeof EstatePlanningRoute
+  '/leadli': typeof LeadliRoute
   '/thank-you': typeof ThankYouRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/estate-planning': typeof EstatePlanningRoute
+  '/leadli': typeof LeadliRoute
   '/thank-you': typeof ThankYouRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/estate-planning': typeof EstatePlanningRoute
+  '/leadli': typeof LeadliRoute
   '/thank-you': typeof ThankYouRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/estate-planning' | '/thank-you'
+  fullPaths: '/' | '/estate-planning' | '/leadli' | '/thank-you'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/estate-planning' | '/thank-you'
-  id: '__root__' | '/' | '/estate-planning' | '/thank-you'
+  to: '/' | '/estate-planning' | '/leadli' | '/thank-you'
+  id: '__root__' | '/' | '/estate-planning' | '/leadli' | '/thank-you'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   EstatePlanningRoute: typeof EstatePlanningRoute
+  LeadliRoute: typeof LeadliRoute
   ThankYouRoute: typeof ThankYouRoute
 }
 
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EstatePlanningRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/leadli': {
+      id: '/leadli'
+      path: '/leadli'
+      fullPath: '/leadli'
+      preLoaderRoute: typeof LeadliRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/thank-you': {
       id: '/thank-you'
       path: '/thank-you'
@@ -88,6 +105,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   EstatePlanningRoute: EstatePlanningRoute,
+  LeadliRoute: LeadliRoute,
   ThankYouRoute: ThankYouRoute,
 }
 export const routeTree = rootRouteImport

@@ -135,7 +135,7 @@ export const MARKETING_WEB: LeadliFeature[] = [
       "No-code embed",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "ad-manager",
@@ -148,7 +148,7 @@ export const MARKETING_WEB: LeadliFeature[] = [
     replaces: "Spreadsheet ad tracking",
     included: ["Campaign management", "Audience sync", "Spend tracking", "Lead attribution"],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "custom-ad-audiences",
@@ -161,7 +161,7 @@ export const MARKETING_WEB: LeadliFeature[] = [
     replaces: "Manual audience uploads",
     included: ["CRM-to-ad sync", "Segment audiences", "Auto-refresh", "Lookalike seeding"],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "qr-codes",
@@ -179,7 +179,7 @@ export const MARKETING_WEB: LeadliFeature[] = [
       "Campaign attribution",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "websites",
@@ -210,7 +210,7 @@ export const MARKETING_WEB: LeadliFeature[] = [
     replaces: "ClickFunnels & Leadpages",
     included: ["Funnel & page builder", "Custom domain", "Built-in forms", "Conversion tracking"],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "v-cards",
@@ -223,6 +223,6 @@ export const MARKETING_WEB: LeadliFeature[] = [
     replaces: "Paper business cards & contact apps",
     included: ["Digital contact sharing", "CRM sync", "Click-to-save", "Updateable"],
     primary: false,
-    status: "planned",
+    status: "live",
   },
 ];

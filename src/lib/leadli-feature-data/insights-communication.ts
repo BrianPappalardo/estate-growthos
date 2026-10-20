@@ -62,7 +62,7 @@ export const INSIGHTS_COMMUNICATION: LeadliFeature[] = [
       "Share with your team",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "inbox",
@@ -98,7 +98,7 @@ export const INSIGHTS_COMMUNICATION: LeadliFeature[] = [
       "List-based outreach",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "email-sms",
@@ -116,7 +116,7 @@ export const INSIGHTS_COMMUNICATION: LeadliFeature[] = [
       "Compliance & opt-out handling",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "cloud-phone",
@@ -134,7 +134,7 @@ export const INSIGHTS_COMMUNICATION: LeadliFeature[] = [
       "Routing & voicemail",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "web-chat",
@@ -152,6 +152,6 @@ export const INSIGHTS_COMMUNICATION: LeadliFeature[] = [
       "Visitor context",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
 ];

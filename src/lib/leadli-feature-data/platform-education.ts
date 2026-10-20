@@ -47,7 +47,7 @@ export const PLATFORM_EDUCATION: LeadliFeature[] = [
       "Real humans, fast",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "voice-ai",
@@ -65,7 +65,7 @@ export const PLATFORM_EDUCATION: LeadliFeature[] = [
       "Transfer to your team",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "ai-agent-studio",
@@ -83,7 +83,7 @@ export const PLATFORM_EDUCATION: LeadliFeature[] = [
       "Human handoff",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "client-portal",
@@ -96,7 +96,7 @@ export const PLATFORM_EDUCATION: LeadliFeature[] = [
     replaces: "Shared drives & portal apps",
     included: ["Secure client login", "Document sharing", "Payments & messages", "Branded to you"],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "media-storage",
@@ -109,7 +109,7 @@ export const PLATFORM_EDUCATION: LeadliFeature[] = [
     replaces: "Dropbox & Google Drive add-ons",
     included: ["Unlimited storage", "Contact-linked files", "Secure sharing", "No extra bill"],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "courses",
@@ -127,7 +127,7 @@ export const PLATFORM_EDUCATION: LeadliFeature[] = [
       "Progress tracking",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "communities",
@@ -145,7 +145,7 @@ export const PLATFORM_EDUCATION: LeadliFeature[] = [
       "Moderation tools",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "visual-workflow-builder",
@@ -158,6 +158,6 @@ export const PLATFORM_EDUCATION: LeadliFeature[] = [
     replaces: "Zapier & Make",
     included: ["Drag-and-drop canvas", "If/else branching", "Wait steps", "Multi-action sequences"],
     primary: false,
-    status: "planned",
+    status: "live",
   },
 ];

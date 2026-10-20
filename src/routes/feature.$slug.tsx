@@ -27,6 +27,30 @@ import { WebinarFunnelsProductPage } from "@/components/home/WebinarFunnelsProdu
 import { SocialSchedulerProductPage } from "@/components/home/SocialSchedulerProductPage";
 import { EmailMarketingProductPage } from "@/components/home/EmailMarketingProductPage";
 import { SmsMarketingProductPage } from "@/components/home/SmsMarketingProductPage";
+import { CountdownTimersProductPage } from "@/components/home/CountdownTimersProductPage";
+import { AdManagerProductPage } from "@/components/home/AdManagerProductPage";
+import { CustomAdAudiencesProductPage } from "@/components/home/CustomAdAudiencesProductPage";
+import { QrCodesProductPage } from "@/components/home/QrCodesProductPage";
+import { FunnelBuilderProductPage } from "@/components/home/FunnelBuilderProductPage";
+import { VCardsProductPage } from "@/components/home/VCardsProductPage";
+import { InvoicesEstimatesProductPage } from "@/components/home/InvoicesEstimatesProductPage";
+import { ProductsInventoryProductPage } from "@/components/home/ProductsInventoryProductPage";
+import { CouponsGiftCardsProductPage } from "@/components/home/CouponsGiftCardsProductPage";
+import { EcommerceShippingProductPage } from "@/components/home/EcommerceShippingProductPage";
+import { AffiliateManagerProductPage } from "@/components/home/AffiliateManagerProductPage";
+import { CustomMetricsProductPage } from "@/components/home/CustomMetricsProductPage";
+import { PowerDialerProductPage } from "@/components/home/PowerDialerProductPage";
+import { EmailSmsSnippetsProductPage } from "@/components/home/EmailSmsSnippetsProductPage";
+import { CloudPhoneProductPage } from "@/components/home/CloudPhoneProductPage";
+import { WebChatProductPage } from "@/components/home/WebChatProductPage";
+import { SupportConciergeProductPage } from "@/components/home/SupportConciergeProductPage";
+import { VoiceAiProductPage } from "@/components/home/VoiceAiProductPage";
+import { AiAgentStudioProductPage } from "@/components/home/AiAgentStudioProductPage";
+import { ClientPortalProductPage } from "@/components/home/ClientPortalProductPage";
+import { MediaStorageProductPage } from "@/components/home/MediaStorageProductPage";
+import { CoursesMembershipsProductPage } from "@/components/home/CoursesMembershipsProductPage";
+import { OnlineCommunitiesProductPage } from "@/components/home/OnlineCommunitiesProductPage";
+import { VisualWorkflowBuilderProductPage } from "@/components/home/VisualWorkflowBuilderProductPage";
 import { getFeatureBySlug, LEADLI_FEATURES } from "@/lib/leadli-features";
 
 export const Route = createFileRoute("/feature/$slug")({
@@ -149,6 +173,54 @@ function FeatureDetailPage() {
           <EmailMarketingProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : feature.slug === "sms-marketing" ? (
           <SmsMarketingProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "countdown-timers" ? (
+          <CountdownTimersProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "ad-manager" ? (
+          <AdManagerProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "custom-ad-audiences" ? (
+          <CustomAdAudiencesProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "qr-codes" ? (
+          <QrCodesProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "funnel-builder" ? (
+          <FunnelBuilderProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "v-cards" ? (
+          <VCardsProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "invoices-estimates" ? (
+          <InvoicesEstimatesProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "products-inventory" ? (
+          <ProductsInventoryProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "coupons-gift-cards" ? (
+          <CouponsGiftCardsProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "ecommerce-shipping" ? (
+          <EcommerceShippingProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "affiliate" ? (
+          <AffiliateManagerProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "custom-metrics" ? (
+          <CustomMetricsProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "power-dialer" ? (
+          <PowerDialerProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "email-sms" ? (
+          <EmailSmsSnippetsProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "cloud-phone" ? (
+          <CloudPhoneProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "web-chat" ? (
+          <WebChatProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "support-concierge" ? (
+          <SupportConciergeProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "voice-ai" ? (
+          <VoiceAiProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "ai-agent-studio" ? (
+          <AiAgentStudioProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "client-portal" ? (
+          <ClientPortalProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "media-storage" ? (
+          <MediaStorageProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "courses" ? (
+          <CoursesMembershipsProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "communities" ? (
+          <OnlineCommunitiesProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "visual-workflow-builder" ? (
+          <VisualWorkflowBuilderProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : (
           <FeatureContent feature={feature} onOpenDiscovery={handleOpenDiscovery} />
         )

@@ -50,7 +50,7 @@ export const PAYMENTS_GROWTH: LeadliFeature[] = [
       "Auto-filed to contacts",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "products-inventory",
@@ -63,7 +63,7 @@ export const PAYMENTS_GROWTH: LeadliFeature[] = [
     replaces: "Shopify Lite & inventory spreadsheets",
     included: ["Product catalog", "Stock tracking", "Digital & physical", "Order management"],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "coupons-gift-cards",
@@ -76,7 +76,7 @@ export const PAYMENTS_GROWTH: LeadliFeature[] = [
     replaces: "Coupon apps & gift card platforms",
     included: ["Promo codes", "Sellable gift cards", "Auto-apply at checkout", "Usage tracking"],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "ecommerce-shipping",
@@ -89,7 +89,7 @@ export const PAYMENTS_GROWTH: LeadliFeature[] = [
     replaces: "Shopify & ShipStation",
     included: ["Online checkout", "Shipping rates", "Order tracking", "Automated fulfillment"],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "reviews",
@@ -125,7 +125,7 @@ export const PAYMENTS_GROWTH: LeadliFeature[] = [
       "Automated payouts",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "contracts",

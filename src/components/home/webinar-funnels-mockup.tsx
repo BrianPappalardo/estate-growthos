@@ -13,7 +13,7 @@ import {
   ArrowRight,
   Tag,
   FileText,
-  Replay,
+  RotateCcw,
 } from "lucide-react";
 
 type Mode = "live" | "evergreen";
@@ -301,7 +301,7 @@ export function WebinarFunnelsMockup() {
 
           <div className="mt-5 pt-4 border-t border-slate-200">
             <div className="flex items-start gap-2.5 text-xs text-slate-500">
-              <Replay className="w-4 h-4 text-[#3344b8] shrink-0 mt-0.5" />
+              <RotateCcw className="w-4 h-4 text-[#3344b8] shrink-0 mt-0.5" />
               <span className="leading-relaxed">
                 Every registrant flows straight into your CRM &mdash; tagged, staged, and ready for
                 the post-webinar nurture sequence. No imports, no spreadsheets, no &ldquo;did they

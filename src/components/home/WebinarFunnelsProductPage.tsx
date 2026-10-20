@@ -14,7 +14,7 @@ import {
   Users,
   Clock,
   Tag,
-  Replay,
+  RotateCcw,
   Database,
   Zap,
   Globe,
@@ -273,7 +273,7 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
 
             <div>
               <div className="inline-flex items-center gap-2 text-[#3344b8] mb-3">
-                <Replay className="w-5 h-5" />
+                <RotateCcw className="w-5 h-5" />
                 <span className="text-xs font-bold uppercase tracking-wider">
                   It follows up for you
                 </span>

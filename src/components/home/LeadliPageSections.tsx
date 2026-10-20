@@ -442,7 +442,7 @@ export function LeadliBuildRoadmap({ onOpenDiscovery }: { onOpenDiscovery: () =>
                   className="group bg-emerald-50/60 border border-emerald-200 rounded-2xl p-4 hover:shadow-md hover:border-emerald-400 transition-all flex items-center gap-3"
                 >
                   <div className="w-9 h-9 rounded-xl bg-white border border-emerald-200 flex items-center justify-center text-emerald-700 shrink-0">
-                    <Icon className="w-4.5 h-4.5 w-5 h-5" />
+                    <Icon className="w-5 h-5" />
                   </div>
                   <span className="font-bold text-xs sm:text-sm text-slate-900 leading-snug group-hover:text-emerald-800 transition-colors flex-1">
                     {f.name}

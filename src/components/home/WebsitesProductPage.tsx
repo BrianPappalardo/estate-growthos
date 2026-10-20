@@ -485,6 +485,15 @@ export function WebsitesProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
                       ),
                     )}
                   </div>
+                  <div className="mt-6 inline-flex items-baseline gap-2 rounded-2xl bg-amber-500/15 border border-amber-400/40 px-4 py-3">
+                    <span className="text-xs font-bold uppercase tracking-wider text-amber-200">
+                      WordPress hosting
+                    </span>
+                    <span className="text-xl font-black text-amber-300">$49/mo</span>
+                    <span className="text-xs text-slate-300 font-medium">
+                      — separate from your Leadli rate
+                    </span>
+                  </div>
                 </div>
               </div>
 
@@ -519,7 +528,8 @@ export function WebsitesProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
                 </div>
                 <p className="mt-6 text-xs text-slate-500 leading-relaxed">
                   Plus several other premium plugins included with your hosting. No license renewals
-                  to chase, no updates to break your site — we handle all of it.
+                  to chase, no updates to break your site — we handle all of it. WordPress hosting
+                  is a separate $49/mo fee on top of your Leadli rate.
                 </p>
               </div>
             </div>

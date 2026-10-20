@@ -170,6 +170,6 @@ export const OPS_SCHEDULING: LeadliFeature[] = [
       "Right-to-the-right-person routing",
     ],
     primary: false,
-    status: "planned",
+    status: "live",
   },
 ];

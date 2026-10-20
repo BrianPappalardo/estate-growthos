@@ -21,6 +21,7 @@ import { ClassBookingsProductPage } from "@/components/home/ClassBookingsProduct
 import { TaskManagementProductPage } from "@/components/home/TaskManagementProductPage";
 import { SmartListsProductPage } from "@/components/home/SmartListsProductPage";
 import { FormsProductPage } from "@/components/home/FormsProductPage";
+import { ServiceCalendarsProductPage } from "@/components/home/ServiceCalendarsProductPage";
 import { getFeatureBySlug, LEADLI_FEATURES } from "@/lib/leadli-features";
 
 export const Route = createFileRoute("/feature/$slug")({
@@ -131,6 +132,8 @@ function FeatureDetailPage() {
           <SmartListsProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : feature.slug === "forms-surveys-quizzes" ? (
           <FormsProductPage onOpenDiscovery={handleOpenDiscovery} />
+        ) : feature.slug === "service-calendars" ? (
+          <ServiceCalendarsProductPage onOpenDiscovery={handleOpenDiscovery} />
         ) : (
           <FeatureContent feature={feature} onOpenDiscovery={handleOpenDiscovery} />
         )

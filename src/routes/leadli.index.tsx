@@ -15,6 +15,7 @@ import {
 } from "@/components/home/LeadliPageSections";
 
 export const Route = createFileRoute("/leadli/")({
+  component: LeadliPage,
   head: () => ({
     meta: [
       {

@@ -44,7 +44,7 @@ export const INSIGHTS_COMMUNICATION: LeadliFeature[] = [
       "Goal & KPI tracking",
     ],
     primary: true,
-    status: "planned",
+    status: "live",
   },
   {
     slug: "custom-metrics",

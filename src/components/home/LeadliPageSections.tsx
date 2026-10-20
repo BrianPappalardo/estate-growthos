@@ -1,6 +1,15 @@
 import React from "react";
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2, XCircle, Sparkles, ChevronRight, PhoneCall } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  XCircle,
+  Sparkles,
+  ChevronRight,
+  PhoneCall,
+  Hammer,
+  ArrowUpRight,
+} from "lucide-react";
 import { DiscoveryModal } from "@/components/DiscoveryModal";
 import { HomeFooter } from "@/components/home/HomeCrewAndPlan";
 import { LEADLI_FEATURES } from "@/lib/leadli-features";
@@ -332,18 +341,30 @@ export function LeadliFeatureGrid() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {primaryFeatures.map((item) => {
             const Icon = item.icon;
+            const isLive = item.status === "live";
             return (
               <Link
                 key={item.slug}
                 to="/feature/$slug"
                 params={{ slug: item.slug }}
-                className="group bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xs hover:shadow-md hover:border-[#3344b8]/40 transition-all flex items-center gap-3"
+                className="group bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xs hover:shadow-md hover:border-[#3344b8]/40 transition-all flex flex-col gap-2.5 h-full"
               >
-                <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-[#3344b8] shrink-0 group-hover:bg-[#3344b8] group-hover:text-white group-hover:border-[#3344b8] transition-colors">
-                  <Icon className="w-5 h-5" />
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-[#3344b8] shrink-0 group-hover:bg-[#3344b8] group-hover:text-white group-hover:border-[#3344b8] transition-colors">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <span className="font-bold text-xs sm:text-sm text-slate-900 leading-snug group-hover:text-[#3344b8] transition-colors flex-1">
+                    {item.name}
+                  </span>
                 </div>
-                <span className="font-bold text-xs sm:text-sm text-slate-900 leading-snug group-hover:text-[#3344b8] transition-colors">
-                  {item.name}
+                <span
+                  className={`self-start text-[9px] font-extrabold uppercase tracking-wider px-1.5 py-0.5 rounded-full border ${
+                    isLive
+                      ? "bg-emerald-50 text-emerald-700 border-emerald-200"
+                      : "bg-amber-50 text-amber-700 border-amber-200"
+                  }`}
+                >
+                  {isLive ? "Live now" : "Planned"}
                 </span>
               </Link>
             );
@@ -372,6 +393,129 @@ export function LeadliFeatureGrid() {
             </p>
           </div>
         )}
+      </div>
+    </section>
+  );
+}
+
+export function LeadliBuildRoadmap({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
+  const live = LEADLI_FEATURES.filter((f) => f.status === "live");
+  const planned = LEADLI_FEATURES.filter((f) => f.status === "planned");
+  const categories = Array.from(new Set(planned.map((f) => f.category)));
+
+  return (
+    <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+            The Build Roadmap
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] mt-3 tracking-tight">
+            What&apos;s live, and what&apos;s coming next.
+          </h2>
+          <p className="mt-3 text-base sm:text-lg text-slate-600">
+            We&apos;re building Leadli out feature by feature — one dedicated page at a time.
+            Here&apos;s what&apos;s fully built today and what&apos;s on deck. Every feature is
+            included at one flat $199/mo rate.
+          </p>
+        </div>
+
+        {/* LIVE NOW */}
+        <div className="mb-12">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+              <CheckCircle2 className="w-4 h-4" />
+              Live now
+            </span>
+            <span className="text-xs text-slate-500 font-medium">
+              Full, dedicated product pages — ready to explore
+            </span>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {live.map((f) => {
+              const Icon = f.icon;
+              return (
+                <Link
+                  key={f.slug}
+                  to="/feature/$slug"
+                  params={{ slug: f.slug }}
+                  className="group bg-emerald-50/60 border border-emerald-200 rounded-2xl p-4 hover:shadow-md hover:border-emerald-400 transition-all flex items-center gap-3"
+                >
+                  <div className="w-9 h-9 rounded-xl bg-white border border-emerald-200 flex items-center justify-center text-emerald-700 shrink-0">
+                    <Icon className="w-4.5 h-4.5 w-5 h-5" />
+                  </div>
+                  <span className="font-bold text-xs sm:text-sm text-slate-900 leading-snug group-hover:text-emerald-800 transition-colors flex-1">
+                    {f.name}
+                  </span>
+                  <ArrowUpRight className="w-4 h-4 text-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* ON THE ROADMAP */}
+        <div>
+          <div className="flex items-center gap-2 mb-4">
+            <span className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+              <Hammer className="w-4 h-4" />
+              On the roadmap
+            </span>
+            <span className="text-xs text-slate-500 font-medium">
+              Stub pages today — full buildouts rolling out one by one
+            </span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {categories.map((cat) => {
+              const items = planned.filter((f) => f.category === cat);
+              return (
+                <div
+                  key={cat}
+                  className="rounded-2xl border border-slate-200 bg-[#fcfbf8] p-5 flex flex-col"
+                >
+                  <h3 className="text-xs font-extrabold uppercase tracking-wider text-[#3344b8] mb-3 flex items-center justify-between">
+                    <span>{cat}</span>
+                    <span className="text-[10px] text-slate-400 font-bold normal-case tracking-normal">
+                      {items.length} planned
+                    </span>
+                  </h3>
+                  <ul className="space-y-1.5">
+                    {items.map((f) => {
+                      const Icon = f.icon;
+                      return (
+                        <li key={f.slug}>
+                          <Link
+                            to="/feature/$slug"
+                            params={{ slug: f.slug }}
+                            className="group inline-flex items-center gap-2 w-full text-sm text-slate-700 hover:text-[#3344b8] transition-colors rounded-lg px-2 py-1.5 hover:bg-white"
+                          >
+                            <Icon className="w-4 h-4 text-slate-400 group-hover:text-[#3344b8] shrink-0" />
+                            <span className="flex-1 font-semibold leading-snug">{f.name}</span>
+                            <ArrowUpRight className="w-3.5 h-3.5 text-slate-300 group-hover:text-[#3344b8] shrink-0" />
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <button
+            onClick={onOpenDiscovery}
+            className="inline-flex items-center justify-center gap-3 px-8 sm:px-10 py-4 text-base sm:text-lg font-bold bg-[#3344b8] hover:bg-[#25349c] text-white rounded-2xl shadow-xl hover:shadow-2xl transition-all cursor-pointer"
+          >
+            <strong>Book a Discovery Call</strong>
+            <ArrowRight className="w-5 h-5" />
+          </button>
+          <p className="mt-3 text-xs text-slate-500">
+            Don&apos;t see your feature? Ask us on the call — odds are it&apos;s already on the
+            roadmap.
+          </p>
+        </div>
       </div>
     </section>
   );

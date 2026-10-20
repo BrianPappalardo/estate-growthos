@@ -10,6 +10,7 @@ import {
   LeadliConstellationSection,
   LeadliChaosSection,
   LeadliFeatureGrid,
+  LeadliBuildRoadmap,
 } from "@/components/home/LeadliPageSections";
 
 export const Route = createFileRoute("/leadli")({
@@ -270,6 +271,9 @@ function LeadliPage() {
 
       {/* 6. FEATURE GRID */}
       <LeadliFeatureGrid />
+
+      {/* 6b. BUILD ROADMAP */}
+      <LeadliBuildRoadmap onOpenDiscovery={handleOpenDiscovery} />
 
       {/* 7. CONSOLIDATE & SAVE CALCULATOR (LITE / ILLUSTRATIVE) */}
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">

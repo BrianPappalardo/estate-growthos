@@ -1,0 +1,163 @@
+import {
+  Bot,
+  LifeBuoy,
+  Mic,
+  BrainCircuit,
+  MonitorSmartphone,
+  Cloud,
+  GraduationCap,
+  Users,
+  Split,
+} from "lucide-react";
+import type { LeadliFeature } from "./types";
+
+export const PLATFORM_EDUCATION: LeadliFeature[] = [
+  {
+    slug: "integrations",
+    name: "Integrations + AI Tools",
+    category: "Platform",
+    icon: Bot,
+    tagline:
+      "A built-in AI assistant and clean integrations with the tools you can't live without.",
+    description:
+      "Leadli includes a conversation AI engine for smart response drafting and transcription. Need to connect practice management or specialized software? We integrate through webhooks and native connectors.",
+    replaces: "Separate AI subscriptions & custom API glue",
+    included: [
+      "Built-in AI conversation engine",
+      "Smart response drafting",
+      "Webhook & native integrations",
+      "Zapier-compatible",
+    ],
+    primary: true,
+    status: "planned",
+  },
+  {
+    slug: "support-concierge",
+    name: "Support + Concierge Team",
+    category: "Platform",
+    icon: LifeBuoy,
+    tagline: "A real human team on standby to configure, train, and troubleshoot.",
+    description:
+      "Beyond software, you get our concierge team to help build, train your staff, and keep your system running — so you're never stuck.",
+    replaces: "DIY support tickets & help docs",
+    included: [
+      "White-glove configuration",
+      "Team training",
+      "Ongoing troubleshooting",
+      "Real humans, fast",
+    ],
+    primary: false,
+    status: "planned",
+  },
+  {
+    slug: "voice-ai",
+    name: "Voice AI & Conversational AI",
+    category: "Platform",
+    icon: Mic,
+    tagline: "AI that answers calls and books appointments — 24/7.",
+    description:
+      "Conversational AI handles inbound calls and messages, answers questions, and books consults on your calendar without a missed call.",
+    replaces: "Answering services & call centers",
+    included: [
+      "24/7 call answering",
+      "Appointment booking",
+      "FAQ handling",
+      "Transfer to your team",
+    ],
+    primary: false,
+    status: "planned",
+  },
+  {
+    slug: "ai-agent-studio",
+    name: "AI Agent Studio",
+    category: "Platform",
+    icon: BrainCircuit,
+    tagline: "Build custom AI agents that work inside your workflows.",
+    description:
+      "Design AI agents trained on your processes and content to draft replies, qualify leads, and handle routine work — all inside Leadli.",
+    replaces: "Separate AI subscriptions & glue",
+    included: [
+      "Custom agent builders",
+      "Process-trained AI",
+      "Workflow integration",
+      "Human handoff",
+    ],
+    primary: false,
+    status: "planned",
+  },
+  {
+    slug: "client-portal",
+    name: "Client Portal",
+    category: "Platform",
+    icon: MonitorSmartphone,
+    tagline: "A private, branded space where clients self-serve.",
+    description:
+      "Give clients a secure portal for documents, messages, payments, and updates — branded to your firm, controlled by you.",
+    replaces: "Shared drives & portal apps",
+    included: ["Secure client login", "Document sharing", "Payments & messages", "Branded to you"],
+    primary: false,
+    status: "planned",
+  },
+  {
+    slug: "media-storage",
+    name: "Unlimited Media Storage",
+    category: "Platform",
+    icon: Cloud,
+    tagline: "Host files and media without a separate storage bill.",
+    description:
+      "Store documents, images, and media in-platform with unlimited space tied to each contact — no extra storage subscription.",
+    replaces: "Dropbox & Google Drive add-ons",
+    included: ["Unlimited storage", "Contact-linked files", "Secure sharing", "No extra bill"],
+    primary: false,
+    status: "planned",
+  },
+  {
+    slug: "courses",
+    name: "Courses & Memberships",
+    category: "Education",
+    icon: GraduationCap,
+    tagline: "Gated educational content and client libraries, all in one place.",
+    description:
+      "Deliver on-demand video modules, resource libraries, and membership content to educate prospects before they book and support clients after they sign.",
+    replaces: "Kajabi, Teachable, Skool",
+    included: [
+      "Gated video modules",
+      "Resource libraries",
+      "Membership tiers",
+      "Progress tracking",
+    ],
+    primary: false,
+    status: "planned",
+  },
+  {
+    slug: "communities",
+    name: "Online Communities",
+    category: "Education",
+    icon: Users,
+    tagline: "Bring your clients and prospects into a space you control.",
+    description:
+      "Host private communities where clients ask questions, share wins, and stay engaged between matters — without sending them to a third-party platform.",
+    replaces: "Facebook Groups, Skool, Circle",
+    included: [
+      "Private member spaces",
+      "Threaded discussions",
+      "Member directories",
+      "Moderation tools",
+    ],
+    primary: false,
+    status: "planned",
+  },
+  {
+    slug: "visual-workflow-builder",
+    name: "Visual Workflow Builder",
+    category: "Builder",
+    icon: Split,
+    tagline: "Drag, connect, and automate on a clean visual canvas.",
+    description:
+      "Build multi-step automations with triggers, branches, waits, and actions — all visual, all testable, no code.",
+    replaces: "Zapier & Make",
+    included: ["Drag-and-drop canvas", "If/else branching", "Wait steps", "Multi-action sequences"],
+    primary: false,
+    status: "planned",
+  },
+];

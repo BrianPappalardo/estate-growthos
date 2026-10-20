@@ -1,0 +1,157 @@
+import {
+  BarChart3,
+  LayoutDashboard,
+  Activity,
+  MessageSquare,
+  Phone,
+  Mail,
+  MessagesSquare,
+} from "lucide-react";
+import type { LeadliFeature } from "./types";
+
+export const INSIGHTS_COMMUNICATION: LeadliFeature[] = [
+  {
+    slug: "reporting",
+    name: "Reporting + Analytics",
+    category: "Insights",
+    icon: BarChart3,
+    tagline: "See exactly where leads leak and where revenue lands — in real time.",
+    description:
+      "Custom dashboards pull from every part of the platform so you can track show rates, pipeline value, and campaign ROI without exporting a single spreadsheet.",
+    replaces: "Spreadsheets & manual reporting",
+    included: [
+      "Custom dashboards",
+      "Pipeline & revenue reporting",
+      "Campaign performance tracking",
+      "Real-time data across the platform",
+    ],
+    primary: true,
+    status: "planned",
+  },
+  {
+    slug: "dashboards",
+    name: "Custom Dashboards",
+    category: "Insights",
+    icon: LayoutDashboard,
+    tagline: "The metrics that matter to your firm, laid out exactly how you want them.",
+    description:
+      "Build dashboards that surface the numbers you actually check — show rates, lead sources, average case value — and skip the noise. Drag, drop, and save your view.",
+    replaces: "Scattered reports across tools",
+    included: [
+      "Drag-and-drop widgets",
+      "Saved personal views",
+      "Shared team dashboards",
+      "Goal & KPI tracking",
+    ],
+    primary: true,
+    status: "planned",
+  },
+  {
+    slug: "custom-metrics",
+    name: "Custom Metrics",
+    category: "Insights",
+    icon: Activity,
+    tagline: "Track the numbers that actually move your firm — defined your way.",
+    description:
+      "Define your own KPIs and pull them from anywhere in the platform. Stop bending your reporting around someone else's idea of what matters.",
+    replaces: "Spreadsheets & manual calculations",
+    included: [
+      "Build metrics from any platform data",
+      "Combine sources into one view",
+      "Time-based comparisons",
+      "Share with your team",
+    ],
+    primary: false,
+    status: "planned",
+  },
+  {
+    slug: "inbox",
+    name: "Unified Inbox",
+    category: "Communication",
+    icon: MessageSquare,
+    tagline: "Email, SMS, and social messages in one inbox — answered in seconds, not hours.",
+    description:
+      "Every conversation with a prospect or client lives in one place, tied to their CRM record. Reply by email or text, assign to your team, and never lose track of a thread again.",
+    replaces: "Email + separate SMS tools",
+    included: [
+      "Email, SMS & social in one view",
+      "Threaded to each contact",
+      "Team assignment & notes",
+      "Two-way text conversations",
+    ],
+    primary: true,
+    status: "planned",
+  },
+  {
+    slug: "power-dialer",
+    name: "Power Dialer",
+    category: "Communication",
+    icon: Phone,
+    tagline: "Call through your list fast, with notes logged automatically.",
+    description:
+      "Power through outreach with a click-to-call dialer that logs every call, voicemail drop, and note to the right contact — so follow-up never stalls.",
+    replaces: "Separate dialer & call-logging tools",
+    included: [
+      "Click-to-call dialer",
+      "Voicemail drop",
+      "Auto-logged call notes",
+      "List-based outreach",
+    ],
+    primary: false,
+    status: "planned",
+  },
+  {
+    slug: "email-sms",
+    name: "Email & Text Snippets",
+    category: "Communication",
+    icon: Mail,
+    tagline: "Two-way text and email marketing that actually gets read.",
+    description:
+      "Run compliant SMS and email marketing campaigns with two-way conversations, templates, and scheduling — built right into the same platform as your CRM.",
+    replaces: "EZTexting, SimpleTexting, Podium",
+    included: [
+      "Two-way SMS conversations",
+      "Template library",
+      "Scheduled broadcasts",
+      "Compliance & opt-out handling",
+    ],
+    primary: false,
+    status: "planned",
+  },
+  {
+    slug: "cloud-phone",
+    name: "Cloud Phone System",
+    category: "Communication",
+    icon: Phone,
+    tagline: "A firm phone number with call tracking, recording, and routing.",
+    description:
+      "Get a local firm number with call recording, call whisper, missed-call text-back, and routing rules — so every inbound call becomes a tracked lead.",
+    replaces: "RingCentral, CallRail, Grasshopper",
+    included: [
+      "Local firm numbers",
+      "Call recording & whisper",
+      "Missed-call text-back",
+      "Routing & voicemail",
+    ],
+    primary: false,
+    status: "planned",
+  },
+  {
+    slug: "web-chat",
+    name: "Web Chat",
+    category: "Communication",
+    icon: MessagesSquare,
+    tagline: "Live chat on your site, answered from your unified inbox.",
+    description:
+      "Add live chat to any page; messages land in your unified inbox with full context and AI-assisted replies.",
+    replaces: "Intercom & Tawk.to",
+    included: [
+      "On-site live chat",
+      "Unified inbox routing",
+      "AI-assisted replies",
+      "Visitor context",
+    ],
+    primary: false,
+    status: "planned",
+  },
+];

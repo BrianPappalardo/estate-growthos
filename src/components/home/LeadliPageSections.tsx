@@ -13,6 +13,7 @@ import {
 import { DiscoveryModal } from "@/components/DiscoveryModal";
 import { HomeFooter } from "@/components/home/HomeCrewAndPlan";
 import { LEADLI_FEATURES } from "@/lib/leadli-features";
+import { LEADLI_FUNCTIONS } from "@/lib/leadli-functions";
 
 export function LeadliPageHero({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
   return (
@@ -514,6 +515,102 @@ export function LeadliBuildRoadmap({ onOpenDiscovery }: { onOpenDiscovery: () =>
           <p className="mt-3 text-xs text-slate-500">
             Don't see your feature? Ask us on the call — odds are it's already on the roadmap.
           </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LeadliFunctionsSection({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
+  return (
+    <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+            Browse by function
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] mt-3 tracking-tight">
+            One platform. Five functions. Every tool you need.
+          </h2>
+          <p className="mt-3 text-base sm:text-lg text-slate-600">
+            Most platforms force you to buy by the feature. Leadli organizes everything around the
+            work you actually do — so you can see how the pieces fit together before you dive in.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {LEADLI_FUNCTIONS.map((fn) => {
+            const Icon = fn.icon;
+            return (
+              <Link
+                key={fn.slug}
+                to="/function/$slug"
+                params={{ slug: fn.slug }}
+                className="group relative bg-gradient-to-br from-[#fcfbf8] to-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-[#3344b8]/40 transition-all flex flex-col gap-4 h-full overflow-hidden"
+              >
+                <div
+                  className="absolute -top-12 -right-12 w-32 h-32 rounded-full opacity-10 blur-2xl group-hover:opacity-20 transition-opacity"
+                  style={{ backgroundColor: fn.accent }}
+                />
+                <div className="flex items-center justify-between relative">
+                  <div
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0"
+                    style={{
+                      backgroundColor: `${fn.accent}18`,
+                      color: fn.accent,
+                      border: `1px solid ${fn.accent}44`,
+                    }}
+                  >
+                    <Icon className="w-6 h-6" />
+                  </div>
+                  <span
+                    className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-1 rounded-full"
+                    style={{ backgroundColor: `${fn.accent}12`, color: fn.accent }}
+                  >
+                    {fn.featureSlugs.length} tools
+                  </span>
+                </div>
+
+                <div className="relative flex-1">
+                  <h3 className="text-xl font-black text-[#12193b] group-hover:text-[#3344b8] transition-colors">
+                    {fn.name}
+                  </h3>
+                  <p className="mt-2 text-sm text-slate-600 leading-relaxed">{fn.tagline}</p>
+                </div>
+
+                <div className="flex items-center justify-between pt-3 border-t border-slate-200 relative">
+                  <span className="text-xs font-bold text-slate-500">
+                    {fn.featureSlugs.length} capabilities included
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-xs font-bold text-[#3344b8] group-hover:gap-2 transition-all">
+                    Explore
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </span>
+                </div>
+              </Link>
+            );
+          })}
+
+          {/* CTA card */}
+          <div className="bg-gradient-to-br from-[#12193b] to-[#202c61] text-white p-7 rounded-3xl shadow-xl flex flex-col justify-between gap-4">
+            <div>
+              <div className="w-12 h-12 rounded-2xl bg-white/10 border border-amber-400/40 flex items-center justify-center text-amber-300 mb-4">
+                <PhoneCall className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-black">Not sure where to start?</h3>
+              <p className="mt-2 text-sm text-slate-200 leading-relaxed">
+                Tell us how your firm runs and we'll point you to the right function — or build the
+                whole platform around you.
+              </p>
+            </div>
+            <button
+              onClick={onOpenDiscovery}
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-sm transition-all cursor-pointer"
+            >
+              <strong>Book a Discovery Call</strong>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </div>
     </section>

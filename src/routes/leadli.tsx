@@ -10,6 +10,7 @@ import {
   LeadliConstellationSection,
   LeadliChaosSection,
   LeadliFeatureGrid,
+  LeadliFunctionsSection,
   LeadliBuildRoadmap,
 } from "@/components/home/LeadliPageSections";
 
@@ -271,6 +272,9 @@ function LeadliPage() {
 
       {/* 6. FEATURE GRID */}
       <LeadliFeatureGrid />
+
+      {/* 6a. BROWSE BY FUNCTION */}
+      <LeadliFunctionsSection onOpenDiscovery={handleOpenDiscovery} />
 
       {/* 6b. BUILD ROADMAP */}
       <LeadliBuildRoadmap onOpenDiscovery={handleOpenDiscovery} />

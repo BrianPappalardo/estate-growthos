@@ -617,7 +617,7 @@ const REPORTING_CAPABILITIES: { title: string; body: string; icon: typeof BarCha
   },
   {
     icon: TrendingUp,
-    title: "Goal &amp; KPI tracking",
+    title: "Goal & KPI tracking",
     body: "Set the targets that matter &mdash; show rate, average case value, new clients a month &mdash; and watch your progress update in real time. No quarter-end scramble to see how you did.",
   },
   {

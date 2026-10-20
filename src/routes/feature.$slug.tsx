@@ -4,6 +4,7 @@ import { ArrowRight, ArrowLeft, CheckCircle2, Sparkles, Landmark } from "lucide-
 import { FlyingLeapLogo } from "@/components/FlyingLeapLogo";
 import { DiscoveryModal } from "@/components/DiscoveryModal";
 import { HomeFooter } from "@/components/home/HomeCrewAndPlan";
+import { CrmProductPage } from "@/components/home/CrmProductPage";
 import { getFeatureBySlug, LEADLI_FEATURES } from "@/lib/leadli-features";
 
 export const Route = createFileRoute("/feature/$slug")({
@@ -80,7 +81,11 @@ function FeatureDetailPage() {
       </header>
 
       {feature ? (
-        <FeatureContent feature={feature} onOpenDiscovery={handleOpenDiscovery} />
+        feature.slug === "crm" ? (
+          <CrmProductPage feature={feature} onOpenDiscovery={handleOpenDiscovery} />
+        ) : (
+          <FeatureContent feature={feature} onOpenDiscovery={handleOpenDiscovery} />
+        )
       ) : (
         <FeatureComingSoon onOpenDiscovery={handleOpenDiscovery} />
       )}

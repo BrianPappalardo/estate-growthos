@@ -6,6 +6,7 @@ import {
   Sparkles,
   Globe,
   Layout,
+  LayoutPanelTop,
   SlidersHorizontal,
   ShieldCheck,
   Zap,
@@ -20,6 +21,10 @@ import {
   Database,
   Layers,
   FileText,
+  Settings,
+  Puzzle,
+  TrendingUp,
+  Boxes,
 } from "lucide-react";
 import { LEADLI_FEATURES } from "@/lib/leadli-features";
 
@@ -442,6 +447,86 @@ export function WebsitesProductPage({ onOpenDiscovery }: { onOpenDiscovery: () =
         </div>
       </section>
 
+      {/* ===== "BUT WHAT IF I LOVE WORDPRESS?" ===== */}
+      <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 to-[#fcfbf8] overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
+              {/* Left: the pitch */}
+              <div className="lg:col-span-5 p-8 sm:p-10 lg:p-12 bg-gradient-to-br from-[#12193b] to-[#1a2350] text-white relative overflow-hidden">
+                <div className="absolute inset-0 bg-[radial-gradient(#3344b8_1px,transparent_1px)] [background-size:24px_24px] opacity-15 pointer-events-none" />
+                <div className="relative">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-extrabold uppercase tracking-wider text-amber-300">
+                    <Boxes className="w-4 h-4" />
+                    WordPress, included
+                  </div>
+                  <h2 className="mt-6 text-2xl sm:text-3xl font-black tracking-tight leading-tight">
+                    But what if I love WordPress?
+                  </h2>
+                  <p className="mt-5 text-base sm:text-lg text-slate-200 leading-relaxed">
+                    Then we&apos;ll meet you right where you are. We host WordPress too — and we
+                    host it well.
+                  </p>
+                  <p className="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed">
+                    Fast, scalable, secure WordPress hosting with a stack of premium plugins already
+                    included. You keep the platform you know; we handle the performance, the
+                    security, and the license renewals.
+                  </p>
+                  <div className="mt-7 flex flex-wrap gap-2.5">
+                    {["Fast & scalable", "Secure & monitored", "Premium plugins included"].map(
+                      (item) => (
+                        <span
+                          key={item}
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-400/30 text-emerald-200 text-xs font-bold"
+                        >
+                          <CheckCircle2 className="w-3.5 h-3.5" />
+                          {item}
+                        </span>
+                      ),
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {/* Right: premium plugin stack */}
+              <div className="lg:col-span-7 p-8 sm:p-10 lg:p-12">
+                <div className="flex items-center gap-2 mb-6">
+                  <Puzzle className="w-5 h-5 text-[#3344b8]" />
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8]">
+                    Premium plugins, already on the house
+                  </span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                  {WORDPRESS_PREMIUM_STACK.map((plugin) => {
+                    const Icon = plugin.icon;
+                    return (
+                      <div
+                        key={plugin.name}
+                        className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5 flex items-start gap-4 hover:shadow-md transition-shadow"
+                      >
+                        <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-[#3344b8] shrink-0">
+                          <Icon className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <h3 className="font-black text-sm text-[#12193b]">{plugin.name}</h3>
+                          <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                            {plugin.body}
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+                <p className="mt-6 text-xs text-slate-500 leading-relaxed">
+                  Plus several other premium plugins included with your hosting. No license renewals
+                  to chase, no updates to break your site — we handle all of it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== MORE FEATURES ===== */}
       <section className="py-16 sm:py-20 bg-[#fcfbf8] border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -531,6 +616,39 @@ const WEBSITE_CAPABILITIES: { title: string; body: string; icon: typeof Globe }[
     icon: FileText,
     title: "Built-in content & blogging",
     body: "Publish pages, posts, and lead magnets on your domain with SEO controls baked in — so your content lives where your leads do, not on a third-party platform.",
+  },
+];
+
+const WORDPRESS_PREMIUM_STACK: { name: string; body: string; icon: typeof Globe }[] = [
+  {
+    name: "Elementor Pro",
+    body: "The full pro build of the visual page builder — every widget, theme builder, and popup included.",
+    icon: LayoutPanelTop,
+  },
+  {
+    name: "JetEngine",
+    body: "Custom post types, custom fields, and dynamic data for true database-driven WordPress builds.",
+    icon: Database,
+  },
+  {
+    name: "The Entire Crocoblock Suite",
+    body: "Every Crocoblock add-on — JetElements, JetSmartFilters, JetBooking, and the rest — for ultimate flexibility.",
+    icon: Boxes,
+  },
+  {
+    name: "Rank Math SEO",
+    body: "Pro-grade on-page SEO, schema markup, and tracking — included, so your content ranks without a second subscription.",
+    icon: TrendingUp,
+  },
+  {
+    name: "Premium Hosting Stack",
+    body: "Fast, scalable, and secure hosting with caching, CDN, and daily backups — monitored and tuned for you.",
+    icon: ShieldCheck,
+  },
+  {
+    name: "Several More Premium Plugins",
+    body: "A curated set of premium plugins already licensed, installed, and kept up to date as part of your hosting.",
+    icon: Settings,
   },
 ];
 

@@ -281,15 +281,13 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
             </div>
 
             <div className="mt-8 pt-6 border-t border-slate-100">
-              <a
-                href="https://www.leadli.co/order"
-                target="_blank"
-                rel="noreferrer"
+              <Link
+                to="/signup"
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-900 border-2 border-slate-300 font-bold text-sm transition-all"
               >
                 <span>Start Software Only</span>
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

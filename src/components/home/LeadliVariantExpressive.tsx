@@ -81,14 +81,12 @@ export function LeadliVariantExpressive() {
               >
                 Book a Discovery Call <ArrowRight className="w-4 h-4" />
               </button>
-              <a
-                href="https://www.leadli.co/standard-order"
-                target="_blank"
-                rel="noreferrer"
+              <Link
+                to="/signup"
                 className="inline-flex items-center gap-1.5 text-sm font-bold text-[#2a2118] underline decoration-[#c85a1e] decoration-2 underline-offset-4 hover:text-[#c85a1e]"
               >
                 Get Started Free <ArrowUpRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           </div>
 

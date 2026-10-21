@@ -80,14 +80,12 @@ export function LeadliVariantBold() {
             >
               Book a Discovery Call <ArrowRight className="w-5 h-5" />
             </button>
-            <a
-              href="https://www.leadli.co/standard-order"
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              to="/signup"
               className="inline-flex items-center gap-1.5 text-base font-black uppercase tracking-wide text-[#111111] border-b-4 border-[#111111] hover:text-white hover:border-white transition-colors"
             >
               Get Started Free <ArrowUpRight className="w-5 h-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

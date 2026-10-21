@@ -15,6 +15,7 @@ import { Route as LeadliRouteImport } from './routes/leadli'
 import { Route as Leadli1RouteImport } from './routes/leadli-1'
 import { Route as Leadli2RouteImport } from './routes/leadli-2'
 import { Route as Leadli3RouteImport } from './routes/leadli-3'
+import { Route as SignupRouteImport } from './routes/signup'
 import { Route as ThankYouRouteImport } from './routes/thank-you'
 import { Route as FeatureSlugRouteImport } from './routes/feature.$slug'
 import { Route as LeadliIndexRouteImport } from './routes/leadli.index'
@@ -50,6 +51,11 @@ const Leadli3Route = Leadli3RouteImport.update({
   path: '/leadli-3',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SignupRoute = SignupRouteImport.update({
+  id: '/signup',
+  path: '/signup',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ThankYouRoute = ThankYouRouteImport.update({
   id: '/thank-you',
   path: '/thank-you',
@@ -78,6 +84,7 @@ export interface FileRoutesByFullPath {
   '/leadli-1': typeof Leadli1Route
   '/leadli-2': typeof Leadli2Route
   '/leadli-3': typeof Leadli3Route
+  '/signup': typeof SignupRoute
   '/thank-you': typeof ThankYouRoute
   '/feature/$slug': typeof FeatureSlugRoute
   '/leadli/$slug': typeof LeadliSlugRoute
@@ -89,6 +96,7 @@ export interface FileRoutesByTo {
   '/leadli-1': typeof Leadli1Route
   '/leadli-2': typeof Leadli2Route
   '/leadli-3': typeof Leadli3Route
+  '/signup': typeof SignupRoute
   '/thank-you': typeof ThankYouRoute
   '/feature/$slug': typeof FeatureSlugRoute
   '/leadli/$slug': typeof LeadliSlugRoute
@@ -102,6 +110,7 @@ export interface FileRoutesById {
   '/leadli-1': typeof Leadli1Route
   '/leadli-2': typeof Leadli2Route
   '/leadli-3': typeof Leadli3Route
+  '/signup': typeof SignupRoute
   '/thank-you': typeof ThankYouRoute
   '/feature/$slug': typeof FeatureSlugRoute
   '/leadli/$slug': typeof LeadliSlugRoute
@@ -116,6 +125,7 @@ export interface FileRouteTypes {
     | '/leadli-1'
     | '/leadli-2'
     | '/leadli-3'
+    | '/signup'
     | '/thank-you'
     | '/feature/$slug'
     | '/leadli/$slug'
@@ -127,6 +137,7 @@ export interface FileRouteTypes {
     | '/leadli-1'
     | '/leadli-2'
     | '/leadli-3'
+    | '/signup'
     | '/thank-you'
     | '/feature/$slug'
     | '/leadli/$slug'
@@ -139,6 +150,7 @@ export interface FileRouteTypes {
     | '/leadli-1'
     | '/leadli-2'
     | '/leadli-3'
+    | '/signup'
     | '/thank-you'
     | '/feature/$slug'
     | '/leadli/$slug'
@@ -152,6 +164,7 @@ export interface RootRouteChildren {
   Leadli1Route: typeof Leadli1Route
   Leadli2Route: typeof Leadli2Route
   Leadli3Route: typeof Leadli3Route
+  SignupRoute: typeof SignupRoute
   ThankYouRoute: typeof ThankYouRoute
   FeatureSlugRoute: typeof FeatureSlugRoute
 }
@@ -198,6 +211,13 @@ declare module '@tanstack/react-router' {
       path: '/leadli-3'
       fullPath: '/leadli-3'
       preLoaderRoute: typeof Leadli3RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/signup': {
+      id: '/signup'
+      path: '/signup'
+      fullPath: '/signup'
+      preLoaderRoute: typeof SignupRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/thank-you': {
@@ -251,6 +271,7 @@ const rootRouteChildren: RootRouteChildren = {
   Leadli1Route: Leadli1Route,
   Leadli2Route: Leadli2Route,
   Leadli3Route: Leadli3Route,
+  SignupRoute: SignupRoute,
   ThankYouRoute: ThankYouRoute,
   FeatureSlugRoute: FeatureSlugRoute,
 }

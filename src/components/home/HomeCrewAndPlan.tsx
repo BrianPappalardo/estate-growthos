@@ -197,6 +197,11 @@ export function HomeFooter({ onOpenDiscovery }: { onOpenDiscovery: () => void })
                 </a>
               </li>
               <li>
+                <Link to="/signup" className="text-slate-600 hover:text-[#3344b8]">
+                  Start 30-Day Free Trial
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://app.leadli.co/"
                   target="_blank"

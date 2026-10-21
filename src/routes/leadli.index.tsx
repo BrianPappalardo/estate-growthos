@@ -121,10 +121,7 @@ function LeadliPage() {
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200 inline-block">
-              Smart. Powerful. Customizable. Workflows.
-            </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] mt-3 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] tracking-tight">
               Automation that turns everyday systems into seamless operations.
             </h2>
             <p className="mt-3 text-base sm:text-lg text-slate-600">
@@ -283,10 +280,7 @@ function LeadliPage() {
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200">
-              Illustrative Savings Estimate
-            </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] mt-3 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] tracking-tight">
               What is your tech stack costing you?
             </h2>
             <p className="mt-3 text-base sm:text-lg text-slate-600">

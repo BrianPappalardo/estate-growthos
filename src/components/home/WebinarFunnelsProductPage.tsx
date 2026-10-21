@@ -165,10 +165,7 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
       <section className="py-16 sm:py-24 bg-[#fcfbf8] border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-              The dashboard your firm actually needs
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b]  tracking-tight">
               One registration. Every reminder. Zero manual follow-up.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
@@ -185,10 +182,7 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-              What you get
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b]  tracking-tight">
               A webinar funnel that runs itself — start to finish.
             </h2>
           </div>
@@ -310,10 +304,7 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-              Built for the webinars you already run
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b]  tracking-tight">
               Three funnels. Three audiences. Zero manual reminders.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
@@ -352,10 +343,7 @@ export function WebinarFunnelsProductPage({ onOpenDiscovery }: { onOpenDiscovery
       <section className="py-16 sm:py-24 bg-[#fcfbf8] border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-              Connected, not copied
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b]  tracking-tight">
               Every registrant ripples through the rest of your platform.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">

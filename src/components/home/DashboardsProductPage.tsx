@@ -171,10 +171,7 @@ export function DashboardsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
       <section className="py-16 sm:py-24 bg-[#fcfbf8] border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-              Drag, drop, save
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b]  tracking-tight">
               Everyone gets the dashboard they actually check.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
@@ -191,10 +188,7 @@ export function DashboardsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-              What you get
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b]  tracking-tight">
               Dashboards built around the people who read them.
             </h2>
           </div>
@@ -311,10 +305,7 @@ export function DashboardsProductPage({ onOpenDiscovery }: { onOpenDiscovery: ()
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-              Connected, not copied
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b]  tracking-tight">
               Your dashboard knows what the rest of your platform knows.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">

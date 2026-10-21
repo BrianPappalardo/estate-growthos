@@ -6,9 +6,6 @@ export function MantraSection() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-              The Core Strategy
-            </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] tracking-tight leading-tight">
               Start Closest to the Money.
             </h2>

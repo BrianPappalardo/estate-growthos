@@ -171,10 +171,7 @@ function GrowthOSLandingPage() {
       <section id="pricing" className="py-16 sm:py-24 bg-[#fcfbf8]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-              Clear, Simple Investment
-            </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#12193b] mt-3 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#12193b] tracking-tight">
               Two ways to work with us.
             </h2>
             <p className="mt-3 text-base sm:text-lg text-slate-600">
@@ -195,10 +192,7 @@ function GrowthOSLandingPage() {
       <section className="py-16 sm:py-24 bg-white border-y border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
-              Client Proof
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] mt-3 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] tracking-tight">
               Don't just take my word for it.
             </h2>
           </div>
@@ -211,10 +205,7 @@ function GrowthOSLandingPage() {
       <section className="py-16 sm:py-24 bg-white border-y border-slate-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-              Frequently Asked Questions
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] mt-3 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] tracking-tight">
               Everything You Need to Know
             </h2>
           </div>

@@ -124,10 +124,7 @@ function FlyingLeapHomePage() {
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
-              Client Proof
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] mt-3 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] tracking-tight">
               Don't just take our word for it.
             </h2>
           </div>

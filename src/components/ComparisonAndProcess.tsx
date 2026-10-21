@@ -9,10 +9,7 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
       <section className="py-16 sm:py-24 bg-[#fcfbf8]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-              The Fundamental Difference
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] mt-3 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] tracking-tight">
               Most agencies sell you leads or traffic. We fix the process that decides whether those
               leads become clients.
             </h2>
@@ -85,10 +82,7 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
       <section id="how-it-works" className="py-16 sm:py-24 bg-white border-y border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-              The 3-Step Plan
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] mt-3 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] tracking-tight">
               From first call to a finished intake process.
             </h2>
           </div>
@@ -211,10 +205,7 @@ export function ComparisonAndProcess({ onBookClick }: { onBookClick: () => void 
       <section className="py-16 sm:py-24 bg-[#fcfbf8]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-              Firm Qualification
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] mt-3 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] tracking-tight">
               Who It’s For (And Who It’s Not)
             </h2>
           </div>

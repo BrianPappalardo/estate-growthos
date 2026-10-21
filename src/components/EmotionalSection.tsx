@@ -6,10 +6,7 @@ export function EmotionalSection({ onBookClick }: { onBookClick: () => void }) {
     <section className="py-16 sm:py-24 bg-linear-to-b from-[#12193b] via-[#18234e] to-[#12193b] text-white relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 relative">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-amber-300 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/30">
-            The Reality of Running a Firm
-          </span>
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-white mt-4 tracking-tight leading-tight">
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
             Stop Running a Non-Profit You Didn’t Sign Up For.
           </h2>
         </div>

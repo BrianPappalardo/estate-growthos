@@ -15,10 +15,7 @@ export function DeliverablesSection({ onBookClick }: { onBookClick: () => void }
     <section className="py-16 sm:py-24 bg-white border-y border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-            The GrowthOS Deliverables
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#12193b] mt-3 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#12193b] tracking-tight">
             GrowthOS: Your Intake, Built Around Your Firm
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600">

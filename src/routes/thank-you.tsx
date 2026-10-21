@@ -168,10 +168,7 @@ function ThankYouPage() {
                 <Sparkles className="w-8 h-8 text-amber-700" />
               </div>
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-amber-900 bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
-                  Your First Homework Assignment
-                </span>
-                <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-3 tracking-tight">
+                <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight">
                   Your first homework assignment is a fun one.
                 </h2>
                 <p className="mt-3 text-base text-slate-700 leading-relaxed max-w-3xl">
@@ -241,11 +238,7 @@ function ThankYouPage() {
             {/* Extra Replacements (Zoom, Loom, Asana) */}
             <div className="bg-[#fcfbf8] p-7 rounded-3xl border border-slate-200 flex flex-col justify-between">
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-                  More Than Just a CRM
-                </span>
-
-                <h3 className="text-xl sm:text-2xl font-black tracking-tight text-[#12193b] mt-3">
+                <h3 className="text-xl sm:text-2xl font-black tracking-tight text-[#12193b]">
                   A Few Things You Might Not Expect Included:
                 </h3>
 

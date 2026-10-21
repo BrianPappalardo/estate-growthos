@@ -72,10 +72,7 @@ export function PlatformFeaturesGrid() {
     <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-            The Engine
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#12193b] mt-3 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#12193b] tracking-tight">
             Everything you need to run your business in one place.
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600">
@@ -122,10 +119,7 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
     <section className="py-16 sm:py-24 bg-[#fcfbf8] border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#f97316] bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
-            It's 2026. Isn't it time your business runs itself?
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#12193b] mt-3 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#12193b] tracking-tight">
             Choose your experience.
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600">

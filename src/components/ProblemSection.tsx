@@ -6,10 +6,7 @@ export function ProblemSection() {
     <section id="problem" className="py-16 sm:py-24 bg-white border-y border-slate-200/80">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-rose-600 bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
-            The Intake Leak
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] mt-3 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] tracking-tight">
             Your intake is where the money leaks.
           </h2>
         </div>

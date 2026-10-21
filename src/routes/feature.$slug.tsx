@@ -313,10 +313,7 @@ function FeatureContent({
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
             <div className="md:col-span-7">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-                What you get
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-4 tracking-tight">
+              <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight">
                 {feature.name}, built around your firm.
               </h2>
               <div className="mt-6 space-y-3.5">

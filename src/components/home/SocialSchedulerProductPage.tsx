@@ -161,10 +161,7 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
       <section className="py-16 sm:py-24 bg-[#fcfbf8] border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-              The dashboard your firm actually needs
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b]  tracking-tight">
               One calendar. Every platform. Zero extra logins.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
@@ -181,10 +178,7 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-              What you get
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b]  tracking-tight">
               A social presence that runs on a schedule — not on willpower.
             </h2>
           </div>
@@ -305,10 +299,7 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-              Built for the content you already mean to post
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b]  tracking-tight">
               Three cadences. Three audiences. One calendar.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">
@@ -346,10 +337,7 @@ export function SocialSchedulerProductPage({ onOpenDiscovery }: { onOpenDiscover
       <section className="py-16 sm:py-24 bg-[#fcfbf8] border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-              Connected, not copied
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b] mt-4 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#12193b]  tracking-tight">
               Every post ripples through the rest of your platform.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600">

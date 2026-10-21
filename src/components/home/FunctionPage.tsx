@@ -78,17 +78,7 @@ export function FunctionPage({
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span
-              className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full border inline-block"
-              style={{
-                color: fn.accent,
-                backgroundColor: `${fn.accent}12`,
-                borderColor: `${fn.accent}44`,
-              }}
-            >
-              {features.length} capabilities in this function
-            </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] mt-3 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] tracking-tight">
               {fn.featureGridHeading ?? `Everything ${fn.name.toLowerCase()} needs — in one place.`}
             </h2>
             <p className="mt-3 text-base sm:text-lg text-slate-600">
@@ -149,10 +139,7 @@ export function FunctionPage({
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
-                One platform, one rate
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] mt-4 tracking-tight">
+              <h2 className="text-2xl sm:text-3xl font-black text-[#12193b] tracking-tight">
                 {fn.whatYouGetHeading ??
                   `${fn.name}, built around your firm — not the other way around.`}
               </h2>

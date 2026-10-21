@@ -186,9 +186,6 @@ export function LeadliConstellationSection({ onOpenDiscovery }: { onOpenDiscover
           </div>
 
           <div className="lg:col-span-6 space-y-6">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200 inline-block">
-              Smart Systems That Grow With You
-            </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] tracking-tight leading-tight">
               One platform that adapts to the way you work.
             </h2>
@@ -327,10 +324,7 @@ export function LeadliFeatureGrid() {
     <section className="py-16 sm:py-24 bg-[#fcfbf8] border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-            The core platform
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] mt-3 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] tracking-tight">
             Everything your firm runs on.
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600">
@@ -516,10 +510,7 @@ export function LeadliFunctionsSection({ onOpenDiscovery }: { onOpenDiscovery: (
     <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#3344b8] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
-            Browse by function
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] mt-3 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#12193b] tracking-tight">
             One platform. Five functions. Every tool you need.
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600">

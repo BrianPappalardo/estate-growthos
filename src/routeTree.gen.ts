@@ -12,6 +12,9 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as EstatePlanningRouteImport } from './routes/estate-planning'
 import { Route as LeadliRouteImport } from './routes/leadli'
+import { Route as Leadli1RouteImport } from './routes/leadli-1'
+import { Route as Leadli2RouteImport } from './routes/leadli-2'
+import { Route as Leadli3RouteImport } from './routes/leadli-3'
 import { Route as ThankYouRouteImport } from './routes/thank-you'
 import { Route as FeatureSlugRouteImport } from './routes/feature.$slug'
 import { Route as LeadliIndexRouteImport } from './routes/leadli.index'
@@ -30,6 +33,21 @@ const EstatePlanningRoute = EstatePlanningRouteImport.update({
 const LeadliRoute = LeadliRouteImport.update({
   id: '/leadli',
   path: '/leadli',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Leadli1Route = Leadli1RouteImport.update({
+  id: '/leadli-1',
+  path: '/leadli-1',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Leadli2Route = Leadli2RouteImport.update({
+  id: '/leadli-2',
+  path: '/leadli-2',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Leadli3Route = Leadli3RouteImport.update({
+  id: '/leadli-3',
+  path: '/leadli-3',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ThankYouRoute = ThankYouRouteImport.update({
@@ -57,6 +75,9 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/estate-planning': typeof EstatePlanningRoute
   '/leadli': typeof LeadliRouteWithChildren
+  '/leadli-1': typeof Leadli1Route
+  '/leadli-2': typeof Leadli2Route
+  '/leadli-3': typeof Leadli3Route
   '/thank-you': typeof ThankYouRoute
   '/feature/$slug': typeof FeatureSlugRoute
   '/leadli/$slug': typeof LeadliSlugRoute
@@ -65,6 +86,9 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/estate-planning': typeof EstatePlanningRoute
+  '/leadli-1': typeof Leadli1Route
+  '/leadli-2': typeof Leadli2Route
+  '/leadli-3': typeof Leadli3Route
   '/thank-you': typeof ThankYouRoute
   '/feature/$slug': typeof FeatureSlugRoute
   '/leadli/$slug': typeof LeadliSlugRoute
@@ -75,6 +99,9 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/estate-planning': typeof EstatePlanningRoute
   '/leadli': typeof LeadliRouteWithChildren
+  '/leadli-1': typeof Leadli1Route
+  '/leadli-2': typeof Leadli2Route
+  '/leadli-3': typeof Leadli3Route
   '/thank-you': typeof ThankYouRoute
   '/feature/$slug': typeof FeatureSlugRoute
   '/leadli/$slug': typeof LeadliSlugRoute
@@ -86,6 +113,9 @@ export interface FileRouteTypes {
     | '/'
     | '/estate-planning'
     | '/leadli'
+    | '/leadli-1'
+    | '/leadli-2'
+    | '/leadli-3'
     | '/thank-you'
     | '/feature/$slug'
     | '/leadli/$slug'
@@ -94,6 +124,9 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/estate-planning'
+    | '/leadli-1'
+    | '/leadli-2'
+    | '/leadli-3'
     | '/thank-you'
     | '/feature/$slug'
     | '/leadli/$slug'
@@ -103,6 +136,9 @@ export interface FileRouteTypes {
     | '/'
     | '/estate-planning'
     | '/leadli'
+    | '/leadli-1'
+    | '/leadli-2'
+    | '/leadli-3'
     | '/thank-you'
     | '/feature/$slug'
     | '/leadli/$slug'
@@ -113,6 +149,9 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   EstatePlanningRoute: typeof EstatePlanningRoute
   LeadliRoute: typeof LeadliRouteWithChildren
+  Leadli1Route: typeof Leadli1Route
+  Leadli2Route: typeof Leadli2Route
+  Leadli3Route: typeof Leadli3Route
   ThankYouRoute: typeof ThankYouRoute
   FeatureSlugRoute: typeof FeatureSlugRoute
 }
@@ -138,6 +177,27 @@ declare module '@tanstack/react-router' {
       path: '/leadli'
       fullPath: '/leadli'
       preLoaderRoute: typeof LeadliRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leadli-1': {
+      id: '/leadli-1'
+      path: '/leadli-1'
+      fullPath: '/leadli-1'
+      preLoaderRoute: typeof Leadli1RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leadli-2': {
+      id: '/leadli-2'
+      path: '/leadli-2'
+      fullPath: '/leadli-2'
+      preLoaderRoute: typeof Leadli2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leadli-3': {
+      id: '/leadli-3'
+      path: '/leadli-3'
+      fullPath: '/leadli-3'
+      preLoaderRoute: typeof Leadli3RouteImport
       parentRoute: typeof rootRouteImport
     }
     '/thank-you': {
@@ -188,6 +248,9 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   EstatePlanningRoute: EstatePlanningRoute,
   LeadliRoute: LeadliRouteWithChildren,
+  Leadli1Route: Leadli1Route,
+  Leadli2Route: Leadli2Route,
+  Leadli3Route: Leadli3Route,
   ThankYouRoute: ThankYouRoute,
   FeatureSlugRoute: FeatureSlugRoute,
 }

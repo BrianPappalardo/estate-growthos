@@ -16,8 +16,8 @@ import { InlineEditor } from "@/lib/inline-editor";
 export const Route = createFileRoute("/")({
   component: FlyingLeapHomePage,
   loader: async () => {
-    const { data } = await getContentEdits({ data: { route: "/" } });
-    return { edits: data.edits };
+    const result = await getContentEdits({ data: { route: "/" } });
+    return { edits: result.edits };
   },
   head: () => ({
     meta: [

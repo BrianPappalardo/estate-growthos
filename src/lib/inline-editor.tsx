@@ -30,13 +30,14 @@ function elementPath(el: HTMLElement): string | null {
   const parts: string[] = [];
   let node: HTMLElement | null = el;
   while (node && node !== root) {
-    const tag = node.tagName.toLowerCase();
-    const parent = node.parentElement;
+    const current: HTMLElement = node;
+    const parent: HTMLElement | null = current.parentElement;
     if (!parent) break;
     const siblings = Array.from(parent.children).filter(
-      (c: Element) => c.tagName === node!.tagName,
+      (c: Element) => c.tagName === current.tagName,
     );
-    const index = siblings.indexOf(node);
+    const index = siblings.indexOf(current);
+    const tag = current.tagName.toLowerCase();
     const sig = siblings.length > 1 ? `${tag}[${index}]` : tag;
     parts.unshift(sig);
     node = parent;
@@ -334,7 +335,7 @@ function findByPath(root: HTMLElement, path: string): HTMLElement | null {
     let next: Element | null = null;
     if (m) {
       const tag = m[1] as string;
-      const idx = parseInt(m[2], 10);
+      const idx = parseInt(m[2] as string, 10);
       const sibs = Array.from(current.children).filter(
         (c: Element) => c.tagName.toLowerCase() === tag,
       );

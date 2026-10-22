@@ -10,7 +10,6 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as AdminRouteImport } from './routes/admin'
 import { Route as EstatePlanningRouteImport } from './routes/estate-planning'
 import { Route as LeadliRouteImport } from './routes/leadli'
 import { Route as Leadli1RouteImport } from './routes/leadli-1'
@@ -25,11 +24,6 @@ import { Route as LeadliSlugRouteImport } from './routes/leadli.$slug'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AdminRoute = AdminRouteImport.update({
-  id: '/admin',
-  path: '/admin',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EstatePlanningRoute = EstatePlanningRouteImport.update({
@@ -85,7 +79,6 @@ const LeadliSlugRoute = LeadliSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/admin': typeof AdminRoute
   '/estate-planning': typeof EstatePlanningRoute
   '/leadli': typeof LeadliRouteWithChildren
   '/leadli-1': typeof Leadli1Route
@@ -99,7 +92,6 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/admin': typeof AdminRoute
   '/estate-planning': typeof EstatePlanningRoute
   '/leadli-1': typeof Leadli1Route
   '/leadli-2': typeof Leadli2Route
@@ -113,7 +105,6 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/admin': typeof AdminRoute
   '/estate-planning': typeof EstatePlanningRoute
   '/leadli': typeof LeadliRouteWithChildren
   '/leadli-1': typeof Leadli1Route
@@ -129,7 +120,6 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/admin'
     | '/estate-planning'
     | '/leadli'
     | '/leadli-1'
@@ -143,7 +133,6 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/admin'
     | '/estate-planning'
     | '/leadli-1'
     | '/leadli-2'
@@ -156,7 +145,6 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
-    | '/admin'
     | '/estate-planning'
     | '/leadli'
     | '/leadli-1'
@@ -171,7 +159,6 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AdminRoute: typeof AdminRoute
   EstatePlanningRoute: typeof EstatePlanningRoute
   LeadliRoute: typeof LeadliRouteWithChildren
   Leadli1Route: typeof Leadli1Route
@@ -189,13 +176,6 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/admin': {
-      id: '/admin'
-      path: '/admin'
-      fullPath: '/admin'
-      preLoaderRoute: typeof AdminRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/estate-planning': {
@@ -286,7 +266,6 @@ const LeadliRouteWithChildren =
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AdminRoute: AdminRoute,
   EstatePlanningRoute: EstatePlanningRoute,
   LeadliRoute: LeadliRouteWithChildren,
   Leadli1Route: Leadli1Route,

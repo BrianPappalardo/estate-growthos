@@ -14,36 +14,6 @@ export type Database = {
   }
   public: {
     Tables: {
-      content_edits: {
-        Row: {
-          element_path: string
-          field_type: string
-          id: string
-          route: string
-          updated_at: string
-          updated_by: string | null
-          value: string
-        }
-        Insert: {
-          element_path: string
-          field_type?: string
-          id?: string
-          route: string
-          updated_at?: string
-          updated_by?: string | null
-          value: string
-        }
-        Update: {
-          element_path?: string
-          field_type?: string
-          id?: string
-          route?: string
-          updated_at?: string
-          updated_by?: string | null
-          value?: string
-        }
-        Relationships: []
-      }
       leads: {
         Row: {
           booking_submitted: boolean

@@ -15,7 +15,9 @@ import {
   ChevronRight,
   Cpu,
   ArrowUpRight,
+  Scissors,
 } from "lucide-react";
+import { DropSubscriptionsSection } from "@/components/home/DropSubscriptionsSection";
 import { FlyingLeapLogo } from "@/components/FlyingLeapLogo";
 import { DiscoveryModal } from "@/components/DiscoveryModal";
 
@@ -627,6 +629,9 @@ export function Leadli2Page() {
           </div>
         </div>
       </section>
+
+      {/* ── DROP THESE SUBSCRIPTIONS ── */}
+      <DropSubscriptionsSection />
 
       {/* ── FINAL CTA ── */}
       <section className="relative py-20 sm:py-28 overflow-hidden">

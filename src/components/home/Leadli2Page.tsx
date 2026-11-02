@@ -7,16 +7,13 @@ import {
   Wand2,
   Gift,
   Workflow,
-  Rocket,
   Layers,
   Building2,
   Navigation,
   CreditCard,
-  Zap,
   Check,
   ChevronRight,
   Cpu,
-  Gauge,
   ArrowUpRight,
 } from "lucide-react";
 import { FlyingLeapLogo } from "@/components/FlyingLeapLogo";
@@ -36,55 +33,55 @@ const AI_RELEASES: Release[] = [
   {
     id: "conversation-ai",
     badge: "Conversation AI Flow Builder",
-    title: "Outbound agents that reactivate your dead database — up to 2.6x faster.",
+    title: "Your AI can now reach out first — and it's up to 2.6x faster.",
     blurb:
-      "The Flow Builder now ships outbound agents and database reactivation on top of a serious processing-speed upgrade. Your AI isn't just replying faster — it's reaching out on its own.",
+      "The Conversation AI in your account now ships outbound agents and database reactivation. It doesn't just answer faster — it reaches out on its own, waking up the leads that went quiet and never came back.",
     icon: Bot,
     accent: "#22d3ee",
     points: [
-      { label: "Outbound agents", detail: "AI that initiates, not just responds" },
+      { label: "Outbound agents", detail: "AI that initiates — not just replies" },
       { label: "Database reactivation", detail: "Wake up cold leads automatically" },
-      { label: "2.6x faster processing", detail: "Less latency between intent and reply" },
+      { label: "2.6x faster processing", detail: "Less waiting between intent and reply" },
     ],
   },
   {
     id: "creator-studio",
     badge: "Creator Studio",
-    title: "A built-in Canva and ad-recreation tool — no extra subscription.",
+    title: "A built-in Canva — for your content and your ads.",
     blurb:
-      "Create and recreate content and ads inside the platform you already use. It's the alternative to Canva and Higgsfield, baked into Leadli so your creative work lives next to your data.",
+      "Create and recreate your content and ads without leaving Leadli or paying for another tool. It's the alternative to Canva and Higgsfield, sitting right where your contacts and data already live.",
     icon: Wand2,
     accent: "#a78bfa",
     points: [
-      { label: "Content creation", detail: "Design without leaving the platform" },
-      { label: "Ad recreation", detail: "Spin up fresh variations fast" },
-      { label: "No extra subscription", detail: "Included, not upsold" },
+      { label: "Content + ad creation", detail: "Design without leaving the platform" },
+      { label: "Spin up variations fast", detail: "Fresh creative in minutes, not days" },
+      { label: "No extra subscription", detail: "Already in your account" },
     ],
   },
   {
     id: "free-ai-tools",
     badge: "Free AI Tools",
-    title: "Free AI generation for the tools you use every day.",
+    title: "Free AI generation, on the everyday tools you already use.",
     blurb:
-      "Ask AI, AI Studio, Creator Studio, workflows, and AI email are now free to generate. Managed agents and Conversation AI stay monetized — the everyday stuff is on the house.",
+      "Ask AI, AI Studio, Creator Studio, workflows, and AI email are now free to generate. The everyday AI work is on the house — managed agents and Conversation AI stay as optional premium add-ons if you want to go further.",
     icon: Gift,
     accent: "#34d399",
     points: [
       { label: "Ask AI, AI Studio", detail: "Free generation across the board" },
       { label: "Workflows + AI email", detail: "Free to generate" },
-      { label: "Managed agents", detail: "Still a monetized, premium service" },
+      { label: "Managed agents", detail: "Still an optional premium add-on" },
     ],
   },
   {
     id: "workflow-map",
     badge: "Workflow Map & MCP",
-    title: "Visual workflow mapping that finally makes automation legible.",
+    title: "See your automations mapped out — and fix them at a glance.",
     blurb:
-      "See your automations mapped out, build them outside the main interface, and let the system upgrade templates and fix tags automatically. The MCP integration means automation is no longer a black box.",
+      "Your workflows now have a visual map, so automation is no longer a black box. See every step, build outside the main interface, and let the system upgrade templates and fix tags for you automatically.",
     icon: Workflow,
     accent: "#fb923c",
     points: [
-      { label: "Visual map", detail: "Simplify automation tracking" },
+      { label: "Visual map", detail: "Every step of every automation, visible" },
       { label: "Build outside the UI", detail: "Map & MCP integration" },
       { label: "Auto template upgrades", detail: "Tag fixes handled for you" },
     ],
@@ -93,87 +90,59 @@ const AI_RELEASES: Release[] = [
 
 const OPS_RELEASES: Release[] = [
   {
-    id: "founder-plan",
-    badge: "Founder Plan",
-    title: "The $497 Agency Pro plan is now the Founder Plan — same price, more unlocks.",
-    blurb:
-      "We renamed it and kept the price. The Founder Plan unlocks exclusive features: Industry Modes, Workflow Maps, the Founders Club, and Partner Network access.",
-    icon: Rocket,
-    accent: "#fb923c",
-    points: [
-      { label: "Same $497 price", detail: "Renamed, not repriced" },
-      { label: "Industry Modes", detail: "Exclusive to Founders" },
-      { label: "Founders Club + Partner Network", detail: "Access unlocked" },
-    ],
-  },
-  {
     id: "native-pm",
     badge: "Native Project Management & Ticketing",
-    title: "Task management, status groups, and workflow automations — built in.",
+    title: "Your tasks now live where your data does.",
     blurb:
-      "Run your team's work where your data already lives. Built-in task management with updated status groups, reminder automations, and public APIs for custom integrations.",
+      "Built-in task management, updated status groups, and reminder automations — all inside Leadli. Run your team's work where your clients and contacts already are, with no separate project tool to buy or sync.",
     icon: Layers,
     accent: "#22d3ee",
     points: [
       { label: "Built-in task management", detail: "No third-party PM tool" },
-      { label: "Updated status groups", detail: "Reminders & workflow automation" },
-      { label: "Public APIs", detail: "Custom integrations welcome" },
+      { label: "Status groups + reminders", detail: "Workflow automation included" },
+      { label: "Public APIs", detail: "Hook in your custom integrations" },
     ],
   },
   {
     id: "industry-snapshots",
-    badge: "Industry Snapshots / Operating Systems",
-    title: "Full operational snapshots tailored to your vertical.",
+    badge: "Industry Operating Systems",
+    title: "An operating system tailored to your kind of business.",
     blurb:
-      "Snapshots for verticals like restaurants and home services — complete with table drawing, online ordering, and job routing. Drop in an operating system, not just a template.",
+      "Snapshots built for verticals like restaurants and home services — complete with table drawing, online ordering, and job routing. Drop in a way of running your business, not just a template you have to learn.",
     icon: Building2,
     accent: "#a78bfa",
     points: [
-      { label: "Vertical-tailored", detail: "Restaurants, home services, more" },
+      { label: "Vertical-tailored", detail: "Restaurants, home services, and more" },
       { label: "Table drawing + online ordering", detail: "Operational out of the box" },
-      { label: "Job routing", detail: "Built for real operations" },
-    ],
-  },
-  {
-    id: "ad-fuel",
-    badge: "Ad Fuel",
-    title: "HighLevel helps you create and run targeted ads — inside the ad manager.",
-    blurb:
-      "A Founder Plan program where we assist with targeted advertising creation and execution, right inside the ad manager. Less guesswork, better ad spend.",
-    icon: Zap,
-    accent: "#f97316",
-    points: [
-      { label: "Targeted ad creation", detail: "Assisted by the platform" },
-      { label: "Execution inside ad manager", detail: "Create and run in one place" },
-      { label: "Founder Plan members", detail: "Exclusive program" },
+      { label: "Job routing", detail: "Built for real, day-to-day operations" },
     ],
   },
   {
     id: "new-navigation",
     badge: "New Navigation",
-    title: "A reorganized sidebar built around how you actually move.",
+    title: "The sidebar finally knows where you're going.",
     blurb:
-      "Pins, recents, and a genuinely better global search. The sidebar finally feels like it knows where you're going before you do.",
+      "A reorganized sidebar with pins, recents, and a genuinely better global search. Less hunting, more doing — it surfaces your most-used before you go looking for them.",
     icon: Navigation,
     accent: "#60a5fa",
     points: [
-      { label: "Pins + recents", detail: "Your most-used, surfaced" },
+      { label: "Pins + recents", detail: "Your most-used, surfaced first" },
       { label: "Improved global search", detail: "Find anything, faster" },
       { label: "Reorganized sidebar", detail: "Less hunting, more doing" },
     ],
   },
   {
     id: "lc-payments",
-    badge: "LC Payments & E-Commerce",
-    title: "Shopify fulfillment automation and new LC Payments commission structures.",
+    badge: "Payments & E-Commerce",
+    title: "Your payments and your orders, finally talking to each other.",
     blurb:
-      "Order fulfillment workflow automation for Shopify, plus new commission structures for reselling LC payments. Commerce and payments just got tighter.",
+      "Shopify order fulfillment now syncs automatically, and there are new, smarter ways to handle payments and commissions inside your account. Commerce and payments just got tighter — and faster.",
     icon: CreditCard,
     accent: "#34d399",
     points: [
       { label: "Shopify fulfillment automation", detail: "Orders sync automatically" },
-      { label: "New commission structures", detail: "Resell LC payments cleanly" },
-      { label: "Tighter e-commerce", detail: "Payments + orders, together" },
+      { label: "Smarter payments", detail: "New commission structures" },
+      { label: "Payments + orders together", detail: "One place, no reconciliation" },
     ],
   },
 ];
@@ -344,14 +313,15 @@ function AIPricingBlock({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
                 }}
               >
                 <Cpu className="w-3.5 h-3.5" />
-                New AI pricing
+                Want to go unlimited?
               </div>
               <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[var(--v2-text)] leading-[1.1]">
-                Unlimited AI for the whole workspace.
+                Unlimited AI for your whole workspace.
               </h2>
               <p className="mt-5 text-base sm:text-lg text-[var(--v2-muted)] leading-relaxed">
-                Flat-rate AI usage across your entire team — no per-seat metering, no surprise
-                overages. Generate as much as your business needs.
+                Turn on flat-rate AI across your entire team — no per-seat metering, no surprise
+                overages. Generate as much as your business needs. The new features above are
+                already free in your account; this is for when you want to take the AI further.
               </p>
 
               <div className="mt-7 flex items-end gap-2">
@@ -396,7 +366,7 @@ function AIPricingBlock({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
                   className="mt-2 w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm transition-all cursor-pointer"
                   style={{ background: "var(--v2-electric)", color: "#06243a" }}
                 >
-                  Talk to us about AI
+                  Talk to us about unlimited AI
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </li>
@@ -421,8 +391,8 @@ function Release2Footer({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
               <FlyingLeapLogo className="h-9 opacity-90" />
             </div>
             <p className="mt-4 text-sm text-[var(--v2-muted)] max-w-md">
-              Leadli is our white-label platform. Leadli 2.0 is the cumulative work of the last
-              release cycle — and we're just getting started.
+              Leadli is our platform. Leadli 2.0 is the cumulative work of the last release cycle —
+              all of it already live in your account — and we're just getting started.
             </p>
           </div>
           <button
@@ -438,7 +408,7 @@ function Release2Footer({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
           className="mt-10 pt-6 border-t text-xs text-[var(--v2-muted)]"
           style={{ borderColor: "var(--v2-border)" }}
         >
-          © {new Date().getFullYear()} Flying Leap Studio. Leadli is a white-label platform.
+          © {new Date().getFullYear()} Flying Leap Studio. Leadli is our platform.
         </div>
       </div>
     </footer>
@@ -515,16 +485,23 @@ export function Leadli2Page() {
             className="v2-rise text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.05]"
             style={{ animationDelay: "0.08s" }}
           >
-            The platform just got a <span className="v2-shimmer-text">serious upgrade.</span>
+            Your Leadli just got a <span className="v2-shimmer-text">serious upgrade.</span>
           </h1>
 
           <p
             className="v2-rise mt-7 text-lg sm:text-2xl text-[var(--v2-muted)] max-w-3xl mx-auto leading-relaxed"
             style={{ animationDelay: "0.16s" }}
           >
-            Ten major releases in the last cycle — from outbound AI agents and a built-in creative
-            studio to native project management, vertical operating systems, and flat-rate AI.
-            Here's what changed.
+            Eight major releases in the last cycle — from outbound AI agents that reactivate your
+            cold leads, to a built-in creative studio, native project management, and payments that
+            finally talk to your orders. And it's all already in your account.
+          </p>
+
+          <p
+            className="v2-rise mt-5 text-sm sm:text-base text-[var(--v2-muted)]/80 max-w-2xl mx-auto leading-relaxed"
+            style={{ animationDelay: "0.2s" }}
+          >
+            No downloads. No new subscriptions. Nothing to install. Just open Leadli and it's there.
           </p>
 
           <div
@@ -559,7 +536,7 @@ export function Leadli2Page() {
           >
             {[
               { v: "2.6x", l: "Faster AI processing" },
-              { v: "10", l: "Major releases" },
+              { v: "8", l: "Major releases" },
               { v: "$40", l: "Flat AI / workspace" },
             ].map((s) => (
               <div
@@ -597,13 +574,13 @@ export function Leadli2Page() {
               }}
             >
               <Bot className="w-3.5 h-3.5" />
-              AI & Automation releases
+              AI &amp; Automation
             </div>
             <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[var(--v2-text)]">
               Smarter, faster, and a little more autonomous.
             </h2>
             <p className="mt-4 text-base sm:text-lg text-[var(--v2-muted)]">
-              The AI layer of Leadli 2.0 doesn't just answer — it acts.
+              The AI layer of your Leadli doesn't just answer anymore — it acts.
             </p>
           </div>
 
@@ -618,7 +595,7 @@ export function Leadli2Page() {
       {/* ── AI PRICING ── */}
       <AIPricingBlock onOpenDiscovery={handleOpenDiscovery} />
 
-      {/* ── AGENCY & OPS RELEASES ── */}
+      {/* ── OPERATIONS & COMMERCE RELEASES ── */}
       <section className="relative py-16 sm:py-24" style={{ background: "var(--v2-bg-2)" }}>
         <div className="absolute inset-0 v2-grid-bg opacity-30 pointer-events-none" />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
@@ -631,14 +608,15 @@ export function Leadli2Page() {
                 border: "1px solid color-mix(in oklab, var(--v2-accent) 35%, transparent)",
               }}
             >
-              <Gauge className="w-3.5 h-3.5" />
-              Agency &amp; Operations
+              <Layers className="w-3.5 h-3.5" />
+              Operations &amp; Commerce
             </div>
             <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[var(--v2-text)]">
               Built for the way you actually run it.
             </h2>
             <p className="mt-4 text-base sm:text-lg text-[var(--v2-muted)]">
-              The operational backbone — from project management to vertical operating systems.
+              The operational backbone — from project management to payments that finally talk to
+              your orders.
             </p>
           </div>
 

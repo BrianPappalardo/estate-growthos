@@ -10,7 +10,7 @@ export const Route = createFileRoute("/whats-new")({
       {
         name: "description",
         content:
-          "Ten major Leadli releases in the last cycle — outbound AI agents, a built-in creator studio, native project management, vertical operating systems, and flat-rate AI from $40/mo.",
+          "Eight major Leadli releases in the last cycle — outbound AI agents that reactivate cold leads, a built-in creator studio, native project management, payments that sync with your orders, and flat-rate AI from $40/mo.",
       },
       {
         property: "og:title",
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/whats-new")({
       {
         property: "og:description",
         content:
-          "The platform just got a serious upgrade. See the major AI, automation, and operations releases — and flat-rate AI from $40/mo per workspace.",
+          "Your Leadli just got a serious upgrade — and it's all already in your account. See the major AI, automation, and commerce releases.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

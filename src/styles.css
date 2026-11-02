@@ -202,6 +202,27 @@
   }
 }
 
+@keyframes v2-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes v2-pulse-soft {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.18);
+  }
+}
+
 .v2-float {
   animation: v2-float 7s ease-in-out infinite;
 }
@@ -274,6 +295,16 @@
     0 0 40px -8px color-mix(in oklab, var(--v2-electric) 45%, transparent);
 }
 
+.v2-marquee {
+  animation: v2-marquee 38s linear infinite;
+}
+.v2-marquee-rev {
+  animation: v2-marquee 46s linear infinite reverse;
+}
+.v2-pulse-soft {
+  animation: v2-pulse-soft 2.4s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .v2-float,
   .v2-drift,
@@ -281,7 +312,10 @@
   .v2-squiggle,
   .v2-squiggle-slow,
   .v2-shimmer-text,
-  .v2-rise {
+  .v2-rise,
+  .v2-marquee,
+  .v2-marquee-rev,
+  .v2-pulse-soft {
     animation: none !important;
   }
   .v2-shimmer-text {

@@ -3,151 +3,18 @@ import { Link } from "@tanstack/react-router";
 import {
   ArrowRight,
   Sparkles,
-  Bot,
-  Wand2,
-  Gift,
-  Workflow,
-  Layers,
-  Building2,
-  Navigation,
-  CreditCard,
   Check,
   ChevronRight,
-  Cpu,
   ArrowUpRight,
-  Scissors,
+  Gauge,
+  Layers,
 } from "lucide-react";
 import { DropSubscriptionsSection } from "@/components/home/DropSubscriptionsSection";
 import { FlyingLeapLogo } from "@/components/FlyingLeapLogo";
 import { DiscoveryModal } from "@/components/DiscoveryModal";
-
-type Release = {
-  id: string;
-  badge: string;
-  title: string;
-  blurb: string;
-  icon: typeof Bot;
-  accent: string; // hex for inline style tints
-  points: { label: string; detail: string }[];
-};
-
-const AI_RELEASES: Release[] = [
-  {
-    id: "conversation-ai",
-    badge: "Conversation AI Flow Builder",
-    title: "Your AI can now reach out first — and it's up to 2.6x faster.",
-    blurb:
-      "The Conversation AI in your account now ships outbound agents and database reactivation. It doesn't just answer faster — it reaches out on its own, waking up the leads that went quiet and never came back.",
-    icon: Bot,
-    accent: "#22d3ee",
-    points: [
-      { label: "Outbound agents", detail: "AI that initiates — not just replies" },
-      { label: "Database reactivation", detail: "Wake up cold leads automatically" },
-      { label: "2.6x faster processing", detail: "Less waiting between intent and reply" },
-    ],
-  },
-  {
-    id: "creator-studio",
-    badge: "Creator Studio",
-    title: "A built-in Canva — for your content and your ads.",
-    blurb:
-      "Create and recreate your content and ads without leaving Leadli or paying for another tool. It's the alternative to Canva and Higgsfield, sitting right where your contacts and data already live.",
-    icon: Wand2,
-    accent: "#a78bfa",
-    points: [
-      { label: "Content + ad creation", detail: "Design without leaving the platform" },
-      { label: "Spin up variations fast", detail: "Fresh creative in minutes, not days" },
-      { label: "No extra subscription", detail: "Already in your account" },
-    ],
-  },
-  {
-    id: "free-ai-tools",
-    badge: "Free AI Tools",
-    title: "Free AI generation, on the everyday tools you already use.",
-    blurb:
-      "Ask AI, AI Studio, Creator Studio, workflows, and AI email are now free to generate. The everyday AI work is on the house — managed agents and Conversation AI stay as optional premium add-ons if you want to go further.",
-    icon: Gift,
-    accent: "#34d399",
-    points: [
-      { label: "Ask AI, AI Studio", detail: "Free generation across the board" },
-      { label: "Workflows + AI email", detail: "Free to generate" },
-      { label: "Managed agents", detail: "Still an optional premium add-on" },
-    ],
-  },
-  {
-    id: "workflow-map",
-    badge: "Workflow Map & MCP",
-    title: "See your automations mapped out — and fix them at a glance.",
-    blurb:
-      "Your workflows now have a visual map, so automation is no longer a black box. See every step, build outside the main interface, and let the system upgrade templates and fix tags for you automatically.",
-    icon: Workflow,
-    accent: "#fb923c",
-    points: [
-      { label: "Visual map", detail: "Every step of every automation, visible" },
-      { label: "Build outside the UI", detail: "Map & MCP integration" },
-      { label: "Auto template upgrades", detail: "Tag fixes handled for you" },
-    ],
-  },
-];
-
-const OPS_RELEASES: Release[] = [
-  {
-    id: "native-pm",
-    badge: "Native Project Management & Ticketing",
-    title: "Your tasks now live where your data does.",
-    blurb:
-      "Built-in task management, updated status groups, and reminder automations — all inside Leadli. Run your team's work where your clients and contacts already are, with no separate project tool to buy or sync.",
-    icon: Layers,
-    accent: "#22d3ee",
-    points: [
-      { label: "Built-in task management", detail: "No third-party PM tool" },
-      { label: "Status groups + reminders", detail: "Workflow automation included" },
-      { label: "Public APIs", detail: "Hook in your custom integrations" },
-    ],
-  },
-  {
-    id: "industry-snapshots",
-    badge: "Industry Operating Systems",
-    title: "An operating system tailored to your kind of business.",
-    blurb:
-      "Snapshots built for verticals like restaurants and home services — complete with table drawing, online ordering, and job routing. Drop in a way of running your business, not just a template you have to learn.",
-    icon: Building2,
-    accent: "#a78bfa",
-    points: [
-      { label: "Vertical-tailored", detail: "Restaurants, home services, and more" },
-      { label: "Table drawing + online ordering", detail: "Operational out of the box" },
-      { label: "Job routing", detail: "Built for real, day-to-day operations" },
-    ],
-  },
-  {
-    id: "new-navigation",
-    badge: "New Navigation",
-    title: "The sidebar finally knows where you're going.",
-    blurb:
-      "A reorganized sidebar with pins, recents, and a genuinely better global search. Less hunting, more doing — it surfaces your most-used before you go looking for them.",
-    icon: Navigation,
-    accent: "#60a5fa",
-    points: [
-      { label: "Pins + recents", detail: "Your most-used, surfaced first" },
-      { label: "Improved global search", detail: "Find anything, faster" },
-      { label: "Reorganized sidebar", detail: "Less hunting, more doing" },
-    ],
-  },
-  {
-    id: "lc-payments",
-    badge: "Payments & E-Commerce",
-    title: "Your payments and your orders, finally talking to each other.",
-    blurb:
-      "Shopify order fulfillment now syncs automatically, and there are new, smarter ways to handle payments and commissions inside your account. Commerce and payments just got tighter — and faster.",
-    icon: CreditCard,
-    accent: "#34d399",
-    points: [
-      { label: "Shopify fulfillment automation", detail: "Orders sync automatically" },
-      { label: "Smarter payments", detail: "New commission structures" },
-      { label: "Payments + orders together", detail: "One place, no reconciliation" },
-    ],
-  },
-];
+import { AIPricingBlock } from "@/components/home/Leadli2Pricing";
+import { TickerStrip } from "@/components/home/Leadli2Ticker";
+import { SPEED_RELEASES, OPS_RELEASES, type Release } from "@/components/home/leadli2-data";
 
 function SquiggleBackground() {
   return (
@@ -193,7 +60,6 @@ function ReleaseSection({ release, index }: { release: Release; index: number })
       style={{ animationDelay: `${0.06 * index}s` }}
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-        {/* visual */}
         <div className={`lg:col-span-5 ${flip ? "lg:order-2" : ""}`}>
           <div
             className="relative rounded-3xl p-8 sm:p-10 v2-grid-bg"
@@ -238,7 +104,6 @@ function ReleaseSection({ release, index }: { release: Release; index: number })
           </div>
         </div>
 
-        {/* copy */}
         <div className={`lg:col-span-7 ${flip ? "lg:order-1" : ""}`}>
           <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-[var(--v2-text)] leading-[1.12]">
             {release.title}
@@ -273,110 +138,6 @@ function ReleaseSection({ release, index }: { release: Release; index: number })
         </div>
       </div>
     </div>
-  );
-}
-
-function AIPricingBlock({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
-  return (
-    <section className="relative py-20 sm:py-28 overflow-hidden">
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(60% 60% at 50% 0%, color-mix(in oklab, var(--v2-violet) 22%, transparent), transparent 70%)",
-        }}
-      />
-      <div className="absolute inset-0 v2-noise opacity-30 pointer-events-none" />
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 relative">
-        <div
-          className="rounded-[2rem] p-8 sm:p-12 lg:p-16 relative overflow-hidden v2-glow"
-          style={{
-            background:
-              "linear-gradient(150deg, color-mix(in oklab, var(--v2-violet) 26%, var(--v2-surface)), var(--v2-surface) 55%, color-mix(in oklab, var(--v2-electric) 18%, var(--v2-surface)))",
-            border: "1px solid color-mix(in oklab, var(--v2-violet) 40%, var(--v2-border))",
-          }}
-        >
-          <div
-            className="absolute -top-24 -right-24 w-72 h-72 rounded-full blur-3xl pointer-events-none v2-drift"
-            style={{ background: "#a78bfa", opacity: 0.3 }}
-          />
-          <div
-            className="absolute -bottom-24 -left-24 w-72 h-72 rounded-full blur-3xl pointer-events-none v2-drift"
-            style={{ background: "#22d3ee", opacity: 0.2, animationDelay: "3s" }}
-          />
-
-          <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <div
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-extrabold tracking-wide v2-glow-cyan"
-                style={{
-                  background: "color-mix(in oklab, var(--v2-electric) 16%, transparent)",
-                  color: "var(--v2-electric)",
-                }}
-              >
-                <Cpu className="w-3.5 h-3.5" />
-                Want to go unlimited?
-              </div>
-              <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[var(--v2-text)] leading-[1.1]">
-                Unlimited AI for your whole workspace.
-              </h2>
-              <p className="mt-5 text-base sm:text-lg text-[var(--v2-muted)] leading-relaxed">
-                Turn on flat-rate AI across your entire team — no per-seat metering, no surprise
-                overages. Generate as much as your business needs. The new features above are
-                already free in your account; this is for when you want to take the AI further.
-              </p>
-
-              <div className="mt-7 flex items-end gap-2">
-                <span className="text-5xl sm:text-6xl font-black v2-shimmer-text">$40</span>
-                <span className="text-xl font-bold text-[var(--v2-muted)] mb-1">/mo</span>
-                <span className="text-sm text-[var(--v2-muted)] mb-2 ml-2">per workspace</span>
-              </div>
-            </div>
-
-            <ul className="space-y-3.5">
-              {[
-                "Unlimited AI generation across the workspace",
-                "Ask AI, AI Studio, Creator Studio, workflows & AI email",
-                "No per-seat AI metering — one flat rate",
-                "Managed agents & Conversation AI stay premium add-ons",
-              ].map((t) => (
-                <li
-                  key={t}
-                  className="flex items-start gap-3 p-4 rounded-xl"
-                  style={{
-                    background: "color-mix(in oklab, var(--v2-bg-2) 70%, transparent)",
-                    border: "1px solid var(--v2-border)",
-                  }}
-                >
-                  <span
-                    className="mt-0.5 w-5 h-5 rounded-full flex items-center justify-center shrink-0"
-                    style={{
-                      background: "color-mix(in oklab, var(--v2-electric) 26%, transparent)",
-                      color: "var(--v2-electric)",
-                    }}
-                  >
-                    <Check className="w-3 h-3" strokeWidth={3} />
-                  </span>
-                  <span className="text-sm font-semibold text-[var(--v2-text)] leading-snug">
-                    {t}
-                  </span>
-                </li>
-              ))}
-              <li>
-                <button
-                  onClick={onOpenDiscovery}
-                  className="mt-2 w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm transition-all cursor-pointer"
-                  style={{ background: "var(--v2-electric)", color: "#06243a" }}
-                >
-                  Talk to us about unlimited AI
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
   );
 }
 
@@ -494,9 +255,9 @@ export function Leadli2Page() {
             className="v2-rise mt-7 text-lg sm:text-2xl text-[var(--v2-muted)] max-w-3xl mx-auto leading-relaxed"
             style={{ animationDelay: "0.16s" }}
           >
-            Eight major releases in the last cycle — from outbound AI agents that reactivate your
-            cold leads, to a built-in creative studio, native project management, and payments that
-            finally talk to your orders. And it's all already in your account.
+            Faster across the board — outbound AI agents that reactivate your cold leads, a built-in
+            creative studio, native project management and ticketing, and payments that finally talk
+            to your orders. And it's all already in your account.
           </p>
 
           <p
@@ -531,14 +292,13 @@ export function Leadli2Page() {
             </a>
           </div>
 
-          {/* stat strip */}
           <div
             className="v2-rise mt-14 grid grid-cols-3 gap-3 sm:gap-6 max-w-2xl mx-auto"
             style={{ animationDelay: "0.3s" }}
           >
             {[
-              { v: "2.6x", l: "Faster AI processing" },
-              { v: "8", l: "Major releases" },
+              { v: "2.6x", l: "Faster processing" },
+              { v: "10+", l: "Major releases" },
               { v: "$40", l: "Flat AI / workspace" },
             ].map((s) => (
               <div
@@ -559,7 +319,7 @@ export function Leadli2Page() {
         </div>
       </section>
 
-      {/* ── AI RELEASES ── */}
+      {/* ── SPEED & AI RELEASES ── */}
       <section
         id="releases"
         className="relative py-16 sm:py-24"
@@ -575,19 +335,19 @@ export function Leadli2Page() {
                 border: "1px solid color-mix(in oklab, var(--v2-electric) 35%, transparent)",
               }}
             >
-              <Bot className="w-3.5 h-3.5" />
-              AI &amp; Automation
+              <Gauge className="w-3.5 h-3.5" />
+              Speed & AI
             </div>
             <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[var(--v2-text)]">
-              Smarter, faster, and a little more autonomous.
+              Faster first. Then smarter, and a little more autonomous.
             </h2>
             <p className="mt-4 text-base sm:text-lg text-[var(--v2-muted)]">
-              The AI layer of your Leadli doesn't just answer anymore — it acts.
+              We led with speed this cycle — then gave the AI layer the ability to act on its own.
             </p>
           </div>
 
           <div className="space-y-20 sm:space-y-28">
-            {AI_RELEASES.map((r, i) => (
+            {SPEED_RELEASES.map((r, i) => (
               <ReleaseSection key={r.id} release={r} index={i} />
             ))}
           </div>
@@ -611,14 +371,14 @@ export function Leadli2Page() {
               }}
             >
               <Layers className="w-3.5 h-3.5" />
-              Operations &amp; Commerce
+              Operations & Commerce
             </div>
             <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[var(--v2-text)]">
               Built for the way you actually run it.
             </h2>
             <p className="mt-4 text-base sm:text-lg text-[var(--v2-muted)]">
-              The operational backbone — from project management to payments that finally talk to
-              your orders.
+              The operational backbone — from project management and ticketing to payments that
+              finally talk to your orders.
             </p>
           </div>
 
@@ -629,6 +389,9 @@ export function Leadli2Page() {
           </div>
         </div>
       </section>
+
+      {/* ── TICKER: everything else ── */}
+      <TickerStrip />
 
       {/* ── DROP THESE SUBSCRIPTIONS ── */}
       <DropSubscriptionsSection />

@@ -74,6 +74,19 @@
   --brand-blue: oklch(0.42 0.22 268);
   --brand-orange: oklch(0.68 0.17 48);
   --brand-dark: oklch(0.16 0.04 265);
+
+  /* Leadli 2.0 release page — high-contrast dark mode */
+  --v2-bg: oklch(0.13 0.025 275);
+  --v2-bg-2: oklch(0.1 0.02 275);
+  --v2-surface: oklch(0.17 0.03 272);
+  --v2-surface-2: oklch(0.21 0.035 272);
+  --v2-accent: oklch(0.71 0.18 48); /* orange */
+  --v2-accent-soft: oklch(0.74 0.16 55);
+  --v2-electric: oklch(0.8 0.16 210); /* cyan */
+  --v2-violet: oklch(0.7 0.17 295);
+  --v2-text: oklch(0.97 0.008 275);
+  --v2-muted: oklch(0.72 0.02 275);
+  --v2-border: oklch(0.27 0.03 272);
 }
 
 @layer base {
@@ -100,5 +113,178 @@
   h5,
   h6 {
     font-family: var(--font-display), system-ui, sans-serif;
+  }
+}
+
+/* ── Leadli 2.0 release page: animated, techy, special ── */
+
+@keyframes v2-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes v2-drift {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(40px, -30px) scale(1.08);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes v2-squiggle {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -60;
+  }
+}
+
+@keyframes v2-squiggle-slow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 120;
+  }
+}
+
+@keyframes v2-pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+  80%,
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes v2-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes v2-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes v2-spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.v2-float {
+  animation: v2-float 7s ease-in-out infinite;
+}
+.v2-drift {
+  animation: v2-drift 12s ease-in-out infinite;
+}
+.v2-spin-slow {
+  animation: v2-spin-slow 40s linear infinite;
+}
+.v2-rise {
+  animation: v2-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.v2-squiggle {
+  stroke-dasharray: 6 8;
+  animation: v2-squiggle 3s linear infinite;
+}
+.v2-squiggle-slow {
+  stroke-dasharray: 4 10;
+  animation: v2-squiggle-slow 6s linear infinite;
+}
+
+.v2-shimmer-text {
+  background: linear-gradient(
+    100deg,
+    var(--v2-accent) 0%,
+    var(--v2-accent-soft) 25%,
+    #fff 50%,
+    var(--v2-accent-soft) 75%,
+    var(--v2-accent) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: v2-shimmer 4s linear infinite;
+}
+
+.v2-grid-bg {
+  background-image:
+    linear-gradient(
+      to right,
+      color-mix(in oklab, var(--v2-border) 60%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in oklab, var(--v2-border) 60%, transparent) 1px,
+      transparent 1px
+    );
+  background-size: 44px 44px;
+}
+
+.v2-noise {
+  background-image: radial-gradient(
+    color-mix(in oklab, var(--v2-text) 14%, transparent) 0.6px,
+    transparent 0.6px
+  );
+  background-size: 14px 14px;
+}
+
+.v2-glow {
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--v2-accent) 30%, transparent),
+    0 0 40px -8px color-mix(in oklab, var(--v2-accent) 45%, transparent);
+}
+
+.v2-glow-cyan {
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--v2-electric) 30%, transparent),
+    0 0 40px -8px color-mix(in oklab, var(--v2-electric) 45%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .v2-float,
+  .v2-drift,
+  .v2-spin-slow,
+  .v2-squiggle,
+  .v2-squiggle-slow,
+  .v2-shimmer-text,
+  .v2-rise {
+    animation: none !important;
+  }
+  .v2-shimmer-text {
+    -webkit-text-fill-color: var(--v2-accent);
   }
 }

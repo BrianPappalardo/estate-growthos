@@ -17,6 +17,7 @@ import { Route as Leadli2RouteImport } from './routes/leadli-2'
 import { Route as Leadli3RouteImport } from './routes/leadli-3'
 import { Route as SignupRouteImport } from './routes/signup'
 import { Route as ThankYouRouteImport } from './routes/thank-you'
+import { Route as WhatsNewRouteImport } from './routes/whats-new'
 import { Route as FeatureSlugRouteImport } from './routes/feature.$slug'
 import { Route as LeadliIndexRouteImport } from './routes/leadli.index'
 import { Route as LeadliSlugRouteImport } from './routes/leadli.$slug'
@@ -61,6 +62,11 @@ const ThankYouRoute = ThankYouRouteImport.update({
   path: '/thank-you',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WhatsNewRoute = WhatsNewRouteImport.update({
+  id: '/whats-new',
+  path: '/whats-new',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FeatureSlugRoute = FeatureSlugRouteImport.update({
   id: '/feature/$slug',
   path: '/feature/$slug',
@@ -86,6 +92,7 @@ export interface FileRoutesByFullPath {
   '/leadli-3': typeof Leadli3Route
   '/signup': typeof SignupRoute
   '/thank-you': typeof ThankYouRoute
+  '/whats-new': typeof WhatsNewRoute
   '/feature/$slug': typeof FeatureSlugRoute
   '/leadli/$slug': typeof LeadliSlugRoute
   '/leadli/': typeof LeadliIndexRoute
@@ -98,6 +105,7 @@ export interface FileRoutesByTo {
   '/leadli-3': typeof Leadli3Route
   '/signup': typeof SignupRoute
   '/thank-you': typeof ThankYouRoute
+  '/whats-new': typeof WhatsNewRoute
   '/feature/$slug': typeof FeatureSlugRoute
   '/leadli/$slug': typeof LeadliSlugRoute
   '/leadli': typeof LeadliIndexRoute
@@ -112,6 +120,7 @@ export interface FileRoutesById {
   '/leadli-3': typeof Leadli3Route
   '/signup': typeof SignupRoute
   '/thank-you': typeof ThankYouRoute
+  '/whats-new': typeof WhatsNewRoute
   '/feature/$slug': typeof FeatureSlugRoute
   '/leadli/$slug': typeof LeadliSlugRoute
   '/leadli/': typeof LeadliIndexRoute
@@ -127,6 +136,7 @@ export interface FileRouteTypes {
     | '/leadli-3'
     | '/signup'
     | '/thank-you'
+    | '/whats-new'
     | '/feature/$slug'
     | '/leadli/$slug'
     | '/leadli/'
@@ -139,6 +149,7 @@ export interface FileRouteTypes {
     | '/leadli-3'
     | '/signup'
     | '/thank-you'
+    | '/whats-new'
     | '/feature/$slug'
     | '/leadli/$slug'
     | '/leadli'
@@ -152,6 +163,7 @@ export interface FileRouteTypes {
     | '/leadli-3'
     | '/signup'
     | '/thank-you'
+    | '/whats-new'
     | '/feature/$slug'
     | '/leadli/$slug'
     | '/leadli/'
@@ -166,6 +178,7 @@ export interface RootRouteChildren {
   Leadli3Route: typeof Leadli3Route
   SignupRoute: typeof SignupRoute
   ThankYouRoute: typeof ThankYouRoute
+  WhatsNewRoute: typeof WhatsNewRoute
   FeatureSlugRoute: typeof FeatureSlugRoute
 }
 
@@ -227,6 +240,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ThankYouRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/whats-new': {
+      id: '/whats-new'
+      path: '/whats-new'
+      fullPath: '/whats-new'
+      preLoaderRoute: typeof WhatsNewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/feature/$slug': {
       id: '/feature/$slug'
       path: '/feature/$slug'
@@ -273,6 +293,7 @@ const rootRouteChildren: RootRouteChildren = {
   Leadli3Route: Leadli3Route,
   SignupRoute: SignupRoute,
   ThankYouRoute: ThankYouRoute,
+  WhatsNewRoute: WhatsNewRoute,
   FeatureSlugRoute: FeatureSlugRoute,
 }
 export const routeTree = rootRouteImport

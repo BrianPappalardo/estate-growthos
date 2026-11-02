@@ -13,6 +13,7 @@ import {
   LeadliFeatureGrid,
   LeadliFunctionsSection,
 } from "@/components/home/LeadliPageSections";
+import { Leadli2Banner } from "@/components/home/Leadli2Banner";
 
 export const Route = createFileRoute("/leadli/")({
   component: LeadliPage,
@@ -59,6 +60,8 @@ function LeadliPage() {
 
   return (
     <div className="min-h-screen bg-[#fcfbf8] text-slate-900 font-sans selection:bg-amber-200 selection:text-slate-900">
+      <Leadli2Banner />
+
       {/* 1. HEADER */}
       <header className="sticky top-0 z-40 bg-[#fcfbf8]/95 backdrop-blur-md border-b border-slate-200/80 transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">

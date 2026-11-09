@@ -48,14 +48,22 @@ export function ImplementationPromise({
     <section
       className={
         isDark
-          ? "py-16 sm:py-20 bg-[#12193b] text-white"
-          : "py-16 sm:py-20 bg-[#fcfbf8] border-y border-slate-200"
+          ? "fl-dark-canvas relative overflow-hidden py-20 sm:py-24 text-white"
+          : "relative overflow-hidden py-20 sm:py-24 bg-white border-y border-slate-200"
       }
     >
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+      {isDark && (
+        <div className="absolute inset-0 -z-10 pointer-events-none">
+          <div className="fl-dark-grid absolute inset-0" />
+          <div className="fl-glow absolute top-1/2 left-[5%] w-[380px] h-[380px] rounded-full bg-[radial-gradient(circle_at_center,color-mix(in_oklab,var(--brand-orange)_50%,transparent),transparent_70%)] blur-3xl" />
+        </div>
+      )}
+      {!isDark && <div className="absolute inset-0 -z-10 pointer-events-none fl-light-grid" />}
+
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 relative">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <p
-            className={`text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight leading-snug ${
+            className={`fl-rise fl-rise-1 text-2xl sm:text-3xl md:text-4xl font-black tracking-tight leading-[1.1] ${
               isDark ? "text-white" : "text-[#12193b]"
             }`}
           >
@@ -63,8 +71,8 @@ export function ImplementationPromise({
           </p>
           {showExperience && (
             <p
-              className={`mt-4 text-sm sm:text-base ${
-                isDark ? "text-slate-300" : "text-slate-600"
+              className={`fl-rise fl-rise-2 mt-5 text-base sm:text-lg ${
+                isDark ? "text-white/60" : "text-slate-600"
               }`}
             >
               Over a decade of experience and dozens of happy clients under our belt — there's not
@@ -74,37 +82,36 @@ export function ImplementationPromise({
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {PILLARS.map((p) => {
+          {PILLARS.map((p, i) => {
             const Icon = p.icon;
             return (
               <div
                 key={p.label}
-                className={
+                className={`fl-rise rounded-2xl p-6 flex flex-col gap-3 transition-all hover:-translate-y-1 ${
                   isDark
-                    ? "rounded-2xl bg-white/5 border border-white/10 p-5 flex flex-col gap-3"
-                    : "rounded-2xl bg-white border border-slate-200 p-5 flex flex-col gap-3 shadow-xs"
-                }
+                    ? "bg-white/[0.06] backdrop-blur-sm border border-white/10 hover:border-[var(--brand-orange)]/40"
+                    : "bg-[#fcfbf8] border border-slate-200 hover:border-[var(--brand-orange)]/40 hover:shadow-md"
+                }`}
+                style={{ animationDelay: `${0.08 + i * 0.06}s` }}
               >
                 <div
-                  className={
+                  className={`w-12 h-12 rounded-xl flex items-center justify-center ${
                     isDark
-                      ? "w-11 h-11 rounded-xl bg-amber-500/15 border border-amber-400/30 flex items-center justify-center text-amber-300"
-                      : "w-11 h-11 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#f97316]"
-                  }
+                      ? "bg-[var(--brand-orange)]/15 border border-[var(--brand-orange)]/30 text-[var(--brand-orange)]"
+                      : "bg-[var(--brand-orange)]/10 border border-[var(--brand-orange)]/20 text-[var(--brand-orange)]"
+                  }`}
                 >
-                  <Icon className="w-5 h-5" />
+                  <Icon className="w-6 h-6" />
                 </div>
                 <div>
                   <div
-                    className={`text-sm font-extrabold ${
-                      isDark ? "text-amber-300" : "text-[#12193b]"
-                    }`}
+                    className={`text-base font-black ${isDark ? "text-white" : "text-[#12193b]"}`}
                   >
                     {p.label}
                   </div>
                   <p
-                    className={`text-xs sm:text-sm mt-1 leading-relaxed ${
-                      isDark ? "text-slate-300" : "text-slate-600"
+                    className={`text-sm mt-1 leading-relaxed ${
+                      isDark ? "text-white/60" : "text-slate-600"
                     }`}
                   >
                     {p.text}

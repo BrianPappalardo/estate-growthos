@@ -131,16 +131,17 @@ function FlyingLeapHomePage() {
       <FlightPlanTimeline onOpenDiscovery={handleOpenDiscovery} />
 
       {/* 9. TESTIMONIALS */}
-      <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+      <section className="relative py-20 sm:py-28 bg-white border-b border-slate-200 overflow-hidden">
+        <div className="absolute inset-0 -z-10 pointer-events-none fl-light-grid" />
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 relative">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12193b] tracking-tight">
+            <h2 className="fl-rise fl-rise-1 text-4xl sm:text-5xl md:text-6xl font-black text-[#12193b] tracking-tight leading-[1.02]">
               Don't just take our word for it.
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-[#fcfbf8] rounded-2xl border border-slate-200 p-7 flex flex-col justify-between">
+            <div className="fl-rise bg-[#fcfbf8] rounded-2xl border border-slate-200 p-7 flex flex-col justify-between hover:border-[var(--brand-orange)]/40 hover:shadow-md transition-all">
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed italic">
                 “I came to Brian and team eight years ago with a long list of ideas and everything
                 I’d heard I needed to do for digital marketing. Instead of selling me a package,
@@ -149,7 +150,7 @@ function FlyingLeapHomePage() {
                 asking the questions that help us find what I actually need.”
               </p>
               <div className="mt-6 pt-4 border-t border-slate-200 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#3344b8] text-white flex items-center justify-center font-bold text-sm">
+                <div className="w-10 h-10 rounded-full bg-[var(--brand-orange)] text-white flex items-center justify-center font-bold text-sm">
                   JK
                 </div>
                 <div>
@@ -159,7 +160,7 @@ function FlyingLeapHomePage() {
               </div>
             </div>
 
-            <div className="bg-[#fcfbf8] rounded-2xl border border-slate-200 p-7 flex flex-col justify-between">
+            <div className="fl-rise fl-rise-2 bg-[#fcfbf8] rounded-2xl border border-slate-200 p-7 flex flex-col justify-between hover:border-[var(--brand-orange)]/40 hover:shadow-md transition-all">
               <p className="text-slate-700 text-sm sm:text-base leading-relaxed italic">
                 “Working with Leadli has been very easy. I’m not your super tech girl, but I’m not
                 low tech either. I can dream up whatever I want, then speak to their programming
@@ -168,7 +169,7 @@ function FlyingLeapHomePage() {
                 hands down, Flying Leap Studio is where you should go.”
               </p>
               <div className="mt-6 pt-4 border-t border-slate-200 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-sm">
+                <div className="w-10 h-10 rounded-full bg-[#3344b8] text-white flex items-center justify-center font-bold text-sm">
                   JN
                 </div>
                 <div>

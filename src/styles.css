@@ -525,6 +525,108 @@
   animation: hero-dot-pulse 2.2s ease-in-out infinite;
 }
 
+/* ── Bold section utilities — rolled across the homepage ── */
+
+.fl-light-grid {
+  background-image: radial-gradient(
+    color-mix(in oklab, var(--brand-orange) 14%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+  -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 35%, #000 25%, transparent 82%);
+  mask-image: radial-gradient(ellipse 75% 65% at 50% 35%, #000 25%, transparent 82%);
+}
+
+.fl-dark-canvas {
+  background:
+    radial-gradient(
+      ellipse 70% 50% at 15% 0%,
+      color-mix(in oklab, var(--brand-orange) 16%, transparent),
+      transparent 65%
+    ),
+    radial-gradient(
+      ellipse 60% 55% at 95% 100%,
+      color-mix(in oklab, var(--brand-blue) 24%, transparent),
+      transparent 60%
+    ),
+    linear-gradient(180deg, oklch(0.13 0.03 268) 0%, oklch(0.1 0.025 270) 100%);
+}
+
+.fl-dark-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, #fff 7%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, #fff 7%, transparent) 1px, transparent 1px);
+  background-size: 52px 52px;
+  -webkit-mask-image: radial-gradient(ellipse 78% 72% at 50% 45%, #000 18%, transparent 86%);
+  mask-image: radial-gradient(ellipse 78% 72% at 50% 45%, #000 18%, transparent 86%);
+}
+
+@keyframes fl-rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fl-rise {
+  animation: fl-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.fl-rise-1 {
+  animation-delay: 0.05s;
+}
+.fl-rise-2 {
+  animation-delay: 0.12s;
+}
+.fl-rise-3 {
+  animation-delay: 0.19s;
+}
+.fl-rise-4 {
+  animation-delay: 0.26s;
+}
+
+@keyframes fl-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.fl-marquee {
+  animation: fl-marquee 32s linear infinite;
+}
+
+@keyframes fl-glow {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translate(24px, -18px) scale(1.1);
+  }
+}
+.fl-glow {
+  animation: fl-glow 15s ease-in-out infinite;
+}
+
+@keyframes fl-node-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--brand-orange) 55%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 12px color-mix(in oklab, var(--brand-orange) 0%, transparent);
+  }
+}
+.fl-node-pulse {
+  animation: fl-node-pulse 2.4s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-rise,
   .hero-rise-1,
@@ -540,7 +642,15 @@
   .hero-bold-orange-text,
   .hero-bold-marquee-track,
   .hero-bold-spin,
-  .hero-bold-dot {
+  .hero-bold-dot,
+  .fl-rise,
+  .fl-rise-1,
+  .fl-rise-2,
+  .fl-rise-3,
+  .fl-rise-4,
+  .fl-marquee,
+  .fl-glow,
+  .fl-node-pulse {
     animation: none !important;
   }
   .hero-bold-line {

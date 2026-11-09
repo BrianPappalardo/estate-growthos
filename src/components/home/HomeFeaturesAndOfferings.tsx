@@ -69,49 +69,60 @@ export const PLATFORM_FEATURES = [
 
 export function PlatformFeaturesGrid() {
   return (
-    <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section className="fl-dark-canvas relative overflow-hidden py-20 sm:py-28 text-white">
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="fl-dark-grid absolute inset-0" />
+        <div className="fl-glow absolute -top-20 right-[8%] w-[420px] h-[420px] rounded-full bg-[radial-gradient(circle_at_center,color-mix(in_oklab,var(--brand-orange)_55%,transparent),transparent_70%)] blur-3xl" />
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#12193b] tracking-tight">
-            All the power of an all-in-one system. Without all of the headaches.
+          <h2 className="fl-rise fl-rise-1 text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.02]">
+            All the power of an all-in-one system.
+            <span className="block hero-bold-orange-text mt-2">Without all of the headaches.</span>
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-slate-600">
+          <p className="fl-rise fl-rise-2 mt-5 text-lg sm:text-xl text-white/70 leading-relaxed">
             These are the tools. We're the team that sets them up, connects them, and teaches your
             people to use them — so you never have to wrestle with software again.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-          {PLATFORM_FEATURES.map((feature) => {
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
+          {PLATFORM_FEATURES.map((feature, i) => {
             const Icon = feature.icon;
             return (
               <div
                 key={feature.name}
-                className="bg-[#fcfbf8] p-5 rounded-2xl border border-slate-200 hover:border-[#3344b8]/40 hover:shadow-md transition-all group"
+                className="fl-rise bg-white/[0.05] backdrop-blur-sm p-5 rounded-2xl border border-white/10 hover:border-[var(--brand-orange)]/50 hover:bg-white/[0.08] transition-all group"
+                style={{ animationDelay: `${0.05 + i * 0.04}s` }}
               >
-                <div className="w-11 h-11 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-[#f97316] mb-3 group-hover:bg-[#3344b8]/10 group-hover:text-[#3344b8] transition-colors">
+                <div className="w-11 h-11 rounded-xl bg-[var(--brand-orange)]/15 border border-[var(--brand-orange)]/30 flex items-center justify-center text-[var(--brand-orange)] mb-3 group-hover:scale-110 transition-transform">
                   <Icon className="w-5 h-5" />
                 </div>
-                <h3 className="font-bold text-slate-900 text-base">{feature.name}</h3>
-                <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-snug">
-                  {feature.desc}
-                </p>
+                <h3 className="font-bold text-white text-base">{feature.name}</h3>
+                <p className="text-xs sm:text-sm text-white/60 mt-1 leading-snug">{feature.desc}</p>
               </div>
             );
           })}
         </div>
 
-        <p className="mt-10 text-center text-sm text-slate-600 max-w-2xl mx-auto">
-          Seem like a lot? It is — and our team builds, trains, and supports every bit of it so you
-          don't have to. The software includes access to hourly build help whenever you need it. For
-          now,{" "}
-          <Link
-            to="/estate-planning"
-            className="text-[#3344b8] font-bold hover:underline underline-offset-4"
-          >
-            explore the estate planning build →
-          </Link>
-        </p>
+        <div className="fl-rise mt-12 max-w-3xl mx-auto">
+          <div className="rounded-2xl bg-white/[0.06] backdrop-blur-md border border-white/15 px-6 sm:px-8 py-6 text-center">
+            <p className="text-lg sm:text-xl font-bold text-white leading-relaxed">
+              Seem like a lot? It is — and our team builds, trains, and supports every bit of it so
+              you don't have to.
+            </p>
+            <p className="mt-2 text-sm text-white/60">
+              The software includes access to hourly build help whenever you need it. For now,{" "}
+              <Link
+                to="/estate-planning"
+                className="hero-bold-orange-text font-bold hover:underline underline-offset-4"
+              >
+                explore the estate planning build →
+              </Link>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -119,32 +130,34 @@ export function PlatformFeaturesGrid() {
 
 export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
   return (
-    <section className="py-16 sm:py-24 bg-[#fcfbf8] border-b border-slate-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section className="relative py-20 sm:py-28 bg-[#fcfbf8] overflow-hidden">
+      <div className="absolute inset-0 -z-10 pointer-events-none fl-light-grid" />
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#12193b] tracking-tight">
+          <h2 className="fl-rise fl-rise-1 text-4xl sm:text-5xl md:text-6xl font-black text-[#12193b] tracking-tight leading-[1.02]">
             Choose your experience.
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-slate-600">
+          <p className="fl-rise fl-rise-2 mt-5 text-lg sm:text-xl text-slate-600 leading-relaxed">
             From done-for-you work with you in the driver's seat to a fully managed retainer, we
             meet you where you are.
           </p>
         </div>
 
         {/* Estate planner vertical callout */}
-        <div className="mb-10 max-w-3xl mx-auto">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-gradient-to-r from-amber-50 to-blue-50 border border-amber-200 rounded-2xl px-6 py-5">
+        <div className="fl-rise mb-10 max-w-3xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-[#12193b] rounded-2xl px-6 py-5 border border-[#12193b] shadow-xl">
             <div className="text-center sm:text-left">
-              <h3 className="text-lg sm:text-xl font-black text-[#12193b] tracking-tight">
+              <h3 className="text-lg sm:text-xl font-black text-white tracking-tight">
                 Are you an Estate Planner? We have something just for you.
               </h3>
-              <p className="text-sm text-slate-600 mt-1">
+              <p className="text-sm text-white/60 mt-1">
                 We've built an entire vertical around estate planning intake. See how it works.
               </p>
             </div>
             <Link
               to="/estate-planning"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#12193b] text-white font-bold text-sm hover:bg-[#202c61] transition-all whitespace-nowrap shrink-0"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[var(--brand-orange)] text-[oklch(0.16_0.04_45)] font-bold text-sm hover:brightness-110 transition-all whitespace-nowrap shrink-0"
             >
               <span>See the Estate Planning Vertical</span>
               <ArrowRight className="w-4 h-4" />
@@ -154,7 +167,7 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Leadli+ — Hourly (Featured) */}
-          <div className="relative bg-white rounded-3xl border-2 border-[#3344b8] p-7 sm:p-8 shadow-xl flex flex-col justify-between md:mt-2">
+          <div className="fl-rise relative bg-white rounded-3xl border-2 border-[#3344b8] p-7 sm:p-8 shadow-xl flex flex-col justify-between md:mt-2">
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#3344b8] text-white text-xs font-extrabold uppercase px-4 py-1 rounded-full tracking-wider whitespace-nowrap">
               Most Popular • You're in the driver's seat
             </div>
@@ -208,7 +221,7 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
           </div>
 
           {/* Growth OS — Retainer */}
-          <div className="bg-white rounded-3xl border border-slate-200 p-7 sm:p-8 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div className="fl-rise fl-rise-2 bg-white rounded-3xl border border-slate-200 p-7 sm:p-8 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-slate-400">
                 Retainer
@@ -252,7 +265,7 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
           </div>
 
           {/* Software Only — DIY */}
-          <div className="bg-white rounded-3xl border border-slate-200 p-7 sm:p-8 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div className="fl-rise fl-rise-3 bg-white rounded-3xl border border-slate-200 p-7 sm:p-8 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-slate-400">
                 Self-Service

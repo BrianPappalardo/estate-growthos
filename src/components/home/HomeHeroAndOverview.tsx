@@ -45,8 +45,7 @@ export function HomeHero({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
           <div className="relative rounded-3xl bg-white/80 backdrop-blur-md border border-blue-200/60 shadow-2xl shadow-blue-900/10 overflow-hidden p-6 sm:p-8">
             <div className="absolute -top-px left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-[#f97316]/70 to-transparent" />
             <p className="hero-callout-text text-xl sm:text-3xl font-black tracking-tight leading-snug">
-              Flying Leap Studio helps established service businesses replace scattered tools and
-              guesswork with one connected system — and provides the strategy to grow it.
+              Flying Leap Studio helps established service businesses replace scattered tools and guesswork with one connected system — and provides the team to grow it.
             </p>
           </div>
         </div>

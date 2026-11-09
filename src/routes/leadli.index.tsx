@@ -86,6 +86,9 @@ function LeadliPage() {
             <Link to="/leadli" className="text-[#3344b8] font-extrabold transition-colors">
               Leadli
             </Link>
+            <Link to="/features" className="hover:text-[#3344b8] transition-colors">
+              Changelog
+            </Link>
             <a
               href="https://app.leadli.co/"
               target="_blank"

@@ -14,6 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
+      changelog_entries: {
+        Row: {
+          body: string
+          category: string
+          created_at: string
+          external_id: string | null
+          id: string
+          published_at: string
+          summary: string
+          tags: string[]
+          title: string
+        }
+        Insert: {
+          body?: string
+          category?: string
+          created_at?: string
+          external_id?: string | null
+          id?: string
+          published_at?: string
+          summary?: string
+          tags?: string[]
+          title: string
+        }
+        Update: {
+          body?: string
+          category?: string
+          created_at?: string
+          external_id?: string | null
+          id?: string
+          published_at?: string
+          summary?: string
+          tags?: string[]
+          title?: string
+        }
+        Relationships: []
+      }
       leads: {
         Row: {
           booking_submitted: boolean

@@ -36,7 +36,7 @@ export const getChangelog = createServerFn({ method: "GET" }).handler(async () =
     }
 
     const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/changelog_entries?select=id,title,summary,body,category,tags,published_at&order=published_at.desc,created_at.desc&limit=200`,
+      `${SUPABASE_URL}/rest/v1/changelog_entries?select=id,title,summary,body,category,tags,published_at&order=published_at.desc,created_at.desc&limit=1000`,
       {
         headers: {
           apikey: SUPABASE_PUBLISHABLE_KEY,

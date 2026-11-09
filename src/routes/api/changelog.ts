@@ -4,7 +4,10 @@ import {
   ChangelogEntrySchema,
   insertChangelogEntry,
   bulkUpsertChangelogEntries,
+  coerceCategory,
+  coerceTags,
 } from "@/lib/changelog.functions";
+import { APPROVED_CATEGORIES, APPROVED_TAGS, CATEGORY_LABELS } from "@/lib/changelog-taxonomy";
 
 /**
  * Webhook receiver for new Leadli changelog entries.
@@ -75,7 +78,14 @@ export const Route = createFileRoute("/api/changelog")({
         const parsed = ChangelogEntrySchema.safeParse(payload);
         if (!parsed.success) {
           return Response.json(
-            { ok: false, errors: parsed.error.flatten() },
+            {
+              ok: false,
+              errors: parsed.error.flatten(),
+              hint: {
+                approvedCategories: APPROVED_CATEGORIES,
+                approvedTags: APPROVED_TAGS,
+              },
+            },
             { status: 400, headers: corsHeaders },
           );
         }
@@ -149,52 +159,61 @@ export const Route = createFileRoute("/api/changelog")({
             return text.length > 300 ? text.substring(0, 300) + "..." : text;
           }
 
+          // Keyword → approved-category map. Anything not matched falls back
+          // to "general" via coerceCategory. This keeps the importer on the
+          // controlled vocabulary instead of inventing categories.
+          const KEYWORD_CATEGORIES: Array<{ words: string[]; cat: string }> = [
+            { words: ["workflow", "automation", "trigger", "workflow map"], cat: "automations" },
+            { words: ["calendar", "appointment", "booking", "scheduling"], cat: "calendar" },
+            { words: ["chat widget", "live chat", "web chat"], cat: "chat_widget" },
+            { words: ["crm", "contact", "opportunity", "pipeline", "smart list"], cat: "crm" },
+            { words: ["community", "gokollab"], cat: "communities" },
+            { words: ["course", "membership"], cat: "courses" },
+            { words: ["analytics", "dashboard", "report", "metric"], cat: "reporting" },
+            { words: ["voice ai", "conversational ai"], cat: "voice-ai" },
+            { words: ["ai agent", "agent studio"], cat: "ai-agents" },
+            { words: ["ask ai", "ai email", "ai studio", "creator studio"], cat: "ai" },
+            { words: ["form", "survey", "quiz"], cat: "forms-surveys-quizzes" },
+            { words: ["task", "project", "kanban", "ticketing"], cat: "task-management" },
+            { words: ["payment", "invoice", "confido", "iolta", "trust"], cat: "payments" },
+            { words: ["contract", "e-sign", "esign", "signature"], cat: "contracts" },
+            { words: ["email marketing", "broadcast", "drip"], cat: "email-marketing" },
+            { words: ["sms", "texting", "text message"], cat: "sms-marketing" },
+            { words: ["social", "planner", "instagram", "facebook post"], cat: "social" },
+            { words: ["review", "reputation"], cat: "reviews" },
+            { words: ["website", "domain", "wordpress", "landing page"], cat: "websites" },
+            { words: ["funnel"], cat: "funnels" },
+            { words: ["unified inbox", "inbox"], cat: "inbox" },
+            { words: ["phone", "dialer", "call"], cat: "phone" },
+            { words: ["integration", "zapier", "webhook"], cat: "integrations" },
+            { words: ["client portal", "portal"], cat: "client-portal" },
+            { words: ["media", "storage", "file"], cat: "media-storage" },
+            { words: ["qr code"], cat: "qr-codes" },
+          ];
+
           function detectCategory(title: string, content: string): string {
             const text = (title + " " + content).toLowerCase();
-            if (
-              text.includes("workflow") ||
-              text.includes("automation") ||
-              text.includes("trigger")
-            )
-              return "automations";
-            if (
-              text.includes("calendar") ||
-              text.includes("appointment") ||
-              text.includes("booking") ||
-              text.includes("scheduling")
-            )
-              return "calendar";
-            if (text.includes("chat widget") || text.includes("live chat")) return "chat_widget";
-            if (
-              text.includes("crm") ||
-              text.includes("contact") ||
-              text.includes("opportunity") ||
-              text.includes("pipeline")
-            )
-              return "crm";
-            if (
-              text.includes("community") ||
-              text.includes("course") ||
-              text.includes("membership") ||
-              text.includes("gokollab")
-            )
-              return "courses";
-            if (text.includes("analytics") || text.includes("dashboard") || text.includes("report"))
-              return "reporting";
-            if (
-              text.includes("ai") ||
-              text.includes("gpt") ||
-              text.includes("ask ai") ||
-              text.includes("agent")
-            )
-              return "ai";
-            if (text.includes("form") || text.includes("survey") || text.includes("quiz"))
-              return "forms-surveys-quizzes";
-            if (text.includes("task") || text.includes("project") || text.includes("kanban"))
-              return "task-management";
-            if (text.includes("payment") || text.includes("invoice") || text.includes("confido"))
-              return "payments";
+            for (const rule of KEYWORD_CATEGORIES) {
+              if (rule.words.some((w) => text.includes(w))) {
+                return coerceCategory(rule.cat) ?? "general";
+              }
+            }
             return "general";
+          }
+
+          function detectTags(title: string, content: string): string[] {
+            const text = (title + " " + content).toLowerCase();
+            const matched: string[] = ["wp-import"];
+            const tagWords: Array<{ words: string[]; tag: string }> = [
+              { words: ["new", "release", "launched"], tag: "new-feature" },
+              { words: ["improve", "enhance", "update", "upgrade"], tag: "improvement" },
+              { words: ["fix", "resolve", "bug"], tag: "fix" },
+              { words: ["beta"], tag: "beta" },
+            ];
+            for (const rule of tagWords) {
+              if (rule.words.some((w) => text.includes(w))) matched.push(rule.tag);
+            }
+            return coerceTags(matched);
           }
 
           const entries = allPosts.map((p) => {
@@ -202,6 +221,7 @@ export const Route = createFileRoute("/api/changelog")({
             const body = p.content?.rendered || "";
             const summary = extractSummary(body);
             const category = detectCategory(title, body);
+            const tags = detectTags(title, body);
             const publishedAt = p.date ? new Date(p.date).toISOString() : new Date().toISOString();
 
             return {
@@ -210,7 +230,7 @@ export const Route = createFileRoute("/api/changelog")({
               summary,
               body,
               category,
-              tags: ["wp-import"],
+              tags,
               publishedAt,
             };
           });

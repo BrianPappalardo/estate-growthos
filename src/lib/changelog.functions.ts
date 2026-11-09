@@ -1,5 +1,11 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
+import {
+  normalizeCategory,
+  normalizeTags,
+  APPROVED_CATEGORIES,
+  APPROVED_TAGS,
+} from "@/lib/changelog-taxonomy";
 
 export interface ChangelogEntry {
   id: string;
@@ -11,17 +17,48 @@ export interface ChangelogEntry {
   publishedAt: string;
 }
 
-const ChangelogEntrySchema = z.object({
+/**
+ * Validated changelog input. `category` must be one of APPROVED_CATEGORIES;
+ * `tags` are filtered to APPROVED_TAGS (unknown tags dropped, not rejected).
+ * See src/lib/changelog-taxonomy.ts for the controlled vocabulary.
+ */
+export const ChangelogEntrySchema = z.object({
   title: z.string().min(1).max(255),
   summary: z.string().max(1000).default(""),
   body: z.string().max(20000).default(""),
-  category: z.string().min(1).max(80).default("general"),
-  tags: z.array(z.string().min(1).max(80)).max(20).default([]),
+  category: z
+    .string()
+    .min(1)
+    .max(80)
+    .default("general")
+    .refine((v) => APPROVED_CATEGORIES.includes(v as never), {
+      message: "category must be one of the approved categories (see changelog-taxonomy.ts)",
+    }),
+  tags: z
+    .array(z.string().min(1).max(80))
+    .max(20)
+    .default([])
+    .refine((arr) => arr.every((t) => APPROVED_TAGS.includes(t as never)), {
+      message: "tags must all be approved tags (see changelog-taxonomy.ts)",
+    }),
   publishedAt: z.string().optional(),
   externalId: z.string().max(200).optional(),
 });
 
 export type ChangelogInput = z.infer<typeof ChangelogEntrySchema>;
+
+/**
+ * Coerce a raw (possibly-aliased) category string into an approved slug, or
+ * fall back to "general". Used by the bulk importer and any path that trusts
+ * external category strings less than the strict schema does.
+ */
+export function coerceCategory(value: unknown): string {
+  return normalizeCategory(value) ?? "general";
+}
+
+export function coerceTags(value: unknown): string[] {
+  return normalizeTags(value);
+}
 
 /**
  * Public read of the changelog (newest first). Uses the publishable server
@@ -129,5 +166,3 @@ export async function bulkUpsertChangelogEntries(
   }
   return { count: rows.length };
 }
-
-export { ChangelogEntrySchema };

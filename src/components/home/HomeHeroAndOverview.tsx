@@ -24,11 +24,6 @@ export function HomeHero({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
           guesswork with one connected system — and provides the strategy to grow it.
         </p>
 
-        <p className="mt-3 text-sm sm:text-base text-[#3344b8] font-bold max-w-2xl mx-auto">
-          The platform is Leadli. The team behind it is Flying Leap Studio — we build, train,
-          troubleshoot, and implement it end to end.
-        </p>
-
         <div className="mt-6 max-w-2xl mx-auto text-slate-600 text-sm sm:text-base leading-relaxed space-y-3">
           <p>
             Starting a business takes nerve. Growing one takes something more. We built Flying Leap

@@ -63,19 +63,14 @@ export function HomeHero({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
           <span className="hero-bold-line block text-white" style={{ animationDelay: "0.18s" }}>
             you're <span className="italic font-light">proud</span> of.
           </span>
-          <span
-            className="hero-bold-line hero-bold-orange-text block mt-2"
-            style={{ animationDelay: "0.3s" }}
-          >
-            Now let's build the
-          </span>
-          <span
-            className="hero-bold-line hero-bold-orange-text block"
-            style={{ animationDelay: "0.4s" }}
-          >
-            system it deserves.
-          </span>
         </h1>
+
+        <p
+          className="hero-bold-line hero-bold-orange-text mt-6 text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight"
+          style={{ animationDelay: "0.3s" }}
+        >
+          Now let's build the system it deserves.
+        </p>
 
         {/* Supporting copy */}
         <div className="hero-rise hero-rise-4 mt-10 max-w-2xl mx-auto space-y-3">

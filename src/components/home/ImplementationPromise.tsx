@@ -14,7 +14,7 @@ const PILLARS = [
   {
     icon: Wrench,
     label: "Troubleshoot",
-    text: "Something breaks or behaves odd? We fix it — you don't open a ticket.",
+    text: "No sweat, we'll fix it for you.",
   },
   {
     icon: Lightbulb,

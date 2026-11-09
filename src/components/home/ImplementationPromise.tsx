@@ -76,7 +76,7 @@ export function ImplementationPromise({
               }`}
             >
               Over a decade of experience and dozens of happy clients under our belt — there's not
-              much we haven't seen under the sun.
+              much under the sun we haven't seen.
             </p>
           )}
         </div>

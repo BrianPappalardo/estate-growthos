@@ -58,9 +58,9 @@ export function Leadli2Banner({ dark = false }: { dark?: boolean }) {
           </span>
 
           <p className="text-xs sm:text-sm font-bold leading-snug text-center">
-            <span className="hidden sm:inline">Leadli 2.0 is here — </span>
+            <span className="hidden sm:inline">Leadli 2.0 is here. </span>
             <span className="sm:hidden">Leadli 2.0 — </span>
-            outbound AI agents, native project management &amp; payments that talk to your orders.
+            Explore Managed Agents, Project Management, CRM Customization and More
           </p>
 
           <Link

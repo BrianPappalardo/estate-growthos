@@ -77,9 +77,6 @@ function FlyingLeapHomePage() {
               className="text-white/80 hover:text-white transition-colors inline-flex items-center gap-1.5"
             >
               <span>Estate Planning</span>
-              <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-sm bg-[var(--brand-orange)] text-[oklch(0.16_0.04_45)] border border-[var(--brand-orange)]">
-                Vertical
-              </span>
             </Link>
             <Link
               to="/leadli"

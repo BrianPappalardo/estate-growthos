@@ -113,13 +113,7 @@ export function PlatformFeaturesGrid() {
               you don't have to.
             </p>
             <p className="mt-2 text-sm text-white/60">
-              The software includes access to hourly build help whenever you need it. For now,{" "}
-              <Link
-                to="/estate-planning"
-                className="hero-bold-orange-text font-bold hover:underline underline-offset-4"
-              >
-                explore the estate planning build →
-              </Link>
+              The software includes access to hourly build help whenever you need it.
             </p>
           </div>
         </div>

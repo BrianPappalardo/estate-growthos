@@ -109,7 +109,7 @@ export function HomeHero({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
             to="/estate-planning"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 sm:py-5 text-base font-bold bg-white/5 hover:bg-white/10 text-white rounded-2xl border-2 border-white/20 transition-all"
           >
-            <span>Explore the Estate Planning Vertical</span>
+            <span>I'm an Estate Planner</span>
             <ChevronRight className="w-4 h-4 text-white/50" />
           </Link>
         </div>

@@ -102,4 +102,32 @@ export async function insertChangelogEntry(input: ChangelogInput): Promise<{ id:
   return { id: data.id as string };
 }
 
+/**
+ * Bulk upsert entries via supabaseAdmin
+ */
+export async function bulkUpsertChangelogEntries(
+  entries: ChangelogInput[],
+): Promise<{ count: number }> {
+  const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+
+  const rows = entries.map((e) => ({
+    title: e.title,
+    summary: e.summary,
+    body: e.body,
+    category: e.category,
+    tags: e.tags,
+    ...(e.publishedAt ? { published_at: e.publishedAt } : {}),
+    ...(e.externalId ? { external_id: e.externalId } : {}),
+  }));
+
+  const { error } = await supabaseAdmin
+    .from("changelog_entries")
+    .upsert(rows, { onConflict: "external_id" });
+
+  if (error) {
+    throw new Error(error.message);
+  }
+  return { count: rows.length };
+}
+
 export { ChangelogEntrySchema };

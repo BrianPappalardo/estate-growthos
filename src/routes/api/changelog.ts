@@ -1,7 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { createHmac, timingSafeEqual } from "node:crypto";
-import { ChangelogEntrySchema } from "@/lib/changelog.functions";
-import { insertChangelogEntry } from "@/lib/changelog.functions";
+import {
+  ChangelogEntrySchema,
+  insertChangelogEntry,
+  bulkUpsertChangelogEntries,
+} from "@/lib/changelog.functions";
 
 /**
  * Webhook receiver for new Leadli changelog entries.
@@ -93,6 +96,136 @@ export const Route = createFileRoute("/api/changelog")({
             { ok: false, error: message },
             { status: 500, headers: corsHeaders },
           );
+        }
+      },
+      GET: async ({ request }) => {
+        const url = new URL(request.url);
+        const secret = process.env["CHANGELOG_WEBHOOK_SECRET"];
+        const providedSecret = url.searchParams.get("secret");
+        if (!secret || providedSecret !== secret) {
+          return new Response("Unauthorized", { status: 401 });
+        }
+
+        try {
+          let allPosts: Array<{
+            id: number;
+            title: { rendered: string };
+            content: { rendered: string };
+            date: string;
+          }> = [];
+
+          let page = 1;
+          while (page <= 6) {
+            const res = await fetch(
+              `https://flyingleapstudio.com/wp-json/wp/v2/features?per_page=100&page=${page}`,
+            );
+            if (!res.ok) break;
+            const posts = (await res.json()) as typeof allPosts;
+            if (!posts || posts.length === 0) break;
+            allPosts = allPosts.concat(posts);
+            page++;
+          }
+
+          function decodeEntities(str: string): string {
+            return str
+              .replace(/&#8217;/g, "'")
+              .replace(/&#8216;/g, "'")
+              .replace(/&#8220;/g, '"')
+              .replace(/&#8221;/g, '"')
+              .replace(/&#8211;/g, "–")
+              .replace(/&#8212;/g, "—")
+              .replace(/&amp;/g, "&")
+              .replace(/&lt;/g, "<")
+              .replace(/&gt;/g, ">")
+              .replace(/&quot;/g, '"')
+              .replace(/&#039;/g, "'");
+          }
+
+          function extractSummary(html: string): string {
+            const text = html
+              .replace(/<[^>]+>/g, " ")
+              .replace(/\s+/g, " ")
+              .trim();
+            return text.length > 300 ? text.substring(0, 300) + "..." : text;
+          }
+
+          function detectCategory(title: string, content: string): string {
+            const text = (title + " " + content).toLowerCase();
+            if (
+              text.includes("workflow") ||
+              text.includes("automation") ||
+              text.includes("trigger")
+            )
+              return "automations";
+            if (
+              text.includes("calendar") ||
+              text.includes("appointment") ||
+              text.includes("booking") ||
+              text.includes("scheduling")
+            )
+              return "calendar";
+            if (text.includes("chat widget") || text.includes("live chat")) return "chat_widget";
+            if (
+              text.includes("crm") ||
+              text.includes("contact") ||
+              text.includes("opportunity") ||
+              text.includes("pipeline")
+            )
+              return "crm";
+            if (
+              text.includes("community") ||
+              text.includes("course") ||
+              text.includes("membership") ||
+              text.includes("gokollab")
+            )
+              return "courses";
+            if (text.includes("analytics") || text.includes("dashboard") || text.includes("report"))
+              return "reporting";
+            if (
+              text.includes("ai") ||
+              text.includes("gpt") ||
+              text.includes("ask ai") ||
+              text.includes("agent")
+            )
+              return "ai";
+            if (text.includes("form") || text.includes("survey") || text.includes("quiz"))
+              return "forms-surveys-quizzes";
+            if (text.includes("task") || text.includes("project") || text.includes("kanban"))
+              return "task-management";
+            if (text.includes("payment") || text.includes("invoice") || text.includes("confido"))
+              return "payments";
+            return "general";
+          }
+
+          const entries = allPosts.map((p) => {
+            const title = decodeEntities(p.title?.rendered || "Untitled");
+            const body = p.content?.rendered || "";
+            const summary = extractSummary(body);
+            const category = detectCategory(title, body);
+            const publishedAt = p.date ? new Date(p.date).toISOString() : new Date().toISOString();
+
+            return {
+              externalId: `wp-${p.id}`,
+              title,
+              summary,
+              body,
+              category,
+              tags: ["wp-import"],
+              publishedAt,
+            };
+          });
+
+          let totalUpserted = 0;
+          for (let i = 0; i < entries.length; i += 50) {
+            const chunk = entries.slice(i, i + 50);
+            await bulkUpsertChangelogEntries(chunk);
+            totalUpserted += chunk.length;
+          }
+
+          return Response.json({ ok: true, totalFetched: allPosts.length, totalUpserted });
+        } catch (err) {
+          const msg = err instanceof Error ? err.message : String(err);
+          return Response.json({ ok: false, error: msg }, { status: 500 });
         }
       },
     },

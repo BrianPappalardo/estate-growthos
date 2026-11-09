@@ -305,7 +305,7 @@
   animation: v2-pulse-soft 2.4s ease-in-out infinite;
 }
 
-/* ── Homepage hero: layered, ambient, eye-catching ── */
+/* ── Homepage hero: BOLD dark canvas, oversized type, kinetic ── */
 
 @keyframes hero-rise {
   from {
@@ -370,6 +370,61 @@
   }
 }
 
+/* Bold hero — oversized headline reveal */
+@keyframes hero-line-rise {
+  from {
+    opacity: 0;
+    transform: translateY(40px) rotate(2deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* Bold hero — orange sweep across the headline */
+@keyframes hero-orange-sweep {
+  0% {
+    background-position: -150% center;
+  }
+  100% {
+    background-position: 250% center;
+  }
+}
+
+/* Bold hero — kinetic marquee */
+@keyframes hero-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Bold hero — slow rotating ring */
+@keyframes hero-spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Bold hero — pulsing dot */
+@keyframes hero-dot-pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
+
 .hero-rise {
   animation: hero-rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -424,6 +479,62 @@
   mask-image: radial-gradient(ellipse 60% 55% at 50% 38%, #000 30%, transparent 75%);
 }
 
+/* ── BOLD hero tokens ── */
+.hero-bold-canvas {
+  background:
+    radial-gradient(
+      ellipse 80% 60% at 50% -10%,
+      color-mix(in oklab, var(--brand-orange) 22%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 85% 30%,
+      color-mix(in oklab, var(--brand-blue) 28%, transparent),
+      transparent 65%
+    ),
+    linear-gradient(180deg, oklch(0.13 0.03 268) 0%, oklch(0.1 0.025 270) 100%);
+}
+
+.hero-bold-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, #fff 8%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, #fff 8%, transparent) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 65% at 50% 35%, #000 20%, transparent 80%);
+  mask-image: radial-gradient(ellipse 70% 65% at 50% 35%, #000 20%, transparent 80%);
+}
+
+.hero-bold-line {
+  opacity: 0;
+  animation: hero-line-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-bold-orange-text {
+  background: linear-gradient(
+    100deg,
+    var(--brand-orange) 0%,
+    oklch(0.78 0.2 55) 50%,
+    var(--brand-orange) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hero-orange-sweep 6s linear infinite;
+}
+
+.hero-bold-marquee-track {
+  animation: hero-marquee 28s linear infinite;
+}
+
+.hero-bold-spin {
+  animation: hero-spin-slow 60s linear infinite;
+}
+
+.hero-bold-dot {
+  animation: hero-dot-pulse 2.2s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-rise,
   .hero-rise-1,
@@ -434,10 +545,19 @@
   .hero-float,
   .hero-glow,
   .hero-glow-2,
-  .hero-callout-text {
+  .hero-callout-text,
+  .hero-bold-line,
+  .hero-bold-orange-text,
+  .hero-bold-marquee-track,
+  .hero-bold-spin,
+  .hero-bold-dot {
     animation: none !important;
   }
-  .hero-callout-text {
-    -webkit-text-fill-color: var(--brand-blue);
+  .hero-bold-line {
+    opacity: 1;
+  }
+  .hero-callout-text,
+  .hero-bold-orange-text {
+    -webkit-text-fill-color: var(--brand-orange);
   }
 }

@@ -60,30 +60,30 @@ function FlyingLeapHomePage() {
     >
       <Leadli2Banner />
 
-      {/* 1. TOP HEADER / NAV */}
-      <header className="sticky top-0 z-40 bg-[#fcfbf8]/95 backdrop-blur-md border-b border-slate-200/80 transition-all">
+      {/* 1. TOP HEADER / NAV — transparent overlay on dark hero */}
+      <header className="absolute top-0 inset-x-0 z-40 transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <FlyingLeapLogo className="h-11 sm:h-12" />
+            <FlyingLeapLogo className="h-11 sm:h-12 brightness-0 invert" />
           </Link>
 
           {/* Navigation Links */}
-          <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700">
-            <Link to="/" className="text-[#3344b8] hover:text-[#12193b] transition-colors">
+          <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-white/80">
+            <Link to="/" className="text-white hover:text-white transition-colors">
               Home
             </Link>
             <Link
               to="/estate-planning"
-              className="text-slate-700 hover:text-[#3344b8] transition-colors inline-flex items-center gap-1.5"
+              className="text-white/80 hover:text-white transition-colors inline-flex items-center gap-1.5"
             >
               <span>Estate Planning</span>
-              <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-sm bg-amber-100 text-amber-900 border border-amber-300">
+              <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded-sm bg-[var(--brand-orange)] text-[oklch(0.16_0.04_45)] border border-[var(--brand-orange)]">
                 Vertical
               </span>
             </Link>
             <Link
               to="/leadli"
-              className="text-slate-700 hover:text-[#3344b8] transition-colors font-medium"
+              className="text-white/80 hover:text-white transition-colors font-medium"
             >
               Leadli
             </Link>
@@ -91,7 +91,7 @@ function FlyingLeapHomePage() {
               href="https://app.leadli.co/"
               target="_blank"
               rel="noreferrer"
-              className="text-slate-700 hover:text-[#3344b8] transition-colors"
+              className="text-white/80 hover:text-white transition-colors"
             >
               Login
             </a>
@@ -100,7 +100,7 @@ function FlyingLeapHomePage() {
           <div className="flex items-center gap-3">
             <button
               onClick={handleOpenDiscovery}
-              className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#12193b] text-white hover:bg-[#202c61] font-bold text-sm sm:text-base transition-all shadow-md hover:shadow-lg cursor-pointer"
+              className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[var(--brand-orange)] text-[oklch(0.16_0.04_45)] hover:brightness-110 font-bold text-sm sm:text-base transition-all shadow-lg cursor-pointer"
             >
               <strong>Build My System</strong>
               <ArrowRight className="w-4 h-4" />

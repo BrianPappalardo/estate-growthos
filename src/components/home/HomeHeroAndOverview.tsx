@@ -3,75 +3,140 @@ import { ArrowRight, Sparkles, ChevronRight } from "lucide-react";
 import { getCapacityMonth } from "@/lib/capacity-month";
 
 export function HomeHero({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
+  const marqueeItems = [
+    "Build it for you",
+    "Train your team",
+    "Troubleshoot",
+    "Implement new ideas",
+    "One connected system",
+    "No loose ends",
+    "Powered by Flying Leap Studio",
+  ];
+
   return (
-    <section className="relative overflow-hidden pt-14 pb-16 sm:pt-20 sm:pb-24">
-      {/* Ambient layered background */}
+    <section className="hero-bold-canvas relative overflow-hidden pt-16 pb-0 sm:pt-24 sm:pb-0 text-white">
+      {/* Layered background */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        {/* Dotted grid that fades at the edges */}
-        <div className="hero-grid absolute inset-0" />
-        {/* Drifting glow orbs — orange leaning, blue as the accent */}
-        <div className="hero-glow absolute -top-20 left-[8%] w-[420px] h-[420px] rounded-full bg-[radial-gradient(circle_at_center,color-mix(in_oklab,var(--brand-orange)_55%,transparent),transparent_70%)] blur-3xl" />
-        <div className="hero-glow-2 absolute top-10 right-[6%] w-[360px] h-[360px] rounded-full bg-[radial-gradient(circle_at_center,color-mix(in_oklab,var(--brand-blue)_42%,transparent),transparent_70%)] blur-3xl" />
-        {/* Soft top vignette to anchor the header */}
-        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#fcfbf8] to-transparent" />
+        <div className="hero-bold-grid absolute inset-0" />
+        {/* Orange glow orb */}
+        <div className="hero-glow absolute -top-24 left-[10%] w-[480px] h-[480px] rounded-full bg-[radial-gradient(circle_at_center,color-mix(in_oklab,var(--brand-orange)_60%,transparent),transparent_70%)] blur-3xl" />
+        {/* Blue accent glow */}
+        <div className="hero-glow-2 absolute top-20 right-[8%] w-[420px] h-[420px] rounded-full bg-[radial-gradient(circle_at_center,color-mix(in_oklab,var(--brand-blue)_55%,transparent),transparent_70%)] blur-3xl" />
+        {/* Slow rotating dashed ring — decorative */}
+        <svg
+          className="hero-bold-spin absolute -right-32 top-1/2 -translate-y-1/2 w-[520px] h-[520px] opacity-[0.18] hidden lg:block"
+          viewBox="0 0 200 200"
+          fill="none"
+        >
+          <circle
+            cx="100"
+            cy="100"
+            r="96"
+            stroke="var(--brand-orange)"
+            strokeWidth="0.5"
+            strokeDasharray="2 6"
+          />
+          <circle cx="100" cy="100" r="72" stroke="#fff" strokeWidth="0.4" strokeDasharray="1 5" />
+          <circle
+            cx="100"
+            cy="100"
+            r="48"
+            stroke="var(--brand-blue)"
+            strokeWidth="0.4"
+            strokeDasharray="1 4"
+          />
+        </svg>
       </div>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 relative text-center">
-        {/* Eyebrow badge */}
-        <div className="hero-rise hero-rise-1 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50/90 border border-blue-200/80 text-[#3344b8] text-xs sm:text-sm font-bold mb-7 shadow-xs backdrop-blur-sm">
-          <Sparkles className="w-4 h-4 text-[#f97316]" />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative text-center">
+        {/* Eyebrow — live status pill */}
+        <div className="hero-rise hero-rise-1 inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/90 text-xs sm:text-sm font-bold mb-10 backdrop-blur-sm">
+          <span className="hero-bold-dot w-2 h-2 rounded-full bg-[var(--brand-orange)]" />
           <span>One Team. One Platform. No Loose Ends.</span>
         </div>
 
-        {/* Headline */}
-        <h1 className="hero-rise hero-rise-2 text-4xl sm:text-6xl md:text-7xl font-black text-[#12193b] tracking-tight leading-[1.1]">
-          You built a business you're proud of.
-          <span className="block text-[#3344b8] mt-3">Now let's build the system it deserves.</span>
+        {/* Oversized headline — line by line reveal */}
+        <h1 className="font-black tracking-tight leading-[0.95] text-5xl sm:text-7xl md:text-8xl lg:text-[8.5rem]">
+          <span className="hero-bold-line block text-white" style={{ animationDelay: "0.08s" }}>
+            You built a business
+          </span>
+          <span className="hero-bold-line block text-white" style={{ animationDelay: "0.18s" }}>
+            you're <span className="italic font-light">proud</span> of.
+          </span>
+          <span
+            className="hero-bold-line hero-bold-orange-text block mt-2"
+            style={{ animationDelay: "0.3s" }}
+          >
+            Now let's build the
+          </span>
+          <span
+            className="hero-bold-line hero-bold-orange-text block"
+            style={{ animationDelay: "0.4s" }}
+          >
+            system it deserves.
+          </span>
         </h1>
 
-        {/* Supporting line 1 */}
-        <p className="hero-rise hero-rise-3 mt-7 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-          Starting a business takes nerve. Growing one takes something more.
-        </p>
+        {/* Supporting copy */}
+        <div className="hero-rise hero-rise-4 mt-10 max-w-2xl mx-auto space-y-3">
+          <p className="text-lg sm:text-xl text-white/70 leading-relaxed">
+            Starting a business takes nerve. Growing one takes something more.
+          </p>
+          <p className="text-lg sm:text-xl text-white/70 leading-relaxed">
+            We celebrate every flying leap you've already taken — your first client, your first
+            pivot, your first hire — and we're here to support your next one.
+          </p>
+        </div>
 
-        {/* Supporting line 2 */}
-        <p className="hero-rise hero-rise-3 mt-3 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-          We celebrate every flying leap you've already taken — your first client, your first pivot,
-          your first hire — and we're here to support your next one.
-        </p>
-
-        {/* Value proposition callout box */}
-        <div className="hero-rise hero-rise-4 mt-9 mx-auto max-w-2xl">
-          <div className="relative rounded-3xl bg-white/80 backdrop-blur-md border border-blue-200/60 shadow-2xl shadow-blue-900/10 overflow-hidden p-6 sm:p-8">
-            <div className="absolute -top-px left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-[#f97316]/70 to-transparent" />
-            <p className="hero-callout-text text-xl sm:text-3xl font-black tracking-tight leading-snug">
-              Flying Leap Studio helps established service businesses replace scattered tools and guesswork with one connected system — and provides the team to grow it.
+        {/* Value proposition — bold bordered slab */}
+        <div className="hero-rise hero-rise-5 mt-10 mx-auto max-w-3xl">
+          <div className="relative rounded-2xl bg-white/[0.06] backdrop-blur-md border border-white/15 px-6 sm:px-10 py-7 shadow-2xl shadow-black/40">
+            <div className="absolute -top-px left-1/2 -translate-x-1/2 w-2/3 h-px bg-gradient-to-r from-transparent via-[var(--brand-orange)] to-transparent" />
+            <p className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight leading-snug text-white">
+              Flying Leap Studio helps established service businesses replace scattered tools and
+              guesswork with one connected system — and provides the{" "}
+              <span className="hero-bold-orange-text">team</span> to grow it.
             </p>
           </div>
         </div>
 
         {/* CTAs */}
-        <div className="hero-rise hero-rise-5 mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="hero-rise hero-rise-5 mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             onClick={onOpenDiscovery}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 sm:px-10 py-4 text-base sm:text-lg font-bold bg-[#3344b8] hover:bg-[#25349c] text-white rounded-2xl shadow-xl hover:shadow-2xl transition-all cursor-pointer border-2 border-blue-400/30"
+            className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-9 sm:px-12 py-4 sm:py-5 text-base sm:text-lg font-black bg-[var(--brand-orange)] hover:brightness-110 text-[oklch(0.16_0.04_45)] rounded-2xl shadow-2xl shadow-orange-900/40 transition-all cursor-pointer border-2 border-white/10"
           >
             <strong>Build My System</strong>
-            <ArrowRight className="w-5 h-5" />
+            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
           </button>
 
           <Link
             to="/estate-planning"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 text-base font-bold bg-white hover:bg-slate-50 text-[#12193b] rounded-2xl border-2 border-slate-300 shadow-sm transition-all"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 sm:py-5 text-base font-bold bg-white/5 hover:bg-white/10 text-white rounded-2xl border-2 border-white/20 transition-all"
           >
             <span>Explore the Estate Planning Vertical</span>
-            <ChevronRight className="w-4 h-4 text-slate-400" />
+            <ChevronRight className="w-4 h-4 text-white/50" />
           </Link>
         </div>
 
-        <p className="hero-rise hero-rise-5 mt-4 text-xs sm:text-sm text-slate-500 font-medium">
+        <p className="hero-rise hero-rise-5 mt-5 text-xs sm:text-sm text-white/50 font-medium">
           Customized setup • Concierge support • Only 2 build spots open for {getCapacityMonth()}
         </p>
+      </div>
+
+      {/* Kinetic marquee bar — bold, full-bleed, orange */}
+      <div className="relative mt-16 sm:mt-24 border-y border-white/10 bg-[var(--brand-orange)] text-[oklch(0.16_0.04_45)] overflow-hidden">
+        <div className="flex hero-bold-marquee-track whitespace-nowrap py-4 sm:py-5">
+          {[...marqueeItems, ...marqueeItems, ...marqueeItems, ...marqueeItems].map((item, i) => (
+            <span
+              key={i}
+              className="mx-6 sm:mx-10 text-lg sm:text-2xl font-black uppercase tracking-tight flex items-center gap-6 sm:gap-10"
+            >
+              {item}
+              <span className="text-[oklch(0.16_0.04_45)]/40">✦</span>
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   );

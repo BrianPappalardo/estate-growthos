@@ -60,8 +60,8 @@ function FlyingLeapHomePage() {
     >
       <Leadli2Banner />
 
-      {/* 1. TOP HEADER / NAV — transparent overlay on dark hero */}
-      <header className="absolute top-0 inset-x-0 z-40 transition-all">
+      {/* 1. TOP HEADER / NAV — in normal flow, sits below the announcement banner */}
+      <header className="relative z-40 bg-[#0f1530] border-b border-white/10 transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
           <Link to="/" className="flex items-center">
             <FlyingLeapLogo className="h-11 sm:h-12 brightness-0 invert" />

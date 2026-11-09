@@ -14,7 +14,7 @@ export function HomeHero({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
   ];
 
   return (
-    <section className="hero-bold-canvas relative overflow-hidden pt-16 pb-0 sm:pt-24 sm:pb-0 text-white">
+    <section className="hero-bold-canvas relative overflow-hidden pt-10 pb-0 sm:pt-14 sm:pb-0 text-white">
       {/* Layered background */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="hero-bold-grid absolute inset-0" />

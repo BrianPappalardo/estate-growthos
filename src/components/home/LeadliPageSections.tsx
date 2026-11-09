@@ -37,6 +37,11 @@ export function LeadliPageHero({ onOpenDiscovery }: { onOpenDiscovery: () => voi
           payments so nothing falls through the cracks.
         </p>
 
+        <p className="mt-3 text-sm sm:text-base text-amber-300 font-bold max-w-2xl mx-auto">
+          The platform is Leadli. The team behind it is Flying Leap Studio — we build, configure,
+          train, and support it end to end.
+        </p>
+
         <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             onClick={onOpenDiscovery}
@@ -328,8 +333,9 @@ export function LeadliFeatureGrid() {
             Everything your firm runs on.
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600">
-            Tap any feature to see how it fits your firm. Use all of them, or only the ones you need
-            to automate, connect, and grow with confidence.
+            Every feature below is included — and our team sets it up, connects it, and trains your
+            people. Use all of them, or only the ones you need to automate, connect, and grow with
+            confidence.
           </p>
         </div>
 

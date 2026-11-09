@@ -9,6 +9,7 @@ import {
   DuctTapeSection,
 } from "@/components/home/HomeHeroAndOverview";
 import { PlatformFeaturesGrid, OfferingsSection } from "@/components/home/HomeFeaturesAndOfferings";
+import { ImplementationPromise } from "@/components/home/ImplementationPromise";
 import { FlightPlanTimeline, HomeFinalCta, HomeFooter } from "@/components/home/HomeCrewAndPlan";
 import { Leadli2Banner } from "@/components/home/Leadli2Banner";
 
@@ -119,6 +120,9 @@ function FlyingLeapHomePage() {
 
       {/* 5. ALL IN ONE PLACE ENGINE */}
       <PlatformFeaturesGrid />
+
+      {/* 5a. WE BUILD, TRAIN, TROUBLESHOOT, IMPLEMENT */}
+      <ImplementationPromise showExperience />
 
       {/* 6. CHOOSE YOUR EXPERIENCE */}
       <OfferingsSection onOpenDiscovery={handleOpenDiscovery} />

@@ -73,10 +73,11 @@ export function PlatformFeaturesGrid() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#12193b] tracking-tight">
-            Everything you need to run your business in one place.
+            All the power of an all-in-one system. Without all of the headaches.
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600">
-            Every tool works together out of the box — no Zapier duct tape required.
+            These are the tools. We're the team that sets them up, connects them, and teaches your
+            people to use them — so you never have to wrestle with software again.
           </p>
         </div>
 
@@ -100,8 +101,10 @@ export function PlatformFeaturesGrid() {
           })}
         </div>
 
-        <p className="mt-10 text-center text-sm text-slate-500">
-          Our Consolidate & Save Calculator lives on the Leadli page — coming soon. For now,{" "}
+        <p className="mt-10 text-center text-sm text-slate-600 max-w-2xl mx-auto">
+          Seem like a lot? It is — and our team builds, trains, and supports every bit of it so you
+          don't have to. The software includes access to hourly build help whenever you need it. For
+          now,{" "}
           <Link
             to="/estate-planning"
             className="text-[#3344b8] font-bold hover:underline underline-offset-4"

@@ -155,8 +155,8 @@ export function ProductPageScaffold({ content, mockup, onOpenDiscovery }: Props)
               <ArrowRight className="w-5 h-5" />
             </button>
             <p className="text-xs sm:text-sm text-slate-400 font-medium max-w-xs leading-relaxed pt-2">
-              Included with Leadli at one flat $199/mo rate. See how it fits your firm on a
-              30-minute call.
+              Included with Leadli at one flat $199/mo rate. We'll configure it around your workflow
+              and train your team on a 30-minute call.
             </p>
           </div>
         </div>
@@ -248,12 +248,12 @@ export function ProductPageScaffold({ content, mockup, onOpenDiscovery }: Props)
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
               <div>
                 <div className="text-xs font-extrabold uppercase tracking-widest text-amber-300 mb-1">
-                  Included in Leadli
+                  Powered by the experts at Flying Leap Studio
                 </div>
                 <p className="text-sm text-slate-200 leading-relaxed max-w-xl">
-                  This is part of the single platform we configure around how your firm runs — not a
-                  separate tool with its own login, its own pricing, and its own disconnected data.
-                  One inbox, one rate, one place where everything lives.
+                  We build this for you, train your team, troubleshoot when something breaks, and
+                  help you implement new ideas as you grow. All the power of an all-in-one system —
+                  without all of the headaches.
                 </p>
               </div>
               <div className="flex items-baseline gap-2 shrink-0">
@@ -458,9 +458,13 @@ export function ProductPageScaffold({ content, mockup, onOpenDiscovery }: Props)
           <p className="mt-5 text-base sm:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed">
             {c.finalCtaBody}
           </p>
+          <p className="mt-4 text-sm text-amber-300 font-bold max-w-xl mx-auto">
+            Powered by the experts at Flying Leap Studio. We build, train, troubleshoot, and
+            implement — so you don't have to.
+          </p>
           <button
             onClick={onOpenDiscovery}
-            className="mt-8 inline-flex items-center gap-3 px-8 sm:px-10 py-4 text-base sm:text-lg font-bold bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-2xl shadow-xl transition-all cursor-pointer"
+            className="mt-7 inline-flex items-center gap-3 px-8 sm:px-10 py-4 text-base sm:text-lg font-bold bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-2xl shadow-xl transition-all cursor-pointer"
           >
             <strong>Book a Discovery Call</strong>
             <ArrowRight className="w-5 h-5" />

@@ -24,6 +24,11 @@ export function HomeHero({ onOpenDiscovery }: { onOpenDiscovery: () => void }) {
           guesswork with one connected system — and provides the strategy to grow it.
         </p>
 
+        <p className="mt-3 text-sm sm:text-base text-[#3344b8] font-bold max-w-2xl mx-auto">
+          The platform is Leadli. The team behind it is Flying Leap Studio — we build, train,
+          troubleshoot, and implement it end to end.
+        </p>
+
         <div className="mt-6 max-w-2xl mx-auto text-slate-600 text-sm sm:text-base leading-relaxed space-y-3">
           <p>
             Starting a business takes nerve. Growing one takes something more. We built Flying Leap
@@ -83,15 +88,30 @@ export function SystemOverviewCard({ onOpenDiscovery }: { onOpenDiscovery: () =>
                   platform we build on.
                 </p>
                 <p>
-                  Most businesses that come to us have tried software before — and either couldn’t
+                  Most businesses that come to us have tried software before — and either couldn't
                   get it off the ground or cobbled together something that technically works but
                   costs too much and breaks too often.
                 </p>
                 <p>
                   We fix that. We configure Leadli specifically for the way your business runs. Not
                   a generic template. A system built around your clients, your processes, and where
-                  you’re headed next.
+                  you're headed next.
                 </p>
+              </div>
+              <div className="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {[
+                  { label: "Build", text: "We build it for you." },
+                  { label: "Train", text: "We train your team." },
+                  { label: "Troubleshoot", text: "We fix what breaks." },
+                  { label: "Implement", text: "We roll out new ideas." },
+                ].map((p) => (
+                  <div key={p.label} className="text-center">
+                    <div className="text-xs font-extrabold text-[#3344b8] uppercase tracking-wider">
+                      {p.label}
+                    </div>
+                    <div className="text-[11px] text-slate-500 mt-0.5 leading-tight">{p.text}</div>
+                  </div>
+                ))}
               </div>
               <div className="pt-2">
                 <button
@@ -191,8 +211,9 @@ export function DuctTapeSection({ onOpenDiscovery }: { onOpenDiscovery: () => vo
                 Flying Leap replaces the Frankensystem with Leadli.
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                We design and implement the foundation, then support you as needed, turning
-                scattered tech into a streamlined system built for growth.
+                We design and implement the foundation, then we build, train, troubleshoot, and
+                implement alongside you — turning scattered tech into a streamlined system built for
+                growth. You're never on your own with this.
               </p>
             </div>
 

@@ -19,7 +19,7 @@ export function DeliverablesSection({ onBookClick }: { onBookClick: () => void }
             GrowthOS: Your Intake, Built Around Your Firm
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600">
-            At the end of the engagement, you own a custom intake system that includes:
+            We build you a custom intake system that includes:
           </p>
         </div>
 

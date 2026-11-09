@@ -14,6 +14,7 @@ import { GrowthOSFAQ } from "@/components/GrowthOSFAQ";
 import { DeliverablesSection } from "@/components/DeliverablesSection";
 import { ComparisonAndProcess } from "@/components/ComparisonAndProcess";
 import { FinalCtaSection } from "@/components/CtaSections";
+import { ImplementationPromise } from "@/components/home/ImplementationPromise";
 
 export const Route = createFileRoute("/estate-planning")({
   component: GrowthOSLandingPage,
@@ -108,7 +109,11 @@ function GrowthOSLandingPage() {
             </button>
 
             <p className="text-xs sm:text-sm text-slate-600 font-medium">
-              30 minutes. See if it’s right for you and leave with a clear estimate.
+              30 minutes. See if it's right for you and leave with a clear estimate.
+            </p>
+            <p className="mt-2 text-xs sm:text-sm text-[#3344b8] font-bold max-w-xl mx-auto">
+              We don't hand you software and disappear. We build it, train your team, and stay on
+              call.
             </p>
           </div>
 
@@ -163,6 +168,12 @@ function GrowthOSLandingPage() {
 
       {/* WHAT YOU GET */}
       <DeliverablesSection onBookClick={handleOpenDiscovery} />
+
+      {/* WE BUILD, TRAIN, TROUBLESHOOT, IMPLEMENT */}
+      <ImplementationPromise
+        tagline="Powered by the experts at Flying Leap Studio. We build, train, troubleshoot, and implement — so you don't have to."
+        showExperience
+      />
 
       {/* WHY DIFFERENT, HOW IT WORKS, RISK REVERSAL, WHO IT'S FOR */}
       <ComparisonAndProcess onBookClick={handleOpenDiscovery} />

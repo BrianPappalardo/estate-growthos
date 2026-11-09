@@ -13,6 +13,7 @@ import {
   LeadliFeatureGrid,
   LeadliFunctionsSection,
 } from "@/components/home/LeadliPageSections";
+import { ImplementationPromise } from "@/components/home/ImplementationPromise";
 import { Leadli2Banner } from "@/components/home/Leadli2Banner";
 
 export const Route = createFileRoute("/leadli/")({
@@ -279,7 +280,13 @@ function LeadliPage() {
       {/* 6. FEATURE GRID */}
       <LeadliFeatureGrid />
 
-      {/* 6a. BROWSE BY FUNCTION */}
+      {/* 6a. WE BUILD, TRAIN, TROUBLESHOOT, IMPLEMENT */}
+      <ImplementationPromise
+        tagline="The platform is Leadli. The team behind it is Flying Leap Studio — we build, configure, train, and support it end to end."
+        variant="dark"
+      />
+
+      {/* 6b. BROWSE BY FUNCTION */}
       <LeadliFunctionsSection onOpenDiscovery={handleOpenDiscovery} />
 
       {/* 7. CONSOLIDATE & SAVE CALCULATOR (LITE / ILLUSTRATIVE) */}

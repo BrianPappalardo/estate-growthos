@@ -305,20 +305,139 @@
   animation: v2-pulse-soft 2.4s ease-in-out infinite;
 }
 
+/* ── Homepage hero: layered, ambient, eye-catching ── */
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+@keyframes hero-glow {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translate(30px, -20px) scale(1.12);
+  }
+}
+
+@keyframes hero-glow-2 {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: translate(-26px, 24px) scale(1.08);
+  }
+}
+
+@keyframes hero-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes hero-grid-fade {
+  from {
+    mask-position: 50% 30%;
+  }
+  to {
+    mask-position: 50% 0%;
+  }
+}
+
+.hero-rise {
+  animation: hero-rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.hero-rise-1 {
+  animation-delay: 0.05s;
+}
+.hero-rise-2 {
+  animation-delay: 0.15s;
+}
+.hero-rise-3 {
+  animation-delay: 0.25s;
+}
+.hero-rise-4 {
+  animation-delay: 0.35s;
+}
+.hero-rise-5 {
+  animation-delay: 0.45s;
+}
+.hero-float {
+  animation: hero-float 9s ease-in-out infinite;
+}
+.hero-glow {
+  animation: hero-glow 14s ease-in-out infinite;
+}
+.hero-glow-2 {
+  animation: hero-glow-2 16s ease-in-out infinite;
+}
+
+/* Callout / value-proposition card text gradient */
+.hero-callout-text {
+  background: linear-gradient(
+    100deg,
+    var(--brand-blue) 0%,
+    oklch(0.5 0.2 250) 40%,
+    var(--brand-blue) 80%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hero-shimmer 5s linear infinite;
+}
+
+/* Subtle dotted/line grid backdrop behind the hero */
+.hero-grid {
+  background-image: radial-gradient(
+    color-mix(in oklab, var(--brand-blue) 22%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 26px 26px;
+  -webkit-mask-image: radial-gradient(ellipse 60% 55% at 50% 38%, #000 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse 60% 55% at 50% 38%, #000 30%, transparent 75%);
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .v2-float,
-  .v2-drift,
-  .v2-spin-slow,
-  .v2-squiggle,
-  .v2-squiggle-slow,
-  .v2-shimmer-text,
-  .v2-rise,
-  .v2-marquee,
-  .v2-marquee-rev,
-  .v2-pulse-soft {
+  .hero-rise,
+  .hero-rise-1,
+  .hero-rise-2,
+  .hero-rise-3,
+  .hero-rise-4,
+  .hero-rise-5,
+  .hero-float,
+  .hero-glow,
+  .hero-glow-2,
+  .hero-callout-text {
     animation: none !important;
   }
-  .v2-shimmer-text {
-    -webkit-text-fill-color: var(--v2-accent);
+  .hero-callout-text {
+    -webkit-text-fill-color: var(--brand-blue);
   }
 }

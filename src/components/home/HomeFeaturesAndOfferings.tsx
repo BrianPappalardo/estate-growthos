@@ -168,19 +168,22 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
 
             <div>
               <div className="text-xs font-bold uppercase tracking-wider text-slate-400 mt-2">
-                Implementation
+                Done for you
               </div>
               <h3 className="text-2xl font-black text-[#12193b] mt-1">Leadli+</h3>
               <p className="text-sm font-semibold text-[#3344b8] mt-1">
-                Done for you. You're in the driver's seat.
+                Done for you. Billed hourly.
               </p>
 
+              <div className="mt-4 flex items-baseline gap-1">
+                <span className="text-3xl font-extrabold text-[#12193b]">$199</span>
+                <span className="text-slate-500 font-semibold text-sm">/mo software + hourly</span>
+              </div>
+
               <p className="mt-4 text-sm text-slate-600 leading-relaxed">
-                Done-for-you services where you set the pace. Leadli+ lets us work with any client
-                and any budget, and we can go as fast or as slow as you'd like. We start with the
-                highest value work that will show a return on investment — then we're on standby for
-                any training, questions, or additional projects after your initial buildout is
-                complete.
+                Done-for-you services where we follow your lead — perfect for any client on any
+                budget with any timeline. We can go as fast or as slow as you like. You control the
+                hours and you control the cost.
               </p>
 
               <div className="mt-6 space-y-2.5 text-xs sm:text-sm text-slate-700">
@@ -222,14 +225,19 @@ export function OfferingsSection({ onOpenDiscovery }: { onOpenDiscovery: () => v
               </div>
               <h3 className="text-2xl font-black text-[#12193b] mt-1">Growth OS</h3>
               <p className="text-sm font-semibold text-slate-700 mt-1">
-                A carefully planned build that's always improving.
+                A part of your team, always improving.
               </p>
 
+              <div className="mt-4 flex items-baseline gap-1">
+                <span className="text-3xl font-extrabold text-[#12193b]">$1,250</span>
+                <span className="text-slate-500 font-semibold text-sm">/mo</span>
+              </div>
+
               <p className="mt-4 text-sm text-slate-600 leading-relaxed">
-                A carefully planned, done-for-you build that's always improving. Each month we're
-                looking for the highest-ROI item to improve, so your system keeps getting sharper
-                and your business keeps getting more efficient — month after month. We become part
-                of your team.
+                At $1,250/mo, we become a part of your team — improving your account and supporting
+                your people month after month. Each month we proactively find the highest-ROI
+                improvement, so your system keeps getting sharper and your business keeps getting
+                more efficient. Software, build, support, and training all included.
               </p>
 
               <div className="mt-6 space-y-2.5 text-xs sm:text-sm text-slate-700">
